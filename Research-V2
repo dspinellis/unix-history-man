@@ -1,399 +1,177 @@
-TABLE OF CONTENTS 
-
-
-
-I. COMMANDS 
-
-
-
-: place label 
-
-acct . . get connect-time accounting 
-
-ar archive (combine) files 
-
-as •••••••••••••••••• assembl er 
-
-bas BASIC dialect 
-
-cat concatenate (or print) files 
-
-cc compile C program 
-
-end ir change working directory 
-
-check check consistency of file system 
-
-chmod change access mode of files 
-
-chown change owner of files 
-
-cmp compare file contents 
-
-cp copy file 
-
-date •••••••••••• get date and time of day 
-
-db symbolic debugger 
-
-dc desk calculator 
-
-df find free disk space 
-
-dpd ••••• spawn data-phone daemon 
-
-ds • verify directory hierarchy 
-
-dsw delete files interactively 
-
-du find disk usage 
-
-echo print command arguments 
-
-ed text editor 
-
-exit ••••••• end command sequence 
-
-fc compile Fortran program 
-
-fed form-letter editor 
-
-find ••••••• find file with given name 
-
-form • generate form letter 
-
-goto command transfer 
-
-if • conditional command 
-
-istat file status by i-number 
-
-Id link editor (loader) 
-
-In •••• link to file 
-
-login log on to system 
-
-Is list contents of directory 
-
-mail send mail to another user 
-
-man run off manual section 
-
-mesg permit or deny messages 
-
-mkdir create directory 
-
-mount mount det achabl e file system 
-
-mt save/restore files on magtape 
-
-mv •• move or rename file 
-
-m6 macroprocessor 
-
-nm •••••••••••••••••••• print namelist 
-
-nroff format text for printing 
-
-od octal dump of file 
-
-opr print file off-line 
-
-ov page overlay file print 
-
-pr print f il e with headings 
-
-rew rewind DECt ape 
-
-rm .... remove (delete) file 
-
-
-
-- vi - 
-
-
-
-rmdir remove (delete) directory 
-
-roff . format text for printing 
-
-salv ••••••••••••• • repair damaged file system 
-
-sh . . command interpreter 
-
-sort sort ASCII file 
-
-stat get file status 
-
-strip . . remove symbols, relocation bits 
-
-stty set typewriter modes 
-
-su become super-user 
-
-sum sum file 
-
-tacct «... conn ect-time account ing 
-
-tap manipulate DECtape 
-
-tm get time information 
-
-tss communicate with MH-TSS (GCOS) 
-
-tty find name of terminal 
-
-type •••••••• print file page-by-page 
-
-umount dismount removable file system 
-
-un •••••• ••••• find undefined symbols 
-
-wc get (English) word count 
-
-who who is on the system 
-
-write write to another user 
-
-
-
-II. SYSTEM CALLS 
-
-
-
-break ••••••••••• •••• set program break 
-
-cemt catch EMT traps 
-
-chd ir •••••••••••••• change working directory 
-
-chmod change mode of file 
-
-chown change owner of file 
-
-close ••••••••••• •••••• close open file 
-
-creat create file 
-
-exec execute program file 
-
-exit terminate execution 
-
-fork create new process 
-
-fstat •••••••••• status of open file 
-
-getuid •• get user ID 
-
-gtty ••••••••• get typewriter mode 
-
-hog set low-priority status 
-
-ilgins catch illegal instruction trap 
-
-intr catch or inhibit interrupts 
-
-link link to file 
-
-kill destroy process 
-
-makdir •••••••••• create directory 
-
-mdate set date modified of file 
-
-mount mount file system 
-
-open open file 
-
-quit catch or inhibit quits 
-
-read read file 
-
-rele release processor 
-
-seek move read or write pointer 
-
-setuid set user ID 
-
-sleep delay execution 
-
-stat get file status 
-
-stime set system time 
-
-stty set mode of typewriter 
-
-
-
-- vii - 
-
-
-
-sync ••••••••••• assure synchronization 
-
-tell . find read or write pointer 
-
-time . get time of year 
-
-"umount . .. dismount file system 
-
-unlink . remove (delete) file 
-
-wait . ... wait for process 
-
-write write file 
-
-III. SUBROUTINES 
-
-at an ........................ arctangent 
-
-atof . . convert ASCII to floating 
-
-atoi «•••• convert ASCII to integer 
-
-const 4 • ••••••• floating-point constants 
-
-ctime convert time to ASCII 
-
-exp •••••••••••• •••••••• expon ent ial function 
-
-fptrap •••••••• floating-point simulator 
-
-f toa convert floating to ASCII 
-
-gerts communicate with GCOS 
-
-getc get character 
-
-hypot compute hypotenuse 
-
-itoa convert integer to ASCII 
-
-log ... logarithm base e 
-
-mesg print string on typewriter 
-
-nlist ••••• ••••• read name list 
-
-ptime print time 
-
-putc •••••••••••• write character or word 
-
-qsort quicker sort 
-
-salloc storage allocator 
-
-sin •••••••••• •••••• sine, cosine 
-
-sqrt square root 
-
-switch transfer depending on value 
-
-
-
-IV. SPECIAL FILES 
-
-
-
-dnO 801 ACU 
-
-dpO 201 Dataphone 
-
-lpr line printer 
-
-mem core memory 
-
-mtO magtape 
-
-ppt punched paper tape 
-
-rfO RF disk 
-
-rkO RK disk 
-
-rpO RP disk 
-
-tapO DECtape 
-
-tty console typewriter 
-
-ttyO remote typewriter 
-
-V. FILE FORMATS 
-
-a. out assembler and loader output 
-
-archive archive file 
-
-core core image file 
-
-
-
-- viii - 
-
-
-
-directory directory format 
-
-file system file system format 
-
-ident # GCOS ident cards 
-
-passwd . . . . password file 
-
-tap . .... DECtape format 
-
-uids •••••••••••• map names to user ID's 
-
-utmp logged-in user information 
-
-wtmp accounting f iles 
-
-VI. USER MAINTAINED PROGRAMS 
-
-basic DEC supplied BASIC 
-
-be •••••••••••••••••••• compile B program 
-
-bj the game of black jack 
-
-cal print calendar 
-
-chash prepare symbol table 
-
-cref cross-reference table 
-
-das disassembler 
-
-dli load DEC binary paper tapes 
-
-dpt read DEC ASCII paper tapes 
-
-moo the game of MOO 
-
-ptx permuted index 
-
-tmg •• compile tmgl program 
-
-ttt * the game of tic-tac-toe 
-
-VII. MI S CELL ANEOUS 
-
-ascii map of ASCII 
-
-bproc ••••••••••••••••• boot procedure 
-
-getty adapt to typewriter 
-
-glob •••••••• argument exp and er 
-
-in it •••••••••••••• initializer process 
-
-kbd map of TTY 37 keyboard 
-
-login ••••• how to log onto system 
-
-msh •••• mini Shell 
-
-tabs set tab stops on typewriter 
+man1/:.1
+man1/acct.1
+man1/ar.1
+man1/as.1
+man1/bas.1
+man1/cat.1
+man1/cc.1
+man1/end.1
+man1/check.1
+man1/chmod.1
+man1/chown.1
+man1/cmp.1
+man1/cp.1
+man1/date.1
+man1/db.1
+man1/dc.1
+man1/df.1
+man1/dpd.1
+man1/ds.1
+man1/dsw.1
+man1/du.1
+man1/echo.1
+man1/ed.1
+man1/exit.1
+man1/fc.1
+man1/fed.1
+man1/find.1
+man1/form.1
+man1/goto.1
+man1/if.1
+man1/istat.1
+man1/ld.1
+man1/ln.1
+man1/login.1
+man1/ls.1
+man1/mail.1
+man1/man.1
+man1/mesg.1
+man1/mkdir.1
+man1/mount.1
+man1/mt.1
+man1/mv.1
+man1/m6.1
+man1/nm.1
+man1/nroff.1
+man1/od.1
+man1/opr.1
+man1/ov.1
+man1/pr.1
+man1/rew.1
+man1/rm.1
+man1/rmdir.1
+man1/roff.1
+man1/salv.1
+man1/sh.1
+man1/sort.1
+man1/stat.1
+man1/strip.1
+man1/stty.1
+man1/su.1
+man1/sum.1
+man1/tacct.1
+man1/tap.1
+man1/tm.1
+man1/tss.1
+man1/tty.1
+man1/type.1
+man1/umount.1
+man1/un.1
+man1/wc.1
+man1/who.1
+man1/write.1
+man2/break.2
+man2/cemt.2
+man2/chd.2
+man2/chmod.2
+man2/chown.2
+man2/close.2
+man2/creat.2
+man2/exec.2
+man2/exit.2
+man2/fork.2
+man2/fstat.2
+man2/getuid.2
+man2/gtty.2
+man2/hog.2
+man2/ilgins.2
+man2/intr.2
+man2/link.2
+man2/kill.2
+man2/makdir.2
+man2/mdate.2
+man2/mount.2
+man2/open.2
+man2/quit.2
+man2/read.2
+man2/rele.2
+man2/seek.2
+man2/setuid.2
+man2/sleep.2
+man2/stat.2
+man2/stime.2
+man2/stty.2
+man2/sync.2
+man2/tell.2
+man2/time.2
+man2/umount.2
+man2/unlink.2
+man2/wait.2
+man2/write.2
+man3/arctan.3
+man3/atof.3
+man3/atoi.3
+man3/const.3
+man3/ctime.3
+man3/exp.3
+man3/fptrap.3
+man3/ftoa.3
+man3/gerts.3
+man3/getc.3
+man3/hypot.3
+man3/itoa.3
+man3/log.3
+man3/mesg.3
+man3/nlist.3
+man3/ptime.3
+man3/putc.3
+man3/qsort.3
+man3/salloc.3
+man3/sin.3
+man3/sqrt.3
+man3/switch.3
+man4/dn0.4
+man4/dp0.4
+man4/lpr.4
+man4/mem.4
+man4/mt0.4
+man4/ppt.4
+man4/rf0.4
+man4/rk0.4
+man4/rp0.4
+man4/tap0.4
+man4/tty.4
+man4/tty0.4
+man5/a.out.5
+man5/archive.5
+man5/core.5
+man5/directory.5
+man5/file.5
+man5/ident.5
+man5/passwd.5
+man5/tap.5
+man5/uids.5
+man5/utmp.5
+man5/wtmp.5
+man6/basic.6
+man6/be.6
+man6/bj.6
+man6/cal.6
+man6/chash.6
+man6/cref.6
+man6/das.6
+man6/dli.6
+man6/dpt.6
+man6/moo.6
+man6/ptx.6
+man6/tmg.6
+man6/ttt.6
+man7/ascii.7
+man7/bproc.7
+man7/getty.7
+man7/glob.7
+man7/init.7
+man7/kbd.7
+man7/login.7
+man7/msh.7
+man7/tabs.7
