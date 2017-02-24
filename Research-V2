@@ -5,7 +5,6 @@ man1/as.1
 man1/bas.1
 man1/cat.1
 man1/cc.1
-man1/end.1
 man1/check.1
 man1/chmod.1
 man1/chown.1
@@ -21,6 +20,7 @@ man1/dsw.1
 man1/du.1
 man1/echo.1
 man1/ed.1
+man1/end.1
 man1/exit.1
 man1/fc.1
 man1/fed.1
@@ -33,6 +33,7 @@ man1/ld.1
 man1/ln.1
 man1/login.1
 man1/ls.1
+man1/m6.1
 man1/mail.1
 man1/man.1
 man1/mesg.1
@@ -40,7 +41,6 @@ man1/mkdir.1
 man1/mount.1
 man1/mt.1
 man1/mv.1
-man1/m6.1
 man1/nm.1
 man1/nroff.1
 man1/od.1
@@ -86,8 +86,8 @@ man2/gtty.2
 man2/hog.2
 man2/ilgins.2
 man2/intr.2
-man2/link.2
 man2/kill.2
+man2/link.2
 man2/makdir.2
 man2/mdate.2
 man2/mount.2
@@ -140,8 +140,8 @@ man4/rf0.4
 man4/rk0.4
 man4/rp0.4
 man4/tap0.4
-man4/tty.4
 man4/tty0.4
+man4/tty.4
 man5/a.out.5
 man5/archive.5
 man5/core.5
