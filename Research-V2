@@ -1,0 +1,399 @@
+TABLE OF CONTENTS 
+
+
+
+I. COMMANDS 
+
+
+
+: place label 
+
+acct . . get connect-time accounting 
+
+ar archive (combine) files 
+
+as •••••••••••••••••• assembl er 
+
+bas BASIC dialect 
+
+cat concatenate (or print) files 
+
+cc compile C program 
+
+end ir change working directory 
+
+check check consistency of file system 
+
+chmod change access mode of files 
+
+chown change owner of files 
+
+cmp compare file contents 
+
+cp copy file 
+
+date •••••••••••• get date and time of day 
+
+db symbolic debugger 
+
+dc desk calculator 
+
+df find free disk space 
+
+dpd ••••• spawn data-phone daemon 
+
+ds • verify directory hierarchy 
+
+dsw delete files interactively 
+
+du find disk usage 
+
+echo print command arguments 
+
+ed text editor 
+
+exit ••••••• end command sequence 
+
+fc compile Fortran program 
+
+fed form-letter editor 
+
+find ••••••• find file with given name 
+
+form • generate form letter 
+
+goto command transfer 
+
+if • conditional command 
+
+istat file status by i-number 
+
+Id link editor (loader) 
+
+In •••• link to file 
+
+login log on to system 
+
+Is list contents of directory 
+
+mail send mail to another user 
+
+man run off manual section 
+
+mesg permit or deny messages 
+
+mkdir create directory 
+
+mount mount det achabl e file system 
+
+mt save/restore files on magtape 
+
+mv •• move or rename file 
+
+m6 macroprocessor 
+
+nm •••••••••••••••••••• print namelist 
+
+nroff format text for printing 
+
+od octal dump of file 
+
+opr print file off-line 
+
+ov page overlay file print 
+
+pr print f il e with headings 
+
+rew rewind DECt ape 
+
+rm .... remove (delete) file 
+
+
+
+- vi - 
+
+
+
+rmdir remove (delete) directory 
+
+roff . format text for printing 
+
+salv ••••••••••••• • repair damaged file system 
+
+sh . . command interpreter 
+
+sort sort ASCII file 
+
+stat get file status 
+
+strip . . remove symbols, relocation bits 
+
+stty set typewriter modes 
+
+su become super-user 
+
+sum sum file 
+
+tacct «... conn ect-time account ing 
+
+tap manipulate DECtape 
+
+tm get time information 
+
+tss communicate with MH-TSS (GCOS) 
+
+tty find name of terminal 
+
+type •••••••• print file page-by-page 
+
+umount dismount removable file system 
+
+un •••••• ••••• find undefined symbols 
+
+wc get (English) word count 
+
+who who is on the system 
+
+write write to another user 
+
+
+
+II. SYSTEM CALLS 
+
+
+
+break ••••••••••• •••• set program break 
+
+cemt catch EMT traps 
+
+chd ir •••••••••••••• change working directory 
+
+chmod change mode of file 
+
+chown change owner of file 
+
+close ••••••••••• •••••• close open file 
+
+creat create file 
+
+exec execute program file 
+
+exit terminate execution 
+
+fork create new process 
+
+fstat •••••••••• status of open file 
+
+getuid •• get user ID 
+
+gtty ••••••••• get typewriter mode 
+
+hog set low-priority status 
+
+ilgins catch illegal instruction trap 
+
+intr catch or inhibit interrupts 
+
+link link to file 
+
+kill destroy process 
+
+makdir •••••••••• create directory 
+
+mdate set date modified of file 
+
+mount mount file system 
+
+open open file 
+
+quit catch or inhibit quits 
+
+read read file 
+
+rele release processor 
+
+seek move read or write pointer 
+
+setuid set user ID 
+
+sleep delay execution 
+
+stat get file status 
+
+stime set system time 
+
+stty set mode of typewriter 
+
+
+
+- vii - 
+
+
+
+sync ••••••••••• assure synchronization 
+
+tell . find read or write pointer 
+
+time . get time of year 
+
+"umount . .. dismount file system 
+
+unlink . remove (delete) file 
+
+wait . ... wait for process 
+
+write write file 
+
+III. SUBROUTINES 
+
+at an ........................ arctangent 
+
+atof . . convert ASCII to floating 
+
+atoi «•••• convert ASCII to integer 
+
+const 4 • ••••••• floating-point constants 
+
+ctime convert time to ASCII 
+
+exp •••••••••••• •••••••• expon ent ial function 
+
+fptrap •••••••• floating-point simulator 
+
+f toa convert floating to ASCII 
+
+gerts communicate with GCOS 
+
+getc get character 
+
+hypot compute hypotenuse 
+
+itoa convert integer to ASCII 
+
+log ... logarithm base e 
+
+mesg print string on typewriter 
+
+nlist ••••• ••••• read name list 
+
+ptime print time 
+
+putc •••••••••••• write character or word 
+
+qsort quicker sort 
+
+salloc storage allocator 
+
+sin •••••••••• •••••• sine, cosine 
+
+sqrt square root 
+
+switch transfer depending on value 
+
+
+
+IV. SPECIAL FILES 
+
+
+
+dnO 801 ACU 
+
+dpO 201 Dataphone 
+
+lpr line printer 
+
+mem core memory 
+
+mtO magtape 
+
+ppt punched paper tape 
+
+rfO RF disk 
+
+rkO RK disk 
+
+rpO RP disk 
+
+tapO DECtape 
+
+tty console typewriter 
+
+ttyO remote typewriter 
+
+V. FILE FORMATS 
+
+a. out assembler and loader output 
+
+archive archive file 
+
+core core image file 
+
+
+
+- viii - 
+
+
+
+directory directory format 
+
+file system file system format 
+
+ident # GCOS ident cards 
+
+passwd . . . . password file 
+
+tap . .... DECtape format 
+
+uids •••••••••••• map names to user ID's 
+
+utmp logged-in user information 
+
+wtmp accounting f iles 
+
+VI. USER MAINTAINED PROGRAMS 
+
+basic DEC supplied BASIC 
+
+be •••••••••••••••••••• compile B program 
+
+bj the game of black jack 
+
+cal print calendar 
+
+chash prepare symbol table 
+
+cref cross-reference table 
+
+das disassembler 
+
+dli load DEC binary paper tapes 
+
+dpt read DEC ASCII paper tapes 
+
+moo the game of MOO 
+
+ptx permuted index 
+
+tmg •• compile tmgl program 
+
+ttt * the game of tic-tac-toe 
+
+VII. MI S CELL ANEOUS 
+
+ascii map of ASCII 
+
+bproc ••••••••••••••••• boot procedure 
+
+getty adapt to typewriter 
+
+glob •••••••• argument exp and er 
+
+in it •••••••••••••• initializer process 
+
+kbd map of TTY 37 keyboard 
+
+login ••••• how to log onto system 
+
+msh •••• mini Shell 
+
+tabs set tab stops on typewriter 
