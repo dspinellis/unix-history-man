@@ -1,25 +1,4 @@
-.
 docket
-man0
-man0/basinf
-man0/intro
-man0/naa
-man0/ptx
-man0/ptxx
-man0/taa
-man0/toc
-man0/tocrc
-man0/tocx1
-man0/tocx2
-man0/tocx3
-man0/tocx4
-man0/tocx5
-man0/tocx6
-man0/tocx7
-man0/tocx8
-man0/x
-man0/xx
-man1
 man1/ar.1
 man1/as.1
 man1/bas.1
@@ -100,7 +79,6 @@ man1/wait.1
 man1/wc.1
 man1/who.1
 man1/write.1
-man2
 man2/break.2
 man2/chdir.2
 man2/chmod.2
@@ -141,7 +119,6 @@ man2/umount.2
 man2/unlink.2
 man2/wait.2
 man2/write.2
-man3
 man3/atan.3
 man3/atof.3
 man3/compar.3
@@ -177,7 +154,6 @@ man3/sqrt.3
 man3/switch.3
 man3/ttyn.3
 man3/vt.3
-man4
 man4/cat.4
 man4/da.4
 man4/dc.4
@@ -194,7 +170,6 @@ man4/tiu.4
 man4/tm.4
 man4/vs.4
 man4/vt.4
-man5
 man5/a.out.5
 man5/ar.5
 man5/core.5
@@ -204,7 +179,6 @@ man5/passwd.5
 man5/tp.5
 man5/utmp.5
 man5/wtmp.5
-man6
 man6/azel.6
 man6/bj.6
 man6/cal.6
@@ -224,7 +198,6 @@ man6/tmg.6
 man6/ttt.6
 man6/wump.6
 man6/yacc.6
-man7
 man7/ascii.7
 man7/dpd.7
 man7/getty.7
@@ -235,7 +208,6 @@ man7/msh.7
 man7/tabs.7
 man7/tmheader.7
 man7/vs.7
-man8
 man8/20boot.8
 man8/bproc.8
 man8/check.8
@@ -252,7 +224,6 @@ man8/su.8
 man8/sync.8
 man8/umount.8
 man8/update.8
-manx
 manx/acct.8
 manx/atoi.3
 manx/bc.6
