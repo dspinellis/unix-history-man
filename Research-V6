@@ -1,15 +1,3 @@
-.
-man0
-man0/basinf
-man0/intro
-man0/kaa
-man0/naa
-man0/ptx
-man0/taa
-man0/toc
-man0/tocrc
-man0/xx
-man1
 man1/ar.1
 man1/as.1
 man1/bas.1
@@ -91,7 +79,6 @@ man1/wc.1
 man1/who.1
 man1/write.1
 man1/yacc.1
-man2
 man2/break.2
 man2/chdir.2
 man2/chmod.2
@@ -135,7 +122,6 @@ man2/umount.2
 man2/unlink.2
 man2/wait.2
 man2/write.2
-man3
 man3/abort.3
 man3/abs.3
 man3/alloc.3
@@ -175,7 +161,6 @@ man3/setfil.3
 man3/sin.3
 man3/sqrt.3
 man3/ttyn.3
-man4
 man4/cat.4
 man4/dc.4
 man4/dh.4
@@ -194,7 +179,6 @@ man4/rp.4
 man4/tc.4
 man4/tm.4
 man4/tty.4
-man5
 man5/a.out.5
 man5/archive.5
 man5/ascii.5
@@ -211,7 +195,6 @@ man5/tp.5
 man5/ttys.5
 man5/utmp.5
 man5/wtmp.5
-man6
 man6/azel.6
 man6/bj.6
 man6/cal.6
@@ -237,12 +220,10 @@ man6/tmg.6
 man6/ttt.6
 man6/units.6
 man6/wump.6
-man7
 man7/cr.7
 man7/ms.7
 man7/plot.7
 man7/salloc.7
-man8
 man8/ac.8
 man8/bproc.8
 man8/chgrp.8
