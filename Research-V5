@@ -18,6 +18,7 @@ man1/diff.1
 man1/dsw.1
 man1/du.1
 man1/echo.1
+man1/ed.1
 man1/eqn.1
 man1/exit.1
 man1/fc.1
@@ -67,6 +68,7 @@ man1/sum.1
 man1/tee.1
 man1/time.1
 man1/tp.1
+man1/tr.1
 man1/troff.1
 man1/tss.1
 man1/tty.1
@@ -76,8 +78,6 @@ man1/wait.1
 man1/wc.1
 man1/who.1
 man1/write.1
-
-man2/intro.2
 man2/break.2
 man2/chdir.2
 man2/chmod.2
@@ -94,6 +94,7 @@ man2/getgid.2
 man2/getuid.2
 man2/gtty.2
 man2/indir.2
+man2/intro.2
 man2/kill.2
 man2/link.2
 man2/mknod.2
@@ -118,7 +119,6 @@ man2/umount.2
 man2/unlink.2
 man2/wait.2
 man2/write.2
-
 man3/alloc.3
 man3/atan.3
 man3/atof.3
@@ -155,7 +155,6 @@ man3/sin.3
 man3/sqrt.3
 man3/ttyn.3
 man3/vt.3
-
 man4/cat.4
 man4/dc.4
 man4/dh.4
@@ -174,7 +173,6 @@ man4/tm.4
 man4/tty.4
 man4/vs.4
 man4/vt.4
-
 man5/a.out.5
 man5/ar.5
 man5/core.5
@@ -188,7 +186,6 @@ man5/tp.5
 man5/ttys.5
 man5/utmp.5
 man5/wtmp.5
-
 man6/apl.6
 man6/azel.6
 man6/bas.6
@@ -219,13 +216,11 @@ man6/tmg.6
 man6/ttt.6
 man6/wump.6
 man6/yacc.6
-
 man7/ascii.7
 man7/greek.7
 man7/tabs.7
 man7/tmheader.7
 man7/vs.7
-
 man8/20boot.8
 man8/ac.8
 man8/boot procedures.8
