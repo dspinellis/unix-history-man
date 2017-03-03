@@ -40,24 +40,24 @@ for my $release (<[A-Z]* 3*>) {
 
 head();
 
+sub bydate {
+	return $release_date{$a} cmp $release_date{$b};
+}
+
 # Release label time line
-start_line('Release');
-for my $r (keys %release_date) {
-	my$from = $release_date{$r};
+print q'
+  var columns = [
+    {id: "Facility", name: "Facility", field: "Facility", cssClass: "cell-title",},
+';
+for my $r (sort bydate keys %release_date) {
+	my $from = $release_date{$r};
 	# Ensure dates are not interpreted as octal
 	$from =~ s/ 0/ /g;
 	my ($y, $m, $d) = split(/,/, $from);
 	$y++;
-	print qq<
-			{
-				label: '$r',
-				type: TimelineChart.TYPE.INTERVAL,
-				from: new Date([$from]),
-				to: new Date([$y, $m, $d]),
-			},
->;
+	print qq<    {id: "$r", name: "$r", field: "$r"},\n>;
 }
-end_line();
+print "  ];\n";
 
 section(2);
 
@@ -69,8 +69,23 @@ section
 {
 	my ($section) = @_;
 
+	# Row titles
+	print "  var data = [\n";
 	for my $name (sort keys %{$man_page{$section}}) {
+		print qq[    {Facility : "$name"},\n];
+	}
+print '
+  ];
+    grid = new Slick.Grid("#myGrid", data, columns, options);
+    grid.setCellCssStyles("implemented_facilities", {
+';
+	# Rows
+	my $row = 0;
+	for my $name (sort keys %{$man_page{$section}}) {
+		print "  $row: {\n";
 		element_line($section, $name);
+		print "  },\n";
+		$row++;
 	}
 }
 
@@ -79,94 +94,61 @@ sub
 element_line
 {
 	my ($section, $name) = @_;
-	start_line("$name($section)");
 	for my $r (keys %release_date) {
 		next unless (defined($release_page{$r}{$section}{$name}));
-		my$d = $release_date{$r};
-		# ensure dates are not interpreted as octal
-		$d =~ s/ 0/ /g;
-		print qq<
-			{
-				type: TimelineChart.TYPE.POINT,
-				at: new Date([$d]),
-			},
->;
+		print "      '$r': 'highlight',\n";
 	}
-	end_line();
 }
-
-# start a time line with the specified name
-sub
-start_line
-{
-	my ($name) = @_;
-	print qq(
-	{
-		label: '$name',
-		data: [
-);
-}
-#
-# end a time line
-sub
-end_line
-{
-	print "\t\t]\n\t},\n";
-}
-
 
 sub
 head
 {
-	print q{<!doctype html>
+	print q|<!doctype html>
 <html>
-
 <head>
-    <meta charset="utf-8" />
-    <title>unix feature timeline char</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.css" />
-    <link rel="stylesheet" href="https://rawgithub.com/caged/d3-tip/master/examples/example-styles.css" />
-    <link rel="stylesheet" href="../dist/timeline-chart.css" />
-    <link rel="stylesheet" href="style.css" />
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <title>Timeline of Unix Facilities</title>
+  <link rel="stylesheet" href="../slick.grid.css" type="text/css"/>
+  <link rel="stylesheet" href="../css/smoothness/jquery-ui-1.8.16.custom.css" type="text/css"/>
+  <link rel="stylesheet" href="examples.css" type="text/css"/>
 </head>
-
 <body>
-    <section flex flex-full-center>
-        <div id="chart"></div>
-    </section>
+<div id="myGrid" style="width:600px;height:500px;"></div>
+<script src="../lib/jquery-1.7.min.js"></script>
+<script src="../lib/jquery.event.drag-2.2.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.6.7/d3-tip.min.js"></script>
-    <script src="../dist/timeline-chart.js"></script>
+<script src="../slick.core.js"></script>
+<script src="../slick.grid.js"></script>
 
-    <script id="code">
+<style>
+.cell-title {
+	font-weight: bold;
+}
 
-        'use strict';
+.highlight{ background: blue }
 
-        const element = document.getElementById('chart');
-        const data = [
-};
+</style>
+
+<script>
+  var grid;
+  var options = {
+    enableCellNavigation: true,
+    frozenColumn: 0,
+    enableColumnReorder: false
+  };
+  $(function () {
+|;
 }
 
 
 sub
 tail
 {
-	print "\t];\n";
-	print q[
-        const timeline = new TimelineChart(element, data, {
-            enableLiveTimer: true,
-            tip: function(d) {
-                return d.at || `${d.from}<br>${d.to}`;
-            }
-        }).onVizChange(e => console.log(e));
-
-    </script>
+	print q|
+    })
+  })
+</script>
 </body>
-
 </html>
-];
+|;
 }
