@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 #
-# Create D3 timeline charts
+# Create Unix facility timeline charts using SlickGrid
 #
 
 use strict;
@@ -15,7 +15,21 @@ my %release_page;
 
 my $last_release;
 
-my $out;
+my $section_file;
+
+my @section_title = (
+	'man0',
+	'User commands',
+	'System calls',
+	'C library functions',
+	'Devices and special files',
+	'File formats and conventions',
+	'Games et. al.',
+	'Miscellanea',
+	'System maintenance procedures and commands',
+	'System kernel interfaces',
+);
+
 
 # Read timeline of releases
 open(my $in, '<', 'timeline') || die;
@@ -98,10 +112,25 @@ sub by_release_date {
 
 
 mkdir('html');
+open(my $index_file, '>', 'html/index.html') || die;
+bs_head($index_file);
+print $index_file '
+<title>Timeline of Unix Facilities</title>
+</head>
+<body>
+<h1>Timeline of Unix Facilities</h1>
+<ol>
+';
 for (my $i = 1; $i < 10; $i++) {
-	open($out, '>', "html/man$i.html") || die;
+	print $index_file qq{<li><a href="man$i.html">$section_title[$i]</a></li>\n};
+	open($section_file, '>', "html/man$i.html") || die;
 	section($i);
 }
+print $index_file '
+</ol>
+</body>
+</html>
+';
 
 # Order facilities by order of their first appearance and then
 # alphabetically
@@ -117,10 +146,10 @@ section
 {
 	my ($section) = @_;
 
-	head($section);
+	slick_head($section);
 
 	# Release label time line
-	print $out q'
+	print $section_file q'
 	  var columns = [
 	    {id: "Facility", name: "Facility", field: "Facility", cssClass: "slick-header-row",},
 	';
@@ -130,16 +159,16 @@ section
 		$from =~ s/ 0/ /g;
 		my ($y, $m, $d) = split(/,/, $from);
 		$y++;
-		print $out qq<    {id: "$r", name: "$r", field: "$r"},\n>;
+		print $section_file qq<    {id: "$r", name: "$r", field: "$r"},\n>;
 	}
-	print $out "  ];\n";
+	print $section_file "  ];\n";
 
 	# Row titles
-	print $out "  var data = [\n";
+	print $section_file "  var data = [\n";
 	for my $name (sort { by_first_appearance $section} keys %{$first_release_date{$section}}) {
-		print $out qq[    {Facility : "$name"},\n];
+		print $section_file qq[    {Facility : "$name"},\n];
 	}
-print $out '
+print $section_file '
   ];
     grid = new Slick.Grid("#myGrid", data, columns, options);
     grid.setCellCssStyles("implemented_facilities", {
@@ -147,9 +176,9 @@ print $out '
 	# Rows
 	my $row = 0;
 	for my $name (sort {by_first_appearance $section} keys %{$first_release_date{$section}}) {
-		print $out "  $row: {\n";
+		print $section_file "  $row: {\n";
 		element_line($section, $name);
-		print $out "  },\n";
+		print $section_file "  },\n";
 		$row++;
 	}
 
@@ -163,18 +192,50 @@ element_line
 	my ($section, $name) = @_;
 	for my $r (keys %release_date) {
 		next unless (defined($release_page{$r}{$section}{$name}));
-		print $out "      '$r': 'highlight',\n";
+		print $section_file "      '$r': 'highlight',\n";
 	}
 }
 
+# Header for Bootstrap HTML
 sub
-head
+bs_head
+{
+	my ($f) = @_;
+
+	print $f qq|<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+|;
+}
+
+# Header for SlickGrid code
+sub
+slick_head
 {
 	my ($section) = @_;
-	print $out qq|<!doctype html>
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	bs_head($section_file);
+	print $section_file qq|
   <title>Timeline of Unix Manual Section $section Facilities</title>
   <link rel="stylesheet" href="../slick.grid.css" type="text/css"/>
   <link rel="stylesheet" href="../css/smoothness/jquery-ui-1.8.24.custom.css" type="text/css"/>
@@ -215,7 +276,7 @@ head
 sub
 tail
 {
-	print $out q|
+	print $section_file q|
     })
   })
 </script>
