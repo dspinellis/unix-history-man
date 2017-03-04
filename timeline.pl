@@ -13,11 +13,14 @@ my %release_date;
 my %first_release_date;
 my %release_page;
 
+my $last_release;
+
 # Read timeline of releases
 open(my $in, '<', 'timeline') || die;
 while (<$in>) {
 	my ($name, $y, $m, $d) = split;
 	$release_date{$name} = "$y, $m, $d";
+	$last_release = $name if (!defined($last_release) || $release_date{$name} gt $release_date{$last_release});
 }
 close($in);
 
@@ -36,16 +39,13 @@ sub min_date
 }
 
 # Read man pages in each release
-for my $release (<[A-Z]* 3*>) {
+for my $release (<[FRB]* 3*>) {
 	open(my $in, '<', $release) || die;
 	while (<$in>) {
 		chop;
 		if (m|man([\dx])f?/(.+)\.\d[a-z]?$|) {
 			my $section = $1;
 			my $name = $2;
-			$first_release_date{$section}{$name} =
-				min_date($first_release_date{$section}{$name},
-					$release_date{$release});
 			if (!defined($release_date{$release})) {
 				print STDERR "Undefined release date for $release\n";
 				exit 1;
@@ -54,6 +54,36 @@ for my $release (<[A-Z]* 3*>) {
 		} else {
 			print STDERR "$release: Unable to parse $_\n";
 			exit 1;
+		}
+	}
+}
+
+# Move man pages in sections 1 (user commands) 6 (games) and
+# 8 (administrator commands and daemons) to match their location
+# in the last release.
+for my $last_section ((1, 6, 8)) {
+	for my $name (keys %{$release_page{$last_release}{$last_section}}) {
+		for my $r (keys %release_date) {
+			next if ($r eq $last_release);
+			for my $original_section ((1, 6, 8)) {
+				next if ($original_section eq $last_section);
+				if (defined($release_page{$r}{$original_section}{$name})) {
+					delete $release_page{$r}{$original_section}{$name};
+					$release_page{$r}{$last_section}{$name} = 1;
+				}
+			}
+		}
+	}
+}
+
+# Set first release date for each command
+# These is used for sorting commands by their release date
+for my $release (sort by_release_date keys %release_date) {
+	for my $section (keys %{$release_page{$release}}) {
+		for my $name (keys %{$release_page{$release}{$section}}) {
+			if (!defined($first_release_date{$section}{$name})) {
+				$first_release_date{$section}{$name} = $release_date{$release};
+			}
 		}
 	}
 }
@@ -80,7 +110,7 @@ for my $r (sort by_release_date keys %release_date) {
 }
 print "  ];\n";
 
-section(2);
+section(6);
 
 tail();
 
