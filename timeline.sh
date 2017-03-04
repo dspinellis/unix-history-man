@@ -23,4 +23,11 @@ done |
 sort -k2n |
 while read name date ; do
   echo $name $(date -d @$date +'%Y %m %d')
-done >$here/timeline
+done |
+sed '
+s/BSD-4_2 1988 03 09/BSD-4_2 1985 01 01/
+/FreeBSD-2.1.6 /d
+/FreeBSD-4.6.2/d
+/FreeBSD-5.2.1/d
+/FreeBSD-11.0.1/d
+' >$here/timeline
