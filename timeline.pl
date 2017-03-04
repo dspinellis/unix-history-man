@@ -9,8 +9,9 @@ use warnings;
 # Date of each release
 my %release_date;
 
-# Defined manual pages: all with the first release date and per release
+# Defined manual pages: all with the first release date, name, and per release
 my %first_release_date;
+my %first_release_name;
 my %release_page;
 
 my $last_release;
@@ -99,6 +100,7 @@ for my $release (sort by_release_date keys %release_date) {
 		for my $name (keys %{$release_page{$release}{$section}}) {
 			if (!defined($first_release_date{$section}{$name})) {
 				$first_release_date{$section}{$name} = $release_date{$release};
+				$first_release_name{$section}{$name} = $release;
 			}
 		}
 	}
@@ -152,6 +154,7 @@ section
 	print $section_file q'
 	  var columns = [
 	    {id: "Facility", name: "Facility", field: "Facility", cssClass: "slick-header-row",},
+	    {id: "Appearance", name: "Appearance", field: "Appearance", cssClass: "slick-header-row",},
 	';
 	for my $r (sort by_release_date keys %release_date) {
 		my $from = $release_date{$r};
@@ -166,7 +169,8 @@ section
 	# Row titles
 	print $section_file "  var data = [\n";
 	for my $name (sort { by_first_appearance $section} keys %{$first_release_date{$section}}) {
-		print $section_file qq[    {Facility : "$name"},\n];
+		print $section_file qq[    {Facility : "$name",\n];
+		print $section_file qq[     Appearance : "$first_release_name{$section}{$name}"},\n];
 	}
 print $section_file '
   ];
@@ -266,7 +270,7 @@ slick_head
   var grid;
   var options = {
     enableCellNavigation: true,
-    frozenColumn: 0,
+    frozenColumn: 1,
     enableColumnReorder: false
   };
   \$(function () {
