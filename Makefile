@@ -15,7 +15,8 @@ TREEMAN_FILES=FreeBSD-1.0-Import 386BSD-0.0 386BSD-0.1 386BSD-0.1-patchkit \
   FreeBSD-8.4.0 FreeBSD-9.0.0 FreeBSD-9.1.0 FreeBSD-9.2.0 FreeBSD-9.3.0
 
 update: $(TREEMAN_FILES) timeline timeline.pl
-	perl timeline.pl | ssh istlab.dmst.aueb.gr dd of=/home/dds/public_html/timeline/man2/index.html
+	perl timeline.pl
+	tar cf - html | ssh istlab.dmst.aueb.gr tar -C public_html/timeline/ -xf -
 
 $(TREEMAN_FILES): treeman.sh
 	./treeman.sh

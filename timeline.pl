@@ -15,6 +15,8 @@ my %release_page;
 
 my $last_release;
 
+my $out;
+
 # Read timeline of releases
 open(my $in, '<', 'timeline') || die;
 while (<$in>) {
@@ -88,31 +90,18 @@ for my $release (sort by_release_date keys %release_date) {
 	}
 }
 
-head();
 
 # Order release names by their date
 sub by_release_date {
 	return $release_date{$a} cmp $release_date{$b};
 }
 
-# Release label time line
-print q'
-  var columns = [
-    {id: "Facility", name: "Facility", field: "Facility", cssClass: "slick-header-row",},
-';
-for my $r (sort by_release_date keys %release_date) {
-	my $from = $release_date{$r};
-	# Ensure dates are not interpreted as octal
-	$from =~ s/ 0/ /g;
-	my ($y, $m, $d) = split(/,/, $from);
-	$y++;
-	print qq<    {id: "$r", name: "$r", field: "$r"},\n>;
+
+mkdir('html');
+for (my $i = 1; $i < 10; $i++) {
+	open($out, '>', "html/man$i.html") || die;
+	section($i);
 }
-print "  ];\n";
-
-section(6);
-
-tail();
 
 # Order facilities by order of their first appearance and then
 # alphabetically
@@ -128,12 +117,29 @@ section
 {
 	my ($section) = @_;
 
-	# Row titles
-	print "  var data = [\n";
-	for my $name (sort { by_first_appearance $section} keys %{$first_release_date{$section}}) {
-		print qq[    {Facility : "$name"},\n];
+	head($section);
+
+	# Release label time line
+	print $out q'
+	  var columns = [
+	    {id: "Facility", name: "Facility", field: "Facility", cssClass: "slick-header-row",},
+	';
+	for my $r (sort by_release_date keys %release_date) {
+		my $from = $release_date{$r};
+		# Ensure dates are not interpreted as octal
+		$from =~ s/ 0/ /g;
+		my ($y, $m, $d) = split(/,/, $from);
+		$y++;
+		print $out qq<    {id: "$r", name: "$r", field: "$r"},\n>;
 	}
-print '
+	print $out "  ];\n";
+
+	# Row titles
+	print $out "  var data = [\n";
+	for my $name (sort { by_first_appearance $section} keys %{$first_release_date{$section}}) {
+		print $out qq[    {Facility : "$name"},\n];
+	}
+print $out '
   ];
     grid = new Slick.Grid("#myGrid", data, columns, options);
     grid.setCellCssStyles("implemented_facilities", {
@@ -141,11 +147,13 @@ print '
 	# Rows
 	my $row = 0;
 	for my $name (sort {by_first_appearance $section} keys %{$first_release_date{$section}}) {
-		print "  $row: {\n";
+		print $out "  $row: {\n";
 		element_line($section, $name);
-		print "  },\n";
+		print $out "  },\n";
 		$row++;
 	}
+
+	tail();
 }
 
 # Produce a timeline for a single man page element
@@ -155,18 +163,19 @@ element_line
 	my ($section, $name) = @_;
 	for my $r (keys %release_date) {
 		next unless (defined($release_page{$r}{$section}{$name}));
-		print "      '$r': 'highlight',\n";
+		print $out "      '$r': 'highlight',\n";
 	}
 }
 
 sub
 head
 {
-	print q|<!doctype html>
+	my ($section) = @_;
+	print $out qq|<!doctype html>
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <title>Timeline of Unix Facilities</title>
+  <title>Timeline of Unix Manual Section $section Facilities</title>
   <link rel="stylesheet" href="../slick.grid.css" type="text/css"/>
   <link rel="stylesheet" href="../css/smoothness/jquery-ui-1.8.24.custom.css" type="text/css"/>
   <link rel="stylesheet" href="../examples/examples.css" type="text/css"/>
@@ -184,7 +193,7 @@ head
 	background: gray;
 }
 
-.highlight{ background: blue }
+.highlight{ background: green }
 
 .slick-header-row {
   background: #edeef0;
@@ -199,15 +208,14 @@ head
     frozenColumn: 0,
     enableColumnReorder: false
   };
-  $(function () {
+  \$(function () {
 |;
 }
-
 
 sub
 tail
 {
-	print q|
+	print $out q|
     })
   })
 </script>
