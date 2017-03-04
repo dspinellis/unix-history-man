@@ -47,7 +47,7 @@ sub bydate {
 # Release label time line
 print q'
   var columns = [
-    {id: "Facility", name: "Facility", field: "Facility", cssClass: "slick-header-column",},
+    {id: "Facility", name: "Facility", field: "Facility", cssClass: "slick-header-row",},
 ';
 for my $r (sort bydate keys %release_date) {
 	my $from = $release_date{$r};
@@ -109,7 +109,7 @@ head
   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <title>Timeline of Unix Facilities</title>
   <link rel="stylesheet" href="../slick.grid.css" type="text/css"/>
-  <link rel="stylesheet" href="../css/smoothness/jquery-ui-1.8.16.custom.css" type="text/css"/>
+  <link rel="stylesheet" href="../css/smoothness/jquery-ui-1.8.24.custom.css" type="text/css"/>
   <link rel="stylesheet" href="../examples/examples.css" type="text/css"/>
 </head>
 <body>
@@ -126,6 +126,10 @@ head
 }
 
 .highlight{ background: blue }
+
+.slick-header-row {
+  background: #edeef0;
+}
 
 </style>
 
