@@ -113,7 +113,7 @@ head
   <link rel="stylesheet" href="../examples/examples.css" type="text/css"/>
 </head>
 <body>
-<div id="myGrid" style="width:600px;height:500px;"></div>
+<div id="myGrid" style="width:1000px;height:700px;"></div>
 <script src="../lib/jquery-1.7.min.js"></script>
 <script src="../lib/jquery.event.drag-2.2.js"></script>
 
