@@ -9,8 +9,8 @@ use warnings;
 # Date of each release
 my %release_date;
 
-# Defined manual pages: all and per release
-my %man_page;
+# Defined manual pages: all with the first release date and per release
+my %first_release_date;
 my %release_page;
 
 # Read timeline of releases
@@ -21,6 +21,20 @@ while (<$in>) {
 }
 close($in);
 
+# Return the minimum date of two
+sub min_date
+{
+	my ($a, $b) = @_;
+
+	return $b if (!defined($a));
+	return $a if (!defined($b));
+	if ($a lt $b) {
+		return $a;
+	} else {
+		return $b;
+	}
+}
+
 # Read man pages in each release
 for my $release (<[A-Z]* 3*>) {
 	open(my $in, '<', $release) || die;
@@ -29,7 +43,13 @@ for my $release (<[A-Z]* 3*>) {
 		if (m|man([\dx])f?/(.+)\.\d[a-z]?$|) {
 			my $section = $1;
 			my $name = $2;
-			$man_page{$section}{$name} = 1;
+			$first_release_date{$section}{$name} =
+				min_date($first_release_date{$section}{$name},
+					$release_date{$release});
+			if (!defined($release_date{$release})) {
+				print STDERR "Undefined release date for $release\n";
+				exit 1;
+			}
 			$release_page{$release}{$section}{$name} = 1;
 		} else {
 			print STDERR "$release: Unable to parse $_\n";
@@ -40,7 +60,8 @@ for my $release (<[A-Z]* 3*>) {
 
 head();
 
-sub bydate {
+# Order release names by their date
+sub by_release_date {
 	return $release_date{$a} cmp $release_date{$b};
 }
 
@@ -49,7 +70,7 @@ print q'
   var columns = [
     {id: "Facility", name: "Facility", field: "Facility", cssClass: "slick-header-row",},
 ';
-for my $r (sort bydate keys %release_date) {
+for my $r (sort by_release_date keys %release_date) {
 	my $from = $release_date{$r};
 	# Ensure dates are not interpreted as octal
 	$from =~ s/ 0/ /g;
@@ -63,6 +84,14 @@ section(2);
 
 tail();
 
+# Order facilities by order of their first appearance and then
+# alphabetically
+sub by_first_appearance {
+	my ($section) = @_;
+	return ($first_release_date{$section}{$a} cmp $first_release_date{$section}{$b}) || ($a cmp $b);
+}
+
+
 # Produce timelines for a whole man page section
 sub
 section
@@ -71,7 +100,7 @@ section
 
 	# Row titles
 	print "  var data = [\n";
-	for my $name (sort keys %{$man_page{$section}}) {
+	for my $name (sort { by_first_appearance $section} keys %{$first_release_date{$section}}) {
 		print qq[    {Facility : "$name"},\n];
 	}
 print '
@@ -81,7 +110,7 @@ print '
 ';
 	# Rows
 	my $row = 0;
-	for my $name (sort keys %{$man_page{$section}}) {
+	for my $name (sort {by_first_appearance $section} keys %{$first_release_date{$section}}) {
 		print "  $row: {\n";
 		element_line($section, $name);
 		print "  },\n";
