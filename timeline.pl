@@ -8,9 +8,11 @@ use warnings;
 
 # Date of each release
 my %release_date;
+# Order of each release
+my %release_order;
 
 # Defined manual pages: all with the first release date, name, and per release
-my %first_release_date;
+my %first_release_order;
 my %first_release_name;
 my %release_page;
 
@@ -36,10 +38,30 @@ my @section_title = (
 open(my $in, '<', 'timeline') || die;
 while (<$in>) {
 	my ($name, $y, $m, $d) = split;
-	$release_date{$name} = "$y, $m, $d";
+	$release_date{$name} = "$y-$m-$d";
 	$last_release = $name if (!defined($last_release) || $release_date{$name} gt $release_date{$last_release});
 }
 close($in);
+
+sub
+by_version
+{
+	if ($a =~ m/FreeBSD-(\d+)\.(\d+)\.(\d+)/) {
+		my ($a1, $a2, $a3) = ($1, $2, $3);
+		if ($b =~ m/FreeBSD-(\d+)\.(\d+)\.(\d+)/) {
+			my ($b1, $b2, $b3) = ($1, $2, $3);
+
+			return ($a1 <=> $b1) || ($a2 <=> $b2) || ($a3 <=> $b3);
+		}
+	}
+	return $release_date{$a} cmp $release_date{$b};
+}
+
+# Set release order based on release date
+my $order = 0;
+for my $release (sort by_version keys %release_date) {
+	$release_order{$release} = $order++;
+}
 
 # Return the minimum date of two
 sub min_date
@@ -95,11 +117,11 @@ for my $last_section ((1, 6, 8)) {
 
 # Set first release date for each command
 # These is used for sorting commands by their release date
-for my $release (sort by_release_date keys %release_date) {
+for my $release (sort by_release_order keys %release_order) {
 	for my $section (keys %{$release_page{$release}}) {
 		for my $name (keys %{$release_page{$release}{$section}}) {
-			if (!defined($first_release_date{$section}{$name})) {
-				$first_release_date{$section}{$name} = $release_date{$release};
+			if (!defined($first_release_order{$section}{$name})) {
+				$first_release_order{$section}{$name} = $release_order{$release};
 				$first_release_name{$section}{$name} = $release;
 			}
 		}
@@ -107,9 +129,9 @@ for my $release (sort by_release_date keys %release_date) {
 }
 
 
-# Order release names by their date
-sub by_release_date {
-	return $release_date{$a} cmp $release_date{$b};
+# Order release names by their chronological/version order
+sub by_release_order {
+	return $release_order{$a} <=> $release_order{$b};
 }
 
 
@@ -138,7 +160,7 @@ print $index_file '
 # alphabetically
 sub by_first_appearance {
 	my ($section) = @_;
-	return ($first_release_date{$section}{$a} cmp $first_release_date{$section}{$b}) || ($a cmp $b);
+	return ($first_release_order{$section}{$a} <=> $first_release_order{$section}{$b}) || ($a cmp $b);
 }
 
 
@@ -156,19 +178,14 @@ section
 	    {id: "Facility", name: "Facility", field: "Facility", cssClass: "slick-header-row",},
 	    {id: "Appearance", name: "Appearance", field: "Appearance", cssClass: "slick-header-row",},
 	';
-	for my $r (sort by_release_date keys %release_date) {
-		my $from = $release_date{$r};
-		# Ensure dates are not interpreted as octal
-		$from =~ s/ 0/ /g;
-		my ($y, $m, $d) = split(/,/, $from);
-		$y++;
+	for my $r (sort by_release_order keys %release_order) {
 		print $section_file qq<    {id: "$r", name: "$r", field: "$r"},\n>;
 	}
 	print $section_file "  ];\n";
 
 	# Row titles
 	print $section_file "  var data = [\n";
-	for my $name (sort { by_first_appearance $section} keys %{$first_release_date{$section}}) {
+	for my $name (sort { by_first_appearance $section} keys %{$first_release_order{$section}}) {
 		print $section_file qq[    {Facility : "$name",\n];
 		print $section_file qq[     Appearance : "$first_release_name{$section}{$name}"},\n];
 	}
@@ -179,7 +196,7 @@ print $section_file '
 ';
 	# Rows
 	my $row = 0;
-	for my $name (sort {by_first_appearance $section} keys %{$first_release_date{$section}}) {
+	for my $name (sort {by_first_appearance $section} keys %{$first_release_order{$section}}) {
 		print $section_file "  $row: {\n";
 		element_line($section, $name);
 		print $section_file "  },\n";
