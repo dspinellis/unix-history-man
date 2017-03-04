@@ -30,4 +30,5 @@ s/BSD-4_2 1988 03 09/BSD-4_2 1985 01 01/
 /FreeBSD-4.6.2/d
 /FreeBSD-5.2.1/d
 /FreeBSD-11.0.1/d
+/BSD-4_3_Net_1/d
 ' >$here/timeline
