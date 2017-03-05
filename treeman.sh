@@ -75,7 +75,8 @@ for ref in $refs ; do
   # Remove non-man pages
   egrep -v -e /Makefile -e BUGS -e makewhatis.sed -e man\\.template \
     -e man0/ -e tools/ -e ^manroff -e manx/asmt.cat -e manx/asmt.x \
-    -e ^docket -e manx/toc -e ^nroff-all |
+    -e ^docket -e manx/toc -e ^nroff-all -e '/[0-9].[0-9]$' \
+    -e 'INST.FreeBSD-2' -e 'ipv6-patch-4' |
   sort -u >$here/$out
 done
 
