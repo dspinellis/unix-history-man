@@ -115,6 +115,18 @@ for my $last_section ((1, 6, 8)) {
 	}
 }
 
+# Beautify the name of a release for screen display
+sub
+beautify
+{
+	my ($n) = @_;
+
+	$n =~ s/-/ /;
+	$n =~ s/_/./;
+	$n =~ s/_/\//;
+	return $n;
+}
+
 # Set first release date for each command
 # These is used for sorting commands by their release date
 for my $release (sort by_release_order keys %release_order) {
@@ -122,7 +134,7 @@ for my $release (sort by_release_order keys %release_order) {
 		for my $name (keys %{$release_page{$release}{$section}}) {
 			if (!defined($first_release_order{$section}{$name})) {
 				$first_release_order{$section}{$name} = $release_order{$release};
-				$first_release_name{$section}{$name} = $release;
+				$first_release_name{$section}{$name} = beautify($release);
 			}
 		}
 	}
@@ -179,7 +191,8 @@ section
 	    {id: "Appearance", name: "Appearance", field: "Appearance", cssClass: "slick-header-row",},
 	';
 	for my $r (sort by_release_order keys %release_order) {
-		print $section_file qq<    {id: "$r", name: "$r", field: "$r"},\n>;
+		my $br = beautify($r);
+		print $section_file qq<    {id: "$r", name: "$br", field: "$r"},\n>;
 	}
 	print $section_file "  ];\n";
 
