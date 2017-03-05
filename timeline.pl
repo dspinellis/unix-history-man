@@ -288,7 +288,11 @@ slick_head
 	background: gray;
 }
 
-.highlight{ background: green }
+.highlight{ background: LightSkyBlue }
+
+.slick-header-column.ui-state-default {
+        height: 100%;
+}
 
 .slick-header-row {
   background: #edeef0;
