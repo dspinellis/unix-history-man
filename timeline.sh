@@ -25,7 +25,11 @@ while read name date ; do
   echo $name $(date -d @$date +'%Y %m %d')
 done |
 sed '
+# Based on ignoring unrelated commits
 s/BSD-4_2 1988 03 09/BSD-4_2 1985 01 01/
+# Make it appear before 32V, because this is how added facilities appear
+s/BSD-2 1979 05 10/BSD-2 1979 05 01/
+# Remove releases that are identical to their predecessors
 /FreeBSD-2.1.6 /d
 /FreeBSD-4.6.2/d
 /FreeBSD-5.2.1/d
