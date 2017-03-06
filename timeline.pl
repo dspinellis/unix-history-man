@@ -124,6 +124,7 @@ beautify
 	$n =~ s/-/ /;
 	$n =~ s/_/./;
 	$n =~ s/_/\//;
+	$n =~ s/Net_2/Net-2/;
 	return $n;
 }
 
@@ -175,6 +176,33 @@ sub by_first_appearance {
 	return ($first_release_order{$section}{$a} <=> $first_release_order{$section}{$b}) || ($a cmp $b);
 }
 
+# Given the name of a parent and the current row in the array reference
+# facilities, return 'new', 'noparent', or 'child' depending on whether
+# the current row name should establish a new parent node, a node without
+# a parent, or a child of the existing parent node.
+# The variable parent contains a prefix up to an underscore
+sub
+node_type
+{
+	my ($parent, $row, $facilities) = @_;
+
+	# Nodes with same prefix in order to establish parent
+	my $SAME_PREFIX = 3;
+
+	if (defined($parent)) {
+		# Remove suffix used for display purposes
+		$parent =~ s/_.*/_/;
+
+		return 'child' if ($facilities->[$row] =~ m/^$parent/);
+	}
+	return 'noparent' if ($facilities->[$row] !~ m/^([^_]+)_/);
+
+	my $candidate = $1;
+	for (my $i = $row; $i < $row + $SAME_PREFIX; $i++) {
+		return 'noparent' if ($facilities->[$i] !~ m/^$candidate/);
+	}
+	return 'new';
+}
 
 # Produce timelines for a whole man page section
 sub
@@ -186,48 +214,130 @@ section
 
 	# Release label time line
 	print $section_file q'
-	  var columns = [
-	    {id: "Facility", name: "Facility", field: "Facility", cssClass: "slick-header-row",},
-	    {id: "Appearance", name: "Appearance", field: "Appearance", cssClass: "slick-header-row",},
-	';
+    var columns = [
+      {id: "Facility", name: "Facility", field: "Facility", cssClass: "slick-header-row", formatter: FacilityNameFormatter},
+      {id: "Appearance", name: "Appearance", field: "Appearance", cssClass: "slick-header-row",},
+';
 	for my $r (sort by_release_order keys %release_order) {
 		my $br = beautify($r);
-		print $section_file qq<    {id: "$r", name: "$br", field: "$r"},\n>;
+		print $section_file qq<      {id: "$r", name: "$br", field: "$r", formatter: ImplementedFormatter},\n>;
 	}
 	print $section_file "  ];\n";
 
 	# Row titles
-	print $section_file "  var data = [\n";
-	for my $name (sort { by_first_appearance $section} keys %{$first_release_order{$section}}) {
-		print $section_file qq[    {Facility : "$name",\n];
-		print $section_file qq[     Appearance : "$first_release_name{$section}{$name}"},\n];
+	print $section_file q|
+
+  var dataView;
+  var grid;
+  var options = {
+    enableCellNavigation: true,
+    frozenColumn: 1,
+    enableColumnReorder: false
+  };
+  var parent = null;
+
+  data = [
+|;
+	my @facilities = sort { by_first_appearance $section} keys %{$first_release_order{$section}};
+	my $parent_name;
+	my $parent_val = 'null';
+	my $indent;
+	my $out_row = 0;
+	my $highlights;
+	for (my $in_row = 0; $in_row <= $#facilities; $in_row++) {
+		my $name = $facilities[$in_row];
+		my $type = node_type($parent_name, $in_row, \@facilities);
+		if ($type eq 'new') {
+			# Parent of many
+			$parent_name = $name;
+			$parent_name =~ s/^([^_]+)_.*/$1_*/;
+			$parent_val = $out_row;
+			$highlights = element_line($out_row, $section, $name);
+			print $section_file qq(
+    { // $out_row
+      Facility: "$parent_name",
+      Appearance: "$first_release_name{$section}{$name}",
+      indent: 0,
+      id: "id_$out_row",
+      'parent': null,
+      _collapsed: true$highlights
+    },
+);
+			$out_row++;
+			$indent = 1;
+		} elsif ($type eq 'noparent') {
+			# Simple node (possibly after child ones)
+			$parent_name = undef;
+			$parent_val = 'null';
+			$indent = 0;
+		}
+		# Output a child or a simple node
+		$highlights = element_line($out_row, $section, $name);
+		print $section_file qq[
+    { // $out_row
+      Facility: "$name",
+      Appearance: "$first_release_name{$section}{$name}",
+      indent: $indent,
+      id: "id_$out_row",
+      'parent': $parent_val$highlights
+    },
+];
+		$out_row++;
 	}
 print $section_file '
-  ];
-    grid = new Slick.Grid("#myGrid", data, columns, options);
-    grid.setCellCssStyles("implemented_facilities", {
-';
-	# Rows
-	my $row = 0;
-	for my $name (sort {by_first_appearance $section} keys %{$first_release_order{$section}}) {
-		print $section_file "  $row: {\n";
-		element_line($section, $name);
-		print $section_file "  },\n";
-		$row++;
-	}
+    ]; // data[] initilization end
 
+    // initialize the model
+    dataView = new Slick.Data.DataView({ inlineFilters: true });
+    dataView.beginUpdate();
+    dataView.setItems(data);
+    dataView.setFilter(collapseFilter);
+    dataView.endUpdate();
+
+    // initialize the grid
+    grid = new Slick.Grid("#myGrid", dataView, columns, options);
+
+    grid.onCellChange.subscribe(function (e, args) {
+      dataView.updateItem(args.item.id, args.item);
+    });
+
+    grid.onClick.subscribe(function (e, args) {
+      if ($(e.target).hasClass("toggle")) {
+	var item = dataView.getItem(args.row);
+	if (item) {
+	  if (!item._collapsed) {
+	    item._collapsed = true;
+	  } else {
+	    item._collapsed = false;
+	  }
+	  dataView.updateItem(item.id, item);
+	}
+	e.stopImmediatePropagation();
+      }
+    });
+
+    dataView.onRowsChanged.subscribe(function (e, args) {
+      grid.invalidateRows(args.rows);
+      grid.render();
+    });
+
+';
 	tail();
 }
 
-# Produce a timeline for a single man page element
+# Return a timeline for a single man page element
+# appearing on the specified row
 sub
 element_line
 {
-	my ($section, $name) = @_;
+	my ($row, $section, $name) = @_;
+	my $ret = '';
+
 	for my $r (keys %release_date) {
 		next unless (defined($release_page{$r}{$section}{$name}));
-		print $section_file "      '$r': 'highlight',\n";
+		$ret .= ",\n      '$r': 1";
 	}
+	return $ret;
 }
 
 # Header for Bootstrap HTML
@@ -282,13 +392,12 @@ slick_head
 
 <script src="../slick.core.js"></script>
 <script src="../slick.grid.js"></script>
+<script src="../slick.dataview.js"></script>
 
 <style>
 .cell-title {
 	background: gray;
 }
-
-.highlight{ background: LightSkyBlue }
 
 .slick-header-column.ui-state-default {
         height: 100%;
@@ -298,24 +407,81 @@ slick_head
   background: #edeef0;
 }
 
-</style>
+.implemented {
+  background: LightSkyBlue;
+  width: 95%;
+  display: inline-block;
+  height: 6px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
 
-<script>
-  var grid;
-  var options = {
-    enableCellNavigation: true,
-    frozenColumn: 1,
-    enableColumnReorder: false
-  };
-  \$(function () {
+.toggle {
+  height: 9px;
+  width: 9px;
+  display: inline-block;
+}
+.toggle.expand {
+  background: url(../images/expand.gif) no-repeat center center;
+}
+.toggle.collapse {
+  background: url(../images/collapse.gif) no-repeat center center;
+}
+
+
+</style>
 |;
+
+	print $section_file q#
+<script>
+  var data = [];
+
+  function collapseFilter(item) {
+    if (item.parent != null) {
+      var parent = data[item.parent];
+      while (parent) {
+	if (parent._collapsed) {
+	  return false;
+	}
+	parent = data[parent.parent];
+      }
+    }
+    return true;
+  }
+
+  $(function () {
+
+    var FacilityNameFormatter = function (row, cell, value, columnDef, dataContext) {
+      value = value.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+      var spacer = "<span style='display:inline-block;height:1px;width:" + (15 * dataContext["indent"]) + "px'></span>";
+      var idx = dataView.getIdxById(dataContext.id);
+      if (data[idx + 1] && data[idx + 1].indent > data[idx].indent) {
+	if (dataContext._collapsed) {
+	  return spacer + " <span class='toggle expand'></span>&nbsp;" + value;
+	} else {
+	  return spacer + " <span class='toggle collapse'></span>&nbsp;" + value;
+	}
+      } else {
+	return spacer + " <span class='toggle'></span>&nbsp;" + value;
+      }
+    };
+
+    var ImplementedFormatter = function(row, cell, value, columnDef, dataContext) {
+      if (value == null || value === "") {
+	return "";
+      } else {
+	return "<span class='implemented'></span>";
+      }
+    };
+
+#;
 }
 
 sub
 tail
 {
 	print $section_file q|
-    })
   })
 </script>
 </body>
