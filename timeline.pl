@@ -155,8 +155,8 @@ sub by_release_order {
 
 
 # Create index file
-mkdir('html');
-open(my $index_file, '>', 'html/index.html') || die;
+mkdir('man');
+open(my $index_file, '>', 'index.html') || die;
 bs_head($index_file);
 print $index_file '
     <title>Evolution of Unix Facilities</title>
@@ -166,8 +166,8 @@ print $index_file '
     <ol>
 ';
 for (my $i = 1; $i <= $#section_title; $i++) {
-	print $index_file qq{      <li><a href="man$i.html">$section_title[$i]</a></li>\n};
-	open($section_file, '>', "html/man$i.html") || die;
+	print $index_file qq{      <li><a href="man/man$i.html">$section_title[$i]</a></li>\n};
+	open($section_file, '>', "man/man$i.html") || die;
 	section($i);
 }
 print $index_file '
@@ -491,6 +491,9 @@ tail
 	print $section_file q|
   })
     </script>
+    <p>
+      <a href="../index.html">Back to section index</index>
+    <p>
     <h2>Disclaimers</h2>
     <ul>
       <li>The name of a facility may have been repurposed over time.</li>
