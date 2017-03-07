@@ -154,24 +154,25 @@ sub by_release_order {
 }
 
 
+# Create index file
 mkdir('html');
 open(my $index_file, '>', 'html/index.html') || die;
 bs_head($index_file);
 print $index_file '
-<title>Timeline of Unix Facilities</title>
-</head>
-<body>
-<h1>Timeline of Unix Facilities</h1>
-<ol>
+    <title>Evolution of Unix Facilities</title>
+  </head>
+  <body>
+    <h1>Evolution of Unix Facilities</h1>
+    <ol>
 ';
-for (my $i = 1; $i < 10; $i++) {
-	print $index_file qq{<li><a href="man$i.html">$section_title[$i]</a></li>\n};
+for (my $i = 1; $i <= $#section_title; $i++) {
+	print $index_file qq{      <li><a href="man$i.html">$section_title[$i]</a></li>\n};
 	open($section_file, '>', "html/man$i.html") || die;
 	section($i);
 }
 print $index_file '
-</ol>
-</body>
+    </ol>
+  </body>
 </html>
 ';
 
@@ -220,29 +221,29 @@ section
 
 	# Release label time line
 	print $section_file q'
-    var columns = [
-      {id: "Facility", name: "Facility", field: "Facility", cssClass: "slick-header-row", formatter: FacilityNameFormatter},
-      {id: "Appearance", name: "Appearance", field: "Appearance", cssClass: "slick-header-row",},
+      var columns = [
+	{id: "Facility", name: "Facility", field: "Facility", cssClass: "slick-header-row", formatter: FacilityNameFormatter},
+	{id: "Appearance", name: "Appearance", field: "Appearance", cssClass: "slick-header-row",},
 ';
 	for my $r (sort by_release_order keys %release_order) {
 		my $br = beautify($r);
-		print $section_file qq<      {id: "$r", name: "$br", field: "$r", formatter: ImplementedFormatter},\n>;
+		print $section_file qq<        {id: "$r", name: "$br", field: "$r", formatter: ImplementedFormatter},\n>;
 	}
 	print $section_file "  ];\n";
 
 	# Row titles
 	print $section_file q|
 
-  var dataView;
-  var grid;
-  var options = {
-    enableCellNavigation: true,
-    frozenColumn: 1,
-    enableColumnReorder: false
-  };
-  var parent = null;
+    var dataView;
+    var grid;
+    var options = {
+      enableCellNavigation: true,
+      frozenColumn: 1,
+      enableColumnReorder: false
+    };
+    var parent = null;
 
-  data = [
+    data = [
 |;
 	my @facilities = sort { by_first_appearance $section} keys %{$first_release_order{$section}};
 	my $parent_name;
@@ -260,14 +261,14 @@ section
 			$parent_val = $out_row;
 			$highlights = element_line($out_row, $section, $name);
 			print $section_file qq(
-    { // $out_row
-      Facility: "$parent_name",
-      Appearance: "$first_release_name{$section}{$name}",
-      indent: 0,
-      id: "id_$out_row",
-      'parent': null,
-      _collapsed: true$highlights
-    },
+      { // $out_row
+	Facility: "$parent_name",
+	Appearance: "$first_release_name{$section}{$name}",
+	indent: 0,
+	id: "id_$out_row",
+	'parent': null,
+	_collapsed: true$highlights
+      },
 );
 			$out_row++;
 			$indent = 1;
@@ -280,13 +281,13 @@ section
 		# Output a child or a simple node
 		$highlights = element_line($out_row, $section, $name);
 		print $section_file qq[
-    { // $out_row
-      Facility: "$name",
-      Appearance: "$first_release_name{$section}{$name}",
-      indent: $indent,
-      id: "id_$out_row",
-      'parent': $parent_val$highlights
-    },
+      { // $out_row
+	Facility: "$name",
+	Appearance: "$first_release_name{$section}{$name}",
+	indent: $indent,
+	id: "id_$out_row",
+	'parent': $parent_val$highlights
+      },
 ];
 		$out_row++;
 	}
@@ -386,100 +387,100 @@ slick_head
 
 	bs_head($section_file);
 	print $section_file qq|
-  <title>Timeline of Unix Manual Section $section Facilities</title>
-  <link rel="stylesheet" href="../slick.grid.css" type="text/css"/>
-  <link rel="stylesheet" href="../css/smoothness/jquery-ui-1.8.24.custom.css" type="text/css"/>
-  <link rel="stylesheet" href="../examples/examples.css" type="text/css"/>
-</head>
-<body>
-<div id="myGrid" style="width:1000px;height:700px;"></div>
-<script src="../lib/jquery-1.7.min.js"></script>
-<script src="../lib/jquery.event.drag-2.2.js"></script>
+    <title>Evolution of Unix manual section $section facilities</title>
+    <link rel="stylesheet" href="../slick.grid.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/smoothness/jquery-ui-1.8.24.custom.css" type="text/css"/>
+    <link rel="stylesheet" href="../examples/examples.css" type="text/css"/>
+  </head>
+  <body>
+    <h1>Evolution of Unix manual section $section facilities: $section_title[$section]</h1>
+    <div id="myGrid" style="width:1000px;height:700px;"></div>
+    <script src="../lib/jquery-1.7.min.js"></script>
+    <script src="../lib/jquery.event.drag-2.2.js"></script>
 
-<script src="../slick.core.js"></script>
-<script src="../slick.grid.js"></script>
-<script src="../slick.dataview.js"></script>
+    <script src="../slick.core.js"></script>
+    <script src="../slick.grid.js"></script>
+    <script src="../slick.dataview.js"></script>
 
-<style>
-.cell-title {
-	background: gray;
-}
+    <style>
+    .cell-title {
+      background: gray;
+    }
 
-.slick-header-column.ui-state-default {
-        height: 100%;
-}
+    .slick-header-column.ui-state-default {
+      height: 100%;
+    }
 
-.slick-header-row {
-  background: #edeef0;
-}
+    .slick-header-row {
+      background: #edeef0;
+    }
 
-.implemented {
-  background: LightSkyBlue;
-  width: 95%;
-  display: inline-block;
-  height: 6px;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-}
+    .implemented {
+      background: LightSkyBlue;
+      width: 95%;
+      display: inline-block;
+      height: 6px;
+      border-radius: 3px;
+      -moz-border-radius: 3px;
+      -webkit-border-radius: 3px;
+    }
 
-.toggle {
-  height: 9px;
-  width: 9px;
-  display: inline-block;
-}
-.toggle.expand {
-  background: url(../images/expand.gif) no-repeat center center;
-}
-.toggle.collapse {
-  background: url(../images/collapse.gif) no-repeat center center;
-}
+    .toggle {
+      height: 9px;
+      width: 9px;
+      display: inline-block;
+    }
+    .toggle.expand {
+      background: url(../images/expand.gif) no-repeat center center;
+    }
+    .toggle.collapse {
+      background: url(../images/collapse.gif) no-repeat center center;
+    }
 
-
-</style>
+  </style>
 |;
 
 	print $section_file q#
-<script>
-  var data = [];
+  <script>
+    var data = [];
 
-  function collapseFilter(item) {
-    if (item.parent != null) {
-      var parent = data[item.parent];
-      while (parent) {
-	if (parent._collapsed) {
-	  return false;
+    function collapseFilter(item) {
+      if (item.parent != null) {
+	var parent = data[item.parent];
+	while (parent) {
+	  if (parent._collapsed) {
+	    return false;
+	  }
+	  parent = data[parent.parent];
 	}
-	parent = data[parent.parent];
       }
+      return true;
     }
-    return true;
-  }
 
-  $(function () {
+    $(function () {
 
-    var FacilityNameFormatter = function (row, cell, value, columnDef, dataContext) {
-      value = value.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
-      var spacer = "<span style='display:inline-block;height:1px;width:" + (15 * dataContext["indent"]) + "px'></span>";
-      var idx = dataView.getIdxById(dataContext.id);
-      if (data[idx + 1] && data[idx + 1].indent > data[idx].indent) {
-	if (dataContext._collapsed) {
-	  return spacer + " <span class='toggle expand'></span>&nbsp;" + value;
+      var FacilityNameFormatter = function (row, cell, value, columnDef, dataContext) {
+	value = value.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+	var spacer = "<span style='display:inline-block;height:1px;width:" + (15 * dataContext["indent"]) + "px'></span>";
+	var idx = dataView.getIdxById(dataContext.id);
+	if (data[idx + 1] && data[idx + 1].indent > data[idx].indent) {
+	  if (dataContext._collapsed) {
+	    return spacer + " <span class='toggle expand'></span>&nbsp;" + value;
+	  } else {
+	    return spacer + " <span class='toggle collapse'></span>&nbsp;" + value;
+	  }
 	} else {
-	  return spacer + " <span class='toggle collapse'></span>&nbsp;" + value;
+	  return spacer + " <span class='toggle'></span>&nbsp;" + value;
 	}
-      } else {
-	return spacer + " <span class='toggle'></span>&nbsp;" + value;
-      }
-    };
+      };
 
-    var ImplementedFormatter = function(row, cell, value, columnDef, dataContext) {
-      if (value == null || value === "") {
-	return "";
-      } else {
-	return "<span class='implemented'></span>";
-      }
-    };
+      var ImplementedFormatter = function(row, cell, value, columnDef, dataContext) {
+	if (value == null || value === "") {
+	  return "";
+	} else {
+	  return "<span class='implemented'></span>";
+	}
+      };
 
 #;
 }
@@ -489,8 +490,20 @@ tail
 {
 	print $section_file q|
   })
-</script>
-</body>
+    </script>
+    <h2>Disclaimers</h2>
+    <ul>
+      <li>The name of a facility may have been repurposed over time.</li>
+      <li>Facilities in sections 1, 6, 8 moved across sections over time.
+        To allow a continuous view of their evolution, all have been
+	relocated to the section of the most recent FreeBSD release,
+	if they still existed at the time.
+      </li>
+      <li> The evolution data of collapsed tree nodes depict the evolution
+        of the tree's first child node.
+      </li>
+    </ul>
+  </body>
 </html>
 |;
 }
