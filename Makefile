@@ -14,12 +14,21 @@ TREEMAN_FILES=386BSD-0.0 386BSD-0.1 386BSD-0.1-patchkit \
   FreeBSD-7.4.0 FreeBSD-8.0.0 FreeBSD-8.1.0 FreeBSD-8.2.0 FreeBSD-8.3.0 \
   FreeBSD-8.4.0 FreeBSD-9.0.0 FreeBSD-9.1.0 FreeBSD-9.2.0 FreeBSD-9.3.0
 
-update: $(TREEMAN_FILES) timeline timeline.pl
+all: unix-timeline/index.html unix-timeline/SlickGrid
+
+unix-timeline/index.html: $(TREEMAN_FILES) timeline timeline.pl
 	perl timeline.pl
-	tar cf - html | ssh istlab.dmst.aueb.gr tar -C public_html/timeline/ -xf -
 
 $(TREEMAN_FILES): treeman.sh
 	./treeman.sh
 
 timeline: timeline.sh
 	./timeline.sh
+
+unix-timeline/SlickGrid:
+	mkdir -p unix-timeline
+	cd unix-timeline && git clone -b 2.0-frozenRowsAndColumns \
+		--depth=1 https://github.com/dspinellis/SlickGrid.git
+
+dist: all
+	tar cf - unix-timeline | ssh istlab.dmst.aueb.gr tar -C public_html -xf -

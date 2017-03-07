@@ -155,8 +155,8 @@ sub by_release_order {
 
 
 # Create index file
-mkdir('man');
-open(my $index_file, '>', 'index.html') || die;
+mkdir('unix-timeline');
+open(my $index_file, '>', 'unix-timeline/index.html') || die;
 bs_head($index_file);
 print $index_file '
     <title>Evolution of Unix Facilities</title>
@@ -166,8 +166,8 @@ print $index_file '
     <ol>
 ';
 for (my $i = 1; $i <= $#section_title; $i++) {
-	print $index_file qq{      <li><a href="man/man$i.html">$section_title[$i]</a></li>\n};
-	open($section_file, '>', "man/man$i.html") || die;
+	print $index_file qq{      <li><a href="man$i.html">$section_title[$i]</a></li>\n};
+	open($section_file, '>', "unix-timeline/man$i.html") || die;
 	section($i);
 }
 print $index_file '
@@ -387,20 +387,20 @@ slick_head
 
 	bs_head($section_file);
 	print $section_file qq|
-    <title>Evolution of Unix manual section $section facilities</title>
-    <link rel="stylesheet" href="../slick.grid.css" type="text/css"/>
-    <link rel="stylesheet" href="../css/smoothness/jquery-ui-1.8.24.custom.css" type="text/css"/>
-    <link rel="stylesheet" href="../examples/examples.css" type="text/css"/>
+    <title>Evolution of Unix facilities: $section</title>
+    <link rel="stylesheet" href="SlickGrid/slick.grid.css" type="text/css"/>
+    <link rel="stylesheet" href="SlickGrid/css/smoothness/jquery-ui-1.8.24.custom.css" type="text/css"/>
+    <link rel="stylesheet" href="SlickGrid/examples/examples.css" type="text/css"/>
   </head>
   <body>
-    <h1>Evolution of Unix manual section $section facilities: $section_title[$section]</h1>
-    <div id="myGrid" style="width:1000px;height:700px;"></div>
-    <script src="../lib/jquery-1.7.min.js"></script>
-    <script src="../lib/jquery.event.drag-2.2.js"></script>
+    <h1>Evolution of Unix section $section: $section_title[$section]</h1>
+    <div id="myGrid" style="width:1000px;height:500px;"></div>
+    <script src="SlickGrid/lib/jquery-1.7.min.js"></script>
+    <script src="SlickGrid/lib/jquery.event.drag-2.2.js"></script>
 
-    <script src="../slick.core.js"></script>
-    <script src="../slick.grid.js"></script>
-    <script src="../slick.dataview.js"></script>
+    <script src="SlickGrid/slick.core.js"></script>
+    <script src="SlickGrid/slick.grid.js"></script>
+    <script src="SlickGrid/slick.dataview.js"></script>
 
     <style>
     .cell-title {
@@ -431,10 +431,10 @@ slick_head
       display: inline-block;
     }
     .toggle.expand {
-      background: url(../images/expand.gif) no-repeat center center;
+      background: url(SlickGrid/images/expand.gif) no-repeat center center;
     }
     .toggle.collapse {
-      background: url(../images/collapse.gif) no-repeat center center;
+      background: url(SlickGrid/images/collapse.gif) no-repeat center center;
     }
 
   </style>
@@ -492,7 +492,7 @@ tail
   })
     </script>
     <p>
-      <a href="../index.html">Back to section index</index>
+      <a href="index.html">Back to section index</a>
     <p>
     <h2>Disclaimers</h2>
     <ul>
