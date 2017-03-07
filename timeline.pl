@@ -130,16 +130,22 @@ beautify
 
 # Set first release date for each command
 # These is used for sorting commands by their release date
+# Also create a table listing number of commands per release
+open(my $tab, '>', 'mancount.txt');
 for my $release (sort by_release_order keys %release_order) {
 	for my $section (keys %{$release_page{$release}}) {
+		my $count = 0;
 		for my $name (keys %{$release_page{$release}{$section}}) {
+			$count++;
 			if (!defined($first_release_order{$section}{$name})) {
 				$first_release_order{$section}{$name} = $release_order{$release};
 				$first_release_name{$section}{$name} = beautify($release);
 			}
 		}
+		print $tab "$release\t$section\t$count\n";
 	}
 }
+close($tab);
 
 
 # Order release names by their chronological/version order
