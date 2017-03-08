@@ -202,7 +202,7 @@ node_type
 
 		return 'child' if ($facilities->[$row] =~ m/^$parent/);
 	}
-	return 'noparent' if ($facilities->[$row] !~ m/^([^_]+)_/);
+	return 'noparent' if ($facilities->[$row] !~ m/^([^_]+_)/);
 
 	my $candidate = $1;
 	for (my $i = $row; $i < $row + $SAME_PREFIX; $i++) {
