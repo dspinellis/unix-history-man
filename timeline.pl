@@ -142,7 +142,7 @@ for my $release (sort by_release_order keys %release_order) {
 				$first_release_name{$section}{$name} = beautify($release);
 			}
 		}
-		print $tab "$release\t$section\t$count\n";
+		print $tab beautify($release) . "\t$section\t$count\n";
 	}
 }
 close($tab);
