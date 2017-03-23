@@ -8,7 +8,7 @@ here=$(pwd)
 refs=(386BSD-0.0 386BSD-0.1 386BSD-0.1-patchkit Bell-32V
   BSD* Research*)
 
-cd $HOME/u/import
+cd $HOME/data/unix-history-repo
 
 refs=(${refs[@]}
   $(git tag -l | grep FreeBSD ; git branch -l | grep FreeBSD-release ) )
