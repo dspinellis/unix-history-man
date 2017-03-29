@@ -5,7 +5,7 @@
 
 here=$(pwd)
 
-cd $HOME/u/import
+cd unix-history-repo || exit 1
 
 all_refs="386BSD-0.0 386BSD-0.1 386BSD-0.1-patchkit
   BSD-4_3_Net_2 BSD-4_3_Reno BSD-4_4 BSD-4_4_Lite1 BSD-4_4_Lite2

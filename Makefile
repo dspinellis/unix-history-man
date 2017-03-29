@@ -14,21 +14,25 @@ TREEMAN_FILES=386BSD-0.0 386BSD-0.1 386BSD-0.1-patchkit \
   FreeBSD-7.4.0 FreeBSD-8.0.0 FreeBSD-8.1.0 FreeBSD-8.2.0 FreeBSD-8.3.0 \
   FreeBSD-8.4.0 FreeBSD-9.0.0 FreeBSD-9.1.0 FreeBSD-9.2.0 FreeBSD-9.3.0
 
-all: unix-timeline/index.html unix-timeline/SlickGrid
+export SITEDIR=docs
 
-unix-timeline/index.html: $(TREEMAN_FILES) timeline timeline.pl
+all: $(SITEDIR)/index.html $(SITEDIR)/SlickGrid
+
+$(SITEDIR)/index.html: $(TREEMAN_FILES) timeline timeline.pl
+	mkdir -p $(SITEDIR)
 	perl timeline.pl
 
-$(TREEMAN_FILES): treeman.sh
+$(TREEMAN_FILES): treeman.sh unix-history-repo
 	./treeman.sh
 
-timeline: timeline.sh
+unix-history-repo:
+	git clone https://github.com/dspinellis/unix-history-repo
+	cd $@ && git branch -r | grep -v '\->' | while read remote; do git branch --track "$${remote#origin/}" "$$remote"; done
+
+timeline: timeline.sh unix-history-repo
 	./timeline.sh
 
-unix-timeline/SlickGrid:
-	mkdir -p unix-timeline
-	cd unix-timeline && git clone -b 2.0-frozenRowsAndColumns \
+$(SITEDIR)/SlickGrid:
+	mkdir -p $(SITEDIR)
+	cd $(SITEDIR) && git clone -b 2.0-frozenRowsAndColumns \
 		--depth=1 https://github.com/dspinellis/SlickGrid.git
-
-dist: all
-	tar cf - unix-timeline | ssh istlab.dmst.aueb.gr tar -C public_html -xf -

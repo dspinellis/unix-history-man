@@ -92,7 +92,7 @@ sub min_date
 }
 
 # Read man pages in each release
-for my $release (<[FRB]* 3*>) {
+for my $release (<[FB]* Research* 3*>) {
 	open(my $in, '<', $release) || die;
 	while (<$in>) {
 		chop;
@@ -169,8 +169,9 @@ sub by_release_order {
 
 
 # Create index file
-mkdir('unix-timeline');
-open(my $index_file, '>', 'unix-timeline/index.html') || die;
+my $sitedir = $ENV{'SITEDIR'};
+mkdir($sitedir);
+open(my $index_file, '>', "$sitedir/index.html") || die;
 bs_head($index_file);
 print $index_file '
     <title>Evolution of Unix Facilities</title>
@@ -181,7 +182,7 @@ print $index_file '
 ';
 for (my $i = 1; $i <= $#section_title; $i++) {
 	print $index_file qq{      <li><a href="man$i.html">$section_title[$i]</a></li>\n};
-	open($section_file, '>', "unix-timeline/man$i.html") || die;
+	open($section_file, '>', "$sitedir/man$i.html") || die;
 	section($i);
 }
 print $index_file '
