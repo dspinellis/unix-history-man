@@ -36,3 +36,7 @@ $(SITEDIR)/SlickGrid:
 	mkdir -p $(SITEDIR)
 	cd $(SITEDIR) && git clone -b 2.0-frozenRowsAndColumns \
 		--depth=1 https://github.com/dspinellis/SlickGrid.git
+	rm -rf $(SITEDIR)/SlickGrid/.git*
+
+dist: all
+	./publish.sh

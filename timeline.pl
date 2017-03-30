@@ -187,6 +187,10 @@ for (my $i = 1; $i <= $#section_title; $i++) {
 }
 print $index_file '
     </ol>
+    <p>
+      The source code for creating this site is available in
+      <a href="https://github.com/dspinellis/unix-history-man">https://github.com/dspinellis/unix-history-man</a>.
+    </p>
   </body>
 </html>
 ';
