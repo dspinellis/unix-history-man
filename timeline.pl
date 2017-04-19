@@ -493,6 +493,25 @@ slick_head
       return true;
     }
 
+    var groupingDisabled = false;
+
+    // Remove parent nodes (*), pointers to them, and indentation
+    function disableGrouping() {
+      if (groupingDisabled) {
+	return;
+      }
+      for (var i = 0; i < data.length; i++) {
+	if (data[i].Facility.slice(-1) == "*") {
+	  data.splice(i, 1);
+	  i--;
+	  continue;
+	}
+	data[i].indent = 0;
+	data[i].parent = null;
+      }
+      groupingDisabled = true;
+    }
+
     $(function () {
 
       var FacilityNameFormatter = function (row, cell, value, columnDef, dataContext) {
@@ -519,6 +538,11 @@ slick_head
       };
 
       var gridSorter = function(cols, grid, gridData) {
+        /*
+	 * After changing the order of the rows, the parent pointers are
+	 * no longer valid, so we disable grouping.
+	 */
+        disableGrouping();
 	gridData.sort(function (dataRow1, dataRow2) {
 	  for (var i = 0, l = cols.length; i < l; i++) {
 	    var field = cols[i].sortCol.field;
