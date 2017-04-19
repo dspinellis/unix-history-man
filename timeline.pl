@@ -238,11 +238,21 @@ section
 
 	slick_head($section);
 
+	# Release dates
+	print $section_file q'
+      var release_date = {
+';
+	for my $r (sort keys %release_date) {
+		my $br = beautify($r);
+		print $section_file qq<        "$br": "$release_date{$r}",\n>;
+	}
+	print $section_file "  };\n";
+
 	# Release label time line
 	print $section_file q'
       var columns = [
-	{id: "Facility", name: "Facility", field: "Facility", cssClass: "slick-header-row", formatter: FacilityNameFormatter},
-	{id: "Appearance", name: "Appearance", field: "Appearance", cssClass: "slick-header-row",},
+	{id: "Facility", name: "Facility", field: "Facility", cssClass: "slick-header-row", formatter: FacilityNameFormatter, sortable: true},
+	{id: "Appearance", name: "Appearance", field: "Appearance", cssClass: "slick-header-row", sortable: true},
 ';
 	for my $r (sort by_release_order keys %release_order) {
 		my $br = beautify($r);
@@ -258,7 +268,8 @@ section
     var options = {
       enableCellNavigation: true,
       frozenColumn: 1,
-      enableColumnReorder: false
+      enableColumnReorder: false,
+      multiColumnSort: true
     };
     var parent = null;
 
@@ -346,6 +357,12 @@ print $section_file '
       grid.invalidateRows(args.rows);
       grid.render();
     });
+
+    grid.onSort.subscribe(function(e, args) {
+      gridSorter(args.sortCols, grid, dataView);
+    });
+
+    grid.setSortColumn("Appearance", true);
 
 ';
 	tail();
@@ -501,6 +518,28 @@ slick_head
 	}
       };
 
+      var gridSorter = function(cols, grid, gridData) {
+	gridData.sort(function (dataRow1, dataRow2) {
+	  for (var i = 0, l = cols.length; i < l; i++) {
+	    var field = cols[i].sortCol.field;
+	    var sign = cols[i].sortAsc ? 1 : -1;
+	    var value1 = dataRow1[field], value2 = dataRow2[field];
+	    if (field == "Appearance") {
+	      value1 = release_date[value1];
+	      value2 = release_date[value2];
+	    }
+	    var result = (value1 == value2) ?  0 :
+	      ((value1 > value2 ? 1 : -1)) * sign;
+	    if (result != 0) {
+	      return result;
+	    }
+	  }
+	  return 0;
+	});
+	grid.invalidate();
+	grid.render();
+      };
+
 #;
 }
 
@@ -513,8 +552,10 @@ tail
     <p>
       <a href="index.html">Back to section index</a>
     <p>
-    <h2>Disclaimers</h2>
+    <h2>Notes and disclaimers</h2>
     <ul>
+      <li>Click on the "Facility" or "Appearance" headers
+        to change the sort order.</li>
       <li>The name of a facility may have been repurposed over time.</li>
       <li>Facilities in sections 1, 6, 8 moved across sections over time.
         To allow a continuous view of their evolution, all have been
