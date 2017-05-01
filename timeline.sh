@@ -20,7 +20,6 @@ for ref in ${refs[@]} ; do
   echo -n "$out "
   git log -n 1 --format=%at "$ref" --
 done |
-sort -k2n |
 while read name date ; do
   echo $name $(date -d @$date +'%Y %m %d')
 done |
@@ -35,4 +34,5 @@ s/BSD-2 1979 05 10/BSD-2 1979 05 01/
 /FreeBSD-5.2.1/d
 /FreeBSD-11.0.1/d
 /BSD-4_3_Net_1/d
-' >$here/timeline
+' |
+sort -k2n >$here/timeline
