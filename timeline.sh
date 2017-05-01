@@ -26,8 +26,10 @@ done |
 sed '
 # Based on ignoring unrelated commits
 s/BSD-4_2 1988 03 09/BSD-4_2 1985 01 01/
-# Make it appear before 32V, because this is how added facilities appear
-s/BSD-2 1979 05 10/BSD-2 1979 05 01/
+# Make 32V appear after the Seventh edition (1979 08 26)
+s/Bell-32V 1979 05 03/Bell-32V 1979 08 28/
+# Make BSD-2 appear before 32V, because this is how added facilities appear
+s/BSD-2 1979 05 10/BSD-2 1979 08 27/
 # Remove releases that are identical to their predecessors
 /FreeBSD-2.1.6 /d
 /FreeBSD-4.6.2/d
@@ -35,4 +37,4 @@ s/BSD-2 1979 05 10/BSD-2 1979 05 01/
 /FreeBSD-11.0.1/d
 /BSD-4_3_Net_1/d
 ' |
-sort -k2n >$here/timeline
+sort -k2n -k3n -k4n >$here/timeline
