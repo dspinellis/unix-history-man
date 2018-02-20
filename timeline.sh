@@ -5,13 +5,13 @@
 
 here=$(pwd)
 
-refs=(386BSD-0.0 386BSD-0.1 386BSD-0.1-patchkit Bell-32V
+refs=(386BSD-0.0 386BSD-0.1 remotes/origin/386BSD-0.1-patchkit Bell-32V
   BSD* Research*)
 
 cd unix-history-repo || exit 1
 
 refs=(${refs[@]}
-  $(git tag -l | grep FreeBSD ; git branch -l | grep FreeBSD-release ) )
+  $(git tag -l | grep FreeBSD ; git branch -al | grep FreeBSD-release ) )
 
 for ref in ${refs[@]} ; do
   expr $ref : '.*-Import' >/dev/null && continue
@@ -24,6 +24,7 @@ while read name date ; do
   echo $name $(date -d @$date +'%Y %m %d')
 done |
 sed '
+s/remotes.origin_//
 # Based on ignoring unrelated commits
 s/BSD-4_2 1988 03 09/BSD-4_2 1985 01 01/
 # Make 32V appear after the Seventh edition (1979 08 26)
