@@ -40,3 +40,6 @@ $(SITEDIR)/SlickGrid:
 
 dist: all
 	./publish.sh
+
+clean:
+	rm -f $(TREEMAN_FILES)
