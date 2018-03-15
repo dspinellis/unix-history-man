@@ -34,7 +34,6 @@
 1	lib	BSD-1/man1/lib.1
 1	ln	Research-V6/usr/doc/man/man1/ln.1
 1	login	BSD-1/man1/login.1
-1	login	Research-V6/usr/doc/man/man1/login.1
 1	ls	Research-V6/usr/doc/man/man1/ls.1
 1	mail	Research-V6/usr/doc/man/man1/mail.1
 1	man	Research-V6/usr/doc/man/man1/man.1
@@ -61,7 +60,6 @@
 1	rmdir	Research-V6/usr/doc/man/man1/rmdir.1
 1	roff	Research-V6/usr/doc/man/man1/roff.1
 1	sh	BSD-1/man1/sh.1
-1	sh	Research-V6/usr/doc/man/man1/sh.1
 1	shift	Research-V6/usr/doc/man/man1/shift.1
 1	size	Research-V6/usr/doc/man/man1/size.1
 1	sleep	Research-V6/usr/doc/man/man1/sleep.1
@@ -79,7 +77,6 @@
 1	typo	Research-V6/usr/doc/man/man1/typo.1
 1	uniq	Research-V6/usr/doc/man/man1/uniq.1
 1	wait	BSD-1/man1/wait.1
-1	wait	Research-V6/usr/doc/man/man1/wait.1
 1	wc	Research-V6/usr/doc/man/man1/wc.1
 1	who	Research-V6/usr/doc/man/man1/who.1
 1	write	Research-V6/usr/doc/man/man1/write.1
@@ -339,7 +336,6 @@
 8	restor	Research-V6/usr/doc/man/man8/restor.8
 8	sa	Research-V6/usr/doc/man/man8/sa.8
 8	su	BSD-1/man1/su.8
-8	su	Research-V6/usr/doc/man/man8/su.8
 8	sync	Research-V6/usr/doc/man/man8/sync.8
 8	umount	Research-V6/usr/doc/man/man8/umount.8
 8	update	Research-V6/usr/doc/man/man8/update.8
