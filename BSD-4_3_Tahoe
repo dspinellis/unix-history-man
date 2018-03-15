@@ -11,7 +11,6 @@
 1	basename	BSD-4_3_Tahoe/usr/src/man/man1/basename.1
 1	bc	BSD-4_3_Tahoe/usr/src/man/man1/bc.1
 1	biff	BSD-4_3_Tahoe/usr/src/man/man1/biff.1
-1	biff	BSD-4_3_Tahoe/usr/src/new/X/man/man1/biff.1
 1	binmail	BSD-4_3_Tahoe/usr/src/man/man1/binmail.1
 1	cal	BSD-4_3_Tahoe/usr/src/man/man1/cal.1
 1	calendar	BSD-4_3_Tahoe/usr/src/man/man1/calendar.1
@@ -31,7 +30,6 @@
 1	compress	BSD-4_3_Tahoe/usr/src/man/man1/compress.1
 1	cp	BSD-4_3_Tahoe/usr/src/man/man1/cp.1
 1	crypt	BSD-4_3_Tahoe/usr/src/man/man1/crypt.1
-1	csh	BSD-4_3_Tahoe/usr/doc/usd/04.csh/csh.1
 1	csh	BSD-4_3_Tahoe/usr/src/man/man1/csh.1
 1	ctags	BSD-4_3_Tahoe/usr/src/man/man1/ctags.1
 1	date	BSD-4_3_Tahoe/usr/src/man/man1/date.1
@@ -74,7 +72,6 @@
 1	hostname	BSD-4_3_Tahoe/usr/src/man/man1/hostname.1
 1	indent	BSD-4_3_Tahoe/usr/src/man/man1/indent.1
 1	install	BSD-4_3_Tahoe/usr/src/man/man1/install.1
-1	intro	BSD-4_3_Tahoe/usr/doc/ps1/18.curses/intro.1
 1	intro	BSD-4_3_Tahoe/usr/src/man/man1/intro.1
 1	iostat	BSD-4_3_Tahoe/usr/src/man/man1/iostat.1
 1	join	BSD-4_3_Tahoe/usr/src/man/man1/join.1
@@ -105,7 +102,6 @@
 1	mail	BSD-4_3_Tahoe/usr/src/man/man1/mail.1
 1	make	BSD-4_3_Tahoe/usr/src/man/man1/make.1
 1	man	BSD-4_3_Tahoe/usr/src/man/man1/man.1
-1	man	BSD-4_3_Tahoe/usr/src/new/apl/apl.vax/doc/man.1
 1	mesg	BSD-4_3_Tahoe/usr/src/man/man1/mesg.1
 1	mkdep	BSD-4_3_Tahoe/usr/src/man/man1/mkdep.1
 1	mkdir	BSD-4_3_Tahoe/usr/src/man/man1/mkdir.1
@@ -271,7 +267,6 @@
 2	getsockopt	BSD-4_3_Tahoe/usr/src/man/man2/getsockopt.2
 2	gettimeofday	BSD-4_3_Tahoe/usr/src/man/man2/gettimeofday.2
 2	getuid	BSD-4_3_Tahoe/usr/src/man/man2/getuid.2
-2	intro	BSD-4_3_Tahoe/usr/doc/ps1/18.curses/intro.2
 2	intro	BSD-4_3_Tahoe/usr/src/man/man2/intro.2
 2	ioctl	BSD-4_3_Tahoe/usr/src/man/man2/ioctl.2
 2	kill	BSD-4_3_Tahoe/usr/src/man/man2/kill.2
@@ -378,7 +373,6 @@
 3	getlogin	BSD-4_3_Tahoe/usr/src/man/man3/getlogin.3
 3	getnetent	BSD-4_3_Tahoe/usr/src/man/man3/getnetent.3
 3	getopt	BSD-4_3_Tahoe/usr/src/man/man3/getopt.3
-3	getopt	BSD-4_3_Tahoe/usr/src/new/xns/examples/print/getopt.3
 3	getpass	BSD-4_3_Tahoe/usr/src/man/man3/getpass.3
 3	getpid	BSD-4_3_Tahoe/usr/src/man/man3f/getpid.3
 3	getprotoent	BSD-4_3_Tahoe/usr/src/man/man3/getprotoent.3
@@ -399,7 +393,6 @@
 3	infnan	BSD-4_3_Tahoe/usr/src/man/man3/infnan.3
 3	initgroups	BSD-4_3_Tahoe/usr/src/man/man3/initgroups.3
 3	insque	BSD-4_3_Tahoe/usr/src/man/man3/insque.3
-3	intro	BSD-4_3_Tahoe/usr/doc/ps1/18.curses/intro.3
 3	intro	BSD-4_3_Tahoe/usr/src/man/man3/intro.3
 3	intro	BSD-4_3_Tahoe/usr/src/man/man3f/intro.3
 3	ioinit	BSD-4_3_Tahoe/usr/src/man/man3f/ioinit.3
@@ -439,7 +432,6 @@
 3	random	BSD-4_3_Tahoe/usr/src/man/man3f/random.3
 3	rcmd	BSD-4_3_Tahoe/usr/src/man/man3/rcmd.3
 3	regex	BSD-4_3_Tahoe/usr/src/man/man3/regex.3
-3	regexp	BSD-4_3_Tahoe/usr/src/lib/libc/gen/regexp/regexp.3
 3	regexp	BSD-4_3_Tahoe/usr/src/man/man3/regexp.3
 3	rename	BSD-4_3_Tahoe/usr/src/man/man3f/rename.3
 3	resolver	BSD-4_3_Tahoe/usr/src/man/man3/resolver.3
@@ -462,7 +454,6 @@
 3	string	BSD-4_3_Tahoe/usr/src/man/man3/string.3
 3	stty	BSD-4_3_Tahoe/usr/src/man/man3/stty.3
 3	swab	BSD-4_3_Tahoe/usr/src/man/man3/swab.3
-3	syslog	BSD-4_3_Tahoe/usr/spool/mqueue/syslog.3
 3	syslog	BSD-4_3_Tahoe/usr/src/man/man3/syslog.3
 3	system	BSD-4_3_Tahoe/usr/src/man/man3/system.3
 3	system	BSD-4_3_Tahoe/usr/src/man/man3f/system.3
@@ -494,7 +485,6 @@
 4	autoconf	BSD-4_3_Tahoe/usr/src/man/man4/vax/autoconf.4
 4	bk	BSD-4_3_Tahoe/usr/src/man/man4/bk.4
 4	cons	BSD-4_3_Tahoe/usr/src/man/man4/tahoe/cons.4
-4	cons	BSD-4_3_Tahoe/usr/src/man/man4/vax/cons.4
 4	cons	BSD-4_3_Tahoe/usr/src/new/X/libibm/doc/man/cons.4
 4	crl	BSD-4_3_Tahoe/usr/src/man/man4/vax/crl.4
 4	css	BSD-4_3_Tahoe/usr/src/man/man4/vax/css.4
@@ -529,9 +519,7 @@
 4	il	BSD-4_3_Tahoe/usr/src/man/man4/vax/il.4
 4	imp	BSD-4_3_Tahoe/usr/src/man/man4/imp.4
 4	inet	BSD-4_3_Tahoe/usr/src/man/man4/inet.4
-4	intro	BSD-4_3_Tahoe/usr/doc/ps1/18.curses/intro.4
 4	intro	BSD-4_3_Tahoe/usr/src/man/man4/tahoe/intro.4
-4	intro	BSD-4_3_Tahoe/usr/src/man/man4/vax/intro.4
 4	ip	BSD-4_3_Tahoe/usr/src/man/man4/ip.4
 4	ix	BSD-4_3_Tahoe/usr/src/man/man4/vax/ix.4
 4	kdb	BSD-4_3_Tahoe/usr/src/man/man4/kdb.4
@@ -636,7 +624,6 @@
 6	fish	BSD-4_3_Tahoe/usr/src/man/man6/fish.6
 6	fortune	BSD-4_3_Tahoe/usr/src/man/man6/fortune.6
 6	gnuchess	BSD-4_3_Tahoe/usr/src/man/man6/gnuchess.6
-6	hack	BSD-4_3_Tahoe/usr/src/games/hack/hack.6
 6	hack	BSD-4_3_Tahoe/usr/src/man/man6/hack.6
 6	hangman	BSD-4_3_Tahoe/usr/src/man/man6/hangman.6
 6	hunt	BSD-4_3_Tahoe/usr/src/man/man6/hunt.6
@@ -662,7 +649,6 @@
 7	intro	BSD-4_3_Tahoe/usr/src/man/man7/intro.7
 7	mailaddr	BSD-4_3_Tahoe/usr/src/man/man7/mailaddr.7
 7	man	BSD-4_3_Tahoe/usr/src/man/man7/man.7
-7	man	BSD-4_3_Tahoe/usr/src/new/apl/apl.vax/doc/man.7
 7	me	BSD-4_3_Tahoe/usr/src/man/man7/me.7
 7	ms	BSD-4_3_Tahoe/usr/src/man/man7/ms.7
 7	term	BSD-4_3_Tahoe/usr/src/man/man7/term.7

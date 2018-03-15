@@ -1,6 +1,5 @@
 1	adb	BSD-4_1_snap/usr/man/man1/adb.1
 1	apl	BSD-4_1_snap/usr/man/man1/apl.1
-1	apl	BSD-4_1_snap/usr/src/cmd/apl/documents/apl.1
 1	apropos	BSD-4_1_snap/usr/man/man1/apropos.1
 1	ar	BSD-4_1_snap/usr/man/man1/ar.1
 1	as	BSD-4_1_snap/usr/man/man1/as.1
@@ -31,7 +30,6 @@
 1	compact	BSD-4_1_snap/usr/man/man1/compact.1
 1	cp	BSD-4_1_snap/usr/man/man1/cp.1
 1	crypt	BSD-4_1_snap/usr/man/man1/crypt.1
-1	csh	BSD-4_1_snap/usr/doc/csh/csh.1
 1	csh	BSD-4_1_snap/usr/man/man1/csh.1
 1	ctags	BSD-4_1_snap/usr/man/man1/ctags.1
 1	cxref	BSD-4_1_snap/usr/man/man1/cxref.1
@@ -41,7 +39,6 @@
 1	deroff	BSD-4_1_snap/usr/man/man1/deroff.1
 1	df	BSD-4_1_snap/usr/man/man1/df.1
 1	diction	BSD-4_1_snap/usr/man/man1/diction.1
-1	diction	BSD-4_1_snap/usr/src/cmd/diction/diction.1
 1	diff	BSD-4_1_snap/usr/man/man1/diff.1
 1	diff3	BSD-4_1_snap/usr/man/man1/diff3.1
 1	diffdir	BSD-4_1_snap/usr/man/man1/diffdir.1
@@ -72,7 +69,6 @@
 1	gets	BSD-4_1_snap/usr/man/man1/gets.1
 1	grep	BSD-4_1_snap/usr/man/man1/grep.1
 1	head	BSD-4_1_snap/usr/man/man1/head.1
-1	intro	BSD-4_1_snap/usr/doc/curses/intro.1
 1	intro	BSD-4_1_snap/usr/man/man1/intro.1
 1	iostat	BSD-4_1_snap/usr/man/man1/iostat.1
 1	iul	BSD-4_1_snap/usr/man/man1/iul.1
@@ -170,7 +166,6 @@
 1	struct	BSD-4_1_snap/usr/man/man1/struct.1
 1	stty	BSD-4_1_snap/usr/man/man1/stty.1
 1	style	BSD-4_1_snap/usr/man/man1/style.1
-1	style	BSD-4_1_snap/usr/src/cmd/diction/style.1
 1	su	BSD-4_1_snap/usr/man/man1/su.1
 1	sum	BSD-4_1_snap/usr/man/man1/sum.1
 1	symorder	BSD-4_1_snap/usr/man/man1/symorder.1
@@ -253,7 +248,6 @@
 2	getpid	BSD-4_1_snap/usr/man/man2/getpid.2
 2	getuid	BSD-4_1_snap/usr/man/man2/getuid.2
 2	indir	BSD-4_1_snap/usr/man/man2/indir.2
-2	intro	BSD-4_1_snap/usr/doc/curses/intro.2
 2	intro	BSD-4_1_snap/usr/man/man2/intro.2
 2	ioctl	BSD-4_1_snap/usr/man/man2/ioctl.2
 2	kill	BSD-4_1_snap/usr/man/man2/kill.2
@@ -314,7 +308,6 @@
 3	getpass	BSD-4_1_snap/usr/man/man3/getpass.3
 3	getpw	BSD-4_1_snap/usr/man/man3/getpw.3
 3	getpwent	BSD-4_1_snap/usr/man/man3/getpwent.3
-3	intro	BSD-4_1_snap/usr/doc/curses/intro.3
 3	intro	BSD-4_1_snap/usr/man/man3/intro.3
 3	l3tol	BSD-4_1_snap/usr/man/man3/l3tol.3
 3	malloc	BSD-4_1_snap/usr/man/man3/malloc.3
@@ -376,7 +369,6 @@
 4	hk	BSD-4_1_snap/usr/man/man4/hk.4
 4	hp	BSD-4_1_snap/usr/man/man4/hp.4
 4	ht	BSD-4_1_snap/usr/man/man4/ht.4
-4	intro	BSD-4_1_snap/usr/doc/curses/intro.4
 4	intro	BSD-4_1_snap/usr/man/man4/intro.4
 4	kmem	BSD-4_1_snap/usr/man/man4/kmem.4
 4	lp	BSD-4_1_snap/usr/man/man4/lp.4
@@ -435,7 +427,6 @@
 6	doctor	BSD-4_1_snap/usr/man/man6/doctor.6
 6	fish	BSD-4_1_snap/usr/man/man6/fish.6
 6	fortune	BSD-4_1_snap/usr/man/man6/fortune.6
-6	fortune	BSD-4_1_snap/usr/src/games/fortune/fortune.6
 6	hangman	BSD-4_1_snap/usr/man/man6/hangman.6
 6	mille	BSD-4_1_snap/usr/man/man6/mille.6
 6	monop	BSD-4_1_snap/usr/man/man6/monop.6
@@ -444,7 +435,6 @@
 6	rain	BSD-4_1_snap/usr/man/man6/rain.6
 6	rogue	BSD-4_1_snap/usr/man/man6/rogue.6
 6	snake	BSD-4_1_snap/usr/man/man6/snake.6
-6	snake	BSD-4_1_snap/usr/src/games/snake/snake.6
 6	trek	BSD-4_1_snap/usr/man/man6/trek.6
 6	worm	BSD-4_1_snap/usr/man/man6/worm.6
 6	worms	BSD-4_1_snap/usr/man/man6/worms.6
@@ -475,7 +465,6 @@
 8	cron	BSD-4_1_snap/usr/man/man8/cron.8
 8	dcheck	BSD-4_1_snap/usr/man/man8/dcheck.8
 8	delivermail	BSD-4_1_snap/usr/man/man8/delivermail.8
-8	delivermail	BSD-4_1_snap/usr/src/cmd/delivermail/delivermail.8
 8	dmesg	BSD-4_1_snap/usr/man/man8/dmesg.8
 8	dump	BSD-4_1_snap/usr/man/man8/dump.8
 8	dumpdir	BSD-4_1_snap/usr/man/man8/dumpdir.8

@@ -1,7 +1,6 @@
 1	accton	BSD-3/usr/man/man1/accton.1
 1	adb	BSD-3/usr/man/man1/adb.1
 1	apl	BSD-3/usr/man/man1/apl.1
-1	apl	BSD-3/usr/src/cmd/apl/documents/apl.1
 1	apropos	BSD-3/usr/man/man1/apropos.1
 1	ar	BSD-3/usr/man/man1/ar.1
 1	ar11	BSD-3/usr/man/man1/ar11.1
@@ -32,7 +31,6 @@
 1	compact	BSD-3/usr/man/man1/compact.1
 1	cp	BSD-3/usr/man/man1/cp.1
 1	crypt	BSD-3/usr/man/man1/crypt.1
-1	csh	BSD-3/usr/doc/csh/csh.1
 1	csh	BSD-3/usr/man/man1/csh.1
 1	ctags	BSD-3/usr/man/man1/ctags.1
 1	cxref	BSD-3/usr/man/man1/cxref.1

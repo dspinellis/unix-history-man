@@ -29,10 +29,8 @@
 1	comm	BSD-4_1c_2/usr/man/man1/comm.1
 1	compact	BSD-4_1c_2/usr/man/man1/compact.1
 1	courier	BSD-4_1c_2/usr/man/man1/courier.1
-1	courier	BSD-4_1c_2/usr/src/new/courier/courier.1
 1	cp	BSD-4_1c_2/usr/man/man1/cp.1
 1	crypt	BSD-4_1c_2/usr/man/man1/crypt.1
-1	csh	BSD-4_1c_2/usr/doc/csh/csh.1
 1	csh	BSD-4_1c_2/usr/man/man1/csh.1
 1	ctags	BSD-4_1c_2/usr/man/man1/ctags.1
 1	cxref	BSD-4_1c_2/usr/man/man1/cxref.1
@@ -73,14 +71,11 @@
 1	from	BSD-4_1c_2/usr/man/man1/from.1
 1	gcore	BSD-4_1c_2/usr/man/man1/gcore.1
 1	gprof	BSD-4_1c_2/usr/man/man1/gprof.1
-1	gprof	BSD-4_1c_2/usr/src/ucb/gprof/gprof.1
 1	grep	BSD-4_1c_2/usr/man/man1/grep.1
 1	groups	BSD-4_1c_2/usr/man/man1/groups.1
 1	head	BSD-4_1c_2/usr/man/man1/head.1
 1	hostname	BSD-4_1c_2/usr/man/man1/hostname.1
 1	indent	BSD-4_1c_2/usr/man/man1/indent.1
-1	indent	BSD-4_1c_2/usr/src/ucb/indent/indent.1
-1	intro	BSD-4_1c_2/usr/doc/curses/intro.1
 1	intro	BSD-4_1c_2/usr/man/man1/intro.1
 1	iostat	BSD-4_1c_2/usr/man/man1/iostat.1
 1	join	BSD-4_1c_2/usr/man/man1/join.1
@@ -137,7 +132,6 @@
 1	passwd	BSD-4_1c_2/usr/man/man1/passwd.1
 1	pc	BSD-4_1c_2/usr/man/man1/pc.1
 1	pdx	BSD-4_1c_2/usr/man/man1/pdx.1
-1	pdx	BSD-4_1c_2/usr/src/ucb/pascal/pdx/pdx.1
 1	pi	BSD-4_1c_2/usr/man/man1/pi.1
 1	pix	BSD-4_1c_2/usr/man/man1/pix.1
 1	pmerge	BSD-4_1c_2/usr/man/man1/pmerge.1
@@ -182,8 +176,6 @@
 1	sum	BSD-4_1c_2/usr/man/man1/sum.1
 1	symorder	BSD-4_1c_2/usr/man/man1/symorder.1
 1	sysline	BSD-4_1c_2/usr/man/man1/sysline.1
-1	sysline	BSD-4_1c_2/usr/src/ucb/sysline/old/sysline.1
-1	sysline	BSD-4_1c_2/usr/src/ucb/sysline/sysline.1
 1	tabs	BSD-4_1c_2/usr/man/man1/tabs.1
 1	tail	BSD-4_1c_2/usr/man/man1/tail.1
 1	tar	BSD-4_1c_2/usr/man/man1/tar.1
@@ -285,7 +277,6 @@
 2	gettimeofday	BSD-4_1c_2/usr/man/man2/gettimeofday.2
 2	getuid	BSD-4_1c_2/usr/man/man2/getuid.2
 2	intro	BSD-4_1c_2/usr/doc/curses/intro.2
-2	intro	BSD-4_1c_2/usr/man/man2/intro.2
 2	ioctl	BSD-4_1c_2/usr/man/man2/ioctl.2
 2	kill	BSD-4_1c_2/usr/man/man2/kill.2
 2	killpg	BSD-4_1c_2/usr/man/man2/killpg.2
@@ -359,7 +350,6 @@
 3	getpwent	BSD-4_1c_2/usr/man/man3/getpwent.3
 3	getwd	BSD-4_1c_2/usr/man/man3/getwd.3
 3	initgroups	BSD-4_1c_2/usr/man/man3/initgroups.3
-3	intro	BSD-4_1c_2/usr/doc/curses/intro.3
 3	intro	BSD-4_1c_2/usr/man/man3/intro.3
 3	l3tol	BSD-4_1c_2/usr/man/man3/l3tol.3
 3	lib2648	BSD-4_1c_2/usr/man/man3/lib2648.3
@@ -379,9 +369,6 @@
 3	string	BSD-4_1c_2/usr/man/man3/string.3
 3	swab	BSD-4_1c_2/usr/man/man3/swab.3
 3	syslog	BSD-4_1c_2/usr/man/man3/syslog.3
-3	syslog	BSD-4_1c_2/usr/spool/mqueue/syslog.3
-3	syslog	BSD-4_1c_2/usr/src/usr.lib/sendmail/aux/syslog.3
-3	syslog	BSD-4_1c_2/usr/src/usr.lib/sendmail/doc/syslog.3
 3	system	BSD-4_1c_2/usr/man/man3/system.3
 3	ttyname	BSD-4_1c_2/usr/man/man3/ttyname.3
 3	valloc	BSD-4_1c_2/usr/man/man3/valloc.3
@@ -471,7 +458,6 @@
 3x	termcap	BSD-4_1c_2/usr/man/man3/termcap.3x
 4	bk	BSD-4_1c_2/usr/man/man4/bk.4
 4	drum	BSD-4_1c_2/usr/man/man4/drum.4
-4	intro	BSD-4_1c_2/usr/doc/curses/intro.4
 4	intro	BSD-4_1c_2/usr/man/man4/intro.4
 4	kmem	BSD-4_1c_2/usr/man/man4/kmem.4
 4	lo	BSD-4_1c_2/usr/man/man4/lo.4
@@ -580,7 +566,6 @@
 6	rain	BSD-4_1c_2/usr/man/man6/rain.6
 6	rogue	BSD-4_1c_2/usr/man/man6/rogue.6
 6	snake	BSD-4_1c_2/usr/man/man6/snake.6
-6	snake	BSD-4_1c_2/usr/src/games/snake/snake.6
 6	trek	BSD-4_1c_2/usr/man/man6/trek.6
 6	worm	BSD-4_1c_2/usr/man/man6/worm.6
 6	worms	BSD-4_1c_2/usr/man/man6/worms.6
@@ -660,18 +645,14 @@
 8	sa	BSD-4_1c_2/usr/man/man8/sa.8
 8	savecore	BSD-4_1c_2/usr/man/man8/savecore.8
 8	sendmail	BSD-4_1c_2/usr/man/man8/sendmail.8
-8	sendmail	BSD-4_1c_2/usr/src/usr.lib/sendmail/doc/sendmail.8
 8	shutdown	BSD-4_1c_2/usr/man/man8/shutdown.8
 8	sticky	BSD-4_1c_2/usr/man/man8/sticky.8
 8	swapon	BSD-4_1c_2/usr/man/man8/swapon.8
 8	sync	BSD-4_1c_2/usr/man/man8/sync.8
 8	syslog	BSD-4_1c_2/usr/man/man8/syslog.8
-8	syslog	BSD-4_1c_2/usr/src/usr.lib/sendmail/aux/syslog.8
-8	syslog	BSD-4_1c_2/usr/src/usr.lib/sendmail/doc/syslog.8
 8	telnetd	BSD-4_1c_2/usr/man/man8/telnetd.8
 8	tftpd	BSD-4_1c_2/usr/man/man8/tftpd.8
 8	trpt	BSD-4_1c_2/usr/man/man8/trpt.8
-8	trpt	BSD-4_1c_2/usr/src/ucb/netser/misc/trpt.8
 8	tunefs	BSD-4_1c_2/usr/man/man8/tunefs.8
 8	update	BSD-4_1c_2/usr/man/man8/update.8
 8	uuclean	BSD-4_1c_2/usr/man/man8/uuclean.8

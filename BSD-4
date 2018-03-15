@@ -1,6 +1,5 @@
 1	adb	BSD-4/usr/man/man1/adb.1
 1	apl	BSD-4/usr/man/man1/apl.1
-1	apl	BSD-4/usr/src/cmd/apl/documents/apl.1
 1	apropos	BSD-4/usr/man/man1/apropos.1
 1	ar	BSD-4/usr/man/man1/ar.1
 1	as	BSD-4/usr/man/man1/as.1
@@ -31,7 +30,6 @@
 1	compact	BSD-4/usr/man/man1/compact.1
 1	cp	BSD-4/usr/man/man1/cp.1
 1	crypt	BSD-4/usr/man/man1/crypt.1
-1	csh	BSD-4/usr/doc/csh/csh.1
 1	csh	BSD-4/usr/man/man1/csh.1
 1	ctags	BSD-4/usr/man/man1/ctags.1
 1	cxref	BSD-4/usr/man/man1/cxref.1
@@ -41,7 +39,6 @@
 1	deroff	BSD-4/usr/man/man1/deroff.1
 1	df	BSD-4/usr/man/man1/df.1
 1	diction	BSD-4/usr/man/man1/diction.1
-1	diction	BSD-4/usr/src/cmd/diction/diction.1
 1	diff	BSD-4/usr/man/man1/diff.1
 1	diff3	BSD-4/usr/man/man1/diff3.1
 1	diffdir	BSD-4/usr/man/man1/diffdir.1
@@ -72,7 +69,6 @@
 1	gets	BSD-4/usr/man/man1/gets.1
 1	grep	BSD-4/usr/man/man1/grep.1
 1	head	BSD-4/usr/man/man1/head.1
-1	intro	BSD-4/usr/doc/curses/intro.1
 1	intro	BSD-4/usr/man/man1/intro.1
 1	iostat	BSD-4/usr/man/man1/iostat.1
 1	iul	BSD-4/usr/man/man1/iul.1
@@ -249,7 +245,6 @@
 2	getpid	BSD-4/usr/man/man2/getpid.2
 2	getuid	BSD-4/usr/man/man2/getuid.2
 2	indir	BSD-4/usr/man/man2/indir.2
-2	intro	BSD-4/usr/doc/curses/intro.2
 2	intro	BSD-4/usr/man/man2/intro.2
 2	ioctl	BSD-4/usr/man/man2/ioctl.2
 2	kill	BSD-4/usr/man/man2/kill.2
@@ -310,7 +305,6 @@
 3	getpass	BSD-4/usr/man/man3/getpass.3
 3	getpw	BSD-4/usr/man/man3/getpw.3
 3	getpwent	BSD-4/usr/man/man3/getpwent.3
-3	intro	BSD-4/usr/doc/curses/intro.3
 3	intro	BSD-4/usr/man/man3/intro.3
 3	l3tol	BSD-4/usr/man/man3/l3tol.3
 3	malloc	BSD-4/usr/man/man3/malloc.3
@@ -368,7 +362,6 @@
 4	fl	BSD-4/usr/man/man4/fl.4
 4	hp	BSD-4/usr/man/man4/hp.4
 4	ht	BSD-4/usr/man/man4/ht.4
-4	ht	BSD-4/usr/src/sys/newsys/ht.4
 4	kl	BSD-4/usr/man/man4/kl.4
 4	kmem	BSD-4/usr/man/man4/kmem.4
 4	lp	BSD-4/usr/man/man4/lp.4
@@ -379,7 +372,6 @@
 4	rk	BSD-4/usr/man/man4/rk.4
 4	rv	BSD-4/usr/man/man4/rv.4
 4	tm	BSD-4/usr/man/man4/tm.4
-4	tm	BSD-4/usr/src/sys/newsys/tm.4
 4	tty	BSD-4/usr/man/man4/tty.4
 4	up	BSD-4/usr/man/man4/up.4
 4	va	BSD-4/usr/man/man4/va.4
@@ -387,7 +379,6 @@
 5	a.out	BSD-4/usr/man/man5/a.out.5
 5	acct	BSD-4/usr/man/man5/acct.5
 5	aliases	BSD-4/usr/man/man5/aliases.5
-5	aliases	BSD-4/usr/src/cmd/delivermail/aliases.5
 5	ar	BSD-4/usr/man/man5/ar.5
 5	core	BSD-4/usr/man/man5/core.5
 5	dir	BSD-4/usr/man/man5/dir.5
@@ -422,7 +413,6 @@
 6	cribbage	BSD-4/usr/man/man6/cribbage.6
 6	fish	BSD-4/usr/man/man6/fish.6
 6	fortune	BSD-4/usr/man/man6/fortune.6
-6	fortune	BSD-4/usr/src/games/fortune/fortune.6
 6	hangman	BSD-4/usr/man/man6/hangman.6
 6	mille	BSD-4/usr/man/man6/mille.6
 6	monop	BSD-4/usr/man/man6/monop.6
@@ -454,7 +444,6 @@
 8	cron	BSD-4/usr/man/man8/cron.8
 8	dcheck	BSD-4/usr/man/man8/dcheck.8
 8	delivermail	BSD-4/usr/man/man8/delivermail.8
-8	delivermail	BSD-4/usr/src/cmd/delivermail/delivermail.8
 8	dmesg	BSD-4/usr/man/man8/dmesg.8
 8	dump	BSD-4/usr/man/man8/dump.8
 8	dumpdir	BSD-4/usr/man/man8/dumpdir.8

@@ -10,7 +10,6 @@
 1	awk	BSD-4_3/usr/man/man1/awk.1
 1	basename	BSD-4_3/usr/man/man1/basename.1
 1	bc	BSD-4_3/usr/man/man1/bc.1
-1	biff	BSD-4_3/usr/contrib/X/man/biff.1
 1	biff	BSD-4_3/usr/man/man1/biff.1
 1	binmail	BSD-4_3/usr/man/man1/binmail.1
 1	cal	BSD-4_3/usr/man/man1/cal.1
@@ -35,7 +34,6 @@
 1	compress	BSD-4_3/usr/man/man1/compress.1
 1	cp	BSD-4_3/usr/man/man1/cp.1
 1	crypt	BSD-4_3/usr/man/man1/crypt.1
-1	csh	BSD-4_3/usr/doc/usd/04.csh/csh.1
 1	csh	BSD-4_3/usr/man/man1/csh.1
 1	ctags	BSD-4_3/usr/man/man1/ctags.1
 1	date	BSD-4_3/usr/man/man1/date.1
@@ -85,7 +83,6 @@
 1	indent	BSD-4_3/usr/man/man1/indent.1
 1	indxbib	BSD-4_3/usr/man/man1/indxbib.1
 1	install	BSD-4_3/usr/man/man1/install.1
-1	intro	BSD-4_3/usr/doc/ps1/18.curses/intro.1
 1	intro	BSD-4_3/usr/man/man1/intro.1
 1	iostat	BSD-4_3/usr/man/man1/iostat.1
 1	join	BSD-4_3/usr/man/man1/join.1
@@ -102,7 +99,6 @@
 1	ln	BSD-4_3/usr/man/man1/ln.1
 1	lock	BSD-4_3/usr/man/man1/lock.1
 1	logger	BSD-4_3/usr/man/man1/logger.1
-1	logger	BSD-4_3/usr/src/usr.lib/sendmail/aux/logger.1
 1	login	BSD-4_3/usr/man/man1/login.1
 1	look	BSD-4_3/usr/man/man1/look.1
 1	lookbib	BSD-4_3/usr/man/man1/lookbib.1
@@ -116,7 +112,6 @@
 1	m4	BSD-4_3/usr/man/man1/m4.1
 1	mail	BSD-4_3/usr/man/man1/mail.1
 1	make	BSD-4_3/usr/man/man1/make.1
-1	man	BSD-4_3/usr/contrib/apl/doc/man.1
 1	man	BSD-4_3/usr/man/man1/man.1
 1	mesg	BSD-4_3/usr/man/man1/mesg.1
 1	mkdir	BSD-4_3/usr/man/man1/mkdir.1
@@ -215,7 +210,6 @@
 1	uptime	BSD-4_3/usr/man/man1/uptime.1
 1	users	BSD-4_3/usr/man/man1/users.1
 1	vacation	BSD-4_3/usr/man/man1/vacation.1
-1	vacation	BSD-4_3/usr/src/usr.lib/sendmail/aux/vacation.1
 1	vgrind	BSD-4_3/usr/man/man1/vgrind.1
 1	vi	BSD-4_3/usr/man/man1/vi.1
 1	vlp	BSD-4_3/usr/man/man1/vlp.1
@@ -307,7 +301,6 @@
 2	getsockopt	BSD-4_3/usr/man/man2/getsockopt.2
 2	gettimeofday	BSD-4_3/usr/man/man2/gettimeofday.2
 2	getuid	BSD-4_3/usr/man/man2/getuid.2
-2	intro	BSD-4_3/usr/doc/ps1/18.curses/intro.2
 2	intro	BSD-4_3/usr/man/man2/intro.2
 2	ioctl	BSD-4_3/usr/man/man2/ioctl.2
 2	kill	BSD-4_3/usr/man/man2/kill.2
@@ -434,8 +427,6 @@
 3	gcvt	BSD-4_3/usr/man/man3/gcvt.3
 3	getdisk	BSD-4_3/usr/man/man3/getdisk.3
 3	getdiskbyname	BSD-4_3/usr/man/man3/getdiskbyname.3
-3	getenv	BSD-4_3/usr/contrib/icon/man/cat3/getenv.3
-3	getenv	BSD-4_3/usr/contrib/icon/man/man3/getenv.3
 3	getenv	BSD-4_3/usr/man/man3/getenv.3
 3	getfsent	BSD-4_3/usr/man/man3/getfsent.3
 3	getfsfile	BSD-4_3/usr/man/man3/getfsfile.3
@@ -445,7 +436,6 @@
 3	getgrgid	BSD-4_3/usr/man/man3/getgrgid.3
 3	getgrnam	BSD-4_3/usr/man/man3/getgrnam.3
 3	getlogin	BSD-4_3/usr/man/man3/getlogin.3
-3	getopt	BSD-4_3/usr/contrib/xns/examples/print/getopt.3
 3	getopt	BSD-4_3/usr/man/man3/getopt.3
 3	getpass	BSD-4_3/usr/man/man3/getpass.3
 3	getpwent	BSD-4_3/usr/man/man3/getpwent.3
@@ -460,7 +450,6 @@
 3	initgroups	BSD-4_3/usr/man/man3/initgroups.3
 3	initstate	BSD-4_3/usr/man/man3/initstate.3
 3	insque	BSD-4_3/usr/man/man3/insque.3
-3	intro	BSD-4_3/usr/doc/ps1/18.curses/intro.3
 3	intro	BSD-4_3/usr/man/man3/intro.3
 3	isalnum	BSD-4_3/usr/man/man3/isalnum.3
 3	isalpha	BSD-4_3/usr/man/man3/isalpha.3
@@ -542,7 +531,6 @@
 3	sys_nerr	BSD-4_3/usr/man/man3/sys_nerr.3
 3	sys_siglist	BSD-4_3/usr/man/man3/sys_siglist.3
 3	syslog	BSD-4_3/usr/man/man3/syslog.3
-3	syslog	BSD-4_3/usr/spool/mqueue/syslog.3
 3	system	BSD-4_3/usr/man/man3/system.3
 3	telldir	BSD-4_3/usr/man/man3/telldir.3
 3	timezone	BSD-4_3/usr/man/man3/timezone.3
@@ -708,20 +696,15 @@
 3m	erf	BSD-4_3/usr/man/man3/erf.3m
 3m	erfc	BSD-4_3/usr/man/man3/erfc.3m
 3m	exp	BSD-4_3/usr/man/man3/exp.3m
-3m	exp	BSD-4_3/usr/man/mano/exp.3m
 3m	expm1	BSD-4_3/usr/man/man3/expm1.3m
 3m	fabs	BSD-4_3/usr/man/man3/fabs.3m
 3m	finite	BSD-4_3/usr/man/man3/finite.3m
 3m	floor	BSD-4_3/usr/man/man3/floor.3m
-3m	floor	BSD-4_3/usr/man/mano/floor.3m
 3m	gamma	BSD-4_3/usr/man/man3/gamma.3m
-3m	gamma	BSD-4_3/usr/man/mano/gamma.3m
 3m	hypot	BSD-4_3/usr/man/man3/hypot.3m
-3m	hypot	BSD-4_3/usr/man/mano/hypot.3m
 3m	ieee	BSD-4_3/usr/man/man3/ieee.3m
 3m	infnan	BSD-4_3/usr/man/man3/infnan.3m
 3m	j0	BSD-4_3/usr/man/man3/j0.3m
-3m	j0	BSD-4_3/usr/man/mano/j0.3m
 3m	j1	BSD-4_3/usr/man/man3/j1.3m
 3m	jn	BSD-4_3/usr/man/man3/jn.3m
 3m	lgamma	BSD-4_3/usr/man/man3/lgamma.3m
@@ -734,9 +717,7 @@
 3m	rint	BSD-4_3/usr/man/man3/rint.3m
 3m	scalb	BSD-4_3/usr/man/man3/scalb.3m
 3m	sin	BSD-4_3/usr/man/man3/sin.3m
-3m	sin	BSD-4_3/usr/man/mano/sin.3m
 3m	sinh	BSD-4_3/usr/man/man3/sinh.3m
-3m	sinh	BSD-4_3/usr/man/mano/sinh.3m
 3m	sqrt	BSD-4_3/usr/man/man3/sqrt.3m
 3m	tan	BSD-4_3/usr/man/man3/tan.3m
 3m	tanh	BSD-4_3/usr/man/man3/tanh.3m
@@ -878,7 +859,6 @@
 4	ik	BSD-4_3/usr/man/man4/ik.4
 4	il	BSD-4_3/usr/man/man4/il.4
 4	imp	BSD-4_3/usr/man/man4/imp.4
-4	intro	BSD-4_3/usr/doc/ps1/18.curses/intro.4
 4	intro	BSD-4_3/usr/man/man4/intro.4
 4	ix	BSD-4_3/usr/man/man4/ix.4
 4	kg	BSD-4_3/usr/man/man4/kg.4
@@ -971,7 +951,6 @@
 6	backgammon	BSD-4_3/usr/man/man6/backgammon.6
 6	banner	BSD-4_3/usr/man/man6/banner.6
 6	battlestar	BSD-4_3/usr/man/man6/battlestar.6
-6	battlestar	BSD-4_3/usr/src/games/battlestar/battlestar.6
 6	bcd	BSD-4_3/usr/man/man6/bcd.6
 6	boggle	BSD-4_3/usr/man/man6/boggle.6
 6	canfield	BSD-4_3/usr/man/man6/canfield.6
@@ -992,12 +971,9 @@
 6	robots	BSD-4_3/usr/man/man6/robots.6
 6	rogue	BSD-4_3/usr/man/man6/rogue.6
 6	sail	BSD-4_3/usr/man/man6/sail.6
-6	sail	BSD-4_3/usr/src/games/sail/sail.6
 6	snake	BSD-4_3/usr/man/man6/snake.6
 6	snscore	BSD-4_3/usr/man/man6/snscore.6
 6	trek	BSD-4_3/usr/man/man6/trek.6
-6	worm	BSD-4_3/usr/contrib/icon/man/cat6/worm.6
-6	worm	BSD-4_3/usr/contrib/icon/man/man6/worm.6
 6	worm	BSD-4_3/usr/man/man6/worm.6
 6	worms	BSD-4_3/usr/man/man6/worms.6
 6	wump	BSD-4_3/usr/man/man6/wump.6
@@ -1008,8 +984,6 @@
 7	hier	BSD-4_3/usr/man/man7/hier.7
 7	intro	BSD-4_3/usr/man/man7/intro.7
 7	mailaddr	BSD-4_3/usr/man/man7/mailaddr.7
-7	mailaddr	BSD-4_3/usr/src/usr.lib/sendmail/doc/mailaddr.7
-7	man	BSD-4_3/usr/contrib/apl/doc/man.7
 7	man	BSD-4_3/usr/man/man7/man.7
 7	me	BSD-4_3/usr/man/man7/me.7
 7	miscellaneous	BSD-4_3/usr/man/man7/miscellaneous.7
@@ -1073,7 +1047,6 @@
 8	sa	BSD-4_3/usr/man/man8/sa.8
 8	savecore	BSD-4_3/usr/man/man8/savecore.8
 8	sendmail	BSD-4_3/usr/man/man8/sendmail.8
-8	sendmail	BSD-4_3/usr/src/usr.lib/sendmail/doc/sendmail.8
 8	shutdown	BSD-4_3/usr/man/man8/shutdown.8
 8	sticky	BSD-4_3/usr/man/man8/sticky.8
 8	swapon	BSD-4_3/usr/man/man8/swapon.8
