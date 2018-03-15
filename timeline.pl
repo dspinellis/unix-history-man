@@ -49,7 +49,7 @@ my @section_title = (
 
 
 # Read timeline of releases
-open(my $in, '<', 'timeline') || die;
+open(my $in, '<', 'data/timeline') || die;
 while (<$in>) {
 	my ($name, $y, $m, $d) = split;
 	$release_date{$name} = "$y-$m-$d";

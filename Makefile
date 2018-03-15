@@ -20,7 +20,7 @@ TREEMAN_PATHS=$(patsubst %,data/%,$(TREEMAN_FILES))
 
 all: $(SITEDIR)/index.html $(SITEDIR)/SlickGrid
 
-$(SITEDIR)/index.html: $(TREEMAN_PATHS) timeline timeline.pl
+$(SITEDIR)/index.html: $(TREEMAN_PATHS) data/timeline timeline.pl
 	mkdir -p $(SITEDIR)
 	perl timeline.pl
 
@@ -31,7 +31,7 @@ unix-history-repo:
 	git clone https://github.com/dspinellis/unix-history-repo
 	cd $@ && git branch -r | grep -v '\->' | while read remote; do git branch --track "$${remote#origin/}" "$$remote"; done
 
-timeline: timeline.sh unix-history-repo
+data/timeline: timeline.sh unix-history-repo
 	./timeline.sh
 
 $(SITEDIR)/SlickGrid:
