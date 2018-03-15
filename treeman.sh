@@ -30,7 +30,7 @@ export -f join_backslash
 
 for ref in $refs ; do
   # Output file name
-  out=$(echo $ref | sed 's|/|_|g;s/-release//;s/-releng//;/FreeBSD/s/_/-/')
+  out=data/$(echo $ref | sed 's|/|_|g;s/-release//;s/-releng//;/FreeBSD/s/_/-/')
 
   {
     # List files that look like man pages

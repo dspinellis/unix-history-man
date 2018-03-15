@@ -16,13 +16,15 @@ TREEMAN_FILES=386BSD-0.0 386BSD-0.1 386BSD-0.1-patchkit \
 
 export SITEDIR=docs
 
+TREEMAN_PATHS=$(patsubst %,data/%,$(TREEMAN_FILES))
+
 all: $(SITEDIR)/index.html $(SITEDIR)/SlickGrid
 
-$(SITEDIR)/index.html: $(TREEMAN_FILES) timeline timeline.pl
+$(SITEDIR)/index.html: $(TREEMAN_PATHS) timeline timeline.pl
 	mkdir -p $(SITEDIR)
 	perl timeline.pl
 
-$(TREEMAN_FILES): treeman.sh unix-history-repo
+$(TREEMAN_PATHS): treeman.sh unix-history-repo
 	./treeman.sh
 
 unix-history-repo:
@@ -42,4 +44,4 @@ dist: all
 	./publish.sh
 
 clean:
-	rm -f $(TREEMAN_FILES)
+	rm -f $(TREEMAN_PATHS)

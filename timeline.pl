@@ -92,8 +92,9 @@ sub min_date
 }
 
 # Read man pages in each release
-for my $release (<[FB]* Research* 3*>) {
+for my $release (<data/[FB]* data/Research* data/3*>) {
 	open(my $in, '<', $release) || die;
+	$release =~ s|data/||;
 	while (<$in>) {
 		chop;
 		if (m|man([\dx])f?/(.+)\.\d[a-z]?$|) {

@@ -5,8 +5,10 @@
 
 here=$(pwd)
 
+cd data
 refs=(386BSD-0.0 386BSD-0.1 remotes/origin/386BSD-0.1-patchkit Bell-32V
   BSD* Research*)
+cd ..
 
 cd unix-history-repo || exit 1
 
