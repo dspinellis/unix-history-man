@@ -1,477 +1,488 @@
-1	adb
-1	apl
-1	apropos
-1	ar
-1	as
-1	at
-1	awk
-1	basename
-1	bc
-1	biff
-1	binmail
-1	cal
-1	calendar
-1c	call
-1	cat
-1	cb
-1	cc
-1	ccat
-1	cd
-1	checknr
-1	chfn
-1	chmod
-1	chsh
-1	cifplot
-1	clear
-1	cmp
-1	col
-1	colcrt
-1	colrm
-1	comm
-1	compact
-1	cp
-1	crypt
-1	csh
-1	ctags
-1c	cu
-1	cxref
-1	date
-1	dc
-1	dd
-1	deroff
-1	df
-1	diction
-1	diff
-1	diff3
-1	diffdir
-1	diffh
-1	du
-1	echo
-1	ed
-1	edit
-1	efl
-1	egrep
-1	enroll
-1	eqn
-1	error
-1	ex
-1	expand
-1	explain
-1	expr
-1	eyacc
-1	f77
-1	false
-1	fgrep
-1	file
-1	find
-1	finger
-1	fmt
-1	fold
-1	from
-1	gets
-1g	graph
-1	grep
-1	head
-1	intro
-1	iostat
-1	iul
-1	join
-1	kill
-1	last
-1	lastcomm
-1	ld
-1	learn
-1	leave
-1	lex
-1	lint
-1	lisp
-1	liszt
-1	ln
-1	lock
-1	login
-1	look
-1	lookbib
-1	lorder
-1	lpq
-1	lpr
-1	lprm
-1	ls
-1	lxref
-1	m4
-1	mail
-1	make
-1	man
-1	mesg
-1	mkdir
-1	mkstr
-1	more
-1	msgs
-1	mv
-1	neqn
-1	net
-1	netcp
-1	netlog
-1	netlogin
-1	netlpr
-1	netmail
-1	netq
-1	netrm
-1	nettroff
-1	newaliases
-1	newcsh
-1	newgrp
-1	nice
-1	nm
-1	nroff
-1	num
-1	od
-1	page
-1	passwd
-1	pc
-1	pi
-1	pix
-1g	plot
-1	pr
-1	print
-1	printenv
-1	prmail
-1	prof
-1	ps
-1	pti
-1	ptx
-1	pwd
-1	px
-1	pxp
-1	pxref
-1	ranlib
-1	ratfor
-1	refer
-1	reset
-1	rev
-1	rewind
-1	rm
-1	rmdir
-1	script
-1	sdb
-1	sed
-1	see
-1	sh
-1	size
-1	sleep
-1	soelim
-1	sort
-1	spell
-1g	spline
-1	split
-1	ssp
-1	strings
-1	strip
-1	struct
-1	stty
-1	su
-1	sum
-1	symorder
-1	tabs
-1	tail
-1	tar
-1	tbl
-1	tc
-1	tee
-1	test
-1	time
-1	tk
-1	touch
-1	tp
-1	tr
-1	tra
-1	trman
-1	troff
-1	true
-1	tset
-1	tsort
-1	tty
-1	ul
-1	uncompact
-1	uniq
-1	units
-1	uptime
-1	users
-1c	uuclean
-1c	uucp
-1c	uudiff
-1c	uuencode
-1c	uulog
-1c	uuname
-1c	uusend
-1c	uux
-1	vfontinfo
-1	vgrind
-1	vi
-1	vmstat
-1	vpq
-1	vpr
-1	vprint
-1	vprm
-1	vtroff
-1	w
-1	wait
-1	wall
-1	wc
-1	what
-1	whatis
-1	whereis
-1	which
-1	who
-1	whoami
-1	write
-1	xget
-1	xsend
-1	xstr
-1	yacc
-1	yes
-2	access
-2	acct
-2	alarm
-2	brk
-2	chdir
-2	chmod
-2	chown
-2	close
-2	creat
-2	dup
-2	exec
-2	exit
-2	fork
-2j	getpgrp
-2	getpid
-2	getuid
-2	indir
-2	intro
-2	ioctl
-2	kill
-2j	killpg
-2	link
-2	lseek
-2	mknod
-2	mount
-2	mpx
-2	nice
-2	open
-2	pause
-2	pipe
-2	profil
-2	ptrace
-2	read
-2v	reboot
-2j	setpgrp
-2	setuid
-2	signal
-2j	sigsys
-2	stat
-2	stime
-2	stty
-2	sync
-2	syscall
-2	time
-2	times
-2	umask
-2	unlink
-2	utime
-2v	vadvise
-2v	vfork
-2v	vhangup
-2v	vlimit
-2v	vread
-2v	vswapon
-2v	vtimes
-2v	vwrite
-2	wait
-2j	wait3
-2	write
-3	abort
-3	abs
-3x	assert
-3	atof
-3	crypt
-3	ctime
-3	ctype
-3	curses
-3x	dbm
-3	ecvt
-3	end
-3m	exp
-3s	fclose
-3s	ferror
-3m	floor
-3s	fopen
-3s	fread
-3	frexp
-3s	fseek
-3m	gamma
-3f	getarg
-3s	getc
-3	getenv
-3	getfsent
-3	getgrent
-3	getlogin
-3	getpass
-3	getpw
-3	getpwent
-3s	gets
-3m	hypot
-3	intro
-3m	j0
-3j	jobs
-3	l3tol
-3	malloc
-3	mktemp
-3	monitor
-3	nlist
-3	perror
-3x	plot
-3s	popen
-3s	printf
-3s	putc
-3s	puts
-3	qsort
-3	rand
-3	regex
-3s	scanf
-3s	setbuf
-3	setjmp
-3	signal
-3	sigset
-3m	sin
-3m	sinh
-3	sleep
-3s	stdio
-3	string
-3	swab
-3	system
-3	termcap
-3	termlib
-3	ttyname
-3s	ungetc
-3	valloc
-3	varargs
-4	bk
-4	cons
-4	dh
-4	drum
-4	dz
-4	fl
-4	hp
-4	ht
-4	kl
-4	kmem
-4	lp
-4	mail
-4	mem
-4	newtty
-4	null
-4	rk
-4	rv
-4	tm
-4	tty
-4	up
-4	va
-4	vp
-5	acct
-5	aliases
-5	a.out
-5	ar
-5	core
-5	dir
-5	dump
-5	environ
-5	filsys
-5	fstab
-5	group
-5	mpxio
-5	mtab
-5	passwd
-5	plot
-5	stab
-5	termcap
-5	tp
-5	ttys
-5	ttytype
-5	types
-5	utmp
-5	uuencode
-5	vfont
-5	wtmp
-6	aardvark
-6	adventure
-6	arithmetic
-6	backgammon
-6	banner
-6	bcd
-6	boggle
-6	chess
-6	ching
-6	cribbage
-6	fish
-6	fortune
-6	hangman
-6	mille
-6	monop
-6	number
-6	quiz
-6	snake
-6	trek
-6	wump
-6	zork
-7	ascii
-7	eqnchar
-7	greek
-7	hier
-7	man
-7	me
-7	ms
-7	term
-8	ac
-8	accton
-8	adduser
-8	analyze
-8	arcv
-8	arff
-8	catman
-8	chgrp
-8	chown
-8	clri
-8	crash
-8	cron
-8	dcheck
-8	delivermail
-8	dmesg
-8	dump
-8	dumpdir
-8	flcopy
-8	fsck
-8	getty
-8	halt
-8	icheck
-8	init
-8	labelfs
-8	makekey
-8	mkfs
-8	mklost+found
-8	mknod
-8	mount
-8	ncheck
-8	old
-8	pstat
-8	quot
-8	rc
-8	reboot
-8	renice
-8	restor
-8	sa
-8	shutdown
-8	sticky
-8	swapon
-8	sync
-8	update
-8	vipw
-8	vpac
+1	adb	BSD-4/usr/man/man1/adb.1
+1	apl	BSD-4/usr/man/man1/apl.1
+1	apl	BSD-4/usr/src/cmd/apl/documents/apl.1
+1	apropos	BSD-4/usr/man/man1/apropos.1
+1	ar	BSD-4/usr/man/man1/ar.1
+1	as	BSD-4/usr/man/man1/as.1
+1	at	BSD-4/usr/man/man1/at.1
+1	awk	BSD-4/usr/man/man1/awk.1
+1	basename	BSD-4/usr/man/man1/basename.1
+1	bc	BSD-4/usr/man/man1/bc.1
+1	biff	BSD-4/usr/man/man1/biff.1
+1	binmail	BSD-4/usr/man/man1/binmail.1
+1	cal	BSD-4/usr/man/man1/cal.1
+1	calendar	BSD-4/usr/man/man1/calendar.1
+1	cat	BSD-4/usr/man/man1/cat.1
+1	cb	BSD-4/usr/man/man1/cb.1
+1	cc	BSD-4/usr/man/man1/cc.1
+1	ccat	BSD-4/usr/man/man1/ccat.1
+1	cd	BSD-4/usr/man/man1/cd.1
+1	checknr	BSD-4/usr/man/man1/checknr.1
+1	chfn	BSD-4/usr/man/man1/chfn.1
+1	chmod	BSD-4/usr/man/man1/chmod.1
+1	chsh	BSD-4/usr/man/man1/chsh.1
+1	cifplot	BSD-4/usr/man/man1/cifplot.1
+1	clear	BSD-4/usr/man/man1/clear.1
+1	cmp	BSD-4/usr/man/man1/cmp.1
+1	col	BSD-4/usr/man/man1/col.1
+1	colcrt	BSD-4/usr/man/man1/colcrt.1
+1	colrm	BSD-4/usr/man/man1/colrm.1
+1	comm	BSD-4/usr/man/man1/comm.1
+1	compact	BSD-4/usr/man/man1/compact.1
+1	cp	BSD-4/usr/man/man1/cp.1
+1	crypt	BSD-4/usr/man/man1/crypt.1
+1	csh	BSD-4/usr/doc/csh/csh.1
+1	csh	BSD-4/usr/man/man1/csh.1
+1	ctags	BSD-4/usr/man/man1/ctags.1
+1	cxref	BSD-4/usr/man/man1/cxref.1
+1	date	BSD-4/usr/man/man1/date.1
+1	dc	BSD-4/usr/man/man1/dc.1
+1	dd	BSD-4/usr/man/man1/dd.1
+1	deroff	BSD-4/usr/man/man1/deroff.1
+1	df	BSD-4/usr/man/man1/df.1
+1	diction	BSD-4/usr/man/man1/diction.1
+1	diction	BSD-4/usr/src/cmd/diction/diction.1
+1	diff	BSD-4/usr/man/man1/diff.1
+1	diff3	BSD-4/usr/man/man1/diff3.1
+1	diffdir	BSD-4/usr/man/man1/diffdir.1
+1	diffh	BSD-4/usr/man/man1/diffh.1
+1	du	BSD-4/usr/man/man1/du.1
+1	echo	BSD-4/usr/man/man1/echo.1
+1	ed	BSD-4/usr/man/man1/ed.1
+1	edit	BSD-4/usr/man/man1/edit.1
+1	efl	BSD-4/usr/man/man1/efl.1
+1	egrep	BSD-4/usr/man/man1/egrep.1
+1	enroll	BSD-4/usr/man/man1/enroll.1
+1	eqn	BSD-4/usr/man/man1/eqn.1
+1	error	BSD-4/usr/man/man1/error.1
+1	ex	BSD-4/usr/man/man1/ex.1
+1	expand	BSD-4/usr/man/man1/expand.1
+1	explain	BSD-4/usr/man/man1/explain.1
+1	expr	BSD-4/usr/man/man1/expr.1
+1	eyacc	BSD-4/usr/man/man1/eyacc.1
+1	f77	BSD-4/usr/man/man1/f77.1
+1	false	BSD-4/usr/man/man1/false.1
+1	fgrep	BSD-4/usr/man/man1/fgrep.1
+1	file	BSD-4/usr/man/man1/file.1
+1	find	BSD-4/usr/man/man1/find.1
+1	finger	BSD-4/usr/man/man1/finger.1
+1	fmt	BSD-4/usr/man/man1/fmt.1
+1	fold	BSD-4/usr/man/man1/fold.1
+1	from	BSD-4/usr/man/man1/from.1
+1	gets	BSD-4/usr/man/man1/gets.1
+1	grep	BSD-4/usr/man/man1/grep.1
+1	head	BSD-4/usr/man/man1/head.1
+1	intro	BSD-4/usr/doc/curses/intro.1
+1	intro	BSD-4/usr/man/man1/intro.1
+1	iostat	BSD-4/usr/man/man1/iostat.1
+1	iul	BSD-4/usr/man/man1/iul.1
+1	join	BSD-4/usr/man/man1/join.1
+1	kill	BSD-4/usr/man/man1/kill.1
+1	last	BSD-4/usr/man/man1/last.1
+1	lastcomm	BSD-4/usr/man/man1/lastcomm.1
+1	ld	BSD-4/usr/man/man1/ld.1
+1	learn	BSD-4/usr/man/man1/learn.1
+1	leave	BSD-4/usr/man/man1/leave.1
+1	lex	BSD-4/usr/man/man1/lex.1
+1	lint	BSD-4/usr/man/man1/lint.1
+1	lisp	BSD-4/usr/man/man1/lisp.1
+1	liszt	BSD-4/usr/man/man1/liszt.1
+1	ln	BSD-4/usr/man/man1/ln.1
+1	lock	BSD-4/usr/man/man1/lock.1
+1	login	BSD-4/usr/man/man1/login.1
+1	look	BSD-4/usr/man/man1/look.1
+1	lookbib	BSD-4/usr/man/man1/lookbib.1
+1	lorder	BSD-4/usr/man/man1/lorder.1
+1	lpq	BSD-4/usr/man/man1/lpq.1
+1	lpr	BSD-4/usr/man/man1/lpr.1
+1	lprm	BSD-4/usr/man/man1/lprm.1
+1	ls	BSD-4/usr/man/man1/ls.1
+1	lxref	BSD-4/usr/man/man1/lxref.1
+1	m4	BSD-4/usr/man/man1/m4.1
+1	mail	BSD-4/usr/man/man1/mail.1
+1	make	BSD-4/usr/man/man1/make.1
+1	man	BSD-4/usr/man/man1/man.1
+1	mesg	BSD-4/usr/man/man1/mesg.1
+1	mkdir	BSD-4/usr/man/man1/mkdir.1
+1	mkstr	BSD-4/usr/man/man1/mkstr.1
+1	more	BSD-4/usr/man/man1/more.1
+1	msgs	BSD-4/usr/man/man1/msgs.1
+1	mv	BSD-4/usr/man/man1/mv.1
+1	neqn	BSD-4/usr/man/man1/neqn.1
+1	net	BSD-4/usr/man/man1/net.1
+1	netcp	BSD-4/usr/man/man1/netcp.1
+1	netlog	BSD-4/usr/man/man1/netlog.1
+1	netlogin	BSD-4/usr/man/man1/netlogin.1
+1	netlpr	BSD-4/usr/man/man1/netlpr.1
+1	netmail	BSD-4/usr/man/man1/netmail.1
+1	netq	BSD-4/usr/man/man1/netq.1
+1	netrm	BSD-4/usr/man/man1/netrm.1
+1	nettroff	BSD-4/usr/man/man1/nettroff.1
+1	newaliases	BSD-4/usr/man/man1/newaliases.1
+1	newcsh	BSD-4/usr/man/man1/newcsh.1
+1	newgrp	BSD-4/usr/man/man1/newgrp.1
+1	nice	BSD-4/usr/man/man1/nice.1
+1	nm	BSD-4/usr/man/man1/nm.1
+1	nroff	BSD-4/usr/man/man1/nroff.1
+1	num	BSD-4/usr/man/man1/num.1
+1	od	BSD-4/usr/man/man1/od.1
+1	page	BSD-4/usr/man/man1/page.1
+1	passwd	BSD-4/usr/man/man1/passwd.1
+1	pc	BSD-4/usr/man/man1/pc.1
+1	pi	BSD-4/usr/man/man1/pi.1
+1	pix	BSD-4/usr/man/man1/pix.1
+1	pr	BSD-4/usr/man/man1/pr.1
+1	print	BSD-4/usr/man/man1/print.1
+1	printenv	BSD-4/usr/man/man1/printenv.1
+1	prmail	BSD-4/usr/man/man1/prmail.1
+1	prof	BSD-4/usr/man/man1/prof.1
+1	ps	BSD-4/usr/man/man1/ps.1
+1	pti	BSD-4/usr/man/man1/pti.1
+1	ptx	BSD-4/usr/man/man1/ptx.1
+1	pwd	BSD-4/usr/man/man1/pwd.1
+1	px	BSD-4/usr/man/man1/px.1
+1	pxp	BSD-4/usr/man/man1/pxp.1
+1	pxref	BSD-4/usr/man/man1/pxref.1
+1	ranlib	BSD-4/usr/man/man1/ranlib.1
+1	ratfor	BSD-4/usr/man/man1/ratfor.1
+1	refer	BSD-4/usr/man/man1/refer.1
+1	reset	BSD-4/usr/man/man1/reset.1
+1	rev	BSD-4/usr/man/man1/rev.1
+1	rewind	BSD-4/usr/man/man1/rewind.1
+1	rm	BSD-4/usr/man/man1/rm.1
+1	rmdir	BSD-4/usr/man/man1/rmdir.1
+1	script	BSD-4/usr/man/man1/script.1
+1	sdb	BSD-4/usr/man/man1/sdb.1
+1	sed	BSD-4/usr/man/man1/sed.1
+1	see	BSD-4/usr/man/man1/see.1
+1	sh	BSD-4/usr/man/man1/sh.1
+1	size	BSD-4/usr/man/man1/size.1
+1	sleep	BSD-4/usr/man/man1/sleep.1
+1	soelim	BSD-4/usr/man/man1/soelim.1
+1	sort	BSD-4/usr/man/man1/sort.1
+1	spell	BSD-4/usr/man/man1/spell.1
+1	split	BSD-4/usr/man/man1/split.1
+1	ssp	BSD-4/usr/man/man1/ssp.1
+1	strings	BSD-4/usr/man/man1/strings.1
+1	strip	BSD-4/usr/man/man1/strip.1
+1	struct	BSD-4/usr/man/man1/struct.1
+1	stty	BSD-4/usr/man/man1/stty.1
+1	su	BSD-4/usr/man/man1/su.1
+1	sum	BSD-4/usr/man/man1/sum.1
+1	symorder	BSD-4/usr/man/man1/symorder.1
+1	tabs	BSD-4/usr/man/man1/tabs.1
+1	tail	BSD-4/usr/man/man1/tail.1
+1	tar	BSD-4/usr/man/man1/tar.1
+1	tbl	BSD-4/usr/man/man1/tbl.1
+1	tc	BSD-4/usr/man/man1/tc.1
+1	tee	BSD-4/usr/man/man1/tee.1
+1	test	BSD-4/usr/man/man1/test.1
+1	time	BSD-4/usr/man/man1/time.1
+1	tk	BSD-4/usr/man/man1/tk.1
+1	touch	BSD-4/usr/man/man1/touch.1
+1	tp	BSD-4/usr/man/man1/tp.1
+1	tr	BSD-4/usr/man/man1/tr.1
+1	tra	BSD-4/usr/man/man1/tra.1
+1	trman	BSD-4/usr/man/man1/trman.1
+1	troff	BSD-4/usr/man/man1/troff.1
+1	true	BSD-4/usr/man/man1/true.1
+1	tset	BSD-4/usr/man/man1/tset.1
+1	tsort	BSD-4/usr/man/man1/tsort.1
+1	tty	BSD-4/usr/man/man1/tty.1
+1	ul	BSD-4/usr/man/man1/ul.1
+1	uncompact	BSD-4/usr/man/man1/uncompact.1
+1	uniq	BSD-4/usr/man/man1/uniq.1
+1	units	BSD-4/usr/man/man1/units.1
+1	uptime	BSD-4/usr/man/man1/uptime.1
+1	users	BSD-4/usr/man/man1/users.1
+1	vfontinfo	BSD-4/usr/man/man1/vfontinfo.1
+1	vgrind	BSD-4/usr/man/man1/vgrind.1
+1	vi	BSD-4/usr/man/man1/vi.1
+1	vmstat	BSD-4/usr/man/man1/vmstat.1
+1	vpq	BSD-4/usr/man/man1/vpq.1
+1	vpr	BSD-4/usr/man/man1/vpr.1
+1	vprint	BSD-4/usr/man/man1/vprint.1
+1	vprm	BSD-4/usr/man/man1/vprm.1
+1	vtroff	BSD-4/usr/man/man1/vtroff.1
+1	w	BSD-4/usr/man/man1/w.1
+1	wait	BSD-4/usr/man/man1/wait.1
+1	wall	BSD-4/usr/man/man1/wall.1
+1	wc	BSD-4/usr/man/man1/wc.1
+1	what	BSD-4/usr/man/man1/what.1
+1	whatis	BSD-4/usr/man/man1/whatis.1
+1	whereis	BSD-4/usr/man/man1/whereis.1
+1	which	BSD-4/usr/man/man1/which.1
+1	who	BSD-4/usr/man/man1/who.1
+1	whoami	BSD-4/usr/man/man1/whoami.1
+1	write	BSD-4/usr/man/man1/write.1
+1	xget	BSD-4/usr/man/man1/xget.1
+1	xsend	BSD-4/usr/man/man1/xsend.1
+1	xstr	BSD-4/usr/man/man1/xstr.1
+1	yacc	BSD-4/usr/man/man1/yacc.1
+1	yes	BSD-4/usr/man/man1/yes.1
+1c	call	BSD-4/usr/man/man1/call.1c
+1c	cu	BSD-4/usr/man/man1/cu.1c
+1c	uuclean	BSD-4/usr/man/man1/uuclean.1c
+1c	uucp	BSD-4/usr/man/man1/uucp.1c
+1c	uudiff	BSD-4/usr/man/man1/uudiff.1c
+1c	uuencode	BSD-4/usr/man/man1/uuencode.1c
+1c	uulog	BSD-4/usr/man/man1/uulog.1c
+1c	uuname	BSD-4/usr/man/man1/uuname.1c
+1c	uusend	BSD-4/usr/man/man1/uusend.1c
+1c	uux	BSD-4/usr/man/man1/uux.1c
+1g	graph	BSD-4/usr/man/man1/graph.1g
+1g	plot	BSD-4/usr/man/man1/plot.1g
+1g	spline	BSD-4/usr/man/man1/spline.1g
+2	access	BSD-4/usr/man/man2/access.2
+2	acct	BSD-4/usr/man/man2/acct.2
+2	alarm	BSD-4/usr/man/man2/alarm.2
+2	brk	BSD-4/usr/man/man2/brk.2
+2	chdir	BSD-4/usr/man/man2/chdir.2
+2	chmod	BSD-4/usr/man/man2/chmod.2
+2	chown	BSD-4/usr/man/man2/chown.2
+2	close	BSD-4/usr/man/man2/close.2
+2	creat	BSD-4/usr/man/man2/creat.2
+2	dup	BSD-4/usr/man/man2/dup.2
+2	exec	BSD-4/usr/man/man2/exec.2
+2	exit	BSD-4/usr/man/man2/exit.2
+2	fork	BSD-4/usr/man/man2/fork.2
+2	getpid	BSD-4/usr/man/man2/getpid.2
+2	getuid	BSD-4/usr/man/man2/getuid.2
+2	indir	BSD-4/usr/man/man2/indir.2
+2	intro	BSD-4/usr/doc/curses/intro.2
+2	intro	BSD-4/usr/man/man2/intro.2
+2	ioctl	BSD-4/usr/man/man2/ioctl.2
+2	kill	BSD-4/usr/man/man2/kill.2
+2	link	BSD-4/usr/man/man2/link.2
+2	lseek	BSD-4/usr/man/man2/lseek.2
+2	mknod	BSD-4/usr/man/man2/mknod.2
+2	mount	BSD-4/usr/man/man2/mount.2
+2	mpx	BSD-4/usr/man/man2/mpx.2
+2	nice	BSD-4/usr/man/man2/nice.2
+2	open	BSD-4/usr/man/man2/open.2
+2	pause	BSD-4/usr/man/man2/pause.2
+2	pipe	BSD-4/usr/man/man2/pipe.2
+2	profil	BSD-4/usr/man/man2/profil.2
+2	ptrace	BSD-4/usr/man/man2/ptrace.2
+2	read	BSD-4/usr/man/man2/read.2
+2	setuid	BSD-4/usr/man/man2/setuid.2
+2	signal	BSD-4/usr/man/man2/signal.2
+2	stat	BSD-4/usr/man/man2/stat.2
+2	stime	BSD-4/usr/man/man2/stime.2
+2	stty	BSD-4/usr/man/man2/stty.2
+2	sync	BSD-4/usr/man/man2/sync.2
+2	syscall	BSD-4/usr/man/man2/syscall.2
+2	time	BSD-4/usr/man/man2/time.2
+2	times	BSD-4/usr/man/man2/times.2
+2	umask	BSD-4/usr/man/man2/umask.2
+2	unlink	BSD-4/usr/man/man2/unlink.2
+2	utime	BSD-4/usr/man/man2/utime.2
+2	wait	BSD-4/usr/man/man2/wait.2
+2	write	BSD-4/usr/man/man2/write.2
+2j	getpgrp	BSD-4/usr/man/man2/getpgrp.2j
+2j	killpg	BSD-4/usr/man/man2/killpg.2j
+2j	setpgrp	BSD-4/usr/man/man2/setpgrp.2j
+2j	sigsys	BSD-4/usr/man/man2/sigsys.2j
+2j	wait3	BSD-4/usr/man/man2/wait3.2j
+2v	reboot	BSD-4/usr/man/man2/reboot.2v
+2v	vadvise	BSD-4/usr/man/man2/vadvise.2v
+2v	vfork	BSD-4/usr/man/man2/vfork.2v
+2v	vhangup	BSD-4/usr/man/man2/vhangup.2v
+2v	vlimit	BSD-4/usr/man/man2/vlimit.2v
+2v	vread	BSD-4/usr/man/man2/vread.2v
+2v	vswapon	BSD-4/usr/man/man2/vswapon.2v
+2v	vtimes	BSD-4/usr/man/man2/vtimes.2v
+2v	vwrite	BSD-4/usr/man/man2/vwrite.2v
+3	abort	BSD-4/usr/man/man3/abort.3
+3	abs	BSD-4/usr/man/man3/abs.3
+3	atof	BSD-4/usr/man/man3/atof.3
+3	crypt	BSD-4/usr/man/man3/crypt.3
+3	ctime	BSD-4/usr/man/man3/ctime.3
+3	ctype	BSD-4/usr/man/man3/ctype.3
+3	curses	BSD-4/usr/man/man3/curses.3
+3	ecvt	BSD-4/usr/man/man3/ecvt.3
+3	end	BSD-4/usr/man/man3/end.3
+3	frexp	BSD-4/usr/man/man3/frexp.3
+3	getenv	BSD-4/usr/man/man3/getenv.3
+3	getfsent	BSD-4/usr/man/man3/getfsent.3
+3	getgrent	BSD-4/usr/man/man3/getgrent.3
+3	getlogin	BSD-4/usr/man/man3/getlogin.3
+3	getpass	BSD-4/usr/man/man3/getpass.3
+3	getpw	BSD-4/usr/man/man3/getpw.3
+3	getpwent	BSD-4/usr/man/man3/getpwent.3
+3	intro	BSD-4/usr/doc/curses/intro.3
+3	intro	BSD-4/usr/man/man3/intro.3
+3	l3tol	BSD-4/usr/man/man3/l3tol.3
+3	malloc	BSD-4/usr/man/man3/malloc.3
+3	mktemp	BSD-4/usr/man/man3/mktemp.3
+3	monitor	BSD-4/usr/man/man3/monitor.3
+3	nlist	BSD-4/usr/man/man3/nlist.3
+3	perror	BSD-4/usr/man/man3/perror.3
+3	qsort	BSD-4/usr/man/man3/qsort.3
+3	rand	BSD-4/usr/man/man3/rand.3
+3	regex	BSD-4/usr/man/man3/regex.3
+3	setjmp	BSD-4/usr/man/man3/setjmp.3
+3	signal	BSD-4/usr/man/man3/signal.3
+3	sigset	BSD-4/usr/man/man3/sigset.3
+3	sleep	BSD-4/usr/man/man3/sleep.3
+3	string	BSD-4/usr/man/man3/string.3
+3	swab	BSD-4/usr/man/man3/swab.3
+3	system	BSD-4/usr/man/man3/system.3
+3	termcap	BSD-4/usr/man/man3/termcap.3
+3	termlib	BSD-4/usr/man/man3/termlib.3
+3	ttyname	BSD-4/usr/man/man3/ttyname.3
+3	valloc	BSD-4/usr/man/man3/valloc.3
+3	varargs	BSD-4/usr/man/man3/varargs.3
+3f	getarg	BSD-4/usr/man/man3/getarg.3f
+3j	jobs	BSD-4/usr/man/man3/jobs.3j
+3m	exp	BSD-4/usr/man/man3/exp.3m
+3m	floor	BSD-4/usr/man/man3/floor.3m
+3m	gamma	BSD-4/usr/man/man3/gamma.3m
+3m	hypot	BSD-4/usr/man/man3/hypot.3m
+3m	j0	BSD-4/usr/man/man3/j0.3m
+3m	sin	BSD-4/usr/man/man3/sin.3m
+3m	sinh	BSD-4/usr/man/man3/sinh.3m
+3s	fclose	BSD-4/usr/man/man3/fclose.3s
+3s	ferror	BSD-4/usr/man/man3/ferror.3s
+3s	fopen	BSD-4/usr/man/man3/fopen.3s
+3s	fread	BSD-4/usr/man/man3/fread.3s
+3s	fseek	BSD-4/usr/man/man3/fseek.3s
+3s	getc	BSD-4/usr/man/man3/getc.3s
+3s	gets	BSD-4/usr/man/man3/gets.3s
+3s	popen	BSD-4/usr/man/man3/popen.3s
+3s	printf	BSD-4/usr/man/man3/printf.3s
+3s	putc	BSD-4/usr/man/man3/putc.3s
+3s	puts	BSD-4/usr/man/man3/puts.3s
+3s	scanf	BSD-4/usr/man/man3/scanf.3s
+3s	setbuf	BSD-4/usr/man/man3/setbuf.3s
+3s	stdio	BSD-4/usr/man/man3/stdio.3s
+3s	ungetc	BSD-4/usr/man/man3/ungetc.3s
+3x	assert	BSD-4/usr/man/man3/assert.3x
+3x	dbm	BSD-4/usr/man/man3/dbm.3x
+3x	plot	BSD-4/usr/man/man3/plot.3x
+4	bk	BSD-4/usr/man/man4/bk.4
+4	cons	BSD-4/usr/man/man4/cons.4
+4	dh	BSD-4/usr/man/man4/dh.4
+4	drum	BSD-4/usr/man/man4/drum.4
+4	dz	BSD-4/usr/man/man4/dz.4
+4	fl	BSD-4/usr/man/man4/fl.4
+4	hp	BSD-4/usr/man/man4/hp.4
+4	ht	BSD-4/usr/man/man4/ht.4
+4	ht	BSD-4/usr/src/sys/newsys/ht.4
+4	kl	BSD-4/usr/man/man4/kl.4
+4	kmem	BSD-4/usr/man/man4/kmem.4
+4	lp	BSD-4/usr/man/man4/lp.4
+4	mail	BSD-4/usr/man/man4/mail.4
+4	mem	BSD-4/usr/man/man4/mem.4
+4	newtty	BSD-4/usr/man/man4/newtty.4
+4	null	BSD-4/usr/man/man4/null.4
+4	rk	BSD-4/usr/man/man4/rk.4
+4	rv	BSD-4/usr/man/man4/rv.4
+4	tm	BSD-4/usr/man/man4/tm.4
+4	tm	BSD-4/usr/src/sys/newsys/tm.4
+4	tty	BSD-4/usr/man/man4/tty.4
+4	up	BSD-4/usr/man/man4/up.4
+4	va	BSD-4/usr/man/man4/va.4
+4	vp	BSD-4/usr/man/man4/vp.4
+5	a.out	BSD-4/usr/man/man5/a.out.5
+5	acct	BSD-4/usr/man/man5/acct.5
+5	aliases	BSD-4/usr/man/man5/aliases.5
+5	aliases	BSD-4/usr/src/cmd/delivermail/aliases.5
+5	ar	BSD-4/usr/man/man5/ar.5
+5	core	BSD-4/usr/man/man5/core.5
+5	dir	BSD-4/usr/man/man5/dir.5
+5	dump	BSD-4/usr/man/man5/dump.5
+5	environ	BSD-4/usr/man/man5/environ.5
+5	filsys	BSD-4/usr/man/man5/filsys.5
+5	fstab	BSD-4/usr/man/man5/fstab.5
+5	group	BSD-4/usr/man/man5/group.5
+5	mpxio	BSD-4/usr/man/man5/mpxio.5
+5	mtab	BSD-4/usr/man/man5/mtab.5
+5	passwd	BSD-4/usr/man/man5/passwd.5
+5	plot	BSD-4/usr/man/man5/plot.5
+5	stab	BSD-4/usr/man/man5/stab.5
+5	termcap	BSD-4/usr/man/man5/termcap.5
+5	tp	BSD-4/usr/man/man5/tp.5
+5	ttys	BSD-4/usr/man/man5/ttys.5
+5	ttytype	BSD-4/usr/man/man5/ttytype.5
+5	types	BSD-4/usr/man/man5/types.5
+5	utmp	BSD-4/usr/man/man5/utmp.5
+5	uuencode	BSD-4/usr/man/man5/uuencode.5
+5	vfont	BSD-4/usr/man/man5/vfont.5
+5	wtmp	BSD-4/usr/man/man5/wtmp.5
+6	aardvark	BSD-4/usr/man/man6/aardvark.6
+6	adventure	BSD-4/usr/man/man6/adventure.6
+6	arithmetic	BSD-4/usr/man/man6/arithmetic.6
+6	backgammon	BSD-4/usr/man/man6/backgammon.6
+6	banner	BSD-4/usr/man/man6/banner.6
+6	bcd	BSD-4/usr/man/man6/bcd.6
+6	boggle	BSD-4/usr/man/man6/boggle.6
+6	chess	BSD-4/usr/man/man6/chess.6
+6	ching	BSD-4/usr/man/man6/ching.6
+6	cribbage	BSD-4/usr/man/man6/cribbage.6
+6	fish	BSD-4/usr/man/man6/fish.6
+6	fortune	BSD-4/usr/man/man6/fortune.6
+6	fortune	BSD-4/usr/src/games/fortune/fortune.6
+6	hangman	BSD-4/usr/man/man6/hangman.6
+6	mille	BSD-4/usr/man/man6/mille.6
+6	monop	BSD-4/usr/man/man6/monop.6
+6	number	BSD-4/usr/man/man6/number.6
+6	quiz	BSD-4/usr/man/man6/quiz.6
+6	snake	BSD-4/usr/man/man6/snake.6
+6	trek	BSD-4/usr/man/man6/trek.6
+6	wump	BSD-4/usr/man/man6/wump.6
+6	zork	BSD-4/usr/man/man6/zork.6
+7	ascii	BSD-4/usr/man/man7/ascii.7
+7	eqnchar	BSD-4/usr/man/man7/eqnchar.7
+7	greek	BSD-4/usr/man/man7/greek.7
+7	hier	BSD-4/usr/man/man7/hier.7
+7	man	BSD-4/usr/man/man7/man.7
+7	me	BSD-4/usr/man/man7/me.7
+7	ms	BSD-4/usr/man/man7/ms.7
+7	term	BSD-4/usr/man/man7/term.7
+8	ac	BSD-4/usr/man/man8/ac.8
+8	accton	BSD-4/usr/man/man8/accton.8
+8	adduser	BSD-4/usr/man/man8/adduser.8
+8	analyze	BSD-4/usr/man/man8/analyze.8
+8	arcv	BSD-4/usr/man/man8/arcv.8
+8	arff	BSD-4/usr/man/man8/arff.8
+8	catman	BSD-4/usr/man/man8/catman.8
+8	chgrp	BSD-4/usr/man/man8/chgrp.8
+8	chown	BSD-4/usr/man/man8/chown.8
+8	clri	BSD-4/usr/man/man8/clri.8
+8	crash	BSD-4/usr/man/man8/crash.8
+8	cron	BSD-4/usr/man/man8/cron.8
+8	dcheck	BSD-4/usr/man/man8/dcheck.8
+8	delivermail	BSD-4/usr/man/man8/delivermail.8
+8	delivermail	BSD-4/usr/src/cmd/delivermail/delivermail.8
+8	dmesg	BSD-4/usr/man/man8/dmesg.8
+8	dump	BSD-4/usr/man/man8/dump.8
+8	dumpdir	BSD-4/usr/man/man8/dumpdir.8
+8	flcopy	BSD-4/usr/man/man8/flcopy.8
+8	fsck	BSD-4/usr/man/man8/fsck.8
+8	getty	BSD-4/usr/man/man8/getty.8
+8	halt	BSD-4/usr/man/man8/halt.8
+8	icheck	BSD-4/usr/man/man8/icheck.8
+8	init	BSD-4/usr/man/man8/init.8
+8	labelfs	BSD-4/usr/man/man8/labelfs.8
+8	makekey	BSD-4/usr/man/man8/makekey.8
+8	mkfs	BSD-4/usr/man/man8/mkfs.8
+8	mklost+found	BSD-4/usr/man/man8/mklost+found.8
+8	mknod	BSD-4/usr/man/man8/mknod.8
+8	mount	BSD-4/usr/man/man8/mount.8
+8	ncheck	BSD-4/usr/man/man8/ncheck.8
+8	old	BSD-4/usr/man/man8/old.8
+8	pstat	BSD-4/usr/man/man8/pstat.8
+8	quot	BSD-4/usr/man/man8/quot.8
+8	rc	BSD-4/usr/man/man8/rc.8
+8	reboot	BSD-4/usr/man/man8/reboot.8
+8	renice	BSD-4/usr/man/man8/renice.8
+8	restor	BSD-4/usr/man/man8/restor.8
+8	sa	BSD-4/usr/man/man8/sa.8
+8	shutdown	BSD-4/usr/man/man8/shutdown.8
+8	sticky	BSD-4/usr/man/man8/sticky.8
+8	swapon	BSD-4/usr/man/man8/swapon.8
+8	sync	BSD-4/usr/man/man8/sync.8
+8	update	BSD-4/usr/man/man8/update.8
+8	vipw	BSD-4/usr/man/man8/vipw.8
+8	vpac	BSD-4/usr/man/man8/vpac.8

@@ -1,761 +1,774 @@
-1	adb
-1	addbib
-1	apply
-1	apropos
-1	ar
-1	as
-1	at
-1	atq
-1	atrm
-1	awk
-1	basename
-1	bc
-1	biff
-1	binmail
-1	cal
-1	calendar
-1	cat
-1	cb
-1	cc
-1	cd
-1	checknr
-1	chgrp
-1	chmod
-1	clear
-1	cmp
-1	col
-1	colcrt
-1	colrm
-1	comm
-1	compress
-1	cp
-1	crypt
-1	csh
-1	ctags
-1	date
-1	dbx
-1	dc
-1	dd
-1	deroff
-1	df
-1	diction
-1	diff
-1	diff3
-1	du
-1	echo
-1	ed
-1	efl
-1	eqn
-1	error
-1	ex
-1	expand
-1	expr
-1	f77
-1	false
-1	file
-1	find
-1	finger
-1	fmt
-1	fold
-1	fp
-1	fpr
-1	from
-1	fsplit
-1	ftp
-1	gcore
-1	gprof
-1	graph
-1	grep
-1	groups
-1	head
-1	hostid
-1	hostname
-1	indent
-1	install
-1	intro
-1	iostat
-1	join
-1	kill
-1	last
-1	lastcomm
-1	ld
-1	learn
-1	leave
-1	lex
-1	lint
-1	lisp
-1	liszt
-1	ln
-1	lock
-1	logger
-1	login
-1	look
-1	lookbib
-1	lorder
-1	lpq
-1	lpr
-1	lprm
-1	lptest
-1	ls
-1	lxref
-1	m4
-1	mail
-1	make
-1	man
-1	mesg
-1	mkdep
-1	mkdir
-1	mkstr
-1	more
-1	mset
-1	msgs
-1	mt
-1	mv
-1	netstat
-1	newaliases
-1	nice
-1	nm
-1	nroff
-1	od
-1	pagesize
-1	passwd
-1	pc
-1	pdx
-1	pi
-1	pix
-1	plot
-1	pmerge
-1	pr
-1	printenv
-1	prof
-1	ps
-1	ptx
-1	pwd
-1	px
-1	pxp
-1	pxref
-1	quota
-1	ranlib
-1	ratfor
-1	rcp
-1	rdist
-1	refer
-1	rev
-1	rlogin
-1	rm
-1	rmail
-1	rmdir
-1	roffbib
-1	rsh
-1	ruptime
-1	rwho
-1	sccs
-1	script
-1	sed
-1	sendbug
-1	sh
-1	size
-1	sleep
-1	soelim
-1	sort
-1	sortbib
-1	spell
-1	spline
-1	split
-1	strings
-1	strip
-1	struct
-1	stty
-1	style
-1	su
-1	sum
-1	symorder
-1	sysline
-1	systat
-1	tabs
-1	tail
-1	talk
-1	tar
-1	tbl
-1	tc
-1	tcopy
-1	tee
-1	telnet
-1	test
-1	tftp
-1	time
-1	tip
-1	tk
-1	tn3270
-1	touch
-1	tp
-1	tr
-1	troff
-1	true
-1	tset
-1	tsort
-1	tty
-1	ul
-1	unifdef
-1	uniq
-1	units
-1	uptime
-1	users
-1	uucp
-1	uuencode
-1	uulog
-1	uuname
-1	uuq
-1	uusend
-1	uux
-1	vacation
-1	vgrind
-1	vi
-1	vlp
-1	vmstat
-1	w
-1	wait
-1	wall
-1	wc
-1	what
-1	whatis
-1	whereis
-1	which
-1	who
-1	whoami
-1	whois
-1	window
-1	write
-1	xsend
-1	xstr
-1	yacc
-1	yes
-2	accept
-2	access
-2	acct
-2	adjtime
-2	bind
-2	brk
-2	chdir
-2	chmod
-2	chown
-2	chroot
-2	close
-2	connect
-2	creat
-2	dup
-2	execve
-2	exit
-2	fcntl
-2	flock
-2	fork
-2	fsync
-2	getdtablesize
-2	getgid
-2	getgroups
-2	gethostid
-2	gethostname
-2	getitimer
-2	getpagesize
-2	getpeername
-2	getpgrp
-2	getpid
-2	getpriority
-2	getrlimit
-2	getrusage
-2	getsockname
-2	getsockopt
-2	gettimeofday
-2	getuid
-2	intro
-2	ioctl
-2	kill
-2	killpg
-2	link
-2	listen
-2	lseek
-2	mkdir
-2	mknod
-2	mount
-2	open
-2	pipe
-2	profil
-2	ptrace
-2	quota
-2	read
-2	readlink
-2	reboot
-2	recv
-2	rename
-2	rmdir
-2	select
-2	send
-2	setgroups
-2	setpgrp
-2	setquota
-2	setregid
-2	setreuid
-2	shutdown
-2	sigblock
-2	sigpause
-2	sigreturn
-2	sigsetmask
-2	sigstack
-2	sigvec
-2	socket
-2	socketpair
-2	stat
-2	swapon
-2	symlink
-2	sync
-2	syscall
-2	truncate
-2	umask
-2	unlink
-2	utimes
-2	vfork
-2	vhangup
-2	wait
-2	write
-3	abort
-3	abs
-3	alarm
-3	asinh
-3	assert
-3	atof
-3	bstring
-3	byteorder
-3	compat-sys5
-3	crypt
-3	ctime
-3	ctype
-3	curses
-3	dbm
-3	directory
-3	ecvt
-3	end
-3	erf
-3	execl
-3	exit
-3	exp
-3	abort
-3	access
-3	alarm
-3	bessel
-3	bit
-3	chdir
-3	chmod
-3	fclose
-3	ferror
-3	etime
-3	exit
-3	fdate
-3	flmin
-3	flush
-3	fork
-3	fseek
-3	getarg
-3	getc
-3	getcwd
-3	getenv
-3	getlog
-3	getpid
-3	getuid
-3	hostnm
-3	idate
-3	index
-3	intro
-3	ioinit
-3	kill
-3	link
-3	loc
-3	long
-3	floor
-3	malloc
-3	fopen
-3	perror
-3	plot
-3	putc
-3	qsort
-3	rand
-3	random
-3	fread
-3	rename
-3	frexp
-3	fseek
-3	signal
-3	sleep
-3	stat
-3	system
-3	time
-3	topen
-3	traper
-3	trapov
-3	trpfpe
-3	ttynam
-3	unlink
-3	wait
-3	getc
-3	getdiskbyname
-3	getenv
-3	getfsent
-3	getgrent
-3	gethostbyname
-3	getlogin
-3	getnetent
-3	getopt
-3	getpass
-3	getprotoent
-3	getpw
-3	getpwent
-3	gets
-3	getservent
-3	getttyent
-3	getusershell
-3	getwd
-3	hypot
-3	ieee
-3	inet
-3	infnan
-3	initgroups
-3	insque
-3	intro
-3	j0
-3	lgamma
-3	lib2648
-3	malloc
-3	math
-3	mktemp
-3	monitor
-3	mp
-3	ndbm
-3	nice
-3	nlist
-3	ns
-3	pause
-3	perror
-3	plot
-3	popen
-3	printf
-3	psignal
-3	putc
-3	puts
-3	qsort
-3	rand
-3	random
-3	rcmd
-3	regex
-3	regexp
-3	resolver
-3	rexec
-3	scandir
-3	scanf
-3	setbuf
-3	setjmp
-3	setuid
-3	siginterrupt
-3	signal
-3	sin
-3	sinh
-3	sleep
-3	sqrt
-3	stdio
-3	string
-3	stty
-3	swab
-3	syslog
-3	system
-3	termcap
-3	time
-3	times
-3	ttyname
-3	ualarm
-3	ungetc
-3	usleep
-3	utime
-3	valloc
-3	varargs
-3	vlimit
-3	vtimes
-4	acc
-4	ace
-4	ad
-4	arp
-4	autoconf
-4	autoconf
-4	bk
-4	cons
-4	cons
-4	crl
-4	css
-4	ct
-4	cy
-4	ddn
-4	de
-4	dh
-4	dhu
-4	dmc
-4	dmf
-4	dmv
-4	dmz
-4	dn
-4	dr
-4	drum
-4	dz
-4	ec
-4	en
-4	enp
-4	ex
-4	fl
-4	hdh
-4	hk
-4	hp
-4	ht
-4	hy
-4	icmp
-4	idp
-4	ik
-4	ik
-4	il
-4	imp
-4	inet
-4	intro
-4	intro
-4	ip
-4	ix
-4	kdb
-4	kg
-4	lo
-4	lp
-4	lp
-4	mem
-4	mem
-4	mpcc
-4	mpcctab
-4	mt
-4	mtio
-4	mtio
-4	netintro
-4	np
-4	ns
-4	nsip
-4	null
-4	pcl
-4	ps
-4	pty
-4	qe
-4	rx
-4	spp
-4	tb
-4	tcp
-4	tm
-4	tmscp
-4	ts
-4	tty
-4	tu
-4	uda
-4	udp
-4	up
-4	ut
-4	uu
-4	va
-4	vd
-4	vp
-4	vv
-4	vx
-5	acct
-5	aliases
-5	a.out
-5	ar
-5	core
-5	dbx
-5	dir
-5	disklabel
-5	disktab
-5	dm.config
-5	dump
-5	fs
-5	fstab
-5	gettytab
-5	group
-5	hosts
-5	L.aliases
-5	L.cmds
-5	L-devices
-5	L-dialcodes
-5	L.sys
-5	map3270
-5	mtab
-5	networks
-5	passwd
-5	phones
-5	plot
-5	printcap
-5	protocols
-5	remote
-5	resolver
-5	services
-5	shells
-5	stab
-5	tar
-5	termcap
-5	tp
-5	ttys
-5	types
-5	tzfile
-5	USERFILE
-5	utmp
-5	uuencode
-5	vfont
-5	vgrindefs
-6	aardvark
-6	adventure
-6	arithmetic
-6	atc
-6	backgammon
-6	banner
-6	battlestar
-6	bcd
-6	boggle
-6	canfield
-6	chess
-6	ching
-6	cribbage
-6	doctor
-6	fish
-6	fortune
-6	gnuchess
-6	hack
-6	hangman
-6	hunt
-6	mille
-6	monop
-6	number
-6	quiz
-6	rain
-6	robots
-6	rogue
-6	sail
-6	snake
-6	trek
-6	worm
-6	worms
-6	wump
-6	zork
-7	ascii
-7	environ
-7	eqnchar
-7	hier
-7	hostname
-7	intro
-7	mailaddr
-7	man
-7	me
-7	ms
-7	term
-8	ac
-8	adduser
-8	arff
-8	arp
-8	bad144
-8	badsect
-8	bugfiler
-8	chown
-8	clri
-8	comsat
-8	config
-8	crash
-8	crash
-8	cron
-8	dcheck
-8	disklabel
-8	diskpart
-8	dlmpcc
-8	dm
-8	dmesg
-8	drtest
-8	dump
-8	dumpfs
-8	edquota
-8	enpload
-8	fastboot
-8	fingerd
-8	format
-8	fsck
-8	fsdb
-8	fstat
-8	ftpd
-8	gettable
-8	getty
-8	halt
-8	htable
-8	icheck
-8	ifconfig
-8	implog
-8	implogd
-8	inetd
-8	init
-8	installboot
-8	intro
-8	kgmon
-8	lpc
-8	lpd
-8	makedev
-8	makekey
-8	mkhosts
-8	mklost+found
-8	mknod
-8	mkpasswd
-8	mkproto
-8	mount
-8	named
-8	ncheck
-8	newfs
-8	pac
-8	ping
-8	pstat
-8	quot
-8	quotacheck
-8	quotaon
-8	rc
-8	rdump
-8	reboot
-8	reboot
-8	renice
-8	repquota
-8	restore
-8	rexecd
-8	rlogind
-8	rmt
-8	route
-8	routed
-8	rrestore
-8	rshd
-8	rwhod
-8	rxformat
-8	sa
-8	savecore
-8	sendmail
-8	shutdown
-8	slattach
-8	sticky
-8	swapon
-8	sync
-8	syslogd
-8	talkd
-8	telnetd
-8	tftpd
-8	timed
-8	timedc
-8	trpt
-8	trsp
-8	tunefs
-8	update
-8	uucico
-8	uuclean
-8	uupoll
-8	uusnap
-8	uuxqt
-8	vdformat
-8	vipw
-8	XNSrouted
+1	adb	BSD-4_3_Tahoe/usr/src/man/man1/adb.1
+1	addbib	BSD-4_3_Tahoe/usr/src/man/man1/addbib.1
+1	apply	BSD-4_3_Tahoe/usr/src/man/man1/apply.1
+1	apropos	BSD-4_3_Tahoe/usr/src/man/man1/apropos.1
+1	ar	BSD-4_3_Tahoe/usr/src/man/man1/ar.1
+1	as	BSD-4_3_Tahoe/usr/src/man/man1/as.1
+1	at	BSD-4_3_Tahoe/usr/src/man/man1/at.1
+1	atq	BSD-4_3_Tahoe/usr/src/man/man1/atq.1
+1	atrm	BSD-4_3_Tahoe/usr/src/man/man1/atrm.1
+1	awk	BSD-4_3_Tahoe/usr/src/man/man1/awk.1
+1	basename	BSD-4_3_Tahoe/usr/src/man/man1/basename.1
+1	bc	BSD-4_3_Tahoe/usr/src/man/man1/bc.1
+1	biff	BSD-4_3_Tahoe/usr/src/man/man1/biff.1
+1	biff	BSD-4_3_Tahoe/usr/src/new/X/man/man1/biff.1
+1	binmail	BSD-4_3_Tahoe/usr/src/man/man1/binmail.1
+1	cal	BSD-4_3_Tahoe/usr/src/man/man1/cal.1
+1	calendar	BSD-4_3_Tahoe/usr/src/man/man1/calendar.1
+1	cat	BSD-4_3_Tahoe/usr/src/man/man1/cat.1
+1	cb	BSD-4_3_Tahoe/usr/src/man/man1/cb.1
+1	cc	BSD-4_3_Tahoe/usr/src/man/man1/cc.1
+1	cd	BSD-4_3_Tahoe/usr/src/man/man1/cd.1
+1	checknr	BSD-4_3_Tahoe/usr/src/man/man1/checknr.1
+1	chgrp	BSD-4_3_Tahoe/usr/src/man/man1/chgrp.1
+1	chmod	BSD-4_3_Tahoe/usr/src/man/man1/chmod.1
+1	clear	BSD-4_3_Tahoe/usr/src/man/man1/clear.1
+1	cmp	BSD-4_3_Tahoe/usr/src/man/man1/cmp.1
+1	col	BSD-4_3_Tahoe/usr/src/man/man1/col.1
+1	colcrt	BSD-4_3_Tahoe/usr/src/man/man1/colcrt.1
+1	colrm	BSD-4_3_Tahoe/usr/src/man/man1/colrm.1
+1	comm	BSD-4_3_Tahoe/usr/src/man/man1/comm.1
+1	compress	BSD-4_3_Tahoe/usr/src/man/man1/compress.1
+1	cp	BSD-4_3_Tahoe/usr/src/man/man1/cp.1
+1	crypt	BSD-4_3_Tahoe/usr/src/man/man1/crypt.1
+1	csh	BSD-4_3_Tahoe/usr/doc/usd/04.csh/csh.1
+1	csh	BSD-4_3_Tahoe/usr/src/man/man1/csh.1
+1	ctags	BSD-4_3_Tahoe/usr/src/man/man1/ctags.1
+1	date	BSD-4_3_Tahoe/usr/src/man/man1/date.1
+1	dbx	BSD-4_3_Tahoe/usr/src/man/man1/dbx.1
+1	dc	BSD-4_3_Tahoe/usr/src/man/man1/dc.1
+1	dd	BSD-4_3_Tahoe/usr/src/man/man1/dd.1
+1	deroff	BSD-4_3_Tahoe/usr/src/man/man1/deroff.1
+1	df	BSD-4_3_Tahoe/usr/src/man/man1/df.1
+1	diction	BSD-4_3_Tahoe/usr/src/man/man1/diction.1
+1	diff	BSD-4_3_Tahoe/usr/src/man/man1/diff.1
+1	diff3	BSD-4_3_Tahoe/usr/src/man/man1/diff3.1
+1	du	BSD-4_3_Tahoe/usr/src/man/man1/du.1
+1	echo	BSD-4_3_Tahoe/usr/src/man/man1/echo.1
+1	ed	BSD-4_3_Tahoe/usr/src/man/man1/ed.1
+1	efl	BSD-4_3_Tahoe/usr/src/man/man1/efl.1
+1	eqn	BSD-4_3_Tahoe/usr/src/man/man1/eqn.1
+1	error	BSD-4_3_Tahoe/usr/src/man/man1/error.1
+1	ex	BSD-4_3_Tahoe/usr/src/man/man1/ex.1
+1	expand	BSD-4_3_Tahoe/usr/src/man/man1/expand.1
+1	expr	BSD-4_3_Tahoe/usr/src/man/man1/expr.1
+1	f77	BSD-4_3_Tahoe/usr/src/man/man1/f77.1
+1	false	BSD-4_3_Tahoe/usr/src/man/man1/false.1
+1	file	BSD-4_3_Tahoe/usr/src/man/man1/file.1
+1	find	BSD-4_3_Tahoe/usr/src/man/man1/find.1
+1	finger	BSD-4_3_Tahoe/usr/src/man/man1/finger.1
+1	fmt	BSD-4_3_Tahoe/usr/src/man/man1/fmt.1
+1	fold	BSD-4_3_Tahoe/usr/src/man/man1/fold.1
+1	fp	BSD-4_3_Tahoe/usr/src/man/man1/fp.1
+1	fpr	BSD-4_3_Tahoe/usr/src/man/man1/fpr.1
+1	from	BSD-4_3_Tahoe/usr/src/man/man1/from.1
+1	fsplit	BSD-4_3_Tahoe/usr/src/man/man1/fsplit.1
+1	ftp	BSD-4_3_Tahoe/usr/src/man/man1/ftp.1
+1	gcore	BSD-4_3_Tahoe/usr/src/man/man1/gcore.1
+1	gprof	BSD-4_3_Tahoe/usr/src/man/man1/gprof.1
+1	graph	BSD-4_3_Tahoe/usr/src/man/man1/graph.1
+1	grep	BSD-4_3_Tahoe/usr/src/man/man1/grep.1
+1	groups	BSD-4_3_Tahoe/usr/src/man/man1/groups.1
+1	head	BSD-4_3_Tahoe/usr/src/man/man1/head.1
+1	hostid	BSD-4_3_Tahoe/usr/src/man/man1/hostid.1
+1	hostname	BSD-4_3_Tahoe/usr/src/man/man1/hostname.1
+1	indent	BSD-4_3_Tahoe/usr/src/man/man1/indent.1
+1	install	BSD-4_3_Tahoe/usr/src/man/man1/install.1
+1	intro	BSD-4_3_Tahoe/usr/doc/ps1/18.curses/intro.1
+1	intro	BSD-4_3_Tahoe/usr/src/man/man1/intro.1
+1	iostat	BSD-4_3_Tahoe/usr/src/man/man1/iostat.1
+1	join	BSD-4_3_Tahoe/usr/src/man/man1/join.1
+1	kill	BSD-4_3_Tahoe/usr/src/man/man1/kill.1
+1	last	BSD-4_3_Tahoe/usr/src/man/man1/last.1
+1	lastcomm	BSD-4_3_Tahoe/usr/src/man/man1/lastcomm.1
+1	ld	BSD-4_3_Tahoe/usr/src/man/man1/ld.1
+1	learn	BSD-4_3_Tahoe/usr/src/man/man1/learn.1
+1	leave	BSD-4_3_Tahoe/usr/src/man/man1/leave.1
+1	lex	BSD-4_3_Tahoe/usr/src/man/man1/lex.1
+1	lint	BSD-4_3_Tahoe/usr/src/man/man1/lint.1
+1	lisp	BSD-4_3_Tahoe/usr/src/man/man1/lisp.1
+1	liszt	BSD-4_3_Tahoe/usr/src/man/man1/liszt.1
+1	ln	BSD-4_3_Tahoe/usr/src/man/man1/ln.1
+1	lock	BSD-4_3_Tahoe/usr/src/man/man1/lock.1
+1	logger	BSD-4_3_Tahoe/usr/src/man/man1/logger.1
+1	login	BSD-4_3_Tahoe/usr/src/man/man1/login.1
+1	look	BSD-4_3_Tahoe/usr/src/man/man1/look.1
+1	lookbib	BSD-4_3_Tahoe/usr/src/man/man1/lookbib.1
+1	lorder	BSD-4_3_Tahoe/usr/src/man/man1/lorder.1
+1	lpq	BSD-4_3_Tahoe/usr/src/man/man1/lpq.1
+1	lpr	BSD-4_3_Tahoe/usr/src/man/man1/lpr.1
+1	lprm	BSD-4_3_Tahoe/usr/src/man/man1/lprm.1
+1	lptest	BSD-4_3_Tahoe/usr/src/man/man1/lptest.1
+1	ls	BSD-4_3_Tahoe/usr/src/man/man1/ls.1
+1	lxref	BSD-4_3_Tahoe/usr/src/man/man1/lxref.1
+1	m4	BSD-4_3_Tahoe/usr/src/man/man1/m4.1
+1	mail	BSD-4_3_Tahoe/usr/src/man/man1/mail.1
+1	make	BSD-4_3_Tahoe/usr/src/man/man1/make.1
+1	man	BSD-4_3_Tahoe/usr/src/man/man1/man.1
+1	man	BSD-4_3_Tahoe/usr/src/new/apl/apl.vax/doc/man.1
+1	mesg	BSD-4_3_Tahoe/usr/src/man/man1/mesg.1
+1	mkdep	BSD-4_3_Tahoe/usr/src/man/man1/mkdep.1
+1	mkdir	BSD-4_3_Tahoe/usr/src/man/man1/mkdir.1
+1	mkstr	BSD-4_3_Tahoe/usr/src/man/man1/mkstr.1
+1	more	BSD-4_3_Tahoe/usr/src/man/man1/more.1
+1	mset	BSD-4_3_Tahoe/usr/src/man/man1/mset.1
+1	msgs	BSD-4_3_Tahoe/usr/src/man/man1/msgs.1
+1	mt	BSD-4_3_Tahoe/usr/src/man/man1/mt.1
+1	mv	BSD-4_3_Tahoe/usr/src/man/man1/mv.1
+1	netstat	BSD-4_3_Tahoe/usr/src/man/man1/netstat.1
+1	newaliases	BSD-4_3_Tahoe/usr/src/man/man1/newaliases.1
+1	nice	BSD-4_3_Tahoe/usr/src/man/man1/nice.1
+1	nm	BSD-4_3_Tahoe/usr/src/man/man1/nm.1
+1	nroff	BSD-4_3_Tahoe/usr/src/man/man1/nroff.1
+1	od	BSD-4_3_Tahoe/usr/src/man/man1/od.1
+1	pagesize	BSD-4_3_Tahoe/usr/src/man/man1/pagesize.1
+1	passwd	BSD-4_3_Tahoe/usr/src/man/man1/passwd.1
+1	pc	BSD-4_3_Tahoe/usr/src/man/man1/pc.1
+1	pdx	BSD-4_3_Tahoe/usr/src/man/man1/pdx.1
+1	pi	BSD-4_3_Tahoe/usr/src/man/man1/pi.1
+1	pix	BSD-4_3_Tahoe/usr/src/man/man1/pix.1
+1	plot	BSD-4_3_Tahoe/usr/src/man/man1/plot.1
+1	pmerge	BSD-4_3_Tahoe/usr/src/man/man1/pmerge.1
+1	pr	BSD-4_3_Tahoe/usr/src/man/man1/pr.1
+1	printenv	BSD-4_3_Tahoe/usr/src/man/man1/printenv.1
+1	prof	BSD-4_3_Tahoe/usr/src/man/man1/prof.1
+1	ps	BSD-4_3_Tahoe/usr/src/man/man1/ps.1
+1	ptx	BSD-4_3_Tahoe/usr/src/man/man1/ptx.1
+1	pwd	BSD-4_3_Tahoe/usr/src/man/man1/pwd.1
+1	px	BSD-4_3_Tahoe/usr/src/man/man1/px.1
+1	pxp	BSD-4_3_Tahoe/usr/src/man/man1/pxp.1
+1	pxref	BSD-4_3_Tahoe/usr/src/man/man1/pxref.1
+1	quota	BSD-4_3_Tahoe/usr/src/man/man1/quota.1
+1	ranlib	BSD-4_3_Tahoe/usr/src/man/man1/ranlib.1
+1	ratfor	BSD-4_3_Tahoe/usr/src/man/man1/ratfor.1
+1	rcp	BSD-4_3_Tahoe/usr/src/man/man1/rcp.1
+1	rdist	BSD-4_3_Tahoe/usr/src/man/man1/rdist.1
+1	refer	BSD-4_3_Tahoe/usr/src/man/man1/refer.1
+1	rev	BSD-4_3_Tahoe/usr/src/man/man1/rev.1
+1	rlogin	BSD-4_3_Tahoe/usr/src/man/man1/rlogin.1
+1	rm	BSD-4_3_Tahoe/usr/src/man/man1/rm.1
+1	rmail	BSD-4_3_Tahoe/usr/src/man/man1/rmail.1
+1	rmdir	BSD-4_3_Tahoe/usr/src/man/man1/rmdir.1
+1	roffbib	BSD-4_3_Tahoe/usr/src/man/man1/roffbib.1
+1	rsh	BSD-4_3_Tahoe/usr/src/man/man1/rsh.1
+1	ruptime	BSD-4_3_Tahoe/usr/src/man/man1/ruptime.1
+1	rwho	BSD-4_3_Tahoe/usr/src/man/man1/rwho.1
+1	sccs	BSD-4_3_Tahoe/usr/src/man/man1/sccs.1
+1	script	BSD-4_3_Tahoe/usr/src/man/man1/script.1
+1	sed	BSD-4_3_Tahoe/usr/src/man/man1/sed.1
+1	sendbug	BSD-4_3_Tahoe/usr/src/man/man1/sendbug.1
+1	sh	BSD-4_3_Tahoe/usr/src/man/man1/sh.1
+1	size	BSD-4_3_Tahoe/usr/src/man/man1/size.1
+1	sleep	BSD-4_3_Tahoe/usr/src/man/man1/sleep.1
+1	soelim	BSD-4_3_Tahoe/usr/src/man/man1/soelim.1
+1	sort	BSD-4_3_Tahoe/usr/src/man/man1/sort.1
+1	sortbib	BSD-4_3_Tahoe/usr/src/man/man1/sortbib.1
+1	spell	BSD-4_3_Tahoe/usr/src/man/man1/spell.1
+1	spline	BSD-4_3_Tahoe/usr/src/man/man1/spline.1
+1	split	BSD-4_3_Tahoe/usr/src/man/man1/split.1
+1	strings	BSD-4_3_Tahoe/usr/src/man/man1/strings.1
+1	strip	BSD-4_3_Tahoe/usr/src/man/man1/strip.1
+1	struct	BSD-4_3_Tahoe/usr/src/man/man1/struct.1
+1	stty	BSD-4_3_Tahoe/usr/src/man/man1/stty.1
+1	style	BSD-4_3_Tahoe/usr/src/man/man1/style.1
+1	su	BSD-4_3_Tahoe/usr/src/man/man1/su.1
+1	sum	BSD-4_3_Tahoe/usr/src/man/man1/sum.1
+1	symorder	BSD-4_3_Tahoe/usr/src/man/man1/symorder.1
+1	sysline	BSD-4_3_Tahoe/usr/src/man/man1/sysline.1
+1	systat	BSD-4_3_Tahoe/usr/src/man/man1/systat.1
+1	tabs	BSD-4_3_Tahoe/usr/src/man/man1/tabs.1
+1	tail	BSD-4_3_Tahoe/usr/src/man/man1/tail.1
+1	talk	BSD-4_3_Tahoe/usr/src/man/man1/talk.1
+1	tar	BSD-4_3_Tahoe/usr/src/man/man1/tar.1
+1	tbl	BSD-4_3_Tahoe/usr/src/man/man1/tbl.1
+1	tc	BSD-4_3_Tahoe/usr/src/man/man1/tc.1
+1	tcopy	BSD-4_3_Tahoe/usr/src/man/man1/tcopy.1
+1	tee	BSD-4_3_Tahoe/usr/src/man/man1/tee.1
+1	telnet	BSD-4_3_Tahoe/usr/src/man/man1/telnet.1
+1	test	BSD-4_3_Tahoe/usr/src/man/man1/test.1
+1	tftp	BSD-4_3_Tahoe/usr/src/man/man1/tftp.1
+1	time	BSD-4_3_Tahoe/usr/src/man/man1/time.1
+1	tip	BSD-4_3_Tahoe/usr/src/man/man1/tip.1
+1	tk	BSD-4_3_Tahoe/usr/src/man/man1/tk.1
+1	tn3270	BSD-4_3_Tahoe/usr/src/man/man1/tn3270.1
+1	touch	BSD-4_3_Tahoe/usr/src/man/man1/touch.1
+1	tp	BSD-4_3_Tahoe/usr/src/man/man1/tp.1
+1	tr	BSD-4_3_Tahoe/usr/src/man/man1/tr.1
+1	troff	BSD-4_3_Tahoe/usr/src/man/man1/troff.1
+1	true	BSD-4_3_Tahoe/usr/src/man/man1/true.1
+1	tset	BSD-4_3_Tahoe/usr/src/man/man1/tset.1
+1	tsort	BSD-4_3_Tahoe/usr/src/man/man1/tsort.1
+1	tty	BSD-4_3_Tahoe/usr/src/man/man1/tty.1
+1	ul	BSD-4_3_Tahoe/usr/src/man/man1/ul.1
+1	unifdef	BSD-4_3_Tahoe/usr/src/man/man1/unifdef.1
+1	uniq	BSD-4_3_Tahoe/usr/src/man/man1/uniq.1
+1	units	BSD-4_3_Tahoe/usr/src/man/man1/units.1
+1	uptime	BSD-4_3_Tahoe/usr/src/man/man1/uptime.1
+1	users	BSD-4_3_Tahoe/usr/src/man/man1/users.1
+1	uucp	BSD-4_3_Tahoe/usr/src/man/man1/uucp.1
+1	uuencode	BSD-4_3_Tahoe/usr/src/man/man1/uuencode.1
+1	uulog	BSD-4_3_Tahoe/usr/src/man/man1/uulog.1
+1	uuname	BSD-4_3_Tahoe/usr/src/man/man1/uuname.1
+1	uuq	BSD-4_3_Tahoe/usr/src/man/man1/uuq.1
+1	uusend	BSD-4_3_Tahoe/usr/src/man/man1/uusend.1
+1	uux	BSD-4_3_Tahoe/usr/src/man/man1/uux.1
+1	vacation	BSD-4_3_Tahoe/usr/src/man/man1/vacation.1
+1	vgrind	BSD-4_3_Tahoe/usr/src/man/man1/vgrind.1
+1	vi	BSD-4_3_Tahoe/usr/src/man/man1/vi.1
+1	vlp	BSD-4_3_Tahoe/usr/src/man/man1/vlp.1
+1	vmstat	BSD-4_3_Tahoe/usr/src/man/man1/vmstat.1
+1	w	BSD-4_3_Tahoe/usr/src/man/man1/w.1
+1	wait	BSD-4_3_Tahoe/usr/src/man/man1/wait.1
+1	wall	BSD-4_3_Tahoe/usr/src/man/man1/wall.1
+1	wc	BSD-4_3_Tahoe/usr/src/man/man1/wc.1
+1	what	BSD-4_3_Tahoe/usr/src/man/man1/what.1
+1	whatis	BSD-4_3_Tahoe/usr/src/man/man1/whatis.1
+1	whereis	BSD-4_3_Tahoe/usr/src/man/man1/whereis.1
+1	which	BSD-4_3_Tahoe/usr/src/man/man1/which.1
+1	who	BSD-4_3_Tahoe/usr/src/man/man1/who.1
+1	whoami	BSD-4_3_Tahoe/usr/src/man/man1/whoami.1
+1	whois	BSD-4_3_Tahoe/usr/src/man/man1/whois.1
+1	window	BSD-4_3_Tahoe/usr/src/man/man1/window.1
+1	write	BSD-4_3_Tahoe/usr/src/man/man1/write.1
+1	xsend	BSD-4_3_Tahoe/usr/src/man/man1/xsend.1
+1	xstr	BSD-4_3_Tahoe/usr/src/man/man1/xstr.1
+1	yacc	BSD-4_3_Tahoe/usr/src/man/man1/yacc.1
+1	yes	BSD-4_3_Tahoe/usr/src/man/man1/yes.1
+2	accept	BSD-4_3_Tahoe/usr/src/man/man2/accept.2
+2	access	BSD-4_3_Tahoe/usr/src/man/man2/access.2
+2	acct	BSD-4_3_Tahoe/usr/src/man/man2/acct.2
+2	adjtime	BSD-4_3_Tahoe/usr/src/man/man2/adjtime.2
+2	bind	BSD-4_3_Tahoe/usr/src/man/man2/bind.2
+2	brk	BSD-4_3_Tahoe/usr/src/man/man2/brk.2
+2	chdir	BSD-4_3_Tahoe/usr/src/man/man2/chdir.2
+2	chmod	BSD-4_3_Tahoe/usr/src/man/man2/chmod.2
+2	chown	BSD-4_3_Tahoe/usr/src/man/man2/chown.2
+2	chroot	BSD-4_3_Tahoe/usr/src/man/man2/chroot.2
+2	close	BSD-4_3_Tahoe/usr/src/man/man2/close.2
+2	connect	BSD-4_3_Tahoe/usr/src/man/man2/connect.2
+2	creat	BSD-4_3_Tahoe/usr/src/man/man2/creat.2
+2	dup	BSD-4_3_Tahoe/usr/src/man/man2/dup.2
+2	execve	BSD-4_3_Tahoe/usr/src/man/man2/execve.2
+2	exit	BSD-4_3_Tahoe/usr/src/man/man2/exit.2
+2	fcntl	BSD-4_3_Tahoe/usr/src/man/man2/fcntl.2
+2	flock	BSD-4_3_Tahoe/usr/src/man/man2/flock.2
+2	fork	BSD-4_3_Tahoe/usr/src/man/man2/fork.2
+2	fsync	BSD-4_3_Tahoe/usr/src/man/man2/fsync.2
+2	getdtablesize	BSD-4_3_Tahoe/usr/src/man/man2/getdtablesize.2
+2	getgid	BSD-4_3_Tahoe/usr/src/man/man2/getgid.2
+2	getgroups	BSD-4_3_Tahoe/usr/src/man/man2/getgroups.2
+2	gethostid	BSD-4_3_Tahoe/usr/src/man/man2/gethostid.2
+2	gethostname	BSD-4_3_Tahoe/usr/src/man/man2/gethostname.2
+2	getitimer	BSD-4_3_Tahoe/usr/src/man/man2/getitimer.2
+2	getpagesize	BSD-4_3_Tahoe/usr/src/man/man2/getpagesize.2
+2	getpeername	BSD-4_3_Tahoe/usr/src/man/man2/getpeername.2
+2	getpgrp	BSD-4_3_Tahoe/usr/src/man/man2/getpgrp.2
+2	getpid	BSD-4_3_Tahoe/usr/src/man/man2/getpid.2
+2	getpriority	BSD-4_3_Tahoe/usr/src/man/man2/getpriority.2
+2	getrlimit	BSD-4_3_Tahoe/usr/src/man/man2/getrlimit.2
+2	getrusage	BSD-4_3_Tahoe/usr/src/man/man2/getrusage.2
+2	getsockname	BSD-4_3_Tahoe/usr/src/man/man2/getsockname.2
+2	getsockopt	BSD-4_3_Tahoe/usr/src/man/man2/getsockopt.2
+2	gettimeofday	BSD-4_3_Tahoe/usr/src/man/man2/gettimeofday.2
+2	getuid	BSD-4_3_Tahoe/usr/src/man/man2/getuid.2
+2	intro	BSD-4_3_Tahoe/usr/doc/ps1/18.curses/intro.2
+2	intro	BSD-4_3_Tahoe/usr/src/man/man2/intro.2
+2	ioctl	BSD-4_3_Tahoe/usr/src/man/man2/ioctl.2
+2	kill	BSD-4_3_Tahoe/usr/src/man/man2/kill.2
+2	killpg	BSD-4_3_Tahoe/usr/src/man/man2/killpg.2
+2	link	BSD-4_3_Tahoe/usr/src/man/man2/link.2
+2	listen	BSD-4_3_Tahoe/usr/src/man/man2/listen.2
+2	lseek	BSD-4_3_Tahoe/usr/src/man/man2/lseek.2
+2	mkdir	BSD-4_3_Tahoe/usr/src/man/man2/mkdir.2
+2	mknod	BSD-4_3_Tahoe/usr/src/man/man2/mknod.2
+2	mount	BSD-4_3_Tahoe/usr/src/man/man2/mount.2
+2	open	BSD-4_3_Tahoe/usr/src/man/man2/open.2
+2	pipe	BSD-4_3_Tahoe/usr/src/man/man2/pipe.2
+2	profil	BSD-4_3_Tahoe/usr/src/man/man2/profil.2
+2	ptrace	BSD-4_3_Tahoe/usr/src/man/man2/ptrace.2
+2	quota	BSD-4_3_Tahoe/usr/src/man/man2/quota.2
+2	read	BSD-4_3_Tahoe/usr/src/man/man2/read.2
+2	readlink	BSD-4_3_Tahoe/usr/src/man/man2/readlink.2
+2	reboot	BSD-4_3_Tahoe/usr/src/man/man2/reboot.2
+2	recv	BSD-4_3_Tahoe/usr/src/man/man2/recv.2
+2	rename	BSD-4_3_Tahoe/usr/src/man/man2/rename.2
+2	rmdir	BSD-4_3_Tahoe/usr/src/man/man2/rmdir.2
+2	select	BSD-4_3_Tahoe/usr/src/man/man2/select.2
+2	send	BSD-4_3_Tahoe/usr/src/man/man2/send.2
+2	setgroups	BSD-4_3_Tahoe/usr/src/man/man2/setgroups.2
+2	setpgrp	BSD-4_3_Tahoe/usr/src/man/man2/setpgrp.2
+2	setquota	BSD-4_3_Tahoe/usr/src/man/man2/setquota.2
+2	setregid	BSD-4_3_Tahoe/usr/src/man/man2/setregid.2
+2	setreuid	BSD-4_3_Tahoe/usr/src/man/man2/setreuid.2
+2	shutdown	BSD-4_3_Tahoe/usr/src/man/man2/shutdown.2
+2	sigblock	BSD-4_3_Tahoe/usr/src/man/man2/sigblock.2
+2	sigpause	BSD-4_3_Tahoe/usr/src/man/man2/sigpause.2
+2	sigreturn	BSD-4_3_Tahoe/usr/src/man/man2/sigreturn.2
+2	sigsetmask	BSD-4_3_Tahoe/usr/src/man/man2/sigsetmask.2
+2	sigstack	BSD-4_3_Tahoe/usr/src/man/man2/sigstack.2
+2	sigvec	BSD-4_3_Tahoe/usr/src/man/man2/sigvec.2
+2	socket	BSD-4_3_Tahoe/usr/src/man/man2/socket.2
+2	socketpair	BSD-4_3_Tahoe/usr/src/man/man2/socketpair.2
+2	stat	BSD-4_3_Tahoe/usr/src/man/man2/stat.2
+2	swapon	BSD-4_3_Tahoe/usr/src/man/man2/swapon.2
+2	symlink	BSD-4_3_Tahoe/usr/src/man/man2/symlink.2
+2	sync	BSD-4_3_Tahoe/usr/src/man/man2/sync.2
+2	syscall	BSD-4_3_Tahoe/usr/src/man/man2/syscall.2
+2	truncate	BSD-4_3_Tahoe/usr/src/man/man2/truncate.2
+2	umask	BSD-4_3_Tahoe/usr/src/man/man2/umask.2
+2	unlink	BSD-4_3_Tahoe/usr/src/man/man2/unlink.2
+2	utimes	BSD-4_3_Tahoe/usr/src/man/man2/utimes.2
+2	vfork	BSD-4_3_Tahoe/usr/src/man/man2/vfork.2
+2	vhangup	BSD-4_3_Tahoe/usr/src/man/man2/vhangup.2
+2	wait	BSD-4_3_Tahoe/usr/src/man/man2/wait.2
+2	write	BSD-4_3_Tahoe/usr/src/man/man2/write.2
+3	abort	BSD-4_3_Tahoe/usr/src/man/man3/abort.3
+3	abort	BSD-4_3_Tahoe/usr/src/man/man3f/abort.3
+3	abs	BSD-4_3_Tahoe/usr/src/man/man3/abs.3
+3	access	BSD-4_3_Tahoe/usr/src/man/man3f/access.3
+3	alarm	BSD-4_3_Tahoe/usr/src/man/man3/alarm.3
+3	alarm	BSD-4_3_Tahoe/usr/src/man/man3f/alarm.3
+3	asinh	BSD-4_3_Tahoe/usr/src/man/man3/asinh.3
+3	assert	BSD-4_3_Tahoe/usr/src/man/man3/assert.3
+3	atof	BSD-4_3_Tahoe/usr/src/man/man3/atof.3
+3	bessel	BSD-4_3_Tahoe/usr/src/man/man3f/bessel.3
+3	bit	BSD-4_3_Tahoe/usr/src/man/man3f/bit.3
+3	bstring	BSD-4_3_Tahoe/usr/src/man/man3/bstring.3
+3	byteorder	BSD-4_3_Tahoe/usr/src/man/man3/byteorder.3
+3	chdir	BSD-4_3_Tahoe/usr/src/man/man3f/chdir.3
+3	chmod	BSD-4_3_Tahoe/usr/src/man/man3f/chmod.3
+3	compat-sys5	BSD-4_3_Tahoe/usr/src/man/man3/compat-sys5.3
+3	crypt	BSD-4_3_Tahoe/usr/src/man/man3/crypt.3
+3	ctime	BSD-4_3_Tahoe/usr/src/man/man3/ctime.3
+3	ctype	BSD-4_3_Tahoe/usr/src/man/man3/ctype.3
+3	curses	BSD-4_3_Tahoe/usr/src/man/man3/curses.3
+3	dbm	BSD-4_3_Tahoe/usr/src/man/man3/dbm.3
+3	directory	BSD-4_3_Tahoe/usr/src/man/man3/directory.3
+3	ecvt	BSD-4_3_Tahoe/usr/src/man/man3/ecvt.3
+3	end	BSD-4_3_Tahoe/usr/src/man/man3/end.3
+3	erf	BSD-4_3_Tahoe/usr/src/man/man3/erf.3
+3	etime	BSD-4_3_Tahoe/usr/src/man/man3f/etime.3
+3	execl	BSD-4_3_Tahoe/usr/src/man/man3/execl.3
+3	exit	BSD-4_3_Tahoe/usr/src/man/man3/exit.3
+3	exit	BSD-4_3_Tahoe/usr/src/man/man3f/exit.3
+3	exp	BSD-4_3_Tahoe/usr/src/man/man3/exp.3
+3	fclose	BSD-4_3_Tahoe/usr/src/man/man3/fclose.3
+3	fdate	BSD-4_3_Tahoe/usr/src/man/man3f/fdate.3
+3	ferror	BSD-4_3_Tahoe/usr/src/man/man3/ferror.3
+3	flmin	BSD-4_3_Tahoe/usr/src/man/man3f/flmin.3
+3	floor	BSD-4_3_Tahoe/usr/src/man/man3/floor.3
+3	flush	BSD-4_3_Tahoe/usr/src/man/man3f/flush.3
+3	fopen	BSD-4_3_Tahoe/usr/src/man/man3/fopen.3
+3	fork	BSD-4_3_Tahoe/usr/src/man/man3f/fork.3
+3	fread	BSD-4_3_Tahoe/usr/src/man/man3/fread.3
+3	frexp	BSD-4_3_Tahoe/usr/src/man/man3/frexp.3
+3	fseek	BSD-4_3_Tahoe/usr/src/man/man3/fseek.3
+3	fseek	BSD-4_3_Tahoe/usr/src/man/man3f/fseek.3
+3	getarg	BSD-4_3_Tahoe/usr/src/man/man3f/getarg.3
+3	getc	BSD-4_3_Tahoe/usr/src/man/man3/getc.3
+3	getc	BSD-4_3_Tahoe/usr/src/man/man3f/getc.3
+3	getcwd	BSD-4_3_Tahoe/usr/src/man/man3f/getcwd.3
+3	getdiskbyname	BSD-4_3_Tahoe/usr/src/man/man3/getdiskbyname.3
+3	getenv	BSD-4_3_Tahoe/usr/src/man/man3/getenv.3
+3	getenv	BSD-4_3_Tahoe/usr/src/man/man3f/getenv.3
+3	getfsent	BSD-4_3_Tahoe/usr/src/man/man3/getfsent.3
+3	getgrent	BSD-4_3_Tahoe/usr/src/man/man3/getgrent.3
+3	gethostbyname	BSD-4_3_Tahoe/usr/src/man/man3/gethostbyname.3
+3	getlog	BSD-4_3_Tahoe/usr/src/man/man3f/getlog.3
+3	getlogin	BSD-4_3_Tahoe/usr/src/man/man3/getlogin.3
+3	getnetent	BSD-4_3_Tahoe/usr/src/man/man3/getnetent.3
+3	getopt	BSD-4_3_Tahoe/usr/src/man/man3/getopt.3
+3	getopt	BSD-4_3_Tahoe/usr/src/new/xns/examples/print/getopt.3
+3	getpass	BSD-4_3_Tahoe/usr/src/man/man3/getpass.3
+3	getpid	BSD-4_3_Tahoe/usr/src/man/man3f/getpid.3
+3	getprotoent	BSD-4_3_Tahoe/usr/src/man/man3/getprotoent.3
+3	getpw	BSD-4_3_Tahoe/usr/src/man/man3/getpw.3
+3	getpwent	BSD-4_3_Tahoe/usr/src/man/man3/getpwent.3
+3	gets	BSD-4_3_Tahoe/usr/src/man/man3/gets.3
+3	getservent	BSD-4_3_Tahoe/usr/src/man/man3/getservent.3
+3	getttyent	BSD-4_3_Tahoe/usr/src/man/man3/getttyent.3
+3	getuid	BSD-4_3_Tahoe/usr/src/man/man3f/getuid.3
+3	getusershell	BSD-4_3_Tahoe/usr/src/man/man3/getusershell.3
+3	getwd	BSD-4_3_Tahoe/usr/src/man/man3/getwd.3
+3	hostnm	BSD-4_3_Tahoe/usr/src/man/man3f/hostnm.3
+3	hypot	BSD-4_3_Tahoe/usr/src/man/man3/hypot.3
+3	idate	BSD-4_3_Tahoe/usr/src/man/man3f/idate.3
+3	ieee	BSD-4_3_Tahoe/usr/src/man/man3/ieee.3
+3	index	BSD-4_3_Tahoe/usr/src/man/man3f/index.3
+3	inet	BSD-4_3_Tahoe/usr/src/man/man3/inet.3
+3	infnan	BSD-4_3_Tahoe/usr/src/man/man3/infnan.3
+3	initgroups	BSD-4_3_Tahoe/usr/src/man/man3/initgroups.3
+3	insque	BSD-4_3_Tahoe/usr/src/man/man3/insque.3
+3	intro	BSD-4_3_Tahoe/usr/doc/ps1/18.curses/intro.3
+3	intro	BSD-4_3_Tahoe/usr/src/man/man3/intro.3
+3	intro	BSD-4_3_Tahoe/usr/src/man/man3f/intro.3
+3	ioinit	BSD-4_3_Tahoe/usr/src/man/man3f/ioinit.3
+3	j0	BSD-4_3_Tahoe/usr/src/man/man3/j0.3
+3	kill	BSD-4_3_Tahoe/usr/src/man/man3f/kill.3
+3	lgamma	BSD-4_3_Tahoe/usr/src/man/man3/lgamma.3
+3	lib2648	BSD-4_3_Tahoe/usr/src/man/man3/lib2648.3
+3	link	BSD-4_3_Tahoe/usr/src/man/man3f/link.3
+3	loc	BSD-4_3_Tahoe/usr/src/man/man3f/loc.3
+3	long	BSD-4_3_Tahoe/usr/src/man/man3f/long.3
+3	malloc	BSD-4_3_Tahoe/usr/src/man/man3/malloc.3
+3	malloc	BSD-4_3_Tahoe/usr/src/man/man3f/malloc.3
+3	math	BSD-4_3_Tahoe/usr/src/man/man3/math.3
+3	mktemp	BSD-4_3_Tahoe/usr/src/man/man3/mktemp.3
+3	monitor	BSD-4_3_Tahoe/usr/src/man/man3/monitor.3
+3	mp	BSD-4_3_Tahoe/usr/src/man/man3/mp.3
+3	ndbm	BSD-4_3_Tahoe/usr/src/man/man3/ndbm.3
+3	nice	BSD-4_3_Tahoe/usr/src/man/man3/nice.3
+3	nlist	BSD-4_3_Tahoe/usr/src/man/man3/nlist.3
+3	ns	BSD-4_3_Tahoe/usr/src/man/man3/ns.3
+3	pause	BSD-4_3_Tahoe/usr/src/man/man3/pause.3
+3	perror	BSD-4_3_Tahoe/usr/src/man/man3/perror.3
+3	perror	BSD-4_3_Tahoe/usr/src/man/man3f/perror.3
+3	plot	BSD-4_3_Tahoe/usr/src/man/man3/plot.3
+3	plot	BSD-4_3_Tahoe/usr/src/man/man3f/plot.3
+3	popen	BSD-4_3_Tahoe/usr/src/man/man3/popen.3
+3	printf	BSD-4_3_Tahoe/usr/src/man/man3/printf.3
+3	psignal	BSD-4_3_Tahoe/usr/src/man/man3/psignal.3
+3	putc	BSD-4_3_Tahoe/usr/src/man/man3/putc.3
+3	putc	BSD-4_3_Tahoe/usr/src/man/man3f/putc.3
+3	puts	BSD-4_3_Tahoe/usr/src/man/man3/puts.3
+3	qsort	BSD-4_3_Tahoe/usr/src/man/man3/qsort.3
+3	qsort	BSD-4_3_Tahoe/usr/src/man/man3f/qsort.3
+3	rand	BSD-4_3_Tahoe/usr/src/man/man3/rand.3
+3	rand	BSD-4_3_Tahoe/usr/src/man/man3f/rand.3
+3	random	BSD-4_3_Tahoe/usr/src/man/man3/random.3
+3	random	BSD-4_3_Tahoe/usr/src/man/man3f/random.3
+3	rcmd	BSD-4_3_Tahoe/usr/src/man/man3/rcmd.3
+3	regex	BSD-4_3_Tahoe/usr/src/man/man3/regex.3
+3	regexp	BSD-4_3_Tahoe/usr/src/lib/libc/gen/regexp/regexp.3
+3	regexp	BSD-4_3_Tahoe/usr/src/man/man3/regexp.3
+3	rename	BSD-4_3_Tahoe/usr/src/man/man3f/rename.3
+3	resolver	BSD-4_3_Tahoe/usr/src/man/man3/resolver.3
+3	rexec	BSD-4_3_Tahoe/usr/src/man/man3/rexec.3
+3	scandir	BSD-4_3_Tahoe/usr/src/man/man3/scandir.3
+3	scanf	BSD-4_3_Tahoe/usr/src/man/man3/scanf.3
+3	setbuf	BSD-4_3_Tahoe/usr/src/man/man3/setbuf.3
+3	setjmp	BSD-4_3_Tahoe/usr/src/man/man3/setjmp.3
+3	setuid	BSD-4_3_Tahoe/usr/src/man/man3/setuid.3
+3	siginterrupt	BSD-4_3_Tahoe/usr/src/man/man3/siginterrupt.3
+3	signal	BSD-4_3_Tahoe/usr/src/man/man3/signal.3
+3	signal	BSD-4_3_Tahoe/usr/src/man/man3f/signal.3
+3	sin	BSD-4_3_Tahoe/usr/src/man/man3/sin.3
+3	sinh	BSD-4_3_Tahoe/usr/src/man/man3/sinh.3
+3	sleep	BSD-4_3_Tahoe/usr/src/man/man3/sleep.3
+3	sleep	BSD-4_3_Tahoe/usr/src/man/man3f/sleep.3
+3	sqrt	BSD-4_3_Tahoe/usr/src/man/man3/sqrt.3
+3	stat	BSD-4_3_Tahoe/usr/src/man/man3f/stat.3
+3	stdio	BSD-4_3_Tahoe/usr/src/man/man3/stdio.3
+3	string	BSD-4_3_Tahoe/usr/src/man/man3/string.3
+3	stty	BSD-4_3_Tahoe/usr/src/man/man3/stty.3
+3	swab	BSD-4_3_Tahoe/usr/src/man/man3/swab.3
+3	syslog	BSD-4_3_Tahoe/usr/spool/mqueue/syslog.3
+3	syslog	BSD-4_3_Tahoe/usr/src/man/man3/syslog.3
+3	system	BSD-4_3_Tahoe/usr/src/man/man3/system.3
+3	system	BSD-4_3_Tahoe/usr/src/man/man3f/system.3
+3	termcap	BSD-4_3_Tahoe/usr/src/man/man3/termcap.3
+3	time	BSD-4_3_Tahoe/usr/src/man/man3/time.3
+3	time	BSD-4_3_Tahoe/usr/src/man/man3f/time.3
+3	times	BSD-4_3_Tahoe/usr/src/man/man3/times.3
+3	topen	BSD-4_3_Tahoe/usr/src/man/man3f/topen.3
+3	traper	BSD-4_3_Tahoe/usr/src/man/man3f/traper.3
+3	trapov	BSD-4_3_Tahoe/usr/src/man/man3f/trapov.3
+3	trpfpe	BSD-4_3_Tahoe/usr/src/man/man3f/trpfpe.3
+3	ttynam	BSD-4_3_Tahoe/usr/src/man/man3f/ttynam.3
+3	ttyname	BSD-4_3_Tahoe/usr/src/man/man3/ttyname.3
+3	ualarm	BSD-4_3_Tahoe/usr/src/man/man3/ualarm.3
+3	ungetc	BSD-4_3_Tahoe/usr/src/man/man3/ungetc.3
+3	unlink	BSD-4_3_Tahoe/usr/src/man/man3f/unlink.3
+3	usleep	BSD-4_3_Tahoe/usr/src/man/man3/usleep.3
+3	utime	BSD-4_3_Tahoe/usr/src/man/man3/utime.3
+3	valloc	BSD-4_3_Tahoe/usr/src/man/man3/valloc.3
+3	varargs	BSD-4_3_Tahoe/usr/src/man/man3/varargs.3
+3	vlimit	BSD-4_3_Tahoe/usr/src/man/man3/vlimit.3
+3	vtimes	BSD-4_3_Tahoe/usr/src/man/man3/vtimes.3
+3	wait	BSD-4_3_Tahoe/usr/src/man/man3f/wait.3
+4	acc	BSD-4_3_Tahoe/usr/src/man/man4/vax/acc.4
+4	ace	BSD-4_3_Tahoe/usr/src/man/man4/tahoe/ace.4
+4	ad	BSD-4_3_Tahoe/usr/src/man/man4/vax/ad.4
+4	arp	BSD-4_3_Tahoe/usr/src/man/man4/arp.4
+4	autoconf	BSD-4_3_Tahoe/usr/src/man/man4/tahoe/autoconf.4
+4	autoconf	BSD-4_3_Tahoe/usr/src/man/man4/vax/autoconf.4
+4	bk	BSD-4_3_Tahoe/usr/src/man/man4/bk.4
+4	cons	BSD-4_3_Tahoe/usr/src/man/man4/tahoe/cons.4
+4	cons	BSD-4_3_Tahoe/usr/src/man/man4/vax/cons.4
+4	cons	BSD-4_3_Tahoe/usr/src/new/X/libibm/doc/man/cons.4
+4	crl	BSD-4_3_Tahoe/usr/src/man/man4/vax/crl.4
+4	css	BSD-4_3_Tahoe/usr/src/man/man4/vax/css.4
+4	ct	BSD-4_3_Tahoe/usr/src/man/man4/vax/ct.4
+4	cy	BSD-4_3_Tahoe/usr/src/man/man4/tahoe/cy.4
+4	ddn	BSD-4_3_Tahoe/usr/src/man/man4/vax/ddn.4
+4	de	BSD-4_3_Tahoe/usr/src/man/man4/vax/de.4
+4	dh	BSD-4_3_Tahoe/usr/src/man/man4/vax/dh.4
+4	dhu	BSD-4_3_Tahoe/usr/src/man/man4/vax/dhu.4
+4	dmc	BSD-4_3_Tahoe/usr/src/man/man4/vax/dmc.4
+4	dmf	BSD-4_3_Tahoe/usr/src/man/man4/vax/dmf.4
+4	dmv	BSD-4_3_Tahoe/usr/src/man/man4/vax/dmv.4
+4	dmz	BSD-4_3_Tahoe/usr/src/man/man4/vax/dmz.4
+4	dn	BSD-4_3_Tahoe/usr/src/man/man4/vax/dn.4
+4	dr	BSD-4_3_Tahoe/usr/src/man/man4/tahoe/dr.4
+4	drum	BSD-4_3_Tahoe/usr/src/man/man4/drum.4
+4	dz	BSD-4_3_Tahoe/usr/src/man/man4/vax/dz.4
+4	ec	BSD-4_3_Tahoe/usr/src/man/man4/vax/ec.4
+4	en	BSD-4_3_Tahoe/usr/src/man/man4/vax/en.4
+4	enp	BSD-4_3_Tahoe/usr/src/man/man4/tahoe/enp.4
+4	ex	BSD-4_3_Tahoe/usr/src/man/man4/vax/ex.4
+4	fl	BSD-4_3_Tahoe/usr/src/man/man4/vax/fl.4
+4	hdh	BSD-4_3_Tahoe/usr/src/man/man4/vax/hdh.4
+4	hk	BSD-4_3_Tahoe/usr/src/man/man4/vax/hk.4
+4	hp	BSD-4_3_Tahoe/usr/src/man/man4/vax/hp.4
+4	ht	BSD-4_3_Tahoe/usr/src/man/man4/vax/ht.4
+4	hy	BSD-4_3_Tahoe/usr/src/man/man4/vax/hy.4
+4	icmp	BSD-4_3_Tahoe/usr/src/man/man4/icmp.4
+4	idp	BSD-4_3_Tahoe/usr/src/man/man4/idp.4
+4	ik	BSD-4_3_Tahoe/usr/src/man/man4/tahoe/ik.4
+4	ik	BSD-4_3_Tahoe/usr/src/man/man4/vax/ik.4
+4	il	BSD-4_3_Tahoe/usr/src/man/man4/vax/il.4
+4	imp	BSD-4_3_Tahoe/usr/src/man/man4/imp.4
+4	inet	BSD-4_3_Tahoe/usr/src/man/man4/inet.4
+4	intro	BSD-4_3_Tahoe/usr/doc/ps1/18.curses/intro.4
+4	intro	BSD-4_3_Tahoe/usr/src/man/man4/tahoe/intro.4
+4	intro	BSD-4_3_Tahoe/usr/src/man/man4/vax/intro.4
+4	ip	BSD-4_3_Tahoe/usr/src/man/man4/ip.4
+4	ix	BSD-4_3_Tahoe/usr/src/man/man4/vax/ix.4
+4	kdb	BSD-4_3_Tahoe/usr/src/man/man4/kdb.4
+4	kg	BSD-4_3_Tahoe/usr/src/man/man4/vax/kg.4
+4	lo	BSD-4_3_Tahoe/usr/src/man/man4/lo.4
+4	lp	BSD-4_3_Tahoe/usr/src/man/man4/tahoe/lp.4
+4	lp	BSD-4_3_Tahoe/usr/src/man/man4/vax/lp.4
+4	mem	BSD-4_3_Tahoe/usr/src/man/man4/tahoe/mem.4
+4	mem	BSD-4_3_Tahoe/usr/src/man/man4/vax/mem.4
+4	mpcc	BSD-4_3_Tahoe/usr/src/man/man4/tahoe/mpcc.4
+4	mpcctab	BSD-4_3_Tahoe/usr/src/man/man4/tahoe/mpcctab.4
+4	mt	BSD-4_3_Tahoe/usr/src/man/man4/vax/mt.4
+4	mtio	BSD-4_3_Tahoe/usr/src/man/man4/tahoe/mtio.4
+4	mtio	BSD-4_3_Tahoe/usr/src/man/man4/vax/mtio.4
+4	netintro	BSD-4_3_Tahoe/usr/src/man/man4/netintro.4
+4	np	BSD-4_3_Tahoe/usr/src/man/man4/vax/np.4
+4	ns	BSD-4_3_Tahoe/usr/src/man/man4/ns.4
+4	nsip	BSD-4_3_Tahoe/usr/src/man/man4/nsip.4
+4	null	BSD-4_3_Tahoe/usr/src/man/man4/null.4
+4	pcl	BSD-4_3_Tahoe/usr/src/man/man4/vax/pcl.4
+4	ps	BSD-4_3_Tahoe/usr/src/man/man4/vax/ps.4
+4	pty	BSD-4_3_Tahoe/usr/src/man/man4/pty.4
+4	qe	BSD-4_3_Tahoe/usr/src/man/man4/vax/qe.4
+4	rx	BSD-4_3_Tahoe/usr/src/man/man4/vax/rx.4
+4	spp	BSD-4_3_Tahoe/usr/src/man/man4/spp.4
+4	tb	BSD-4_3_Tahoe/usr/src/man/man4/vax/tb.4
+4	tcp	BSD-4_3_Tahoe/usr/src/man/man4/tcp.4
+4	tm	BSD-4_3_Tahoe/usr/src/man/man4/vax/tm.4
+4	tmscp	BSD-4_3_Tahoe/usr/src/man/man4/vax/tmscp.4
+4	ts	BSD-4_3_Tahoe/usr/src/man/man4/vax/ts.4
+4	tty	BSD-4_3_Tahoe/usr/src/man/man4/tty.4
+4	tu	BSD-4_3_Tahoe/usr/src/man/man4/vax/tu.4
+4	uda	BSD-4_3_Tahoe/usr/src/man/man4/vax/uda.4
+4	udp	BSD-4_3_Tahoe/usr/src/man/man4/udp.4
+4	up	BSD-4_3_Tahoe/usr/src/man/man4/vax/up.4
+4	ut	BSD-4_3_Tahoe/usr/src/man/man4/vax/ut.4
+4	uu	BSD-4_3_Tahoe/usr/src/man/man4/vax/uu.4
+4	va	BSD-4_3_Tahoe/usr/src/man/man4/vax/va.4
+4	vd	BSD-4_3_Tahoe/usr/src/man/man4/tahoe/vd.4
+4	vp	BSD-4_3_Tahoe/usr/src/man/man4/vax/vp.4
+4	vv	BSD-4_3_Tahoe/usr/src/man/man4/vax/vv.4
+4	vx	BSD-4_3_Tahoe/usr/src/man/man4/tahoe/vx.4
+5	L-devices	BSD-4_3_Tahoe/usr/src/man/man5/L-devices.5
+5	L-dialcodes	BSD-4_3_Tahoe/usr/src/man/man5/L-dialcodes.5
+5	L.aliases	BSD-4_3_Tahoe/usr/src/man/man5/L.aliases.5
+5	L.cmds	BSD-4_3_Tahoe/usr/src/man/man5/L.cmds.5
+5	L.sys	BSD-4_3_Tahoe/usr/src/man/man5/L.sys.5
+5	USERFILE	BSD-4_3_Tahoe/usr/src/man/man5/USERFILE.5
+5	a.out	BSD-4_3_Tahoe/usr/src/man/man5/a.out.5
+5	acct	BSD-4_3_Tahoe/usr/src/man/man5/acct.5
+5	aliases	BSD-4_3_Tahoe/usr/src/man/man5/aliases.5
+5	ar	BSD-4_3_Tahoe/usr/src/man/man5/ar.5
+5	core	BSD-4_3_Tahoe/usr/src/man/man5/core.5
+5	dbx	BSD-4_3_Tahoe/usr/src/man/man5/dbx.5
+5	dir	BSD-4_3_Tahoe/usr/src/man/man5/dir.5
+5	disklabel	BSD-4_3_Tahoe/usr/src/man/man5/disklabel.5
+5	disktab	BSD-4_3_Tahoe/usr/src/man/man5/disktab.5
+5	dm.config	BSD-4_3_Tahoe/usr/src/man/man5/dm.config.5
+5	dump	BSD-4_3_Tahoe/usr/src/man/man5/dump.5
+5	fs	BSD-4_3_Tahoe/usr/src/man/man5/fs.5
+5	fstab	BSD-4_3_Tahoe/usr/src/man/man5/fstab.5
+5	gettytab	BSD-4_3_Tahoe/usr/src/man/man5/gettytab.5
+5	group	BSD-4_3_Tahoe/usr/src/man/man5/group.5
+5	hosts	BSD-4_3_Tahoe/usr/src/man/man5/hosts.5
+5	map3270	BSD-4_3_Tahoe/usr/src/man/man5/map3270.5
+5	mtab	BSD-4_3_Tahoe/usr/src/man/man5/mtab.5
+5	networks	BSD-4_3_Tahoe/usr/src/man/man5/networks.5
+5	passwd	BSD-4_3_Tahoe/usr/src/man/man5/passwd.5
+5	phones	BSD-4_3_Tahoe/usr/src/man/man5/phones.5
+5	plot	BSD-4_3_Tahoe/usr/src/man/man5/plot.5
+5	printcap	BSD-4_3_Tahoe/usr/src/man/man5/printcap.5
+5	protocols	BSD-4_3_Tahoe/usr/src/man/man5/protocols.5
+5	remote	BSD-4_3_Tahoe/usr/src/man/man5/remote.5
+5	resolver	BSD-4_3_Tahoe/usr/src/man/man5/resolver.5
+5	services	BSD-4_3_Tahoe/usr/src/man/man5/services.5
+5	shells	BSD-4_3_Tahoe/usr/src/man/man5/shells.5
+5	stab	BSD-4_3_Tahoe/usr/src/man/man5/stab.5
+5	tar	BSD-4_3_Tahoe/usr/src/man/man5/tar.5
+5	termcap	BSD-4_3_Tahoe/usr/src/man/man5/termcap.5
+5	tp	BSD-4_3_Tahoe/usr/src/man/man5/tp.5
+5	ttys	BSD-4_3_Tahoe/usr/src/man/man5/ttys.5
+5	types	BSD-4_3_Tahoe/usr/src/man/man5/types.5
+5	tzfile	BSD-4_3_Tahoe/usr/src/man/man5/tzfile.5
+5	utmp	BSD-4_3_Tahoe/usr/src/man/man5/utmp.5
+5	uuencode	BSD-4_3_Tahoe/usr/src/man/man5/uuencode.5
+5	vfont	BSD-4_3_Tahoe/usr/src/man/man5/vfont.5
+5	vgrindefs	BSD-4_3_Tahoe/usr/src/man/man5/vgrindefs.5
+6	aardvark	BSD-4_3_Tahoe/usr/src/man/man6/aardvark.6
+6	adventure	BSD-4_3_Tahoe/usr/src/man/man6/adventure.6
+6	arithmetic	BSD-4_3_Tahoe/usr/src/man/man6/arithmetic.6
+6	atc	BSD-4_3_Tahoe/usr/src/man/man6/atc.6
+6	backgammon	BSD-4_3_Tahoe/usr/src/man/man6/backgammon.6
+6	banner	BSD-4_3_Tahoe/usr/src/man/man6/banner.6
+6	battlestar	BSD-4_3_Tahoe/usr/src/man/man6/battlestar.6
+6	bcd	BSD-4_3_Tahoe/usr/src/man/man6/bcd.6
+6	boggle	BSD-4_3_Tahoe/usr/src/man/man6/boggle.6
+6	canfield	BSD-4_3_Tahoe/usr/src/man/man6/canfield.6
+6	chess	BSD-4_3_Tahoe/usr/src/man/man6/chess.6
+6	ching	BSD-4_3_Tahoe/usr/src/man/man6/ching.6
+6	cribbage	BSD-4_3_Tahoe/usr/src/man/man6/cribbage.6
+6	doctor	BSD-4_3_Tahoe/usr/src/man/man6/doctor.6
+6	fish	BSD-4_3_Tahoe/usr/src/man/man6/fish.6
+6	fortune	BSD-4_3_Tahoe/usr/src/man/man6/fortune.6
+6	gnuchess	BSD-4_3_Tahoe/usr/src/man/man6/gnuchess.6
+6	hack	BSD-4_3_Tahoe/usr/src/games/hack/hack.6
+6	hack	BSD-4_3_Tahoe/usr/src/man/man6/hack.6
+6	hangman	BSD-4_3_Tahoe/usr/src/man/man6/hangman.6
+6	hunt	BSD-4_3_Tahoe/usr/src/man/man6/hunt.6
+6	mille	BSD-4_3_Tahoe/usr/src/man/man6/mille.6
+6	monop	BSD-4_3_Tahoe/usr/src/man/man6/monop.6
+6	number	BSD-4_3_Tahoe/usr/src/man/man6/number.6
+6	quiz	BSD-4_3_Tahoe/usr/src/man/man6/quiz.6
+6	rain	BSD-4_3_Tahoe/usr/src/man/man6/rain.6
+6	robots	BSD-4_3_Tahoe/usr/src/man/man6/robots.6
+6	rogue	BSD-4_3_Tahoe/usr/src/man/man6/rogue.6
+6	sail	BSD-4_3_Tahoe/usr/src/man/man6/sail.6
+6	snake	BSD-4_3_Tahoe/usr/src/man/man6/snake.6
+6	trek	BSD-4_3_Tahoe/usr/src/man/man6/trek.6
+6	worm	BSD-4_3_Tahoe/usr/src/man/man6/worm.6
+6	worms	BSD-4_3_Tahoe/usr/src/man/man6/worms.6
+6	wump	BSD-4_3_Tahoe/usr/src/man/man6/wump.6
+6	zork	BSD-4_3_Tahoe/usr/src/man/man6/zork.6
+7	ascii	BSD-4_3_Tahoe/usr/src/man/man7/ascii.7
+7	environ	BSD-4_3_Tahoe/usr/src/man/man7/environ.7
+7	eqnchar	BSD-4_3_Tahoe/usr/src/man/man7/eqnchar.7
+7	hier	BSD-4_3_Tahoe/usr/src/man/man7/hier.7
+7	hostname	BSD-4_3_Tahoe/usr/src/man/man7/hostname.7
+7	intro	BSD-4_3_Tahoe/usr/src/man/man7/intro.7
+7	mailaddr	BSD-4_3_Tahoe/usr/src/man/man7/mailaddr.7
+7	man	BSD-4_3_Tahoe/usr/src/man/man7/man.7
+7	man	BSD-4_3_Tahoe/usr/src/new/apl/apl.vax/doc/man.7
+7	me	BSD-4_3_Tahoe/usr/src/man/man7/me.7
+7	ms	BSD-4_3_Tahoe/usr/src/man/man7/ms.7
+7	term	BSD-4_3_Tahoe/usr/src/man/man7/term.7
+8	XNSrouted	BSD-4_3_Tahoe/usr/src/man/man8/XNSrouted.8
+8	ac	BSD-4_3_Tahoe/usr/src/man/man8/ac.8
+8	adduser	BSD-4_3_Tahoe/usr/src/man/man8/adduser.8
+8	arff	BSD-4_3_Tahoe/usr/src/man/man8/vax/arff.8
+8	arp	BSD-4_3_Tahoe/usr/src/man/man8/arp.8
+8	bad144	BSD-4_3_Tahoe/usr/src/man/man8/vax/bad144.8
+8	badsect	BSD-4_3_Tahoe/usr/src/man/man8/badsect.8
+8	bugfiler	BSD-4_3_Tahoe/usr/src/man/man8/bugfiler.8
+8	chown	BSD-4_3_Tahoe/usr/src/man/man8/chown.8
+8	clri	BSD-4_3_Tahoe/usr/src/man/man8/clri.8
+8	comsat	BSD-4_3_Tahoe/usr/src/man/man8/comsat.8
+8	config	BSD-4_3_Tahoe/usr/src/man/man8/config.8
+8	crash	BSD-4_3_Tahoe/usr/src/man/man8/tahoe/crash.8
+8	crash	BSD-4_3_Tahoe/usr/src/man/man8/vax/crash.8
+8	cron	BSD-4_3_Tahoe/usr/src/man/man8/cron.8
+8	dcheck	BSD-4_3_Tahoe/usr/src/man/man8/dcheck.8
+8	disklabel	BSD-4_3_Tahoe/usr/src/man/man8/disklabel.8
+8	diskpart	BSD-4_3_Tahoe/usr/src/man/man8/diskpart.8
+8	dlmpcc	BSD-4_3_Tahoe/usr/src/man/man8/tahoe/dlmpcc.8
+8	dm	BSD-4_3_Tahoe/usr/src/man/man8/dm.8
+8	dmesg	BSD-4_3_Tahoe/usr/src/man/man8/dmesg.8
+8	drtest	BSD-4_3_Tahoe/usr/src/man/man8/vax/drtest.8
+8	dump	BSD-4_3_Tahoe/usr/src/man/man8/dump.8
+8	dumpfs	BSD-4_3_Tahoe/usr/src/man/man8/dumpfs.8
+8	edquota	BSD-4_3_Tahoe/usr/src/man/man8/edquota.8
+8	enpload	BSD-4_3_Tahoe/usr/src/man/man8/tahoe/enpload.8
+8	fastboot	BSD-4_3_Tahoe/usr/src/man/man8/fastboot.8
+8	fingerd	BSD-4_3_Tahoe/usr/src/man/man8/fingerd.8
+8	format	BSD-4_3_Tahoe/usr/src/man/man8/vax/format.8
+8	fsck	BSD-4_3_Tahoe/usr/src/man/man8/fsck.8
+8	fsdb	BSD-4_3_Tahoe/usr/src/man/man8/fsdb.8
+8	fstat	BSD-4_3_Tahoe/usr/src/man/man8/fstat.8
+8	ftpd	BSD-4_3_Tahoe/usr/src/man/man8/ftpd.8
+8	gettable	BSD-4_3_Tahoe/usr/src/man/man8/gettable.8
+8	getty	BSD-4_3_Tahoe/usr/src/man/man8/getty.8
+8	halt	BSD-4_3_Tahoe/usr/src/man/man8/halt.8
+8	htable	BSD-4_3_Tahoe/usr/src/man/man8/htable.8
+8	icheck	BSD-4_3_Tahoe/usr/src/man/man8/icheck.8
+8	ifconfig	BSD-4_3_Tahoe/usr/src/man/man8/ifconfig.8
+8	implog	BSD-4_3_Tahoe/usr/src/man/man8/implog.8
+8	implogd	BSD-4_3_Tahoe/usr/src/man/man8/implogd.8
+8	inetd	BSD-4_3_Tahoe/usr/src/man/man8/inetd.8
+8	init	BSD-4_3_Tahoe/usr/src/man/man8/init.8
+8	installboot	BSD-4_3_Tahoe/usr/src/man/man8/vax/installboot.8
+8	intro	BSD-4_3_Tahoe/usr/src/man/man8/intro.8
+8	kgmon	BSD-4_3_Tahoe/usr/src/man/man8/kgmon.8
+8	lpc	BSD-4_3_Tahoe/usr/src/man/man8/lpc.8
+8	lpd	BSD-4_3_Tahoe/usr/src/man/man8/lpd.8
+8	makedev	BSD-4_3_Tahoe/usr/src/man/man8/makedev.8
+8	makekey	BSD-4_3_Tahoe/usr/src/man/man8/makekey.8
+8	mkhosts	BSD-4_3_Tahoe/usr/src/man/man8/mkhosts.8
+8	mklost+found	BSD-4_3_Tahoe/usr/src/man/man8/mklost+found.8
+8	mknod	BSD-4_3_Tahoe/usr/src/man/man8/mknod.8
+8	mkpasswd	BSD-4_3_Tahoe/usr/src/man/man8/mkpasswd.8
+8	mkproto	BSD-4_3_Tahoe/usr/src/man/man8/mkproto.8
+8	mount	BSD-4_3_Tahoe/usr/src/man/man8/mount.8
+8	named	BSD-4_3_Tahoe/usr/src/man/man8/named.8
+8	ncheck	BSD-4_3_Tahoe/usr/src/man/man8/ncheck.8
+8	newfs	BSD-4_3_Tahoe/usr/src/man/man8/newfs.8
+8	pac	BSD-4_3_Tahoe/usr/src/man/man8/pac.8
+8	ping	BSD-4_3_Tahoe/usr/src/man/man8/ping.8
+8	pstat	BSD-4_3_Tahoe/usr/src/man/man8/pstat.8
+8	quot	BSD-4_3_Tahoe/usr/src/man/man8/quot.8
+8	quotacheck	BSD-4_3_Tahoe/usr/src/man/man8/quotacheck.8
+8	quotaon	BSD-4_3_Tahoe/usr/src/man/man8/quotaon.8
+8	rc	BSD-4_3_Tahoe/usr/src/man/man8/rc.8
+8	rdump	BSD-4_3_Tahoe/usr/src/man/man8/rdump.8
+8	reboot	BSD-4_3_Tahoe/usr/src/man/man8/tahoe/reboot.8
+8	reboot	BSD-4_3_Tahoe/usr/src/man/man8/vax/reboot.8
+8	renice	BSD-4_3_Tahoe/usr/src/man/man8/renice.8
+8	repquota	BSD-4_3_Tahoe/usr/src/man/man8/repquota.8
+8	restore	BSD-4_3_Tahoe/usr/src/man/man8/restore.8
+8	rexecd	BSD-4_3_Tahoe/usr/src/man/man8/rexecd.8
+8	rlogind	BSD-4_3_Tahoe/usr/src/man/man8/rlogind.8
+8	rmt	BSD-4_3_Tahoe/usr/src/man/man8/rmt.8
+8	route	BSD-4_3_Tahoe/usr/src/man/man8/route.8
+8	routed	BSD-4_3_Tahoe/usr/src/man/man8/routed.8
+8	rrestore	BSD-4_3_Tahoe/usr/src/man/man8/rrestore.8
+8	rshd	BSD-4_3_Tahoe/usr/src/man/man8/rshd.8
+8	rwhod	BSD-4_3_Tahoe/usr/src/man/man8/rwhod.8
+8	rxformat	BSD-4_3_Tahoe/usr/src/man/man8/vax/rxformat.8
+8	sa	BSD-4_3_Tahoe/usr/src/man/man8/sa.8
+8	savecore	BSD-4_3_Tahoe/usr/src/man/man8/savecore.8
+8	sendmail	BSD-4_3_Tahoe/usr/src/man/man8/sendmail.8
+8	shutdown	BSD-4_3_Tahoe/usr/src/man/man8/shutdown.8
+8	slattach	BSD-4_3_Tahoe/usr/src/man/man8/slattach.8
+8	sticky	BSD-4_3_Tahoe/usr/src/man/man8/sticky.8
+8	swapon	BSD-4_3_Tahoe/usr/src/man/man8/swapon.8
+8	sync	BSD-4_3_Tahoe/usr/src/man/man8/sync.8
+8	syslogd	BSD-4_3_Tahoe/usr/src/man/man8/syslogd.8
+8	talkd	BSD-4_3_Tahoe/usr/src/man/man8/talkd.8
+8	telnetd	BSD-4_3_Tahoe/usr/src/man/man8/telnetd.8
+8	tftpd	BSD-4_3_Tahoe/usr/src/man/man8/tftpd.8
+8	timed	BSD-4_3_Tahoe/usr/src/man/man8/timed.8
+8	timedc	BSD-4_3_Tahoe/usr/src/man/man8/timedc.8
+8	trpt	BSD-4_3_Tahoe/usr/src/man/man8/trpt.8
+8	trsp	BSD-4_3_Tahoe/usr/src/man/man8/trsp.8
+8	tunefs	BSD-4_3_Tahoe/usr/src/man/man8/tunefs.8
+8	update	BSD-4_3_Tahoe/usr/src/man/man8/update.8
+8	uucico	BSD-4_3_Tahoe/usr/src/man/man8/uucico.8
+8	uuclean	BSD-4_3_Tahoe/usr/src/man/man8/uuclean.8
+8	uupoll	BSD-4_3_Tahoe/usr/src/man/man8/uupoll.8
+8	uusnap	BSD-4_3_Tahoe/usr/src/man/man8/uusnap.8
+8	uuxqt	BSD-4_3_Tahoe/usr/src/man/man8/uuxqt.8
+8	vdformat	BSD-4_3_Tahoe/usr/src/man/man8/tahoe/vdformat.8
+8	vipw	BSD-4_3_Tahoe/usr/src/man/man8/vipw.8

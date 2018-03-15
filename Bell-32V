@@ -1,309 +1,309 @@
-1m	ac
-1	adb
-1	ar
-1	ar11
-1m	arcv
-1	as
-1	at
-1	awk
-1	basename
-1	bc
-1	cal
-1	calendar
-1c	call
-1	cat
-1	cb
-1	cc
-1	cd
-1	chmod
-1	chown
-1m	clri
-1	cmp
-1	col
-1	comm
-1	cp
-1m	cron
-1	crypt
-1c	cu
-1	date
-1	dc
-1m	dcheck
-1	dd
-1	deroff
-1m	df
-1	diff
-1	diff3
-1	du
-1m	dump
-1m	dumpdir
-1	echo
-1	ed
-1	eqn
-1	expr
-1	f77
-1	false
-1	file
-1	find
-1g	graph
-1	grep
-1m	icheck
-1	intro
-1m	iostat
-1	join
-1	kill
-1	ld
-1	learn
-1	lex
-1	lint
-1	ln
-1	login
-1	look
-1	lookbib
-1	lorder
-1	lpr
-1	ls
-1	m4
-1	mail
-1	make
-1	man
-1	mesg
-1	mkdir
-1m	mkfs
-1m	mknod
-1m	mount
-1	mv
-1m	ncheck
-1	newgrp
-1	nice
-1	nm
-1	nohup
-1	number
-1	od
-1	passwd
-1g	plot
-1	pr
-1	prof
-1	ps
-1m	pstat
-1	ptx
-1	pwd
-1m	quot
-1	ratfor
-1	rc
-1	refer
-1m	restor
-1	rev
-1	rm
-1m	sa
-1	sdb
-1	sed
-1	sh
-1	size
-1	sleep
-1	sort
-1	spell
-1g	spline
-1	split
-1	strip
-1	struct
-1	stty
-1	su
-1	sum
-1m	sync
-1	tabs
-1	tail
-1	tar
-1	tbl
-1	tc
-1	tee
-1	test
-1	time
-1	tk
-1	touch
-1	tp
-1	tr
-1	troff
-1	true
-1	tsort
-1	tty
-1	uniq
-1	units
-1c	uucp
-1c	uudiff
-1c	uulog
-1c	uux
-1	wait
-1m	wall
-1	wc
-1	who
-1	write
-1	xsend
-1	yacc
-2	access
-2	acct
-2	alarm
-2	brk
-2	chdir
-2	chmod
-2	chown
-2	close
-2	creat
-2	dup
-2	exec
-2	exit
-2	fork
-2	getpid
-2	getuid
-2	indir
-2	intro
-2	ioctl
-2	kill
-2	link
-2	lock
-2	lseek
-2	mknod
-2	mount
-2	mpx
-2	nice
-2	open
-2	pause
-2	pipe
-2	profil
-2	ptrace
-2	read
-2	setuid
-2	signal
-2	stat
-2	stime
-2	stty
-2	sync
-2	time
-2	times
-2	umask
-2	unlink
-2	utime
-2	wait
-2	write
-3	abort
-3	abs
-3x	assert
-3	atof
-3	crypt
-3	ctime
-3	ctype
-3x	dbm
-3	ecvt
-3	end
-3m	exp
-3s	fclose
-3s	ferror
-3m	floor
-3s	fopen
-3s	fread
-3	frexp
-3s	fseek
-3m	gamma
-3f	getarg
-3s	getc
-3	getenv
-3	getgrent
-3	getlogin
-3	getpass
-3	getpw
-3	getpwent
-3s	gets
-3m	hypot
-3	intro
-3m	j0
-3	l3tol
-3	malloc
-3	mktemp
-3	monitor
-3	nlist
-3	perror
-3x	plot
-3s	popen
-3s	printf
-3s	putc
-3s	puts
-3	qsort
-3	rand
-3s	scanf
-3s	setbuf
-3	setjmp
-3m	sin
-3m	sinh
-3	sleep
-3s	stdio
-3	string
-3	swab
-3	system
-3	ttyname
-3s	ungetc
-4	cat
-4	dc
-4	dh
-4	dn
-4	dp
-4	dz
-4	hp
-4	hs
-4	ht
-4	kl
-4	kmem
-4	lp
-4	mem
-4	null
-4	pc
-4	pk
-4	rf
-4	rk
-4	rp
-4	tc
-4	tm
-4	tty
-4	vp
-5	a.out
-5	acct
-5	ar
-5	core
-5	dir
-5	dump
-5	environ
-5	filsys
-5	group
-5	mpxio
-5	mtab
-5	passwd
-5	plot
-5	tp
-5	ttys
-5	types
-5	utmp
-5	wtmp
-6	arithmetic
-6	backgammon
-6	bcd
-6	ching
-6	hangman
-6	maze
-6	quiz
-6	wump
-7	ascii
-7	eqnchar
-7	greek
-7	hier
-7	man
-7	ms
-7	term
-8	bproc
-8	crash
-8	cron
-8	fget.demon
-8	getty
-8	init
-8	lpd
-8	makekey
-8	sticky
-8	sysgen
-8	update
+1	adb	Bell-32V/usr/man/man1/adb.1
+1	ar	Bell-32V/usr/man/man1/ar.1
+1	ar11	Bell-32V/usr/man/man1/ar11.1
+1	as	Bell-32V/usr/man/man1/as.1
+1	at	Bell-32V/usr/man/man1/at.1
+1	awk	Bell-32V/usr/man/man1/awk.1
+1	basename	Bell-32V/usr/man/man1/basename.1
+1	bc	Bell-32V/usr/man/man1/bc.1
+1	cal	Bell-32V/usr/man/man1/cal.1
+1	calendar	Bell-32V/usr/man/man1/calendar.1
+1	cat	Bell-32V/usr/man/man1/cat.1
+1	cb	Bell-32V/usr/man/man1/cb.1
+1	cc	Bell-32V/usr/man/man1/cc.1
+1	cd	Bell-32V/usr/man/man1/cd.1
+1	chmod	Bell-32V/usr/man/man1/chmod.1
+1	chown	Bell-32V/usr/man/man1/chown.1
+1	cmp	Bell-32V/usr/man/man1/cmp.1
+1	col	Bell-32V/usr/man/man1/col.1
+1	comm	Bell-32V/usr/man/man1/comm.1
+1	cp	Bell-32V/usr/man/man1/cp.1
+1	crypt	Bell-32V/usr/man/man1/crypt.1
+1	date	Bell-32V/usr/man/man1/date.1
+1	dc	Bell-32V/usr/man/man1/dc.1
+1	dd	Bell-32V/usr/man/man1/dd.1
+1	deroff	Bell-32V/usr/man/man1/deroff.1
+1	diff	Bell-32V/usr/man/man1/diff.1
+1	diff3	Bell-32V/usr/man/man1/diff3.1
+1	du	Bell-32V/usr/man/man1/du.1
+1	echo	Bell-32V/usr/man/man1/echo.1
+1	ed	Bell-32V/usr/man/man1/ed.1
+1	eqn	Bell-32V/usr/man/man1/eqn.1
+1	expr	Bell-32V/usr/man/man1/expr.1
+1	f77	Bell-32V/usr/man/man1/f77.1
+1	false	Bell-32V/usr/man/man1/false.1
+1	file	Bell-32V/usr/man/man1/file.1
+1	find	Bell-32V/usr/man/man1/find.1
+1	grep	Bell-32V/usr/man/man1/grep.1
+1	intro	Bell-32V/usr/man/man1/intro.1
+1	join	Bell-32V/usr/man/man1/join.1
+1	kill	Bell-32V/usr/man/man1/kill.1
+1	ld	Bell-32V/usr/man/man1/ld.1
+1	learn	Bell-32V/usr/man/man1/learn.1
+1	lex	Bell-32V/usr/man/man1/lex.1
+1	lint	Bell-32V/usr/man/man1/lint.1
+1	ln	Bell-32V/usr/man/man1/ln.1
+1	login	Bell-32V/usr/man/man1/login.1
+1	look	Bell-32V/usr/man/man1/look.1
+1	lookbib	Bell-32V/usr/man/man1/lookbib.1
+1	lorder	Bell-32V/usr/man/man1/lorder.1
+1	lpr	Bell-32V/usr/man/man1/lpr.1
+1	ls	Bell-32V/usr/man/man1/ls.1
+1	m4	Bell-32V/usr/man/man1/m4.1
+1	mail	Bell-32V/usr/man/man1/mail.1
+1	make	Bell-32V/usr/man/man1/make.1
+1	man	Bell-32V/usr/man/man1/man.1
+1	mesg	Bell-32V/usr/man/man1/mesg.1
+1	mkdir	Bell-32V/usr/man/man1/mkdir.1
+1	mv	Bell-32V/usr/man/man1/mv.1
+1	newgrp	Bell-32V/usr/man/man1/newgrp.1
+1	nice	Bell-32V/usr/man/man1/nice.1
+1	nm	Bell-32V/usr/man/man1/nm.1
+1	nohup	Bell-32V/usr/man/man1/nohup.1
+1	number	Bell-32V/usr/man/man1/number.1
+1	od	Bell-32V/usr/man/man1/od.1
+1	passwd	Bell-32V/usr/man/man1/passwd.1
+1	pr	Bell-32V/usr/man/man1/pr.1
+1	prof	Bell-32V/usr/man/man1/prof.1
+1	ps	Bell-32V/usr/man/man1/ps.1
+1	ptx	Bell-32V/usr/man/man1/ptx.1
+1	pwd	Bell-32V/usr/man/man1/pwd.1
+1	ratfor	Bell-32V/usr/man/man1/ratfor.1
+1	rc	Bell-32V/usr/man/man1/rc.1
+1	refer	Bell-32V/usr/man/man1/refer.1
+1	rev	Bell-32V/usr/man/man1/rev.1
+1	rm	Bell-32V/usr/man/man1/rm.1
+1	sdb	Bell-32V/usr/man/man1/sdb.1
+1	sed	Bell-32V/usr/man/man1/sed.1
+1	sh	Bell-32V/usr/man/man1/sh.1
+1	size	Bell-32V/usr/man/man1/size.1
+1	sleep	Bell-32V/usr/man/man1/sleep.1
+1	sort	Bell-32V/usr/man/man1/sort.1
+1	spell	Bell-32V/usr/man/man1/spell.1
+1	split	Bell-32V/usr/man/man1/split.1
+1	strip	Bell-32V/usr/man/man1/strip.1
+1	struct	Bell-32V/usr/man/man1/struct.1
+1	stty	Bell-32V/usr/man/man1/stty.1
+1	su	Bell-32V/usr/man/man1/su.1
+1	sum	Bell-32V/usr/man/man1/sum.1
+1	tabs	Bell-32V/usr/man/man1/tabs.1
+1	tail	Bell-32V/usr/man/man1/tail.1
+1	tar	Bell-32V/usr/man/man1/tar.1
+1	tbl	Bell-32V/usr/man/man1/tbl.1
+1	tc	Bell-32V/usr/man/man1/tc.1
+1	tee	Bell-32V/usr/man/man1/tee.1
+1	test	Bell-32V/usr/man/man1/test.1
+1	time	Bell-32V/usr/man/man1/time.1
+1	tk	Bell-32V/usr/man/man1/tk.1
+1	touch	Bell-32V/usr/man/man1/touch.1
+1	tp	Bell-32V/usr/man/man1/tp.1
+1	tr	Bell-32V/usr/man/man1/tr.1
+1	troff	Bell-32V/usr/man/man1/troff.1
+1	true	Bell-32V/usr/man/man1/true.1
+1	tsort	Bell-32V/usr/man/man1/tsort.1
+1	tty	Bell-32V/usr/man/man1/tty.1
+1	uniq	Bell-32V/usr/man/man1/uniq.1
+1	units	Bell-32V/usr/man/man1/units.1
+1	wait	Bell-32V/usr/man/man1/wait.1
+1	wc	Bell-32V/usr/man/man1/wc.1
+1	who	Bell-32V/usr/man/man1/who.1
+1	write	Bell-32V/usr/man/man1/write.1
+1	xsend	Bell-32V/usr/man/man1/xsend.1
+1	yacc	Bell-32V/usr/man/man1/yacc.1
+1c	call	Bell-32V/usr/man/man1/call.1c
+1c	cu	Bell-32V/usr/man/man1/cu.1c
+1c	uucp	Bell-32V/usr/man/man1/uucp.1c
+1c	uudiff	Bell-32V/usr/man/man1/uudiff.1c
+1c	uulog	Bell-32V/usr/man/man1/uulog.1c
+1c	uux	Bell-32V/usr/man/man1/uux.1c
+1g	graph	Bell-32V/usr/man/man1/graph.1g
+1g	plot	Bell-32V/usr/man/man1/plot.1g
+1g	spline	Bell-32V/usr/man/man1/spline.1g
+1m	ac	Bell-32V/usr/man/man1/ac.1m
+1m	arcv	Bell-32V/usr/man/man1/arcv.1m
+1m	clri	Bell-32V/usr/man/man1/clri.1m
+1m	cron	Bell-32V/usr/man/man1/cron.1m
+1m	dcheck	Bell-32V/usr/man/man1/dcheck.1m
+1m	df	Bell-32V/usr/man/man1/df.1m
+1m	dump	Bell-32V/usr/man/man1/dump.1m
+1m	dumpdir	Bell-32V/usr/man/man1/dumpdir.1m
+1m	icheck	Bell-32V/usr/man/man1/icheck.1m
+1m	iostat	Bell-32V/usr/man/man1/iostat.1m
+1m	mkfs	Bell-32V/usr/man/man1/mkfs.1m
+1m	mknod	Bell-32V/usr/man/man1/mknod.1m
+1m	mount	Bell-32V/usr/man/man1/mount.1m
+1m	ncheck	Bell-32V/usr/man/man1/ncheck.1m
+1m	pstat	Bell-32V/usr/man/man1/pstat.1m
+1m	quot	Bell-32V/usr/man/man1/quot.1m
+1m	restor	Bell-32V/usr/man/man1/restor.1m
+1m	sa	Bell-32V/usr/man/man1/sa.1m
+1m	sync	Bell-32V/usr/man/man1/sync.1m
+1m	wall	Bell-32V/usr/man/man1/wall.1m
+2	access	Bell-32V/usr/man/man2/access.2
+2	acct	Bell-32V/usr/man/man2/acct.2
+2	alarm	Bell-32V/usr/man/man2/alarm.2
+2	brk	Bell-32V/usr/man/man2/brk.2
+2	chdir	Bell-32V/usr/man/man2/chdir.2
+2	chmod	Bell-32V/usr/man/man2/chmod.2
+2	chown	Bell-32V/usr/man/man2/chown.2
+2	close	Bell-32V/usr/man/man2/close.2
+2	creat	Bell-32V/usr/man/man2/creat.2
+2	dup	Bell-32V/usr/man/man2/dup.2
+2	exec	Bell-32V/usr/man/man2/exec.2
+2	exit	Bell-32V/usr/man/man2/exit.2
+2	fork	Bell-32V/usr/man/man2/fork.2
+2	getpid	Bell-32V/usr/man/man2/getpid.2
+2	getuid	Bell-32V/usr/man/man2/getuid.2
+2	indir	Bell-32V/usr/man/man2/indir.2
+2	intro	Bell-32V/usr/man/man2/intro.2
+2	ioctl	Bell-32V/usr/man/man2/ioctl.2
+2	kill	Bell-32V/usr/man/man2/kill.2
+2	link	Bell-32V/usr/man/man2/link.2
+2	lock	Bell-32V/usr/man/man2/lock.2
+2	lseek	Bell-32V/usr/man/man2/lseek.2
+2	mknod	Bell-32V/usr/man/man2/mknod.2
+2	mount	Bell-32V/usr/man/man2/mount.2
+2	mpx	Bell-32V/usr/man/man2/mpx.2
+2	nice	Bell-32V/usr/man/man2/nice.2
+2	open	Bell-32V/usr/man/man2/open.2
+2	pause	Bell-32V/usr/man/man2/pause.2
+2	pipe	Bell-32V/usr/man/man2/pipe.2
+2	profil	Bell-32V/usr/man/man2/profil.2
+2	ptrace	Bell-32V/usr/man/man2/ptrace.2
+2	read	Bell-32V/usr/man/man2/read.2
+2	setuid	Bell-32V/usr/man/man2/setuid.2
+2	signal	Bell-32V/usr/man/man2/signal.2
+2	stat	Bell-32V/usr/man/man2/stat.2
+2	stime	Bell-32V/usr/man/man2/stime.2
+2	stty	Bell-32V/usr/man/man2/stty.2
+2	sync	Bell-32V/usr/man/man2/sync.2
+2	time	Bell-32V/usr/man/man2/time.2
+2	times	Bell-32V/usr/man/man2/times.2
+2	umask	Bell-32V/usr/man/man2/umask.2
+2	unlink	Bell-32V/usr/man/man2/unlink.2
+2	utime	Bell-32V/usr/man/man2/utime.2
+2	wait	Bell-32V/usr/man/man2/wait.2
+2	write	Bell-32V/usr/man/man2/write.2
+3	abort	Bell-32V/usr/man/man3/abort.3
+3	abs	Bell-32V/usr/man/man3/abs.3
+3	atof	Bell-32V/usr/man/man3/atof.3
+3	crypt	Bell-32V/usr/man/man3/crypt.3
+3	ctime	Bell-32V/usr/man/man3/ctime.3
+3	ctype	Bell-32V/usr/man/man3/ctype.3
+3	ecvt	Bell-32V/usr/man/man3/ecvt.3
+3	end	Bell-32V/usr/man/man3/end.3
+3	frexp	Bell-32V/usr/man/man3/frexp.3
+3	getenv	Bell-32V/usr/man/man3/getenv.3
+3	getgrent	Bell-32V/usr/man/man3/getgrent.3
+3	getlogin	Bell-32V/usr/man/man3/getlogin.3
+3	getpass	Bell-32V/usr/man/man3/getpass.3
+3	getpw	Bell-32V/usr/man/man3/getpw.3
+3	getpwent	Bell-32V/usr/man/man3/getpwent.3
+3	intro	Bell-32V/usr/man/man3/intro.3
+3	l3tol	Bell-32V/usr/man/man3/l3tol.3
+3	malloc	Bell-32V/usr/man/man3/malloc.3
+3	mktemp	Bell-32V/usr/man/man3/mktemp.3
+3	monitor	Bell-32V/usr/man/man3/monitor.3
+3	nlist	Bell-32V/usr/man/man3/nlist.3
+3	perror	Bell-32V/usr/man/man3/perror.3
+3	qsort	Bell-32V/usr/man/man3/qsort.3
+3	rand	Bell-32V/usr/man/man3/rand.3
+3	setjmp	Bell-32V/usr/man/man3/setjmp.3
+3	sleep	Bell-32V/usr/man/man3/sleep.3
+3	string	Bell-32V/usr/man/man3/string.3
+3	swab	Bell-32V/usr/man/man3/swab.3
+3	system	Bell-32V/usr/man/man3/system.3
+3	ttyname	Bell-32V/usr/man/man3/ttyname.3
+3f	getarg	Bell-32V/usr/man/man3/getarg.3f
+3m	exp	Bell-32V/usr/man/man3/exp.3m
+3m	floor	Bell-32V/usr/man/man3/floor.3m
+3m	gamma	Bell-32V/usr/man/man3/gamma.3m
+3m	hypot	Bell-32V/usr/man/man3/hypot.3m
+3m	j0	Bell-32V/usr/man/man3/j0.3m
+3m	sin	Bell-32V/usr/man/man3/sin.3m
+3m	sinh	Bell-32V/usr/man/man3/sinh.3m
+3s	fclose	Bell-32V/usr/man/man3/fclose.3s
+3s	ferror	Bell-32V/usr/man/man3/ferror.3s
+3s	fopen	Bell-32V/usr/man/man3/fopen.3s
+3s	fread	Bell-32V/usr/man/man3/fread.3s
+3s	fseek	Bell-32V/usr/man/man3/fseek.3s
+3s	getc	Bell-32V/usr/man/man3/getc.3s
+3s	gets	Bell-32V/usr/man/man3/gets.3s
+3s	popen	Bell-32V/usr/man/man3/popen.3s
+3s	printf	Bell-32V/usr/man/man3/printf.3s
+3s	putc	Bell-32V/usr/man/man3/putc.3s
+3s	puts	Bell-32V/usr/man/man3/puts.3s
+3s	scanf	Bell-32V/usr/man/man3/scanf.3s
+3s	setbuf	Bell-32V/usr/man/man3/setbuf.3s
+3s	stdio	Bell-32V/usr/man/man3/stdio.3s
+3s	ungetc	Bell-32V/usr/man/man3/ungetc.3s
+3x	assert	Bell-32V/usr/man/man3/assert.3x
+3x	dbm	Bell-32V/usr/man/man3/dbm.3x
+3x	plot	Bell-32V/usr/man/man3/plot.3x
+4	cat	Bell-32V/usr/man/man4/cat.4
+4	dc	Bell-32V/usr/man/man4/dc.4
+4	dh	Bell-32V/usr/man/man4/dh.4
+4	dn	Bell-32V/usr/man/man4/dn.4
+4	dp	Bell-32V/usr/man/man4/dp.4
+4	dz	Bell-32V/usr/man/man4/dz.4
+4	hp	Bell-32V/usr/man/man4/hp.4
+4	hs	Bell-32V/usr/man/man4/hs.4
+4	ht	Bell-32V/usr/man/man4/ht.4
+4	kl	Bell-32V/usr/man/man4/kl.4
+4	kmem	Bell-32V/usr/man/man4/kmem.4
+4	lp	Bell-32V/usr/man/man4/lp.4
+4	mem	Bell-32V/usr/man/man4/mem.4
+4	null	Bell-32V/usr/man/man4/null.4
+4	pc	Bell-32V/usr/man/man4/pc.4
+4	pk	Bell-32V/usr/man/man4/pk.4
+4	rf	Bell-32V/usr/man/man4/rf.4
+4	rk	Bell-32V/usr/man/man4/rk.4
+4	rp	Bell-32V/usr/man/man4/rp.4
+4	tc	Bell-32V/usr/man/man4/tc.4
+4	tm	Bell-32V/usr/man/man4/tm.4
+4	tty	Bell-32V/usr/man/man4/tty.4
+4	vp	Bell-32V/usr/man/man4/vp.4
+5	a.out	Bell-32V/usr/man/man5/a.out.5
+5	acct	Bell-32V/usr/man/man5/acct.5
+5	ar	Bell-32V/usr/man/man5/ar.5
+5	core	Bell-32V/usr/man/man5/core.5
+5	dir	Bell-32V/usr/man/man5/dir.5
+5	dump	Bell-32V/usr/man/man5/dump.5
+5	environ	Bell-32V/usr/man/man5/environ.5
+5	filsys	Bell-32V/usr/man/man5/filsys.5
+5	group	Bell-32V/usr/man/man5/group.5
+5	mpxio	Bell-32V/usr/man/man5/mpxio.5
+5	mtab	Bell-32V/usr/man/man5/mtab.5
+5	passwd	Bell-32V/usr/man/man5/passwd.5
+5	plot	Bell-32V/usr/man/man5/plot.5
+5	tp	Bell-32V/usr/man/man5/tp.5
+5	ttys	Bell-32V/usr/man/man5/ttys.5
+5	types	Bell-32V/usr/man/man5/types.5
+5	utmp	Bell-32V/usr/man/man5/utmp.5
+5	wtmp	Bell-32V/usr/man/man5/wtmp.5
+6	arithmetic	Bell-32V/usr/man/man6/arithmetic.6
+6	backgammon	Bell-32V/usr/man/man6/backgammon.6
+6	bcd	Bell-32V/usr/man/man6/bcd.6
+6	ching	Bell-32V/usr/man/man6/ching.6
+6	hangman	Bell-32V/usr/man/man6/hangman.6
+6	maze	Bell-32V/usr/man/man6/maze.6
+6	quiz	Bell-32V/usr/man/man6/quiz.6
+6	wump	Bell-32V/usr/man/man6/wump.6
+7	ascii	Bell-32V/usr/man/man7/ascii.7
+7	eqnchar	Bell-32V/usr/man/man7/eqnchar.7
+7	greek	Bell-32V/usr/man/man7/greek.7
+7	hier	Bell-32V/usr/man/man7/hier.7
+7	man	Bell-32V/usr/man/man7/man.7
+7	ms	Bell-32V/usr/man/man7/ms.7
+7	term	Bell-32V/usr/man/man7/term.7
+8	bproc	Bell-32V/usr/man/man8/bproc.8
+8	crash	Bell-32V/usr/man/man8/crash.8
+8	cron	Bell-32V/usr/man/man8/cron.8
+8	fget.demon	Bell-32V/usr/man/man8/fget.demon.8
+8	getty	Bell-32V/usr/man/man8/getty.8
+8	init	Bell-32V/usr/man/man8/init.8
+8	lpd	Bell-32V/usr/man/man8/lpd.8
+8	makekey	Bell-32V/usr/man/man8/makekey.8
+8	sticky	Bell-32V/usr/man/man8/sticky.8
+8	sysgen	Bell-32V/usr/man/man8/sysgen.8
+8	update	Bell-32V/usr/man/man8/update.8

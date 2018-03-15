@@ -1,253 +1,253 @@
-1	ar
-1	as
-1	bas
-1	bc
-1	cat
-1	cc
-1	cdb
-1	chdir
-1	chmod
-1	cmp
-1	comm
-1	cp
-1	cref
-1	date
-1	db
-1	dc
-1	dd
-1	diff
-1	dsw
-1	du
-1	echo
-1	ed
-1	eqn
-1	exit
-1	fc
-1	file
-1	find
-1	goto
-1	grep
-1	if
-1	kill
-1	ld
-1	ln
-1	login
-1	ls
-1	mail
-1	man
-1	mesg
-1	mkdir
-1	mv
-1	neqn
-1	newgrp
-1	nice
-1	nm
-1	nohup
-1	nroff
-1	od
-1	opr
-1	passwd
-1	pfe
-1	pr
-1	prof
-1	ps
-1	pwd
-1	rc
-1	rev
-1	rm
-1	rmdir
-1	roff
-1	sh
-1	shift
-1	size
-1	sleep
-1	sort
-1	spell
-1	split
-1	strip
-1	stty
-1	tee
-1	time
-1	tp
-1	tr
-1	troff
-1	tty
-1	typo
-1	uniq
-1	wait
-1	wc
-1	who
-1	write
-1	yacc
-2	break
-2	chdir
-2	chmod
-2	chown
-2	close
-2	creat
-2	csw
-2	dup
-2	exec
-2	exit
-2	fork
-2	fstat
-2	getgid
-2	getpid
-2	getuid
-2	gtty
-2	indir
-2	intro
-2	kill
-2	link
-2	mknod
-2	mount
-2	nice
-2	open
-2	pipe
-2	profil
-2	ptrace
-2	read
-2	seek
-2	setgid
-2	setuid
-2	signal
-2	sleep
-2	stat
-2	stime
-2	stty
-2	sync
-2	time
-2	times
-2	umount
-2	unlink
-2	wait
-2	write
-3	abort
-3	abs
-3	alloc
-3	atan
-3	atof
-3	atoi
-3	crypt
-3	ctime
-3	ecvt
-3	end
-3	exp
-3	floor
-3	fmod
-3	fptrap
-3	gamma
-3	getarg
-3	getc
-3	getchar
-3	getpw
-3	hmul
-3	ierror
-3	ldiv
-3	locv
-3	log
-3	monitor
-3	nargs
-3	nlist
-3	perror
-3	pow
-3	printf
-3	putc
-3	putchar
-3	qsort
-3	rand
-3	reset
-3	setfil
-3	sin
-3	sqrt
-3	ttyn
-4	cat
-4	dc
-4	dh
-4	dn
-4	dp
-4	hp
-4	hs
-4	ht
-4	kl
-4	lp
-4	mem
-4	pc
-4	rf
-4	rk
-4	rp
-4	tc
-4	tm
-4	tty
-5	a.out
-5	archive
-5	ascii
-5	core
-5	directory
-5	dump
-5	fs
-5	greek
-5	group
-5	mtab
-5	passwd
-5	tabs
-5	tp
-5	ttys
-5	utmp
-5	wtmp
-6	azel
-6	bj
-6	cal
-6	chess
-6	col
-6	cubic
-6	factor
-6	fed
-6	form
-6	graph
-6	gsi
-6	m6
-6	moo
-6	plot
-6	primes
-6	quiz
-6	sky
-6	sno
-6	speak
-6	spline
-6	tbl
-6	tmg
-6	ttt
-6	units
-6	wump
-7	cr
-7	ms
-7	plot
-7	salloc
-8	ac
-8	bproc
-8	chgrp
-8	chown
-8	clri
-8	crash
-8	cron
-8	dcheck
-8	df
-8	dpd
-8	dump
-8	getty
-8	glob
-8	icheck
-8	init
-8	lpd
-8	mkfs
-8	mknod
-8	mount
-8	ncheck
-8	restor
-8	sa
-8	su
-8	sync
-8	umount
-8	update
-8	wall
+1	ar	Research-V6/usr/doc/man/man1/ar.1
+1	as	Research-V6/usr/doc/man/man1/as.1
+1	bas	Research-V6/usr/doc/man/man1/bas.1
+1	bc	Research-V6/usr/doc/man/man1/bc.1
+1	cat	Research-V6/usr/doc/man/man1/cat.1
+1	cc	Research-V6/usr/doc/man/man1/cc.1
+1	cdb	Research-V6/usr/doc/man/man1/cdb.1
+1	chdir	Research-V6/usr/doc/man/man1/chdir.1
+1	chmod	Research-V6/usr/doc/man/man1/chmod.1
+1	cmp	Research-V6/usr/doc/man/man1/cmp.1
+1	comm	Research-V6/usr/doc/man/man1/comm.1
+1	cp	Research-V6/usr/doc/man/man1/cp.1
+1	cref	Research-V6/usr/doc/man/man1/cref.1
+1	date	Research-V6/usr/doc/man/man1/date.1
+1	db	Research-V6/usr/doc/man/man1/db.1
+1	dc	Research-V6/usr/doc/man/man1/dc.1
+1	dd	Research-V6/usr/doc/man/man1/dd.1
+1	diff	Research-V6/usr/doc/man/man1/diff.1
+1	dsw	Research-V6/usr/doc/man/man1/dsw.1
+1	du	Research-V6/usr/doc/man/man1/du.1
+1	echo	Research-V6/usr/doc/man/man1/echo.1
+1	ed	Research-V6/usr/doc/man/man1/ed.1
+1	eqn	Research-V6/usr/doc/man/man1/eqn.1
+1	exit	Research-V6/usr/doc/man/man1/exit.1
+1	fc	Research-V6/usr/doc/man/man1/fc.1
+1	file	Research-V6/usr/doc/man/man1/file.1
+1	find	Research-V6/usr/doc/man/man1/find.1
+1	goto	Research-V6/usr/doc/man/man1/goto.1
+1	grep	Research-V6/usr/doc/man/man1/grep.1
+1	if	Research-V6/usr/doc/man/man1/if.1
+1	kill	Research-V6/usr/doc/man/man1/kill.1
+1	ld	Research-V6/usr/doc/man/man1/ld.1
+1	ln	Research-V6/usr/doc/man/man1/ln.1
+1	login	Research-V6/usr/doc/man/man1/login.1
+1	ls	Research-V6/usr/doc/man/man1/ls.1
+1	mail	Research-V6/usr/doc/man/man1/mail.1
+1	man	Research-V6/usr/doc/man/man1/man.1
+1	mesg	Research-V6/usr/doc/man/man1/mesg.1
+1	mkdir	Research-V6/usr/doc/man/man1/mkdir.1
+1	mv	Research-V6/usr/doc/man/man1/mv.1
+1	neqn	Research-V6/usr/doc/man/man1/neqn.1
+1	newgrp	Research-V6/usr/doc/man/man1/newgrp.1
+1	nice	Research-V6/usr/doc/man/man1/nice.1
+1	nm	Research-V6/usr/doc/man/man1/nm.1
+1	nohup	Research-V6/usr/doc/man/man1/nohup.1
+1	nroff	Research-V6/usr/doc/man/man1/nroff.1
+1	od	Research-V6/usr/doc/man/man1/od.1
+1	opr	Research-V6/usr/doc/man/man1/opr.1
+1	passwd	Research-V6/usr/doc/man/man1/passwd.1
+1	pfe	Research-V6/usr/doc/man/man1/pfe.1
+1	pr	Research-V6/usr/doc/man/man1/pr.1
+1	prof	Research-V6/usr/doc/man/man1/prof.1
+1	ps	Research-V6/usr/doc/man/man1/ps.1
+1	pwd	Research-V6/usr/doc/man/man1/pwd.1
+1	rc	Research-V6/usr/doc/man/man1/rc.1
+1	rev	Research-V6/usr/doc/man/man1/rev.1
+1	rm	Research-V6/usr/doc/man/man1/rm.1
+1	rmdir	Research-V6/usr/doc/man/man1/rmdir.1
+1	roff	Research-V6/usr/doc/man/man1/roff.1
+1	sh	Research-V6/usr/doc/man/man1/sh.1
+1	shift	Research-V6/usr/doc/man/man1/shift.1
+1	size	Research-V6/usr/doc/man/man1/size.1
+1	sleep	Research-V6/usr/doc/man/man1/sleep.1
+1	sort	Research-V6/usr/doc/man/man1/sort.1
+1	spell	Research-V6/usr/doc/man/man1/spell.1
+1	split	Research-V6/usr/doc/man/man1/split.1
+1	strip	Research-V6/usr/doc/man/man1/strip.1
+1	stty	Research-V6/usr/doc/man/man1/stty.1
+1	tee	Research-V6/usr/doc/man/man1/tee.1
+1	time	Research-V6/usr/doc/man/man1/time.1
+1	tp	Research-V6/usr/doc/man/man1/tp.1
+1	tr	Research-V6/usr/doc/man/man1/tr.1
+1	troff	Research-V6/usr/doc/man/man1/troff.1
+1	tty	Research-V6/usr/doc/man/man1/tty.1
+1	typo	Research-V6/usr/doc/man/man1/typo.1
+1	uniq	Research-V6/usr/doc/man/man1/uniq.1
+1	wait	Research-V6/usr/doc/man/man1/wait.1
+1	wc	Research-V6/usr/doc/man/man1/wc.1
+1	who	Research-V6/usr/doc/man/man1/who.1
+1	write	Research-V6/usr/doc/man/man1/write.1
+1	yacc	Research-V6/usr/doc/man/man1/yacc.1
+2	break	Research-V6/usr/doc/man/man2/break.2
+2	chdir	Research-V6/usr/doc/man/man2/chdir.2
+2	chmod	Research-V6/usr/doc/man/man2/chmod.2
+2	chown	Research-V6/usr/doc/man/man2/chown.2
+2	close	Research-V6/usr/doc/man/man2/close.2
+2	creat	Research-V6/usr/doc/man/man2/creat.2
+2	csw	Research-V6/usr/doc/man/man2/csw.2
+2	dup	Research-V6/usr/doc/man/man2/dup.2
+2	exec	Research-V6/usr/doc/man/man2/exec.2
+2	exit	Research-V6/usr/doc/man/man2/exit.2
+2	fork	Research-V6/usr/doc/man/man2/fork.2
+2	fstat	Research-V6/usr/doc/man/man2/fstat.2
+2	getgid	Research-V6/usr/doc/man/man2/getgid.2
+2	getpid	Research-V6/usr/doc/man/man2/getpid.2
+2	getuid	Research-V6/usr/doc/man/man2/getuid.2
+2	gtty	Research-V6/usr/doc/man/man2/gtty.2
+2	indir	Research-V6/usr/doc/man/man2/indir.2
+2	intro	Research-V6/usr/doc/man/man2/intro.2
+2	kill	Research-V6/usr/doc/man/man2/kill.2
+2	link	Research-V6/usr/doc/man/man2/link.2
+2	mknod	Research-V6/usr/doc/man/man2/mknod.2
+2	mount	Research-V6/usr/doc/man/man2/mount.2
+2	nice	Research-V6/usr/doc/man/man2/nice.2
+2	open	Research-V6/usr/doc/man/man2/open.2
+2	pipe	Research-V6/usr/doc/man/man2/pipe.2
+2	profil	Research-V6/usr/doc/man/man2/profil.2
+2	ptrace	Research-V6/usr/doc/man/man2/ptrace.2
+2	read	Research-V6/usr/doc/man/man2/read.2
+2	seek	Research-V6/usr/doc/man/man2/seek.2
+2	setgid	Research-V6/usr/doc/man/man2/setgid.2
+2	setuid	Research-V6/usr/doc/man/man2/setuid.2
+2	signal	Research-V6/usr/doc/man/man2/signal.2
+2	sleep	Research-V6/usr/doc/man/man2/sleep.2
+2	stat	Research-V6/usr/doc/man/man2/stat.2
+2	stime	Research-V6/usr/doc/man/man2/stime.2
+2	stty	Research-V6/usr/doc/man/man2/stty.2
+2	sync	Research-V6/usr/doc/man/man2/sync.2
+2	time	Research-V6/usr/doc/man/man2/time.2
+2	times	Research-V6/usr/doc/man/man2/times.2
+2	umount	Research-V6/usr/doc/man/man2/umount.2
+2	unlink	Research-V6/usr/doc/man/man2/unlink.2
+2	wait	Research-V6/usr/doc/man/man2/wait.2
+2	write	Research-V6/usr/doc/man/man2/write.2
+3	abort	Research-V6/usr/doc/man/man3/abort.3
+3	abs	Research-V6/usr/doc/man/man3/abs.3
+3	alloc	Research-V6/usr/doc/man/man3/alloc.3
+3	atan	Research-V6/usr/doc/man/man3/atan.3
+3	atof	Research-V6/usr/doc/man/man3/atof.3
+3	atoi	Research-V6/usr/doc/man/man3/atoi.3
+3	crypt	Research-V6/usr/doc/man/man3/crypt.3
+3	ctime	Research-V6/usr/doc/man/man3/ctime.3
+3	ecvt	Research-V6/usr/doc/man/man3/ecvt.3
+3	end	Research-V6/usr/doc/man/man3/end.3
+3	exp	Research-V6/usr/doc/man/man3/exp.3
+3	floor	Research-V6/usr/doc/man/man3/floor.3
+3	fmod	Research-V6/usr/doc/man/man3/fmod.3
+3	fptrap	Research-V6/usr/doc/man/man3/fptrap.3
+3	gamma	Research-V6/usr/doc/man/man3/gamma.3
+3	getarg	Research-V6/usr/doc/man/man3/getarg.3
+3	getc	Research-V6/usr/doc/man/man3/getc.3
+3	getchar	Research-V6/usr/doc/man/man3/getchar.3
+3	getpw	Research-V6/usr/doc/man/man3/getpw.3
+3	hmul	Research-V6/usr/doc/man/man3/hmul.3
+3	ierror	Research-V6/usr/doc/man/man3/ierror.3
+3	ldiv	Research-V6/usr/doc/man/man3/ldiv.3
+3	locv	Research-V6/usr/doc/man/man3/locv.3
+3	log	Research-V6/usr/doc/man/man3/log.3
+3	monitor	Research-V6/usr/doc/man/man3/monitor.3
+3	nargs	Research-V6/usr/doc/man/man3/nargs.3
+3	nlist	Research-V6/usr/doc/man/man3/nlist.3
+3	perror	Research-V6/usr/doc/man/man3/perror.3
+3	pow	Research-V6/usr/doc/man/man3/pow.3
+3	printf	Research-V6/usr/doc/man/man3/printf.3
+3	putc	Research-V6/usr/doc/man/man3/putc.3
+3	putchar	Research-V6/usr/doc/man/man3/putchar.3
+3	qsort	Research-V6/usr/doc/man/man3/qsort.3
+3	rand	Research-V6/usr/doc/man/man3/rand.3
+3	reset	Research-V6/usr/doc/man/man3/reset.3
+3	setfil	Research-V6/usr/doc/man/man3/setfil.3
+3	sin	Research-V6/usr/doc/man/man3/sin.3
+3	sqrt	Research-V6/usr/doc/man/man3/sqrt.3
+3	ttyn	Research-V6/usr/doc/man/man3/ttyn.3
+4	cat	Research-V6/usr/doc/man/man4/cat.4
+4	dc	Research-V6/usr/doc/man/man4/dc.4
+4	dh	Research-V6/usr/doc/man/man4/dh.4
+4	dn	Research-V6/usr/doc/man/man4/dn.4
+4	dp	Research-V6/usr/doc/man/man4/dp.4
+4	hp	Research-V6/usr/doc/man/man4/hp.4
+4	hs	Research-V6/usr/doc/man/man4/hs.4
+4	ht	Research-V6/usr/doc/man/man4/ht.4
+4	kl	Research-V6/usr/doc/man/man4/kl.4
+4	lp	Research-V6/usr/doc/man/man4/lp.4
+4	mem	Research-V6/usr/doc/man/man4/mem.4
+4	pc	Research-V6/usr/doc/man/man4/pc.4
+4	rf	Research-V6/usr/doc/man/man4/rf.4
+4	rk	Research-V6/usr/doc/man/man4/rk.4
+4	rp	Research-V6/usr/doc/man/man4/rp.4
+4	tc	Research-V6/usr/doc/man/man4/tc.4
+4	tm	Research-V6/usr/doc/man/man4/tm.4
+4	tty	Research-V6/usr/doc/man/man4/tty.4
+5	a.out	Research-V6/usr/doc/man/man5/a.out.5
+5	archive	Research-V6/usr/doc/man/man5/archive.5
+5	ascii	Research-V6/usr/doc/man/man5/ascii.5
+5	core	Research-V6/usr/doc/man/man5/core.5
+5	directory	Research-V6/usr/doc/man/man5/directory.5
+5	dump	Research-V6/usr/doc/man/man5/dump.5
+5	fs	Research-V6/usr/doc/man/man5/fs.5
+5	greek	Research-V6/usr/doc/man/man5/greek.5
+5	group	Research-V6/usr/doc/man/man5/group.5
+5	mtab	Research-V6/usr/doc/man/man5/mtab.5
+5	passwd	Research-V6/usr/doc/man/man5/passwd.5
+5	tabs	Research-V6/usr/doc/man/man5/tabs.5
+5	tp	Research-V6/usr/doc/man/man5/tp.5
+5	ttys	Research-V6/usr/doc/man/man5/ttys.5
+5	utmp	Research-V6/usr/doc/man/man5/utmp.5
+5	wtmp	Research-V6/usr/doc/man/man5/wtmp.5
+6	azel	Research-V6/usr/doc/man/man6/azel.6
+6	bj	Research-V6/usr/doc/man/man6/bj.6
+6	cal	Research-V6/usr/doc/man/man6/cal.6
+6	chess	Research-V6/usr/doc/man/man6/chess.6
+6	col	Research-V6/usr/doc/man/man6/col.6
+6	cubic	Research-V6/usr/doc/man/man6/cubic.6
+6	factor	Research-V6/usr/doc/man/man6/factor.6
+6	fed	Research-V6/usr/doc/man/man6/fed.6
+6	form	Research-V6/usr/doc/man/man6/form.6
+6	graph	Research-V6/usr/doc/man/man6/graph.6
+6	gsi	Research-V6/usr/doc/man/man6/gsi.6
+6	m6	Research-V6/usr/doc/man/man6/m6.6
+6	moo	Research-V6/usr/doc/man/man6/moo.6
+6	plot	Research-V6/usr/doc/man/man6/plot.6
+6	primes	Research-V6/usr/doc/man/man6/primes.6
+6	quiz	Research-V6/usr/doc/man/man6/quiz.6
+6	sky	Research-V6/usr/doc/man/man6/sky.6
+6	sno	Research-V6/usr/doc/man/man6/sno.6
+6	speak	Research-V6/usr/doc/man/man6/speak.6
+6	spline	Research-V6/usr/doc/man/man6/spline.6
+6	tbl	Research-V6/usr/doc/man/man6/tbl.6
+6	tmg	Research-V6/usr/doc/man/man6/tmg.6
+6	ttt	Research-V6/usr/doc/man/man6/ttt.6
+6	units	Research-V6/usr/doc/man/man6/units.6
+6	wump	Research-V6/usr/doc/man/man6/wump.6
+7	cr	Research-V6/usr/doc/man/man7/cr.7
+7	ms	Research-V6/usr/doc/man/man7/ms.7
+7	plot	Research-V6/usr/doc/man/man7/plot.7
+7	salloc	Research-V6/usr/doc/man/man7/salloc.7
+8	ac	Research-V6/usr/doc/man/man8/ac.8
+8	bproc	Research-V6/usr/doc/man/man8/bproc.8
+8	chgrp	Research-V6/usr/doc/man/man8/chgrp.8
+8	chown	Research-V6/usr/doc/man/man8/chown.8
+8	clri	Research-V6/usr/doc/man/man8/clri.8
+8	crash	Research-V6/usr/doc/man/man8/crash.8
+8	cron	Research-V6/usr/doc/man/man8/cron.8
+8	dcheck	Research-V6/usr/doc/man/man8/dcheck.8
+8	df	Research-V6/usr/doc/man/man8/df.8
+8	dpd	Research-V6/usr/doc/man/man8/dpd.8
+8	dump	Research-V6/usr/doc/man/man8/dump.8
+8	getty	Research-V6/usr/doc/man/man8/getty.8
+8	glob	Research-V6/usr/doc/man/man8/glob.8
+8	icheck	Research-V6/usr/doc/man/man8/icheck.8
+8	init	Research-V6/usr/doc/man/man8/init.8
+8	lpd	Research-V6/usr/doc/man/man8/lpd.8
+8	mkfs	Research-V6/usr/doc/man/man8/mkfs.8
+8	mknod	Research-V6/usr/doc/man/man8/mknod.8
+8	mount	Research-V6/usr/doc/man/man8/mount.8
+8	ncheck	Research-V6/usr/doc/man/man8/ncheck.8
+8	restor	Research-V6/usr/doc/man/man8/restor.8
+8	sa	Research-V6/usr/doc/man/man8/sa.8
+8	su	Research-V6/usr/doc/man/man8/su.8
+8	sync	Research-V6/usr/doc/man/man8/sync.8
+8	umount	Research-V6/usr/doc/man/man8/umount.8
+8	update	Research-V6/usr/doc/man/man8/update.8
+8	wall	Research-V6/usr/doc/man/man8/wall.8
