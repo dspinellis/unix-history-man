@@ -1,218 +1,218 @@
-man1/:.1
-man1/ar.1
-man1/as.1
-man1/bas.1
-man1/cat.1
-man1/cc.1
-man1/cdb.1
-man1/chdir.1
-man1/chmod.1
-man1/chown.1
-man1/cmp.1
-man1/cp.1
-man1/cref.1
-man1/crypt.1
-man1/date.1
-man1/db.1
-man1/dc.1
-man1/df.1
-man1/dsw.1
-man1/du.1
-man1/echo.1
-man1/ed.1
-man1/exit.1
-man1/factor.1
-man1/fc.1
-man1/fed.1
-man1/form.1
-man1/forml.1
-man1/goto.1
-man1/hyphen.1
-man1/if.1
-man1/ld.1
-man1/ln.1
-man1/login.1
-man1/ls.1
-man1/m6.1
-man1/mail.1
-man1/man.1
-man1/mesg.1
-man1/mkdir.1
-man1/mt.1
-man1/mv.1
-man1/nm.1
-man1/nroff.1
-man1/od.1
-man1/opr.1
-man1/ov.1
-man1/passwd.1
-man1/pr.1
-man1/proof.1
-man1/reloc.1
-man1/rew.1
-man1/rm.1
-man1/rmdir.1
-man1/roff.1
-man1/sh.1
-man1/size.1
-man1/sno.1
-man1/sort.1
-man1/speak.1
-man1/split.1
-man1/stat.1
-man1/strip.1
-man1/stty.1
-man1/sum.1
-man1/tap.1
-man1/time.1
-man1/tmg.1
-man1/tss.1
-man1/tty.1
-man1/type.1
-man1/typo.1
-man1/un.1
-man1/uniq.1
-man1/vs.1
-man1/wc.1
-man1/who.1
-man1/write.1
-man2/boot.2
-man2/break.2
-man2/cemt.2
-man2/chdir.2
-man2/chmod.2
-man2/chown.2
-man2/close.2
-man2/creat.2
-man2/csw.2
-man2/dup.2
-man2/exec.2
-man2/exit.2
-man2/fork.2
-man2/fpe.2
-man2/fstat.2
-man2/getuid.2
-man2/gtty.2
-man2/ilgins.2
-man2/intr.2
-man2/kill.2
-man2/link.2
-man2/makdir.2
-man2/mdate.2
-man2/mount.2
-man2/nice.2
-man2/open.2
-man2/pipe.2
-man2/quit.2
-man2/read.2
-man2/rele.2
-man2/seek.2
-man2/setuid.2
-man2/sleep.2
-man2/stat.2
-man2/stime.2
-man2/stty.2
-man2/sync.2
-man2/time.2
-man2/times.2
-man2/umount.2
-man2/unlink.2
-man2/wait.2
-man2/write.2
-man3/atan.3
-man3/atof.3
-man3/atoi.3
-man3/compar.3
-man3/crypt.3
-man3/ctime.3
-man3/ddsput.3
-man3/ecvt.3
-man3/exp.3
-man3/ftoa.3
-man3/ftoo.3
-man3/gerts.3
-man3/getc.3
-man3/hypot.3
-man3/itoa.3
-man3/log.3
-man3/mesg.3
-man3/nlist.3
-man3/pow.3
-man3/ptime.3
-man3/putc.3
-man3/qsort.3
-man3/rand.3
-man3/salloc.3
-man3/sin.3
-man3/sqrt.3
-man3/switch.3
-man3/ttyn.3
-man4/dc.4
-man4/dn.4
-man4/dp.4
-man4/kl.4
-man4/mem.4
-man4/pc.4
-man4/rf.4
-man4/rk.4
-man4/tc.4
-man4/tm.4
-man4/vt.4
-man5/a.out.5
-man5/ar.5
-man5/core.5
-man5/dir.5
-man5/fs.5
-man5/passwd.5
-man5/tap.5
-man5/utmp.5
-man5/wtmp.5
-man6/bc.6
-man6/bj.6
-man6/ptx.6
-man6/yacc.6
-man7/ascii.7
-man7/dpd.7
-man7/getty.7
-man7/glob.7
-man7/greek.7
-man7/init.7
-man7/msh.7
-man7/tabs.7
-man7/vsp.7
-man8/20boot.8
-man8/acct.8
-man8/bproc.8
-man8/check.8
-man8/chk.8
-man8/clri.8
-man8/dcheck.8
-man8/dli.8
-man8/istat.8
-man8/kill.8
-man8/mount.8
-man8/ps.8
-man8/salv.8
-man8/su.8
-man8/swtmp.8
-man8/tm.8
-man8/umount.8
-manx/as.1
-manx/basic.6
-manx/cal.6
-manx/chash.1
-manx/das.6
-manx/dds.1
-manx/dpt.6
-manx/fptrap.3
-manx/fstrip.1
-manx/ident.5
-manx/kbd.7
-manx/login.7
-manx/lpr.4
-manx/moo.6
-manx/obproc.7
-manx/rp.4
-manx/speakm.5
-manx/ttt.6
-manx/uids.5
+1	:
+1	ar
+1	as
+1	bas
+1	cat
+1	cc
+1	cdb
+1	chdir
+1	chmod
+1	chown
+1	cmp
+1	cp
+1	cref
+1	crypt
+1	date
+1	db
+1	dc
+1	df
+1	dsw
+1	du
+1	echo
+1	ed
+1	exit
+1	factor
+1	fc
+1	fed
+1	form
+1	forml
+1	goto
+1	hyphen
+1	if
+1	ld
+1	ln
+1	login
+1	ls
+1	m6
+1	mail
+1	man
+1	mesg
+1	mkdir
+1	mt
+1	mv
+1	nm
+1	nroff
+1	od
+1	opr
+1	ov
+1	passwd
+1	pr
+1	proof
+1	reloc
+1	rew
+1	rm
+1	rmdir
+1	roff
+1	sh
+1	size
+1	sno
+1	sort
+1	speak
+1	split
+1	stat
+1	strip
+1	stty
+1	sum
+1	tap
+1	time
+1	tmg
+1	tss
+1	tty
+1	type
+1	typo
+1	un
+1	uniq
+1	vs
+1	wc
+1	who
+1	write
+2	boot
+2	break
+2	cemt
+2	chdir
+2	chmod
+2	chown
+2	close
+2	creat
+2	csw
+2	dup
+2	exec
+2	exit
+2	fork
+2	fpe
+2	fstat
+2	getuid
+2	gtty
+2	ilgins
+2	intr
+2	kill
+2	link
+2	makdir
+2	mdate
+2	mount
+2	nice
+2	open
+2	pipe
+2	quit
+2	read
+2	rele
+2	seek
+2	setuid
+2	sleep
+2	stat
+2	stime
+2	stty
+2	sync
+2	time
+2	times
+2	umount
+2	unlink
+2	wait
+2	write
+3	atan
+3	atof
+3	atoi
+3	compar
+3	crypt
+3	ctime
+3	ddsput
+3	ecvt
+3	exp
+3	ftoa
+3	ftoo
+3	gerts
+3	getc
+3	hypot
+3	itoa
+3	log
+3	mesg
+3	nlist
+3	pow
+3	ptime
+3	putc
+3	qsort
+3	rand
+3	salloc
+3	sin
+3	sqrt
+3	switch
+3	ttyn
+4	dc
+4	dn
+4	dp
+4	kl
+4	mem
+4	pc
+4	rf
+4	rk
+4	tc
+4	tm
+4	vt
+5	a.out
+5	ar
+5	core
+5	dir
+5	fs
+5	passwd
+5	tap
+5	utmp
+5	wtmp
+6	bc
+6	bj
+6	ptx
+6	yacc
+7	ascii
+7	dpd
+7	getty
+7	glob
+7	greek
+7	init
+7	msh
+7	tabs
+7	vsp
+8	20boot
+8	acct
+8	bproc
+8	check
+8	chk
+8	clri
+8	dcheck
+8	dli
+8	istat
+8	kill
+8	mount
+8	ps
+8	salv
+8	su
+8	swtmp
+8	tm
+8	umount
+1	as
+6	basic
+6	cal
+1	chash
+6	das
+1	dds
+6	dpt
+3	fptrap
+1	fstrip
+5	ident
+7	kbd
+7	login
+4	lpr
+6	moo
+7	obproc
+4	rp
+5	speakm
+6	ttt
+5	uids

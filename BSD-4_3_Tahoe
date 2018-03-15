@@ -1,761 +1,761 @@
-man1/adb.1
-man1/addbib.1
-man1/apply.1
-man1/apropos.1
-man1/ar.1
-man1/as.1
-man1/at.1
-man1/atq.1
-man1/atrm.1
-man1/awk.1
-man1/basename.1
-man1/bc.1
-man1/biff.1
-man1/binmail.1
-man1/cal.1
-man1/calendar.1
-man1/cat.1
-man1/cb.1
-man1/cc.1
-man1/cd.1
-man1/checknr.1
-man1/chgrp.1
-man1/chmod.1
-man1/clear.1
-man1/cmp.1
-man1/col.1
-man1/colcrt.1
-man1/colrm.1
-man1/comm.1
-man1/compress.1
-man1/cp.1
-man1/crypt.1
-man1/csh.1
-man1/ctags.1
-man1/date.1
-man1/dbx.1
-man1/dc.1
-man1/dd.1
-man1/deroff.1
-man1/df.1
-man1/diction.1
-man1/diff.1
-man1/diff3.1
-man1/du.1
-man1/echo.1
-man1/ed.1
-man1/efl.1
-man1/eqn.1
-man1/error.1
-man1/ex.1
-man1/expand.1
-man1/expr.1
-man1/f77.1
-man1/false.1
-man1/file.1
-man1/find.1
-man1/finger.1
-man1/fmt.1
-man1/fold.1
-man1/fp.1
-man1/fpr.1
-man1/from.1
-man1/fsplit.1
-man1/ftp.1
-man1/gcore.1
-man1/gprof.1
-man1/graph.1
-man1/grep.1
-man1/groups.1
-man1/head.1
-man1/hostid.1
-man1/hostname.1
-man1/indent.1
-man1/install.1
-man1/intro.1
-man1/iostat.1
-man1/join.1
-man1/kill.1
-man1/last.1
-man1/lastcomm.1
-man1/ld.1
-man1/learn.1
-man1/leave.1
-man1/lex.1
-man1/lint.1
-man1/lisp.1
-man1/liszt.1
-man1/ln.1
-man1/lock.1
-man1/logger.1
-man1/login.1
-man1/look.1
-man1/lookbib.1
-man1/lorder.1
-man1/lpq.1
-man1/lpr.1
-man1/lprm.1
-man1/lptest.1
-man1/ls.1
-man1/lxref.1
-man1/m4.1
-man1/mail.1
-man1/make.1
-man1/man.1
-man1/mesg.1
-man1/mkdep.1
-man1/mkdir.1
-man1/mkstr.1
-man1/more.1
-man1/mset.1
-man1/msgs.1
-man1/mt.1
-man1/mv.1
-man1/netstat.1
-man1/newaliases.1
-man1/nice.1
-man1/nm.1
-man1/nroff.1
-man1/od.1
-man1/pagesize.1
-man1/passwd.1
-man1/pc.1
-man1/pdx.1
-man1/pi.1
-man1/pix.1
-man1/plot.1
-man1/pmerge.1
-man1/pr.1
-man1/printenv.1
-man1/prof.1
-man1/ps.1
-man1/ptx.1
-man1/pwd.1
-man1/px.1
-man1/pxp.1
-man1/pxref.1
-man1/quota.1
-man1/ranlib.1
-man1/ratfor.1
-man1/rcp.1
-man1/rdist.1
-man1/refer.1
-man1/rev.1
-man1/rlogin.1
-man1/rm.1
-man1/rmail.1
-man1/rmdir.1
-man1/roffbib.1
-man1/rsh.1
-man1/ruptime.1
-man1/rwho.1
-man1/sccs.1
-man1/script.1
-man1/sed.1
-man1/sendbug.1
-man1/sh.1
-man1/size.1
-man1/sleep.1
-man1/soelim.1
-man1/sort.1
-man1/sortbib.1
-man1/spell.1
-man1/spline.1
-man1/split.1
-man1/strings.1
-man1/strip.1
-man1/struct.1
-man1/stty.1
-man1/style.1
-man1/su.1
-man1/sum.1
-man1/symorder.1
-man1/sysline.1
-man1/systat.1
-man1/tabs.1
-man1/tail.1
-man1/talk.1
-man1/tar.1
-man1/tbl.1
-man1/tc.1
-man1/tcopy.1
-man1/tee.1
-man1/telnet.1
-man1/test.1
-man1/tftp.1
-man1/time.1
-man1/tip.1
-man1/tk.1
-man1/tn3270.1
-man1/touch.1
-man1/tp.1
-man1/tr.1
-man1/troff.1
-man1/true.1
-man1/tset.1
-man1/tsort.1
-man1/tty.1
-man1/ul.1
-man1/unifdef.1
-man1/uniq.1
-man1/units.1
-man1/uptime.1
-man1/users.1
-man1/uucp.1
-man1/uuencode.1
-man1/uulog.1
-man1/uuname.1
-man1/uuq.1
-man1/uusend.1
-man1/uux.1
-man1/vacation.1
-man1/vgrind.1
-man1/vi.1
-man1/vlp.1
-man1/vmstat.1
-man1/w.1
-man1/wait.1
-man1/wall.1
-man1/wc.1
-man1/what.1
-man1/whatis.1
-man1/whereis.1
-man1/which.1
-man1/who.1
-man1/whoami.1
-man1/whois.1
-man1/window.1
-man1/write.1
-man1/xsend.1
-man1/xstr.1
-man1/yacc.1
-man1/yes.1
-man2/accept.2
-man2/access.2
-man2/acct.2
-man2/adjtime.2
-man2/bind.2
-man2/brk.2
-man2/chdir.2
-man2/chmod.2
-man2/chown.2
-man2/chroot.2
-man2/close.2
-man2/connect.2
-man2/creat.2
-man2/dup.2
-man2/execve.2
-man2/exit.2
-man2/fcntl.2
-man2/flock.2
-man2/fork.2
-man2/fsync.2
-man2/getdtablesize.2
-man2/getgid.2
-man2/getgroups.2
-man2/gethostid.2
-man2/gethostname.2
-man2/getitimer.2
-man2/getpagesize.2
-man2/getpeername.2
-man2/getpgrp.2
-man2/getpid.2
-man2/getpriority.2
-man2/getrlimit.2
-man2/getrusage.2
-man2/getsockname.2
-man2/getsockopt.2
-man2/gettimeofday.2
-man2/getuid.2
-man2/intro.2
-man2/ioctl.2
-man2/kill.2
-man2/killpg.2
-man2/link.2
-man2/listen.2
-man2/lseek.2
-man2/mkdir.2
-man2/mknod.2
-man2/mount.2
-man2/open.2
-man2/pipe.2
-man2/profil.2
-man2/ptrace.2
-man2/quota.2
-man2/read.2
-man2/readlink.2
-man2/reboot.2
-man2/recv.2
-man2/rename.2
-man2/rmdir.2
-man2/select.2
-man2/send.2
-man2/setgroups.2
-man2/setpgrp.2
-man2/setquota.2
-man2/setregid.2
-man2/setreuid.2
-man2/shutdown.2
-man2/sigblock.2
-man2/sigpause.2
-man2/sigreturn.2
-man2/sigsetmask.2
-man2/sigstack.2
-man2/sigvec.2
-man2/socket.2
-man2/socketpair.2
-man2/stat.2
-man2/swapon.2
-man2/symlink.2
-man2/sync.2
-man2/syscall.2
-man2/truncate.2
-man2/umask.2
-man2/unlink.2
-man2/utimes.2
-man2/vfork.2
-man2/vhangup.2
-man2/wait.2
-man2/write.2
-man3/abort.3
-man3/abs.3
-man3/alarm.3
-man3/asinh.3
-man3/assert.3
-man3/atof.3
-man3/bstring.3
-man3/byteorder.3
-man3/compat-sys5.3
-man3/crypt.3
-man3/ctime.3
-man3/ctype.3
-man3/curses.3
-man3/dbm.3
-man3/directory.3
-man3/ecvt.3
-man3/end.3
-man3/erf.3
-man3/execl.3
-man3/exit.3
-man3/exp.3
-man3f/abort.3
-man3f/access.3
-man3f/alarm.3
-man3f/bessel.3
-man3f/bit.3
-man3f/chdir.3
-man3f/chmod.3
-man3/fclose.3
-man3/ferror.3
-man3f/etime.3
-man3f/exit.3
-man3f/fdate.3
-man3f/flmin.3
-man3f/flush.3
-man3f/fork.3
-man3f/fseek.3
-man3f/getarg.3
-man3f/getc.3
-man3f/getcwd.3
-man3f/getenv.3
-man3f/getlog.3
-man3f/getpid.3
-man3f/getuid.3
-man3f/hostnm.3
-man3f/idate.3
-man3f/index.3
-man3f/intro.3
-man3f/ioinit.3
-man3f/kill.3
-man3f/link.3
-man3f/loc.3
-man3f/long.3
-man3/floor.3
-man3f/malloc.3
-man3/fopen.3
-man3f/perror.3
-man3f/plot.3
-man3f/putc.3
-man3f/qsort.3
-man3f/rand.3
-man3f/random.3
-man3/fread.3
-man3f/rename.3
-man3/frexp.3
-man3/fseek.3
-man3f/signal.3
-man3f/sleep.3
-man3f/stat.3
-man3f/system.3
-man3f/time.3
-man3f/topen.3
-man3f/traper.3
-man3f/trapov.3
-man3f/trpfpe.3
-man3f/ttynam.3
-man3f/unlink.3
-man3f/wait.3
-man3/getc.3
-man3/getdiskbyname.3
-man3/getenv.3
-man3/getfsent.3
-man3/getgrent.3
-man3/gethostbyname.3
-man3/getlogin.3
-man3/getnetent.3
-man3/getopt.3
-man3/getpass.3
-man3/getprotoent.3
-man3/getpw.3
-man3/getpwent.3
-man3/gets.3
-man3/getservent.3
-man3/getttyent.3
-man3/getusershell.3
-man3/getwd.3
-man3/hypot.3
-man3/ieee.3
-man3/inet.3
-man3/infnan.3
-man3/initgroups.3
-man3/insque.3
-man3/intro.3
-man3/j0.3
-man3/lgamma.3
-man3/lib2648.3
-man3/malloc.3
-man3/math.3
-man3/mktemp.3
-man3/monitor.3
-man3/mp.3
-man3/ndbm.3
-man3/nice.3
-man3/nlist.3
-man3/ns.3
-man3/pause.3
-man3/perror.3
-man3/plot.3
-man3/popen.3
-man3/printf.3
-man3/psignal.3
-man3/putc.3
-man3/puts.3
-man3/qsort.3
-man3/rand.3
-man3/random.3
-man3/rcmd.3
-man3/regex.3
-man3/regexp.3
-man3/resolver.3
-man3/rexec.3
-man3/scandir.3
-man3/scanf.3
-man3/setbuf.3
-man3/setjmp.3
-man3/setuid.3
-man3/siginterrupt.3
-man3/signal.3
-man3/sin.3
-man3/sinh.3
-man3/sleep.3
-man3/sqrt.3
-man3/stdio.3
-man3/string.3
-man3/stty.3
-man3/swab.3
-man3/syslog.3
-man3/system.3
-man3/termcap.3
-man3/time.3
-man3/times.3
-man3/ttyname.3
-man3/ualarm.3
-man3/ungetc.3
-man3/usleep.3
-man3/utime.3
-man3/valloc.3
-man3/varargs.3
-man3/vlimit.3
-man3/vtimes.3
-man4/acc.4
-man4/ace.4
-man4/ad.4
-man4/arp.4
-man4/autoconf.4
-man4/autoconf.4
-man4/bk.4
-man4/cons.4
-man4/cons.4
-man4/crl.4
-man4/css.4
-man4/ct.4
-man4/cy.4
-man4/ddn.4
-man4/de.4
-man4/dh.4
-man4/dhu.4
-man4/dmc.4
-man4/dmf.4
-man4/dmv.4
-man4/dmz.4
-man4/dn.4
-man4/dr.4
-man4/drum.4
-man4/dz.4
-man4/ec.4
-man4/en.4
-man4/enp.4
-man4/ex.4
-man4/fl.4
-man4/hdh.4
-man4/hk.4
-man4/hp.4
-man4/ht.4
-man4/hy.4
-man4/icmp.4
-man4/idp.4
-man4/ik.4
-man4/ik.4
-man4/il.4
-man4/imp.4
-man4/inet.4
-man4/intro.4
-man4/intro.4
-man4/ip.4
-man4/ix.4
-man4/kdb.4
-man4/kg.4
-man4/lo.4
-man4/lp.4
-man4/lp.4
-man4/mem.4
-man4/mem.4
-man4/mpcc.4
-man4/mpcctab.4
-man4/mt.4
-man4/mtio.4
-man4/mtio.4
-man4/netintro.4
-man4/np.4
-man4/ns.4
-man4/nsip.4
-man4/null.4
-man4/pcl.4
-man4/ps.4
-man4/pty.4
-man4/qe.4
-man4/rx.4
-man4/spp.4
-man4/tb.4
-man4/tcp.4
-man4/tm.4
-man4/tmscp.4
-man4/ts.4
-man4/tty.4
-man4/tu.4
-man4/uda.4
-man4/udp.4
-man4/up.4
-man4/ut.4
-man4/uu.4
-man4/va.4
-man4/vd.4
-man4/vp.4
-man4/vv.4
-man4/vx.4
-man5/acct.5
-man5/aliases.5
-man5/a.out.5
-man5/ar.5
-man5/core.5
-man5/dbx.5
-man5/dir.5
-man5/disklabel.5
-man5/disktab.5
-man5/dm.config.5
-man5/dump.5
-man5/fs.5
-man5/fstab.5
-man5/gettytab.5
-man5/group.5
-man5/hosts.5
-man5/L.aliases.5
-man5/L.cmds.5
-man5/L-devices.5
-man5/L-dialcodes.5
-man5/L.sys.5
-man5/map3270.5
-man5/mtab.5
-man5/networks.5
-man5/passwd.5
-man5/phones.5
-man5/plot.5
-man5/printcap.5
-man5/protocols.5
-man5/remote.5
-man5/resolver.5
-man5/services.5
-man5/shells.5
-man5/stab.5
-man5/tar.5
-man5/termcap.5
-man5/tp.5
-man5/ttys.5
-man5/types.5
-man5/tzfile.5
-man5/USERFILE.5
-man5/utmp.5
-man5/uuencode.5
-man5/vfont.5
-man5/vgrindefs.5
-man6/aardvark.6
-man6/adventure.6
-man6/arithmetic.6
-man6/atc.6
-man6/backgammon.6
-man6/banner.6
-man6/battlestar.6
-man6/bcd.6
-man6/boggle.6
-man6/canfield.6
-man6/chess.6
-man6/ching.6
-man6/cribbage.6
-man6/doctor.6
-man6/fish.6
-man6/fortune.6
-man6/gnuchess.6
-man6/hack.6
-man6/hangman.6
-man6/hunt.6
-man6/mille.6
-man6/monop.6
-man6/number.6
-man6/quiz.6
-man6/rain.6
-man6/robots.6
-man6/rogue.6
-man6/sail.6
-man6/snake.6
-man6/trek.6
-man6/worm.6
-man6/worms.6
-man6/wump.6
-man6/zork.6
-man7/ascii.7
-man7/environ.7
-man7/eqnchar.7
-man7/hier.7
-man7/hostname.7
-man7/intro.7
-man7/mailaddr.7
-man7/man.7
-man7/me.7
-man7/ms.7
-man7/term.7
-man8/ac.8
-man8/adduser.8
-man8/arff.8
-man8/arp.8
-man8/bad144.8
-man8/badsect.8
-man8/bugfiler.8
-man8/chown.8
-man8/clri.8
-man8/comsat.8
-man8/config.8
-man8/crash.8
-man8/crash.8
-man8/cron.8
-man8/dcheck.8
-man8/disklabel.8
-man8/diskpart.8
-man8/dlmpcc.8
-man8/dm.8
-man8/dmesg.8
-man8/drtest.8
-man8/dump.8
-man8/dumpfs.8
-man8/edquota.8
-man8/enpload.8
-man8/fastboot.8
-man8/fingerd.8
-man8/format.8
-man8/fsck.8
-man8/fsdb.8
-man8/fstat.8
-man8/ftpd.8
-man8/gettable.8
-man8/getty.8
-man8/halt.8
-man8/htable.8
-man8/icheck.8
-man8/ifconfig.8
-man8/implog.8
-man8/implogd.8
-man8/inetd.8
-man8/init.8
-man8/installboot.8
-man8/intro.8
-man8/kgmon.8
-man8/lpc.8
-man8/lpd.8
-man8/makedev.8
-man8/makekey.8
-man8/mkhosts.8
-man8/mklost+found.8
-man8/mknod.8
-man8/mkpasswd.8
-man8/mkproto.8
-man8/mount.8
-man8/named.8
-man8/ncheck.8
-man8/newfs.8
-man8/pac.8
-man8/ping.8
-man8/pstat.8
-man8/quot.8
-man8/quotacheck.8
-man8/quotaon.8
-man8/rc.8
-man8/rdump.8
-man8/reboot.8
-man8/reboot.8
-man8/renice.8
-man8/repquota.8
-man8/restore.8
-man8/rexecd.8
-man8/rlogind.8
-man8/rmt.8
-man8/route.8
-man8/routed.8
-man8/rrestore.8
-man8/rshd.8
-man8/rwhod.8
-man8/rxformat.8
-man8/sa.8
-man8/savecore.8
-man8/sendmail.8
-man8/shutdown.8
-man8/slattach.8
-man8/sticky.8
-man8/swapon.8
-man8/sync.8
-man8/syslogd.8
-man8/talkd.8
-man8/telnetd.8
-man8/tftpd.8
-man8/timed.8
-man8/timedc.8
-man8/trpt.8
-man8/trsp.8
-man8/tunefs.8
-man8/update.8
-man8/uucico.8
-man8/uuclean.8
-man8/uupoll.8
-man8/uusnap.8
-man8/uuxqt.8
-man8/vdformat.8
-man8/vipw.8
-man8/XNSrouted.8
+1	adb
+1	addbib
+1	apply
+1	apropos
+1	ar
+1	as
+1	at
+1	atq
+1	atrm
+1	awk
+1	basename
+1	bc
+1	biff
+1	binmail
+1	cal
+1	calendar
+1	cat
+1	cb
+1	cc
+1	cd
+1	checknr
+1	chgrp
+1	chmod
+1	clear
+1	cmp
+1	col
+1	colcrt
+1	colrm
+1	comm
+1	compress
+1	cp
+1	crypt
+1	csh
+1	ctags
+1	date
+1	dbx
+1	dc
+1	dd
+1	deroff
+1	df
+1	diction
+1	diff
+1	diff3
+1	du
+1	echo
+1	ed
+1	efl
+1	eqn
+1	error
+1	ex
+1	expand
+1	expr
+1	f77
+1	false
+1	file
+1	find
+1	finger
+1	fmt
+1	fold
+1	fp
+1	fpr
+1	from
+1	fsplit
+1	ftp
+1	gcore
+1	gprof
+1	graph
+1	grep
+1	groups
+1	head
+1	hostid
+1	hostname
+1	indent
+1	install
+1	intro
+1	iostat
+1	join
+1	kill
+1	last
+1	lastcomm
+1	ld
+1	learn
+1	leave
+1	lex
+1	lint
+1	lisp
+1	liszt
+1	ln
+1	lock
+1	logger
+1	login
+1	look
+1	lookbib
+1	lorder
+1	lpq
+1	lpr
+1	lprm
+1	lptest
+1	ls
+1	lxref
+1	m4
+1	mail
+1	make
+1	man
+1	mesg
+1	mkdep
+1	mkdir
+1	mkstr
+1	more
+1	mset
+1	msgs
+1	mt
+1	mv
+1	netstat
+1	newaliases
+1	nice
+1	nm
+1	nroff
+1	od
+1	pagesize
+1	passwd
+1	pc
+1	pdx
+1	pi
+1	pix
+1	plot
+1	pmerge
+1	pr
+1	printenv
+1	prof
+1	ps
+1	ptx
+1	pwd
+1	px
+1	pxp
+1	pxref
+1	quota
+1	ranlib
+1	ratfor
+1	rcp
+1	rdist
+1	refer
+1	rev
+1	rlogin
+1	rm
+1	rmail
+1	rmdir
+1	roffbib
+1	rsh
+1	ruptime
+1	rwho
+1	sccs
+1	script
+1	sed
+1	sendbug
+1	sh
+1	size
+1	sleep
+1	soelim
+1	sort
+1	sortbib
+1	spell
+1	spline
+1	split
+1	strings
+1	strip
+1	struct
+1	stty
+1	style
+1	su
+1	sum
+1	symorder
+1	sysline
+1	systat
+1	tabs
+1	tail
+1	talk
+1	tar
+1	tbl
+1	tc
+1	tcopy
+1	tee
+1	telnet
+1	test
+1	tftp
+1	time
+1	tip
+1	tk
+1	tn3270
+1	touch
+1	tp
+1	tr
+1	troff
+1	true
+1	tset
+1	tsort
+1	tty
+1	ul
+1	unifdef
+1	uniq
+1	units
+1	uptime
+1	users
+1	uucp
+1	uuencode
+1	uulog
+1	uuname
+1	uuq
+1	uusend
+1	uux
+1	vacation
+1	vgrind
+1	vi
+1	vlp
+1	vmstat
+1	w
+1	wait
+1	wall
+1	wc
+1	what
+1	whatis
+1	whereis
+1	which
+1	who
+1	whoami
+1	whois
+1	window
+1	write
+1	xsend
+1	xstr
+1	yacc
+1	yes
+2	accept
+2	access
+2	acct
+2	adjtime
+2	bind
+2	brk
+2	chdir
+2	chmod
+2	chown
+2	chroot
+2	close
+2	connect
+2	creat
+2	dup
+2	execve
+2	exit
+2	fcntl
+2	flock
+2	fork
+2	fsync
+2	getdtablesize
+2	getgid
+2	getgroups
+2	gethostid
+2	gethostname
+2	getitimer
+2	getpagesize
+2	getpeername
+2	getpgrp
+2	getpid
+2	getpriority
+2	getrlimit
+2	getrusage
+2	getsockname
+2	getsockopt
+2	gettimeofday
+2	getuid
+2	intro
+2	ioctl
+2	kill
+2	killpg
+2	link
+2	listen
+2	lseek
+2	mkdir
+2	mknod
+2	mount
+2	open
+2	pipe
+2	profil
+2	ptrace
+2	quota
+2	read
+2	readlink
+2	reboot
+2	recv
+2	rename
+2	rmdir
+2	select
+2	send
+2	setgroups
+2	setpgrp
+2	setquota
+2	setregid
+2	setreuid
+2	shutdown
+2	sigblock
+2	sigpause
+2	sigreturn
+2	sigsetmask
+2	sigstack
+2	sigvec
+2	socket
+2	socketpair
+2	stat
+2	swapon
+2	symlink
+2	sync
+2	syscall
+2	truncate
+2	umask
+2	unlink
+2	utimes
+2	vfork
+2	vhangup
+2	wait
+2	write
+3	abort
+3	abs
+3	alarm
+3	asinh
+3	assert
+3	atof
+3	bstring
+3	byteorder
+3	compat-sys5
+3	crypt
+3	ctime
+3	ctype
+3	curses
+3	dbm
+3	directory
+3	ecvt
+3	end
+3	erf
+3	execl
+3	exit
+3	exp
+3	abort
+3	access
+3	alarm
+3	bessel
+3	bit
+3	chdir
+3	chmod
+3	fclose
+3	ferror
+3	etime
+3	exit
+3	fdate
+3	flmin
+3	flush
+3	fork
+3	fseek
+3	getarg
+3	getc
+3	getcwd
+3	getenv
+3	getlog
+3	getpid
+3	getuid
+3	hostnm
+3	idate
+3	index
+3	intro
+3	ioinit
+3	kill
+3	link
+3	loc
+3	long
+3	floor
+3	malloc
+3	fopen
+3	perror
+3	plot
+3	putc
+3	qsort
+3	rand
+3	random
+3	fread
+3	rename
+3	frexp
+3	fseek
+3	signal
+3	sleep
+3	stat
+3	system
+3	time
+3	topen
+3	traper
+3	trapov
+3	trpfpe
+3	ttynam
+3	unlink
+3	wait
+3	getc
+3	getdiskbyname
+3	getenv
+3	getfsent
+3	getgrent
+3	gethostbyname
+3	getlogin
+3	getnetent
+3	getopt
+3	getpass
+3	getprotoent
+3	getpw
+3	getpwent
+3	gets
+3	getservent
+3	getttyent
+3	getusershell
+3	getwd
+3	hypot
+3	ieee
+3	inet
+3	infnan
+3	initgroups
+3	insque
+3	intro
+3	j0
+3	lgamma
+3	lib2648
+3	malloc
+3	math
+3	mktemp
+3	monitor
+3	mp
+3	ndbm
+3	nice
+3	nlist
+3	ns
+3	pause
+3	perror
+3	plot
+3	popen
+3	printf
+3	psignal
+3	putc
+3	puts
+3	qsort
+3	rand
+3	random
+3	rcmd
+3	regex
+3	regexp
+3	resolver
+3	rexec
+3	scandir
+3	scanf
+3	setbuf
+3	setjmp
+3	setuid
+3	siginterrupt
+3	signal
+3	sin
+3	sinh
+3	sleep
+3	sqrt
+3	stdio
+3	string
+3	stty
+3	swab
+3	syslog
+3	system
+3	termcap
+3	time
+3	times
+3	ttyname
+3	ualarm
+3	ungetc
+3	usleep
+3	utime
+3	valloc
+3	varargs
+3	vlimit
+3	vtimes
+4	acc
+4	ace
+4	ad
+4	arp
+4	autoconf
+4	autoconf
+4	bk
+4	cons
+4	cons
+4	crl
+4	css
+4	ct
+4	cy
+4	ddn
+4	de
+4	dh
+4	dhu
+4	dmc
+4	dmf
+4	dmv
+4	dmz
+4	dn
+4	dr
+4	drum
+4	dz
+4	ec
+4	en
+4	enp
+4	ex
+4	fl
+4	hdh
+4	hk
+4	hp
+4	ht
+4	hy
+4	icmp
+4	idp
+4	ik
+4	ik
+4	il
+4	imp
+4	inet
+4	intro
+4	intro
+4	ip
+4	ix
+4	kdb
+4	kg
+4	lo
+4	lp
+4	lp
+4	mem
+4	mem
+4	mpcc
+4	mpcctab
+4	mt
+4	mtio
+4	mtio
+4	netintro
+4	np
+4	ns
+4	nsip
+4	null
+4	pcl
+4	ps
+4	pty
+4	qe
+4	rx
+4	spp
+4	tb
+4	tcp
+4	tm
+4	tmscp
+4	ts
+4	tty
+4	tu
+4	uda
+4	udp
+4	up
+4	ut
+4	uu
+4	va
+4	vd
+4	vp
+4	vv
+4	vx
+5	acct
+5	aliases
+5	a.out
+5	ar
+5	core
+5	dbx
+5	dir
+5	disklabel
+5	disktab
+5	dm.config
+5	dump
+5	fs
+5	fstab
+5	gettytab
+5	group
+5	hosts
+5	L.aliases
+5	L.cmds
+5	L-devices
+5	L-dialcodes
+5	L.sys
+5	map3270
+5	mtab
+5	networks
+5	passwd
+5	phones
+5	plot
+5	printcap
+5	protocols
+5	remote
+5	resolver
+5	services
+5	shells
+5	stab
+5	tar
+5	termcap
+5	tp
+5	ttys
+5	types
+5	tzfile
+5	USERFILE
+5	utmp
+5	uuencode
+5	vfont
+5	vgrindefs
+6	aardvark
+6	adventure
+6	arithmetic
+6	atc
+6	backgammon
+6	banner
+6	battlestar
+6	bcd
+6	boggle
+6	canfield
+6	chess
+6	ching
+6	cribbage
+6	doctor
+6	fish
+6	fortune
+6	gnuchess
+6	hack
+6	hangman
+6	hunt
+6	mille
+6	monop
+6	number
+6	quiz
+6	rain
+6	robots
+6	rogue
+6	sail
+6	snake
+6	trek
+6	worm
+6	worms
+6	wump
+6	zork
+7	ascii
+7	environ
+7	eqnchar
+7	hier
+7	hostname
+7	intro
+7	mailaddr
+7	man
+7	me
+7	ms
+7	term
+8	ac
+8	adduser
+8	arff
+8	arp
+8	bad144
+8	badsect
+8	bugfiler
+8	chown
+8	clri
+8	comsat
+8	config
+8	crash
+8	crash
+8	cron
+8	dcheck
+8	disklabel
+8	diskpart
+8	dlmpcc
+8	dm
+8	dmesg
+8	drtest
+8	dump
+8	dumpfs
+8	edquota
+8	enpload
+8	fastboot
+8	fingerd
+8	format
+8	fsck
+8	fsdb
+8	fstat
+8	ftpd
+8	gettable
+8	getty
+8	halt
+8	htable
+8	icheck
+8	ifconfig
+8	implog
+8	implogd
+8	inetd
+8	init
+8	installboot
+8	intro
+8	kgmon
+8	lpc
+8	lpd
+8	makedev
+8	makekey
+8	mkhosts
+8	mklost+found
+8	mknod
+8	mkpasswd
+8	mkproto
+8	mount
+8	named
+8	ncheck
+8	newfs
+8	pac
+8	ping
+8	pstat
+8	quot
+8	quotacheck
+8	quotaon
+8	rc
+8	rdump
+8	reboot
+8	reboot
+8	renice
+8	repquota
+8	restore
+8	rexecd
+8	rlogind
+8	rmt
+8	route
+8	routed
+8	rrestore
+8	rshd
+8	rwhod
+8	rxformat
+8	sa
+8	savecore
+8	sendmail
+8	shutdown
+8	slattach
+8	sticky
+8	swapon
+8	sync
+8	syslogd
+8	talkd
+8	telnetd
+8	tftpd
+8	timed
+8	timedc
+8	trpt
+8	trsp
+8	tunefs
+8	update
+8	uucico
+8	uuclean
+8	uupoll
+8	uusnap
+8	uuxqt
+8	vdformat
+8	vipw
+8	XNSrouted

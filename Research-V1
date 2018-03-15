@@ -1,155 +1,155 @@
-man1/ar.1
-man1/as.1
-man1/b.1
-man1/bas.1
-man1/bcd.1
-man1/boot.1
-man1/cat.1
-man1/chdir.1
-man1/check.1
-man1/chmod.1
-man1/chown.1
-man1/cmp.1
-man1/cp.1
-man1/date.1
-man1/db.1
-man1/dbppt.1
-man1/dc.1
-man1/df.1
-man1/dsw.1
-man1/dtf.1
-man1/du.1
-man1/ed.1
-man1/find.1
-man1/for.1
-man1/form.1
-man1/hup.1
-man1/lbppt.1
-man1/ld.1
-man1/ln.1
-man1/login.1
-man1/ls.1
-man1/mail.1
-man1/mesg.1
-man1/mkdir.1
-man1/mkfs.1
-man1/mount.1
-man1/mv.1
-man1/nm.1
-man1/od.1
-man1/pr.1
-man1/rew.1
-man1/rkd.1
-man1/rkf.1
-man1/rkl.1
-man1/rm.1
-man1/rmdir.1
-man1/roff.1
-man1/sdate.1
-man1/sh.1
-man1/stat.1
-man1/strip.1
-man1/su.1
-man1/sum.1
-man1/tap.1
-man1/tm.1
-man1/tty.1
-man1/type.1
-man1/umount.1
-man1/un.1
-man1/wc.1
-man1/who.1
-man1/write.1
-man2/break.2
-man2/cemt.2
-man2/chdir.2
-man2/chmod.2
-man2/chown.2
-man2/close.2
-man2/creat.2
-man2/exec.2
-man2/exit.2
-man2/fork.2
-man2/fstat.2
-man2/getuid.2
-man2/gtty.2
-man2/ilgins.2
-man2/intr.2
-man2/link.2
-man2/mkdir.2
-man2/mdate.2
-man2/mount.2
-man2/open.2
-man2/quit.2
-man2/read.2
-man2/rele.2
-man2/seek.2
-man2/setuid.2
-man2/smdate.2
-man2/stat.2
-man2/stime.2
-man2/stty.2
-man2/tell.2
-man2/time.2
-man2/umount.2
-man2/unlink.2
-man2/wait.2
-man2/write.2
-man3/atof.3
-man3/atoi.3
-man3/ctime.3
-man3/exp.3
-man3/fptrap.3
-man3/ftoa.3
-man3/get.3
-man3/itoa.3
-man3/log.3
-man3/mesg.3
-man3/ptime.3
-man3/putc.3
-man3/sin.3
-man3/switch.3
-man4/mem.4
-man4/ppt.4
-man4/rf0.4
-man4/rk0.4
-man4/tap0.4
-man4/tty0.4
-man4/tty.4
-man5/a.out.5
-man5/archive.5
-man5/bppt.5
-man5/core.5
-man5/directory.5
-man5/file system.5
-man5/passwd.5
-man5/uids.5
-man5/utmp.5
-man6/basic.6
-man6/bj.6
-man6/cal.6
-man6/chess.6
-man6/das.6
-man6/dli.6
-man6/dpt.6
-man6/moo.6
-man6/sort.6
-man6/ttt.6
-man7/as2.7
-man7/ascii.7
-man7/ba.7
-man7/bc.7
-man7/bilib.7
-man7/bproc.7
-man7/brt1.7
-man7/f1.7
-man7/glob.7
-man7/init.7
-man7/kbd.7
-man7/liba.7
-man7/libb.7
-man7/libf.7
-man7/login.7
-man7/msh.7
-man7/suftab.7
-man7/tabs.7
+1	ar
+1	as
+1	b
+1	bas
+1	bcd
+1	boot
+1	cat
+1	chdir
+1	check
+1	chmod
+1	chown
+1	cmp
+1	cp
+1	date
+1	db
+1	dbppt
+1	dc
+1	df
+1	dsw
+1	dtf
+1	du
+1	ed
+1	find
+1	for
+1	form
+1	hup
+1	lbppt
+1	ld
+1	ln
+1	login
+1	ls
+1	mail
+1	mesg
+1	mkdir
+1	mkfs
+1	mount
+1	mv
+1	nm
+1	od
+1	pr
+1	rew
+1	rkd
+1	rkf
+1	rkl
+1	rm
+1	rmdir
+1	roff
+1	sdate
+1	sh
+1	stat
+1	strip
+1	su
+1	sum
+1	tap
+1	tm
+1	tty
+1	type
+1	umount
+1	un
+1	wc
+1	who
+1	write
+2	break
+2	cemt
+2	chdir
+2	chmod
+2	chown
+2	close
+2	creat
+2	exec
+2	exit
+2	fork
+2	fstat
+2	getuid
+2	gtty
+2	ilgins
+2	intr
+2	link
+2	mkdir
+2	mdate
+2	mount
+2	open
+2	quit
+2	read
+2	rele
+2	seek
+2	setuid
+2	smdate
+2	stat
+2	stime
+2	stty
+2	tell
+2	time
+2	umount
+2	unlink
+2	wait
+2	write
+3	atof
+3	atoi
+3	ctime
+3	exp
+3	fptrap
+3	ftoa
+3	get
+3	itoa
+3	log
+3	mesg
+3	ptime
+3	putc
+3	sin
+3	switch
+4	mem
+4	ppt
+4	rf0
+4	rk0
+4	tap0
+4	tty0
+4	tty
+5	a.out
+5	archive
+5	bppt
+5	core
+5	directory
+5	file system
+5	passwd
+5	uids
+5	utmp
+6	basic
+6	bj
+6	cal
+6	chess
+6	das
+6	dli
+6	dpt
+6	moo
+6	sort
+6	ttt
+7	as2
+7	ascii
+7	ba
+7	bc
+7	bilib
+7	bproc
+7	brt1
+7	f1
+7	glob
+7	init
+7	kbd
+7	liba
+7	libb
+7	libf
+7	login
+7	msh
+7	suftab
+7	tabs
