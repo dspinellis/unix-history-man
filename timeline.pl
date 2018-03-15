@@ -97,7 +97,7 @@ for my $release (<data/[FB]* data/Research* data/3*>) {
 	$release =~ s|data/||;
 	while (<$in>) {
 		chop;
-		if (m|man([\dx])f?/(.+)\.\d[a-z]?$|) {
+		if (m|^(\d)[^\t]*\t([^\t]+)|) {
 			my $section = $1;
 			my $name = $2;
 			if (!defined($release_date{$release})) {

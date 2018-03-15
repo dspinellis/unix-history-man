@@ -50,8 +50,8 @@ for ref in $refs ; do
       fi
       echo $f
     done |
-    # Change path/name.x to manx/name.x
-    sed -n 's/.*\/\([^/]*\.\)\([1-9]\)$/man\2\/\1\2/p'
+    # Change path/name.x to x name URI
+    sed -n 's|\(.*\/\)\([^/]*\)\.\([1-9]\)$|\3\t\2\t'$ref'\/\1\2.\3|p'
 
     # Also list cross-linked man pages
     git ls-tree --name-only -r $ref |
@@ -64,22 +64,25 @@ for ref in $refs ; do
     xargs git show |
     join_backslash |
     # Output linked man pages
-    sed -rn '/^[ \t]*MLINKS/ { s/.*=//; s/[ \t]+/\n/g; p; }' |
+    sed -rn '/^[ \t]*MLINKS/ { s/.*=[ \t]*//; p; }' |
+    # Print pairs of linked pages: existing linked
+    awk '{for (i = 1; i <= NF; i += 2) print "MLINK", $i, $(i + 1)}' |
     # Remove relative paths
-    sed 's/^.*\///g' |
+    sed 's/ .*\///g' |
     # Remove entries with embedded variables
-    grep -v -e '\$' -e '^$' |
-    # Change name.x to manx/name.x
-    sed -n 's/\([^/]*\.\)\([1-9]\)$/man\2\/\1\2/p'
+    grep -v -e '\$' -e '^$'
   } |
   # Remove non-man pages
   egrep -v -e /Makefile -e BUGS -e makewhatis.sed -e man\\.template \
     -e man0/ -e tools/ -e ^manroff -e manx/asmt.cat -e manx/asmt.x \
     -e ^docket -e manx/toc -e ^nroff-all -e '/[0-9].[0-9]$' \
     -e 'INST.FreeBSD-2' -e 'ipv6-patch-4' -e 'version5\.9' |
+  # Add the URIs of linked pages
+  awk '!/^MLINK/ { uri[$2 "." $1] = $3; print }
+  /^MLINK/ && uri[$2] { print gensub(/^(.*)\.([^.]*)$/, "\\2\t\\1\t", 1, $3) uri[$2]}' |
   sort -u >$here/$out
 done
 
 # Remove duplicate and empty files
-cd $here
+cd $here/data
 rm -f *-Import FreeBSD-11.0.1 FreeBSD-2.1.6 FreeBSD-4.6.2 FreeBSD-5.2.1
