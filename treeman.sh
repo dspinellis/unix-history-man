@@ -5,11 +5,14 @@
 
 GIT='git --git-dir=unix-history-repo'
 
-test unix-history-repo || exit 1
+test -d unix-history-repo/ || exit 1
 
 all_refs="386BSD-0.0 386BSD-0.1 386BSD-0.1-patchkit
   BSD-4_3_Net_2 BSD-4_3_Reno BSD-4_4 BSD-4_4_Lite1 BSD-4_4_Lite2
-  $($GIT tag -l | grep FreeBSD ; $GIT branch -l | grep FreeBSD-release )"
+  $($GIT tag -l | grep FreeBSD
+    $GIT branch -al |
+      sed -n 's|remotes/origin/||;/FreeBSD-release/p' |
+      sort -u)"
 
 refs=${1:-$all_refs}
 
@@ -31,6 +34,11 @@ export -f join_backslash
 for ref in $refs ; do
   # Output file name
   out=data/$(echo $ref | sed 's|/|_|g;s/-release//;s/-releng//;/FreeBSD/s/_/-/')
+
+  # See if remote ref must be used
+  if ! $GIT show $ref >/dev/null 2>&1 ; then
+    ref=remotes/origin/$ref
+  fi
 
   {
     # List files that look like man pages
