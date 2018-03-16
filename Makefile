@@ -24,10 +24,11 @@ export SITEDIR=docs
 
 AUTO_PATHS=$(patsubst %,data/%,$(AUTO_FILES))
 CURATED_PATHS=$(patsubst %,data/%,$(CURATED_FILES))
+ALL_PATHS=$(AUTO_PATHS) $(CURATED_PATHS)
 
-all: $(SITEDIR)/index.html $(SITEDIR)/SlickGrid
+all: $(SITEDIR)/index.html $(SITEDIR)/SlickGrid $(SITEDIR)/data.zip
 
-$(SITEDIR)/index.html: $(AUTO_PATHS) $(CURATED_PATHS) data/timeline timeline.pl
+$(SITEDIR)/index.html: $(ALL_PATHS) data/timeline timeline.pl
 	mkdir -p $(SITEDIR)
 	./timeline.pl
 
@@ -46,6 +47,10 @@ $(SITEDIR)/SlickGrid:
 	cd $(SITEDIR) && git clone -b 2.0-frozenRowsAndColumns \
 		--depth=1 https://github.com/dspinellis/SlickGrid.git
 	rm -rf $(SITEDIR)/SlickGrid/.git*
+
+$(SITEDIR)/data.zip: $(ALL_PATHS)
+	rm -f $@
+	zip -r $@ data
 
 dist: all
 	./publish.sh
