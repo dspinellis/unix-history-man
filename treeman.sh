@@ -3,13 +3,13 @@
 # List manual pages in FreeBSD trees
 #
 
-here=$(pwd)
+GIT='git --git-dir=unix-history-repo'
 
-cd unix-history-repo || exit 1
+test unix-history-repo || exit 1
 
 all_refs="386BSD-0.0 386BSD-0.1 386BSD-0.1-patchkit
   BSD-4_3_Net_2 BSD-4_3_Reno BSD-4_4 BSD-4_4_Lite1 BSD-4_4_Lite2
-  $(git tag -l | grep FreeBSD ; git branch -l | grep FreeBSD-release )"
+  $($GIT tag -l | grep FreeBSD ; $GIT branch -l | grep FreeBSD-release )"
 
 refs=${1:-$all_refs}
 
@@ -34,15 +34,15 @@ for ref in $refs ; do
 
   {
     # List files that look like man pages
-    git ls-tree --name-only -r $ref |
+    $GIT ls-tree --name-only -r $ref |
     # Remove old reference files
     grep -v '^\.ref' |
     # Find name ending in .1-9
     grep '\.[1-9]$' |
     while read f ; do
       # Look for manual troff commands
-      if ! git show $ref:$f | egrep -q '^\.(\\"|S[Hh])' ; then
-	type=$(git show $ref:$f | file -)
+      if ! $GIT show $ref:$f | egrep -q '^\.(\\"|S[Hh])' ; then
+	type=$($GIT show $ref:$f | file -)
 	# See if file(1) thinks its troff
 	if ! expr match "$type" '.*troff' >/dev/null ; then
 	  continue
@@ -54,14 +54,14 @@ for ref in $refs ; do
     sed -n 's|\(.*\/\)\([^/]*\)\.\([1-9]\)$|\3\t\2\t'$ref'\/\1\2.\3|p'
 
     # Also list cross-linked man pages
-    git ls-tree --name-only -r $ref |
+    $GIT ls-tree --name-only -r $ref |
     # Remove old reference files
     grep -v '^\.ref' |
     # Find Makefiles
     grep Makefile |
     # List their contents
     sed "s|^|$ref:|" |
-    xargs git show |
+    xargs $GIT show |
     join_backslash |
     # Output linked man pages
     sed -rn '/^[ \t]*MLINKS/ { s/.*=[ \t]*//; p; }' |
@@ -80,9 +80,9 @@ for ref in $refs ; do
   # Add the URIs of linked pages
   awk '!/^MLINK/ { uri[$2 "." $1] = $3; print }
   /^MLINK/ && uri[$2] { print gensub(/^(.*)\.([^.]*)$/, "\\2\t\\1\t", 1, $3) uri[$2]}' |
-  sort -u >$here/$out
+  sort -u >$out
 done
 
 # Remove duplicate and empty files
-cd $here/data
+cd data
 rm -f *-Import FreeBSD-11.0.1 FreeBSD-2.1.6 FreeBSD-4.6.2 FreeBSD-5.2.1

@@ -3,24 +3,24 @@
 # Create a timeline of the releases
 #
 
-here=$(pwd)
+GIT='git --git-dir=unix-history-repo'
 
 cd data
 refs=(386BSD-0.0 386BSD-0.1 remotes/origin/386BSD-0.1-patchkit Bell-32V
   BSD* Research*)
 cd ..
 
-cd unix-history-repo || exit 1
+test -d unix-history-repo || exit 1
 
 refs=(${refs[@]}
-  $(git tag -l | grep FreeBSD ; git branch -al | grep FreeBSD-release ) )
+  $($GIT tag -l | grep FreeBSD ; $GIT branch -al | grep FreeBSD-release ) )
 
 for ref in ${refs[@]} ; do
   expr $ref : '.*-Import' >/dev/null && continue
   # Output file name
   out=$(echo $ref | sed 's|/|_|g;s/-release//;s/-releng//;/FreeBSD/s/_/-/')
   echo -n "$out "
-  git log -n 1 --format=%at "$ref" --
+  $GIT log -n 1 --format=%at "$ref" --
 done |
 while read name date ; do
   echo $name $(date -d @$date +'%Y %m %d')
@@ -40,4 +40,4 @@ s/BSD-2 1979 05 10/BSD-2 1979 08 27/
 /FreeBSD-11.0.1/d
 /BSD-4_3_Net_1/d
 ' |
-sort -k2n -k3n -k4n >$here/data/timeline
+sort -k2n -k3n -k4n >data/timeline
