@@ -1,5 +1,7 @@
 #!/bin/sh
+#
 # Publish the site from docs to GitHub
+#
 
 set -e
 

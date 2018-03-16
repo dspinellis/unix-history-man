@@ -2,7 +2,7 @@
 #
 # Create Unix facility timeline charts using SlickGrid
 #
-# Copyright 2011-2012 Diomidis Spinellis
+# Copyright 2017-2018 Diomidis Spinellis
 #
 #   Licensed under the Apache License, Version 2.0 (the "License");
 #   you may not use this file except in compliance with the License.
