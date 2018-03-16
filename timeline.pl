@@ -226,7 +226,8 @@ node_type
 
 	my $candidate = $1;
 	for (my $i = $row; $i < $row + $SAME_PREFIX; $i++) {
-		return 'noparent' if ($facilities->[$i] !~ m/^$candidate/);
+		return 'noparent' if (!defined($facilities->[$i]) ||
+			$facilities->[$i] !~ m/^$candidate/);
 	}
 	return 'new';
 }
