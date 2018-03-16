@@ -1,4 +1,5 @@
-TREEMAN_FILES=386BSD-0.0 386BSD-0.1 386BSD-0.1-patchkit \
+# Auto-generated manual files from the Unix releases tree
+AUTO_FILES=386BSD-0.0 386BSD-0.1 386BSD-0.1-patchkit \
   BSD-4_3_Net_2 BSD-4_3_Reno BSD-4_4 BSD-4_4_Lite1 BSD-4_4_Lite2 FreeBSD-1.0 \
   FreeBSD-1.1 FreeBSD-1.1.5 FreeBSD-10.0.0 FreeBSD-10.1.0 FreeBSD-10.2.0 \
   FreeBSD-10.3.0 FreeBSD-11.0.0 FreeBSD-2.0 FreeBSD-2.0.5 FreeBSD-2.1.0 \
@@ -14,17 +15,23 @@ TREEMAN_FILES=386BSD-0.0 386BSD-0.1 386BSD-0.1-patchkit \
   FreeBSD-7.4.0 FreeBSD-8.0.0 FreeBSD-8.1.0 FreeBSD-8.2.0 FreeBSD-8.3.0 \
   FreeBSD-8.4.0 FreeBSD-9.0.0 FreeBSD-9.1.0 FreeBSD-9.2.0 FreeBSD-9.3.0
 
+# Files curated by hand
+CURATED_FILES=Research-V1 Research-V2 Research-V3 Research-V4 Research-V5 \
+  Research-V6 Research-V7 Bell-32V BSD-1 BSD-2 BSD-3 BSD-4 BSD-4_1_snap \
+  BSD-4_1c_2 BSD-4_2 BSD-4_3 BSD-4_3_Tahoe
+
 export SITEDIR=docs
 
-TREEMAN_PATHS=$(patsubst %,data/%,$(TREEMAN_FILES))
+AUTO_PATHS=$(patsubst %,data/%,$(AUTO_FILES))
+CURATED_PATHS=$(patsubst %,data/%,$(CURATED_FILES))
 
 all: $(SITEDIR)/index.html $(SITEDIR)/SlickGrid
 
-$(SITEDIR)/index.html: $(TREEMAN_PATHS) data/timeline timeline.pl
+$(SITEDIR)/index.html: $(AUTO_PATHS) $(CURATED_PATHS) data/timeline timeline.pl
 	mkdir -p $(SITEDIR)
-	perl timeline.pl
+	./timeline.pl
 
-$(TREEMAN_PATHS): treeman.sh unix-history-repo
+$(AUTO_PATHS): treeman.sh unix-history-repo
 	./treeman.sh
 
 unix-history-repo:
@@ -44,4 +51,4 @@ dist: all
 	./publish.sh
 
 clean:
-	rm -f $(TREEMAN_PATHS)
+	rm -f $(AUTO_PATHS)
