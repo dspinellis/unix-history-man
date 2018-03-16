@@ -35,10 +35,10 @@ for ref in $refs ; do
   {
     # List files that look like man pages
     $GIT ls-tree --name-only -r $ref |
-    # Remove old reference files
-    grep -v '^\.ref' |
-    # Find name ending in .1-9
-    grep '\.[1-9]$' |
+    # Remove old reference files and learn files
+    grep -v -e '^\.ref' -e /learnlib/ -e /libdata/learn/ |
+    # Find names ending in .1-9 optionally followed by a character
+    egrep '\.[1-9][a-z]?$' |
     while read f ; do
       # Look for manual troff commands
       if ! $GIT show $ref:$f | egrep -q '^\.(\\"|S[Hh])' ; then
@@ -51,7 +51,7 @@ for ref in $refs ; do
       echo $f
     done |
     # Change path/name.x to x name URI
-    sed -n 's|\(.*\/\)\([^/]*\)\.\([1-9]\)$|\3\t\2\t'$ref'\/\1\2.\3|p'
+    sed -nE 's|(.*\/)([^/]*)\.([1-9][a-z]?)$|\3\t\2\t'$ref'\/\1\2.\3|p'
 
     # Also list cross-linked man pages
     $GIT ls-tree --name-only -r $ref |
@@ -64,22 +64,42 @@ for ref in $refs ; do
     xargs $GIT show |
     join_backslash |
     # Output linked man pages
-    sed -rn '/^[ \t]*MLINKS/ { s/.*=[ \t]*//; p; }' |
+    sed -rn '/^[ \t]*MLINKS/ { s/.*=[ \t]*//; s/[ \t]*#.*//; p; }' |
     # Print pairs of linked pages: existing linked
     awk '{for (i = 1; i <= NF; i += 2) print "MLINK", $i, $(i + 1)}' |
     # Remove relative paths
-    sed 's/ .*\///g' |
-    # Remove entries with embedded variables
+    sed 's/ .*\// /g' |
+    # Remove entries with embedded variables and empty ones
     grep -v -e '\$' -e '^$'
   } |
   # Remove non-man pages
   egrep -v -e /Makefile -e BUGS -e makewhatis.sed -e man\\.template \
-    -e man0/ -e tools/ -e ^manroff -e manx/asmt.cat -e manx/asmt.x \
-    -e ^docket -e manx/toc -e ^nroff-all -e '/[0-9].[0-9]$' \
-    -e 'INST.FreeBSD-2' -e 'ipv6-patch-4' -e 'version5\.9' |
-  # Add the URIs of linked pages
-  awk '!/^MLINK/ { uri[$2 "." $1] = $3; print }
-  /^MLINK/ && uri[$2] { print gensub(/^(.*)\.([^.]*)$/, "\\2\t\\1\t", 1, $3) uri[$2]}' |
+    -e man0/ -e tools/ -e ' manroff' -e manx/asmt.cat -e manx/asmt.x \
+    -e ' docket' -e manx/toc -e ' nroff-all' -e '/[0-9].[0-9]$' \
+    -e INST.FreeBSD-2 -e ipv6-patch-4 -e version5\\.9 |
+  # List linked pages, adding the URIs if available
+  awk '
+    # Store defined paths as possible URIs to link
+    !/^MLINK/ { uri[$2 "." $1] = $3; print }
+
+    function reformat(x) { return gensub(/^(.*)\.([^.]*)$/, "\\2\t\\1", 1, x) }
+
+    # Output URIs for linked pages
+    /^MLINK/ && NF == 3 && $2 != $3 {
+
+      # See if a trailing x must be added (required for FreeBSD curses .3x)
+      if (!uri[$2] && uri[$2 "x"])
+	$2 = $2 "x"
+
+      if (uri[$2])
+	# Output the linked page with the URI of the original
+        print reformat($3) "\t" uri[$2]
+      else {
+	# Output both the linked and the original name w/o a URI
+        print reformat($2)
+        print reformat($3)
+      }
+    }' |
   sort -u >$out
 done
 
