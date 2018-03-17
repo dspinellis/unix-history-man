@@ -175,7 +175,7 @@ sub by_release_order {
 
 
 # Create index file
-my $sitedir = $ENV{'SITEDIR'};
+my $sitedir = ($ENV{'SITEDIR'} or 'docs');
 mkdir($sitedir);
 open(my $index_file, '>', "$sitedir/index.html") || die;
 bs_head($index_file);
