@@ -50,6 +50,7 @@ for ref in $refs ; do
   out=data/$(echo $ref | sed 's|/|_|g;s/-release//;s/-releng//;/FreeBSD/s/_/-/')
 
   # See if remote ref must be used
+  uri_prefix=$ref
   if ! $GIT show $ref >/dev/null 2>&1 ; then
     ref=remotes/origin/$ref
   fi
@@ -73,7 +74,7 @@ for ref in $refs ; do
       echo $f
     done |
     # Change path/name.x to x name URI
-    sed -nE 's|(.*\/)([^/]*)\.([1-9][a-z]?)$|\3\t\2\t'$ref'\/\1\2.\3|p'
+    sed -nE 's|(.*\/)([^/]*)\.([1-9][a-z]?)$|\3\t\2\t'$uri_prefix'\/\1\2.\3|p'
 
     # Also list cross-linked man pages
     $GIT ls-tree --name-only -r $ref |
