@@ -375,18 +375,6 @@ section
 	  dataView.updateItem(item.id, item);
 	}
 	e.stopImmediatePropagation();
-      } else {
-	var cell = grid.getCellFromEvent(e);
-	var releaseId = grid.getColumns()[cell.cell].id;
-	var release = uri[releaseId];
-	if (release) {
-	  var facility = data[cell.row].Facility;
-	  var target = release[facility];
-	  if (target) {
-	    window.open("https://github.com/dspinellis/unix-history-repo/blob/" + target);
-	    e.stopPropagation();
-	  }
-	}
       }
     });
 
@@ -488,14 +476,21 @@ slick_head
       background: #edeef0;
     }
 
-    .implemented {
-      background: LightSkyBlue;
+    .implemented, .linked {
       width: 95%;
       display: inline-block;
       height: 6px;
       border-radius: 3px;
       -moz-border-radius: 3px;
       -webkit-border-radius: 3px;
+    }
+
+    .implemented {
+      background: LightSkyBlue;
+    }
+
+    .linked {
+      background: #0000EE;
     }
 
     .toggle {
@@ -568,11 +563,20 @@ slick_head
       };
 
       var ImplementedFormatter = function(row, cell, value, columnDef, dataContext) {
-	if (value == null || value === "") {
+	if (value == null || value === "")
 	  return "";
-	} else {
-	  return "<span class='implemented'></span>";
-	}
+	var releaseId = columnDef.id;
+	var release = uri[releaseId];
+	var implemented = "<span class='implemented'></span>";
+	if (!release)
+	  return implemented;
+	var facility = dataContext.Facility;
+	var target = release[facility];
+	if (target)
+	  return "<a href='https://github.com/dspinellis/unix-history-repo/blob/" +
+	    target + "' target='_blank'><span class='linked'></span></a>";
+	else
+	  return implemented;
       };
 
       var gridSorter = function(cols, grid, gridData) {
