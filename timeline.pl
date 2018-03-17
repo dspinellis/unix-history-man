@@ -476,21 +476,15 @@ slick_head
       background: #edeef0;
     }
 
+    .slick-cell {
+      padding: 0;
+    }
+
     .implemented, .linked {
-      width: 95%;
+      background: LightSkyBlue;
+      width: 100%;
       display: inline-block;
       height: 6px;
-      border-radius: 3px;
-      -moz-border-radius: 3px;
-      -webkit-border-radius: 3px;
-    }
-
-    .implemented {
-      background: LightSkyBlue;
-    }
-
-    .linked {
-      background: #0000EE;
     }
 
     .toggle {
