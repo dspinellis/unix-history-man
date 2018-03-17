@@ -29,6 +29,8 @@ my %release_order;
 my %first_release_order;
 my %first_release_name;
 my %release_page;
+# URI of a specific release, section, name
+my %uri;
 
 my $last_release;
 
@@ -97,14 +99,15 @@ for my $release (<data/[FB]* data/Research* data/3*>) {
 	$release =~ s|data/||;
 	while (<$in>) {
 		chop;
-		if (m|^(\d)[^\t]*\t([^\t]+)|) {
-			my $section = $1;
-			my $name = $2;
+		if (my ($section, $name, $tab_uri, $uri) = m|^(\d)[^\t]*\t([^\t]+)(\t(.*))?|) {
 			if (!defined($release_date{$release})) {
 				print STDERR "Undefined release date for $release\n";
 				exit 1;
 			}
 			$release_page{$release}{$section}{$name} = 1;
+			if (defined($uri)) {
+				$uri{$release}{$section}{$name} = $uri
+			}
 		} else {
 			print STDERR "$release: Unable to parse $_\n";
 			exit 1;
@@ -122,8 +125,10 @@ for my $last_section ((1, 6, 8)) {
 			for my $original_section ((1, 6, 8)) {
 				next if ($original_section eq $last_section);
 				if (defined($release_page{$r}{$original_section}{$name})) {
-					delete $release_page{$r}{$original_section}{$name};
 					$release_page{$r}{$last_section}{$name} = 1;
+					$uri{$r}{$last_section}{$name} = $uri{$r}{$original_section}{$name};
+					delete $release_page{$r}{$original_section}{$name};
+					delete $uri{$r}{$original_section}{$name};
 				}
 			}
 		}
@@ -323,8 +328,25 @@ section
 ];
 		$out_row++;
 	}
-print $section_file '
+
+	print $section_file '
     ]; // data[] initilization end
+
+    // Initialize URIs
+    uri = {
+';
+	# Initialize URIs
+	for my $release (keys %release_date) {
+		print $section_file qq|      "$release" : {\n|;
+		for my $name (keys %{$uri{$release}{$section}}) {
+			next unless ($uri{$release}{$section}{$name});
+			print $section_file qq|        "$name" : "$uri{$release}{$section}{$name}",\n|;
+		}
+		print $section_file "      },\n";
+	}
+
+	print $section_file '
+    };
 
     // initialize the model
     dataView = new Slick.Data.DataView({ inlineFilters: true });
@@ -342,6 +364,7 @@ print $section_file '
 
     grid.onClick.subscribe(function (e, args) {
       if ($(e.target).hasClass("toggle")) {
+      	// Toggle collapsable entries
 	var item = dataView.getItem(args.row);
 	if (item) {
 	  if (!item._collapsed) {
@@ -352,6 +375,18 @@ print $section_file '
 	  dataView.updateItem(item.id, item);
 	}
 	e.stopImmediatePropagation();
+      } else {
+	var cell = grid.getCellFromEvent(e);
+	var releaseId = grid.getColumns()[cell.cell].id;
+	var release = uri[releaseId];
+	if (release) {
+	  var facility = data[cell.row].Facility;
+	  var target = release[facility];
+	  if (target) {
+	    window.open("https://github.com/dspinellis/unix-history-repo/blob/" + target);
+	    e.stopPropagation();
+	  }
+	}
       }
     });
 
@@ -481,6 +516,7 @@ slick_head
 	print $section_file q#
   <script>
     var data = [];
+    var uri = {};
 
     function collapseFilter(item) {
       if (item.parent != null) {
