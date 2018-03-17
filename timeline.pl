@@ -49,6 +49,11 @@ my @section_title = (
 	'System kernel interfaces',
 );
 
+my %release_pdf = (
+	'Research-V1' => 'http://www.tuhs.org/Archive/Distributions/Research/Dennis_v1/UNIX_ProgrammersManual_Nov71.pdf',
+	'Research-V2' => 'http://www.tuhs.org/Archive/Distributions/Research/Dennis_v2/v2man.pdf',
+	'Research-V5' => 'http://www.tuhs.org/Archive/Distributions/Research/Dennis_v5/v5man.pdf',
+);
 
 # Read timeline of releases
 open(my $in, '<', 'data/timeline') || die;
@@ -107,6 +112,8 @@ for my $release (<data/[FB]* data/Research* data/3*>) {
 			$release_page{$release}{$section}{$name} = 1;
 			if (defined($uri)) {
 				$uri{$release}{$section}{$name} = $uri
+			} elsif (defined($release_pdf{$release})) {
+				$uri{$release}{$section}{$name} = $release_pdf{$release}
 			}
 		} else {
 			print STDERR "$release: Unable to parse $_\n";
@@ -573,8 +580,12 @@ slick_head
 	var facility = dataContext.Facility;
 	var target = release[facility];
 	if (target)
-	  return "<a href='https://github.com/dspinellis/unix-history-repo/blob/" +
-	    target + "' target='_blank'><span class='linked'></span></a>";
+	  if (target.substr(0, 5) == "http:")
+	    return "<a href='" +
+	      target + "' target='_blank'><span class='linked'></span></a>";
+	  else
+	    return "<a href='https://github.com/dspinellis/unix-history-repo/blob/" +
+	      target + "' target='_blank'><span class='linked'></span></a>";
 	else
 	  return implemented;
       };
