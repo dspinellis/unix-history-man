@@ -567,8 +567,11 @@ slick_head
 	var facility = dataContext.Facility;
 	var target = release[facility];
 	if (target)
-	  return "<a href='https://github.com/dspinellis/unix-history-repo/blob/" +
-	    target + "' target='_blank'><span class='linked'></span></a>";
+	  return "<a href='https://dspinellis.github.io/manview/" +
+	    "?src=" + encodeURIComponent("https://raw.githubusercontent.com/dspinellis/unix-history-repo/" + target) +
+	    "&name=" + encodeURIComponent(columnDef.name + ": " + facility + "(# . $section . q#)") +
+	    "&link=" + encodeURIComponent("https://github.com/dspinellis/unix-history-repo/blob/" + target) +
+	    "' target='_blank'><span class='linked'></span></a>";
 	else
 	  return implemented;
       };
