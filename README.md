@@ -1,4 +1,4 @@
-# The History of Documented Unix Facilities
+# The history of documented Unix facilities
 A [repository](https://github.com/dspinellis/unix-history-man),
 a [curated data set](https://dspinellis.github.io/unix-history-man/data.zip),
 and a [timeline visualization web site](https://dspinellis.github.io/unix-history-man/index.html)
@@ -7,7 +7,7 @@ detailing the evolution of documented facilities
 across the major Unix releases tracked by the
 [Unix history repository](https://github.com/dspinellis/unix-history-repo).
 
-## Example Records
+## Example records
 A file corresponding to each release contains tab-separated records
 with the manual page section (1–9), the name,
 and, if available, a URI of the corresponding page.
@@ -45,7 +45,7 @@ The scripts and the curated data are available and are
 maintained in the
 [history of documented Unix facilities repository](https://github.com/dspinellis/unix-history-man).
 
-## Related Publication
+## Related publications
 Diomidis Spinellis. [Documented Unix facilities over 48 years](https://www.dmst.aueb.gr/dds/pubs/conf/2018-MSR-Unix-man/html/unix-man.pdf).  In
 *MSR '18: Proceedings of the 15th Conference on Mining Software Repositories*.
 Association for Computing Machinery, May 2018. (doi:10.1145/3196398.3196476)

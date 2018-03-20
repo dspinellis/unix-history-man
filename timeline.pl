@@ -181,13 +181,13 @@ mkdir($sitedir);
 open(my $index_file, '>', "$sitedir/index.html") || die;
 bs_head($index_file);
 print $index_file '
-    <title>The History of Documented Unix Facilities</title>
+    <title>The history of documented Unix facilities</title>
   </head>
   <body>
     <div class="container">
       <div class="row">
 	<div class="col">
-	  <h1>The History of Documented Unix Facilities</h1>
+	  <h1>The history of documented Unix facilities</h1>
 	  <ol>
 ';
 for (my $i = 1; $i <= $#section_title; $i++) {
