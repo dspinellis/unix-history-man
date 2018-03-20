@@ -50,7 +50,7 @@ $(SITEDIR)/%: %
 all: $(SITEDIR)/index.html $(SITEDIR)/SlickGrid $(SITEDIR)/data.zip \
 	$(SITEDIR)/grid-style.css $(SITEDIR)/grid-behavior.js
 
-$(SITEDIR)/index.html: $(ALL_PATHS) data/timeline timeline.pl
+$(SITEDIR)/index.html: $(ALL_PATHS) data/timeline timeline.pl README.md
 	mkdir -p $(SITEDIR)
 	./timeline.pl
 
