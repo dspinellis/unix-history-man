@@ -1,9 +1,9 @@
 # The history of documented Unix facilities
-A [repository](https://github.com/dspinellis/unix-history-man),
-a [curated data set](https://dspinellis.github.io/unix-history-man/data.zip),
-and a [timeline visualization web site](https://dspinellis.github.io/unix-history-man/index.html)
+A [timeline visualization](https://dspinellis.github.io/unix-history-man/index.html),
+a [curated data set](https://dspinellis.github.io/unix-history-man/data.zip), and
+a [repository](https://github.com/dspinellis/unix-history-man)
 detailing the evolution of 15,596 unique documented facilities
-(commands, system calls, library functions, etc.)
+(commands, system calls, library functions, device drivers, etc.)
 across 93 major Unix releases tracked by the
 [Unix history repository](https://github.com/dspinellis/unix-history-repo).
 
