@@ -619,6 +619,8 @@ tail
     <ul>
       <li>Click on the "Facility" or "Appearance" headers
         to change the sort order.</li>
+      <li>Click on the timeline to see the manual page for the specified
+        version of a facility.</li>
       <li>The name of a facility may have been repurposed over time.</li>
       <li>Facilities in sections 1, 6, 8 moved across sections over time.
         To allow a continuous view of their evolution, all have been
