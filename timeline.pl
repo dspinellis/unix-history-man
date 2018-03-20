@@ -34,7 +34,8 @@ my %uri;
 
 my $last_release;
 
-my $section_file;
+my $html_section_file;
+my $js_section_file;
 
 my @section_title = (
 	'man0',
@@ -188,7 +189,8 @@ print $index_file '
 ';
 for (my $i = 1; $i <= $#section_title; $i++) {
 	print $index_file qq{      <li><a href="man$i.html">$section_title[$i]</a></li>\n};
-	open($section_file, '>', "$sitedir/man$i.html") || die;
+	open($html_section_file, '>', "$sitedir/man$i.html") || die;
+	open($js_section_file, '>', "$sitedir/man$i.js") || die;
 	section($i);
 }
 print $index_file '
@@ -246,31 +248,30 @@ section
 	slick_head($section);
 
 	# Release dates
-	print $section_file q'
+	print $js_section_file q'
       var release_date = {
 ';
 	for my $r (sort keys %release_date) {
 		my $br = beautify($r);
-		print $section_file qq<        "$br": "$release_date{$r}",\n>;
+		print $js_section_file qq<        "$br": "$release_date{$r}",\n>;
 	}
-	print $section_file "  };\n";
+	print $js_section_file "  };\n";
 
 	# Release label time line
-	print $section_file q'
+	print $js_section_file q'
       var columns = [
 	{id: "Facility", name: "Facility", field: "Facility", cssClass: "slick-header-row", formatter: FacilityNameFormatter, sortable: true},
 	{id: "Appearance", name: "Appearance", field: "Appearance", cssClass: "slick-header-row", sortable: true},
 ';
 	for my $r (sort by_release_order keys %release_order) {
 		my $br = beautify($r);
-		print $section_file qq<        {id: "$r", name: "$br", field: "$r", formatter: ImplementedFormatter},\n>;
+		print $js_section_file qq<        {id: "$r", name: "$br", field: "$r", formatter: ImplementedFormatter},\n>;
 	}
-	print $section_file "  ];\n";
+	print $js_section_file "  ];\n";
 
 	# Row titles
-	print $section_file q|
+	print $js_section_file q|
 
-    var dataView;
     var grid;
     var options = {
       enableCellNavigation: true,
@@ -297,7 +298,7 @@ section
 			$parent_name =~ s/^([^_]+)_.*/$1_*/;
 			$parent_val = $out_row;
 			$highlights = element_line($out_row, $section, $name);
-			print $section_file qq(
+			print $js_section_file qq(
       { // $out_row
 	Facility: "$parent_name",
 	Appearance: "$first_release_name{$section}{$name}",
@@ -317,7 +318,7 @@ section
 		}
 		# Output a child or a simple node
 		$highlights = element_line($out_row, $section, $name);
-		print $section_file qq[
+		print $js_section_file qq[
       { // $out_row
 	Facility: "$name",
 	Appearance: "$first_release_name{$section}{$name}",
@@ -329,7 +330,7 @@ section
 		$out_row++;
 	}
 
-	print $section_file '
+	print $js_section_file '
     ]; // data[] initilization end
 
     // Initialize URIs
@@ -337,15 +338,15 @@ section
 ';
 	# Initialize URIs
 	for my $release (keys %release_date) {
-		print $section_file qq|      "$release" : {\n|;
+		print $js_section_file qq|      "$release" : {\n|;
 		for my $name (keys %{$uri{$release}{$section}}) {
 			next unless ($uri{$release}{$section}{$name});
-			print $section_file qq|        "$name" : "$uri{$release}{$section}{$name}",\n|;
+			print $js_section_file qq|        "$name" : "$uri{$release}{$section}{$name}",\n|;
 		}
-		print $section_file "      },\n";
+		print $js_section_file "      },\n";
 	}
 
-	print $section_file '
+	print $js_section_file '
     };
 
     // initialize the model
@@ -446,12 +447,13 @@ slick_head
 {
 	my ($section) = @_;
 
-	bs_head($section_file);
-	print $section_file qq|
+	bs_head($html_section_file);
+	print $html_section_file qq|
     <title>Evolution of Unix facilities: $section</title>
     <link rel="stylesheet" href="SlickGrid/slick.grid.css" type="text/css"/>
     <link rel="stylesheet" href="SlickGrid/css/smoothness/jquery-ui-1.8.24.custom.css" type="text/css"/>
     <link rel="stylesheet" href="SlickGrid/examples/examples.css" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="grid-style.css">
   </head>
   <body>
     <h1>Evolution of Unix section $section: $section_title[$section]</h1>
@@ -463,155 +465,22 @@ slick_head
     <script src="SlickGrid/slick.grid.js"></script>
     <script src="SlickGrid/slick.dataview.js"></script>
 
-    <style>
-    .cell-title {
-      background: gray;
-    }
+    <script src="grid-behavior.js"></script>
+    <script src="man$section.js"></script>
 
-    .slick-header-column.ui-state-default {
-      height: 100%;
-    }
-
-    .slick-header-row {
-      background: #edeef0;
-    }
-
-    .slick-cell {
-      padding: 0;
-    }
-
-    .implemented, .linked {
-      background: LightSkyBlue;
-      width: 100%;
-      display: inline-block;
-      height: 6px;
-    }
-
-    .toggle {
-      height: 9px;
-      width: 9px;
-      display: inline-block;
-    }
-    .toggle.expand {
-      background: url(SlickGrid/images/expand.gif) no-repeat center center;
-    }
-    .toggle.collapse {
-      background: url(SlickGrid/images/collapse.gif) no-repeat center center;
-    }
-
-  </style>
 |;
 
-	print $section_file q#
-  <script>
-    var data = [];
-    var uri = {};
-
-    function collapseFilter(item) {
-      if (item.parent != null) {
-	var parent = data[item.parent];
-	while (parent) {
-	  if (parent._collapsed) {
-	    return false;
-	  }
-	  parent = data[parent.parent];
-	}
-      }
-      return true;
-    }
-
-    var groupingDisabled = false;
-
-    // Remove parent nodes (*), pointers to them, and indentation
-    function disableGrouping() {
-      if (groupingDisabled) {
-	return;
-      }
-      for (var i = 0; i < data.length; i++) {
-	if (data[i].Facility.slice(-1) == "*") {
-	  data.splice(i, 1);
-	  i--;
-	  continue;
-	}
-	data[i].indent = 0;
-	data[i].parent = null;
-      }
-      groupingDisabled = true;
-    }
-
-    $(function () {
-
-      var FacilityNameFormatter = function (row, cell, value, columnDef, dataContext) {
-	value = value.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
-	var spacer = "<span style='display:inline-block;height:1px;width:" + (15 * dataContext["indent"]) + "px'></span>";
-	var idx = dataView.getIdxById(dataContext.id);
-	if (data[idx + 1] && data[idx + 1].indent > data[idx].indent) {
-	  if (dataContext._collapsed) {
-	    return spacer + " <span class='toggle expand'></span>&nbsp;" + value;
-	  } else {
-	    return spacer + " <span class='toggle collapse'></span>&nbsp;" + value;
-	  }
-	} else {
-	  return spacer + " <span class='toggle'></span>&nbsp;" + value;
-	}
-      };
-
-      var ImplementedFormatter = function(row, cell, value, columnDef, dataContext) {
-	if (value == null || value === "")
-	  return "";
-	var releaseId = columnDef.id;
-	var release = uri[releaseId];
-	var implemented = "<span class='implemented'></span>";
-	if (!release)
-	  return implemented;
-	var facility = dataContext.Facility;
-	var target = release[facility];
-	if (target)
-	  return "<a href='https://dspinellis.github.io/manview/" +
-	    "?src=" + encodeURIComponent("https://raw.githubusercontent.com/dspinellis/unix-history-repo/" + target) +
-	    "&name=" + encodeURIComponent(columnDef.name + ": " + facility + "(# . $section . q#)") +
-	    "&link=" + encodeURIComponent("https://github.com/dspinellis/unix-history-repo/blob/" + target) +
-	    "' target='_blank'><span class='linked'></span></a>";
-	else
-	  return implemented;
-      };
-
-      var gridSorter = function(cols, grid, gridData) {
-        /*
-	 * After changing the order of the rows, the parent pointers are
-	 * no longer valid, so we disable grouping.
-	 */
-        disableGrouping();
-	gridData.sort(function (dataRow1, dataRow2) {
-	  for (var i = 0, l = cols.length; i < l; i++) {
-	    var field = cols[i].sortCol.field;
-	    var sign = cols[i].sortAsc ? 1 : -1;
-	    var value1 = dataRow1[field], value2 = dataRow2[field];
-	    if (field == "Appearance") {
-	      value1 = release_date[value1];
-	      value2 = release_date[value2];
-	    }
-	    var result = (value1 == value2) ?  0 :
-	      ((value1 > value2 ? 1 : -1)) * sign;
-	    if (result != 0) {
-	      return result;
-	    }
-	  }
-	  return 0;
-	});
-	grid.invalidate();
-	grid.render();
-      };
-
-#;
+	print $js_section_file qq|
+\$(function () {
+  section = '$section';
+|;
 }
 
 sub
 tail
 {
-	print $section_file q|
-  })
-    </script>
+	print $js_section_file "  });\n";
+	print $html_section_file q|
     <p>
       <a href="index.html">Back to section index</a>
     <p>
