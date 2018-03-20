@@ -22,13 +22,13 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <title>The History of Documented Unix Facilities</title>
+    <title>The history of documented Unix facilities</title>
   </head>
   <body>
     <div class="container">
       <div class="row">
 	<div class="col">
-	  <h1>The History of Documented Unix Facilities</h1>
+	  <h1>The history of documented Unix facilities</h1>
 	  <ol>
             <li><a href="man1.html">User commands</a></li>
             <li><a href="man2.html">System calls</a></li>
@@ -41,9 +41,10 @@
             <li><a href="man9.html">System kernel interfaces</a></li>
           </ol>
           <p>The links above are associated with a <a href="https://github.com/dspinellis/unix-history-man">repository</a>, a <a href="https://dspinellis.github.io/unix-history-man/data.zip">curated data set</a>, and a <a href="https://dspinellis.github.io/unix-history-man/index.html">timeline visualization web site</a> detailing the evolution of documented facilities (commands, system calls, library functions, etc.) across the major Unix releases tracked by the <a href="https://github.com/dspinellis/unix-history-repo">Unix history repository</a>.</p>
-          <h2 id="example-records">Example Records</h2>
+          <h2 id="example-records">Example records</h2>
           <p>A file corresponding to each release contains tab-separated records with the manual page section (1–9), the name, and, if available, a URI of the corresponding page. The raw data are available through <a href="https://dspinellis.github.io/unix-history-man/data.zip">this link</a>. Below are some records from the data set.</p>
-          <pre><code>1       date    Research-V4/man/man1/date.1
+          <pre><code>
+          1       date    Research-V4/man/man1/date.1
           2       open    Research-V3/man/man2/open.2
           2       socket  BSD-4_2/usr/man/man2/socket.2
           2       jail    FreeBSD-release/4.11.0/lib/libc/sys/jail.2
@@ -56,8 +57,11 @@
           9       VFS     FreeBSD-release/2.2.0/share/man/man9/VFS.9</code></pre>
           <h2 id="construction">Construction</h2>
           <p>Where possible, the details are collected automatically from the <a href="https://github.com/dspinellis/unix-history-repo">Unix history repository</a>. In the remaining cases, the details have been hand-entered from printed manuals. (The <a href="https://github.com/dspinellis/unix-v3man">Third Edition</a> and the <a href="https://github.com/dspinellis/unix-v4man">Fourth Edition</a> manuals were recreated from their 1970s source code.) A Perl script creates the <a href="https://dspinellis.github.io/unix-history-man/index.html">timeline visualization web site</a> showing the availability timeline of each facility on every tracked Unix release. The scripts and the curated data are available and are maintained in the <a href="https://github.com/dspinellis/unix-history-man">history of documented Unix facilities repository</a>.</p>
-          <h2 id="related-publication">Related Publication</h2>
-          <p>Diomidis Spinellis. <a href="https://www.dmst.aueb.gr/dds/pubs/conf/2018-MSR-Unix-man/html/unix-man.pdf">Documented Unix facilities over 48 years</a>. In <em>MSR '18: Proceedings of the 15th Conference on Mining Software Repositories</em>. Association for Computing Machinery, May 2018. (doi:10.1145/3196398.3196476)</p>
+          <h2 id="related-publications">Related publications</h2>
+          <ul>
+          <li>Diomidis Spinellis. <a href="https://www.dmst.aueb.gr/dds/pubs/conf/2018-MSR-Unix-man/html/unix-man.pdf">Documented Unix facilities over 48 years</a>. In <em>MSR '18: Proceedings of the 15th Conference on Mining Software Repositories</em>. Association for Computing Machinery, May 2018. doi:10.1145/3196398.3196476</li>
+          <li>Diomidis Spinellis. <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2016-EMPSE-unix-history/html/unix-history.html">A repository of Unix History and evolution</a>. Empirical Software Engineering, 22(3):1372–1404, 2017. <a href="http://dx.doi.org/10.1007/s10664-016-9445-5">doi:10.1007/s10664-016-9445-5</a></li>
+          </ul>
 
 	</div>
       </div>
