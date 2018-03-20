@@ -34,7 +34,8 @@ my %uri;
 
 my $last_release;
 
-my $section_file;
+my $html_section_file;
+my $js_section_file;
 
 my @section_title = (
 	'man0',
@@ -188,7 +189,8 @@ print $index_file '
 ';
 for (my $i = 1; $i <= $#section_title; $i++) {
 	print $index_file qq{      <li><a href="man$i.html">$section_title[$i]</a></li>\n};
-	open($section_file, '>', "$sitedir/man$i.html") || die;
+	open($html_section_file, '>', "$sitedir/man$i.html") || die;
+	open($js_section_file, '>', "$sitedir/man$i.js") || die;
 	section($i);
 }
 print $index_file '
@@ -246,29 +248,29 @@ section
 	slick_head($section);
 
 	# Release dates
-	print $section_file q'
+	print $js_section_file q'
       var release_date = {
 ';
 	for my $r (sort keys %release_date) {
 		my $br = beautify($r);
-		print $section_file qq<        "$br": "$release_date{$r}",\n>;
+		print $js_section_file qq<        "$br": "$release_date{$r}",\n>;
 	}
-	print $section_file "  };\n";
+	print $js_section_file "  };\n";
 
 	# Release label time line
-	print $section_file q'
+	print $js_section_file q'
       var columns = [
 	{id: "Facility", name: "Facility", field: "Facility", cssClass: "slick-header-row", formatter: FacilityNameFormatter, sortable: true},
 	{id: "Appearance", name: "Appearance", field: "Appearance", cssClass: "slick-header-row", sortable: true},
 ';
 	for my $r (sort by_release_order keys %release_order) {
 		my $br = beautify($r);
-		print $section_file qq<        {id: "$r", name: "$br", field: "$r", formatter: ImplementedFormatter},\n>;
+		print $js_section_file qq<        {id: "$r", name: "$br", field: "$r", formatter: ImplementedFormatter},\n>;
 	}
-	print $section_file "  ];\n";
+	print $js_section_file "  ];\n";
 
 	# Row titles
-	print $section_file q|
+	print $js_section_file q|
 
     var grid;
     var options = {
@@ -296,7 +298,7 @@ section
 			$parent_name =~ s/^([^_]+)_.*/$1_*/;
 			$parent_val = $out_row;
 			$highlights = element_line($out_row, $section, $name);
-			print $section_file qq(
+			print $js_section_file qq(
       { // $out_row
 	Facility: "$parent_name",
 	Appearance: "$first_release_name{$section}{$name}",
@@ -316,7 +318,7 @@ section
 		}
 		# Output a child or a simple node
 		$highlights = element_line($out_row, $section, $name);
-		print $section_file qq[
+		print $js_section_file qq[
       { // $out_row
 	Facility: "$name",
 	Appearance: "$first_release_name{$section}{$name}",
@@ -328,7 +330,7 @@ section
 		$out_row++;
 	}
 
-	print $section_file '
+	print $js_section_file '
     ]; // data[] initilization end
 
     // Initialize URIs
@@ -336,15 +338,15 @@ section
 ';
 	# Initialize URIs
 	for my $release (keys %release_date) {
-		print $section_file qq|      "$release" : {\n|;
+		print $js_section_file qq|      "$release" : {\n|;
 		for my $name (keys %{$uri{$release}{$section}}) {
 			next unless ($uri{$release}{$section}{$name});
-			print $section_file qq|        "$name" : "$uri{$release}{$section}{$name}",\n|;
+			print $js_section_file qq|        "$name" : "$uri{$release}{$section}{$name}",\n|;
 		}
-		print $section_file "      },\n";
+		print $js_section_file "      },\n";
 	}
 
-	print $section_file '
+	print $js_section_file '
     };
 
     // initialize the model
@@ -445,8 +447,8 @@ slick_head
 {
 	my ($section) = @_;
 
-	bs_head($section_file);
-	print $section_file qq|
+	bs_head($html_section_file);
+	print $html_section_file qq|
     <title>Evolution of Unix facilities: $section</title>
     <link rel="stylesheet" href="SlickGrid/slick.grid.css" type="text/css"/>
     <link rel="stylesheet" href="SlickGrid/css/smoothness/jquery-ui-1.8.24.custom.css" type="text/css"/>
@@ -464,19 +466,21 @@ slick_head
     <script src="SlickGrid/slick.dataview.js"></script>
 
     <script src="grid-behavior.js"></script>
+    <script src="man$section.js"></script>
 
-  <script>
-    \$(function () {
-      section = '$section';
+|;
+
+	print $js_section_file qq|
+\$(function () {
+  section = '$section';
 |;
 }
 
 sub
 tail
 {
-	print $section_file q|
-  })
-    </script>
+	print $js_section_file "  });\n";
+	print $html_section_file q|
     <p>
       <a href="index.html">Back to section index</a>
     <p>
