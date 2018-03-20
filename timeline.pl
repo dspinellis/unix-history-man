@@ -181,10 +181,10 @@ mkdir($sitedir);
 open(my $index_file, '>', "$sitedir/index.html") || die;
 bs_head($index_file);
 print $index_file '
-    <title>Evolution of Unix Facilities</title>
+    <title>The History of Documented Unix Facilities</title>
   </head>
   <body>
-    <h1>Evolution of Unix Facilities</h1>
+    <h1>The History of Documented Unix Facilities</h1>
     <ol>
 ';
 for (my $i = 1; $i <= $#section_title; $i++) {
@@ -193,12 +193,16 @@ for (my $i = 1; $i <= $#section_title; $i++) {
 	open($js_section_file, '>', "$sitedir/man$i.js") || die;
 	section($i);
 }
-print $index_file '
-    </ol>
-    <p>
-      The source code for creating this site is available in
-      <a href="https://github.com/dspinellis/unix-history-man">https://github.com/dspinellis/unix-history-man</a>.
-    </p>
+print $index_file "    </ol>\n";
+
+# Copy in the README file
+open(my $overview, '-|', 'pandoc README.md -o -') || die "Unable to run pandoc: $!\n";
+while (<$overview>) {
+	next if $. == 1;
+	s/A/The links above are associated with a/ if $. == 2;
+	print $index_file $_;
+}
+	print $index_file '
   </body>
 </html>
 ';
