@@ -22,25 +22,45 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <title>Evolution of Unix Facilities</title>
+    <title>The History of Documented Unix Facilities</title>
   </head>
   <body>
-    <h1>Evolution of Unix Facilities</h1>
-    <ol>
-      <li><a href="man1.html">User commands</a></li>
-      <li><a href="man2.html">System calls</a></li>
-      <li><a href="man3.html">C library functions</a></li>
-      <li><a href="man4.html">Devices and special files</a></li>
-      <li><a href="man5.html">File formats and conventions</a></li>
-      <li><a href="man6.html">Games et. al.</a></li>
-      <li><a href="man7.html">Miscellanea</a></li>
-      <li><a href="man8.html">System maintenance procedures and commands</a></li>
-      <li><a href="man9.html">System kernel interfaces</a></li>
+    <div class="container">
+      <div class="row">
+	<div class="col">
+	  <h1>The History of Documented Unix Facilities</h1>
+	  <ol>
+            <li><a href="man1.html">User commands</a></li>
+            <li><a href="man2.html">System calls</a></li>
+            <li><a href="man3.html">C library functions</a></li>
+            <li><a href="man4.html">Devices and special files</a></li>
+            <li><a href="man5.html">File formats and conventions</a></li>
+            <li><a href="man6.html">Games et. al.</a></li>
+            <li><a href="man7.html">Miscellanea</a></li>
+            <li><a href="man8.html">System maintenance procedures and commands</a></li>
+            <li><a href="man9.html">System kernel interfaces</a></li>
+          </ol>
+          <p>The links above are associated with a <a href="https://github.com/dspinellis/unix-history-man">repository</a>, a <a href="https://dspinellis.github.io/unix-history-man/data.zip">curated data set</a>, and a <a href="https://dspinellis.github.io/unix-history-man/index.html">timeline visualization web site</a> detailing the evolution of documented facilities (commands, system calls, library functions, etc.) across the major Unix releases tracked by the <a href="https://github.com/dspinellis/unix-history-repo">Unix history repository</a>.</p>
+          <h2 id="example-records">Example Records</h2>
+          <p>A file corresponding to each release contains tab-separated records with the manual page section (1–9), the name, and, if available, a URI of the corresponding page. The raw data are available through <a href="https://dspinellis.github.io/unix-history-man/data.zip">this link</a>. Below are some records from the data set.</p>
+          <pre><code>1       date    Research-V4/man/man1/date.1
+          2       open    Research-V3/man/man2/open.2
+          2       socket  BSD-4_2/usr/man/man2/socket.2
+          2       jail    FreeBSD-release/4.11.0/lib/libc/sys/jail.2
+          3s      fopen   Research-V7/usr/man/man3/fopen.3s
+          4       vga     386BSD-0.1-patchkit/usr/src/usr.sbin/keymap/lib/co.4
+          5       vgafont 386BSD-0.1-patchkit/usr/src/usr.sbin/keymap/lib/vgafont.5
+          6       tetris  BSD-4_4_Lite2/usr/src/games/tetris/tetris.6
+          7       c78     FreeBSD-release/9.0.0/share/man/man7/c99.7
+          8       dump    Research-V4/man/man8/dump.8
+          9       VFS     FreeBSD-release/2.2.0/share/man/man9/VFS.9</code></pre>
+          <h2 id="construction">Construction</h2>
+          <p>Where possible, the details are collected automatically from the <a href="https://github.com/dspinellis/unix-history-repo">Unix history repository</a>. In the remaining cases, the details have been hand-entered from printed manuals. (The <a href="https://github.com/dspinellis/unix-v3man">Third Edition</a> and the <a href="https://github.com/dspinellis/unix-v4man">Fourth Edition</a> manuals were recreated from their 1970s source code.) A Perl script creates the <a href="https://dspinellis.github.io/unix-history-man/index.html">timeline visualization web site</a> showing the availability timeline of each facility on every tracked Unix release. The scripts and the curated data are available and are maintained in the <a href="https://github.com/dspinellis/unix-history-man">history of documented Unix facilities repository</a>.</p>
+          <h2 id="related-publication">Related Publication</h2>
+          <p>Diomidis Spinellis. <a href="https://www.dmst.aueb.gr/dds/pubs/conf/2018-MSR-Unix-man/html/unix-man.pdf">Documented Unix facilities over 48 years</a>. In <em>MSR '18: Proceedings of the 15th Conference on Mining Software Repositories</em>. Association for Computing Machinery, May 2018. (doi:10.1145/3196398.3196476)</p>
 
-    </ol>
-    <p>
-      The source code for creating this site is available in
-      <a href="https://github.com/dspinellis/unix-history-man">https://github.com/dspinellis/unix-history-man</a>.
-    </p>
+	</div>
+      </div>
+    </div>
   </body>
 </html>
