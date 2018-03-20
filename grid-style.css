@@ -1,0 +1,36 @@
+.cell-title {
+  background: gray;
+}
+
+.slick-header-column.ui-state-default {
+  height: 100%;
+}
+
+.slick-header-row {
+  background: #edeef0;
+}
+
+.slick-cell {
+  padding: 0;
+}
+
+.implemented, .linked {
+  background: LightSkyBlue;
+  width: 100%;
+  display: inline-block;
+  height: 6px;
+}
+
+.toggle {
+  height: 9px;
+  width: 9px;
+  display: inline-block;
+}
+
+.toggle.expand {
+  background: url(SlickGrid/images/expand.gif) no-repeat center center;
+}
+
+.toggle.collapse {
+  background: url(SlickGrid/images/collapse.gif) no-repeat center center;
+}
