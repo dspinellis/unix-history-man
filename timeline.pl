@@ -184,25 +184,31 @@ print $index_file '
     <title>The History of Documented Unix Facilities</title>
   </head>
   <body>
-    <h1>The History of Documented Unix Facilities</h1>
-    <ol>
+    <div class="container">
+      <div class="row">
+	<div class="col">
+	  <h1>The History of Documented Unix Facilities</h1>
+	  <ol>
 ';
 for (my $i = 1; $i <= $#section_title; $i++) {
-	print $index_file qq{      <li><a href="man$i.html">$section_title[$i]</a></li>\n};
+	print $index_file qq{            <li><a href="man$i.html">$section_title[$i]</a></li>\n};
 	open($html_section_file, '>', "$sitedir/man$i.html") || die;
 	open($js_section_file, '>', "$sitedir/man$i.js") || die;
 	section($i);
 }
-print $index_file "    </ol>\n";
+print $index_file "          </ol>\n";
 
 # Copy in the README file
 open(my $overview, '-|', 'pandoc README.md -o -') || die "Unable to run pandoc: $!\n";
 while (<$overview>) {
 	next if $. == 1;
 	s/A/The links above are associated with a/ if $. == 2;
-	print $index_file $_;
+	print $index_file "          $_";
 }
 	print $index_file '
+	</div>
+      </div>
+    </div>
   </body>
 </html>
 ';
@@ -460,18 +466,20 @@ slick_head
     <link rel="stylesheet" type="text/css" href="grid-style.css">
   </head>
   <body>
-    <h1>Evolution of Unix section $section: $section_title[$section]</h1>
-    <div id="myGrid" style="width:1000px;height:500px;"></div>
-    <script src="SlickGrid/lib/jquery-1.7.min.js"></script>
-    <script src="SlickGrid/lib/jquery.event.drag-2.2.js"></script>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Evolution of Unix section $section: $section_title[$section]</h1>
+          <div id="myGrid" style="width:1000px;height:500px;"></div>
+          <script src="SlickGrid/lib/jquery-1.7.min.js"></script>
+          <script src="SlickGrid/lib/jquery.event.drag-2.2.js"></script>
 
-    <script src="SlickGrid/slick.core.js"></script>
-    <script src="SlickGrid/slick.grid.js"></script>
-    <script src="SlickGrid/slick.dataview.js"></script>
+          <script src="SlickGrid/slick.core.js"></script>
+          <script src="SlickGrid/slick.grid.js"></script>
+          <script src="SlickGrid/slick.dataview.js"></script>
 
-    <script src="grid-behavior.js"></script>
-    <script src="man$section.js"></script>
-
+          <script src="grid-behavior.js"></script>
+          <script src="man$section.js"></script>
 |;
 
 	print $js_section_file qq|
@@ -485,25 +493,28 @@ tail
 {
 	print $js_section_file "  });\n";
 	print $html_section_file q|
-    <p>
-      <a href="index.html">Back to section index</a>
-    <p>
-    <h2>Notes and disclaimers</h2>
-    <ul>
-      <li>Click on the "Facility" or "Appearance" headers
-        to change the sort order.</li>
-      <li>Click on the timeline to see the manual page for the specified
-        version of a facility.</li>
-      <li>The name of a facility may have been repurposed over time.</li>
-      <li>Facilities in sections 1, 6, 8 moved across sections over time.
-        To allow a continuous view of their evolution, all have been
-	relocated to the section of the most recent FreeBSD release,
-	if they still existed at the time.
-      </li>
-      <li> The evolution data of collapsed tree nodes depict the evolution
-        of the tree's first child node.
-      </li>
-    </ul>
+          <p>
+            <a href="index.html">Back to section index</a>
+          <p>
+          <h2>Notes</h2>
+          <ul>
+            <li>Click on the "Facility" or "Appearance" headers
+              to change the sort order.</li>
+            <li>Click on the timeline to see the manual page for the specified
+              version of a facility.</li>
+            <li>The name of a facility may have been repurposed over time.</li>
+            <li>Facilities in sections 1, 6, 8 moved across sections over time.
+              To allow a continuous view of their evolution, all have been
+              relocated to the section of the most recent FreeBSD release,
+              if they still existed at the time.
+            </li>
+            <li> The evolution data of collapsed tree nodes depict the evolution
+              of the tree's first child node.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
 |;
