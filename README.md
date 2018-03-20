@@ -2,15 +2,18 @@
 A [repository](https://github.com/dspinellis/unix-history-man),
 a [curated data set](https://dspinellis.github.io/unix-history-man/data.zip),
 and a [timeline visualization web site](https://dspinellis.github.io/unix-history-man/index.html)
-detailing the evolution of documented facilities
+detailing the evolution of 15,596 unique documented facilities
 (commands, system calls, library functions, etc.)
-across the major Unix releases tracked by the
+across 93 major Unix releases tracked by the
 [Unix history repository](https://github.com/dspinellis/unix-history-repo).
+
 
 ## Example records
 A file corresponding to each release contains tab-separated records
 with the manual page section (1–9), the name,
 and, if available, a URI of the corresponding page.
+In total, the set contains data about 193,781 unique URIs,
+identifying 48,250 distinct manual page instances.
 The raw data are available through
 [this link](https://dspinellis.github.io/unix-history-man/data.zip).
 Below are some records from the data set.
