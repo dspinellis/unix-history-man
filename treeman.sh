@@ -17,7 +17,7 @@
 #   limitations under the License.
 #
 
-GIT='git --git-dir=unix-history-repo'
+GIT='git --git-dir=unix-history-repo/.git'
 
 test -d unix-history-repo/ || exit 1
 
