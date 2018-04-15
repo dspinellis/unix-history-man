@@ -49,9 +49,12 @@ maintained in the
 [history of documented Unix facilities repository](https://github.com/dspinellis/unix-history-man).
 
 ## Related publications
-* Diomidis Spinellis. [Documented Unix facilities over 48 years](https://www.dmst.aueb.gr/dds/pubs/conf/2018-MSR-Unix-man/html/unix-man.pdf).  In
+* Diomidis Spinellis. Documented Unix facilities over 48 years.  In
 *MSR '18: Proceedings of the 15th Conference on Mining Software Repositories*.
-Association for Computing Machinery, May 2018. doi:10.1145/3196398.3196476
+Association for Computing Machinery, May 2018.
+[doi:10.1145/3196398.3196476](http://dx.doi.org/10.1145/3196398.3196476)
+[PDF](https://www.dmst.aueb.gr/dds/pubs/conf/2018-MSR-Unix-man/html/unix-man.pdf),
+[poster](https://www.dmst.aueb.gr/dds/pubs/conf/2018-MSR-Unix-man/html/poster.pdf)
 * Diomidis Spinellis.
 [A repository of Unix History and evolution](http://www.dmst.aueb.gr/dds/pubs/jrnl/2016-EMPSE-unix-history/html/unix-history.html).
 Empirical Software Engineering, 22(3):1372–1404, 2017.
