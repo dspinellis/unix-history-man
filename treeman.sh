@@ -17,7 +17,14 @@
 #   limitations under the License.
 #
 
-GIT='git --git-dir=unix-history-repo/.git'
+if [ -d unix-history-repo/.git/objects ] ; then
+  GIT='git --git-dir=unix-history-repo/.git'
+elif [ -d unix-history-repo/objects ] ; then
+  GIT='git --git-dir=unix-history-repo'
+else
+  echo 'Not Unix history repo directory found' 1>&2
+  exit 1
+fi
 
 test -d unix-history-repo/ || exit 1
 
