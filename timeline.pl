@@ -188,6 +188,7 @@ print $index_file '
       <div class="row">
 	<div class="col">
 	  <h1>The history of documented Unix facilities</h1>
+          <a href="https://doi.org/10.5281/zenodo.2525611"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.2525611.svg" alt="DOI"></a>
 	  <ol>
 ';
 for (my $i = 1; $i <= $#section_title; $i++) {

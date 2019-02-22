@@ -1,3 +1,7 @@
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2525611.svg)](https://doi.org/10.5281/zenodo.2525611)
+
+
 # The history of documented Unix facilities
 A [timeline visualization](https://dspinellis.github.io/unix-history-man/index.html),
 a [curated data set](https://dspinellis.github.io/unix-history-man/data.zip), and
