@@ -20,7 +20,7 @@
 GIT='git --git-dir=unix-history-repo'
 
 cd data
-refs=(386BSD-0.0 386BSD-0.1 remotes/origin/386BSD-0.1-patchkit Bell-32V
+refs=(386BSD-0.0 386BSD-0.1 386BSD-0.1-patchkit Bell-32V
   BSD* Research*)
 cd ..
 
