@@ -12,6 +12,8 @@ my %documented_all;
 my %documented_release;
 my @releases;
 
+my ($prev_x1, $prev_x2, $prev_y) = (undef, -1, -1);
+
 open(my $T, '<', '../data/timeline') || die;
 while (<$T>) {
 	my ($release) = split;
@@ -51,15 +53,30 @@ for my $feature (sort keys %documented_all) {
 		if ($documented_release{$release}{$feature}) {
 			my $x1 = int(($x / $n_releases) * ($width - 1));
 			my $x2 = int((($x + 1) / $n_releases) * ($width - 1));
-			print qq[<line x1="$x1" y1="$y" x2="$x2" y2="$y" style="fill:none;" />\n];
+			draw_line($x1, $x2, $y);
 		}
 	}
 	print "\n";
 	$y++;
 }
+draw_line(0, 0, 0);	# Flush
 
 print q[
   </g>
 </g>
 </svg>
 ];
+
+
+sub
+draw_line
+{
+	my ($x1, $x2, $y) = @_;
+
+	if ($y != $prev_y || $x1 != $prev_x2) {
+		print qq[<line x1="$prev_x1" y1="$prev_y" x2="$prev_x2" y2="$prev_y" style="fill:none;" />\n] if (defined($prev_x1));
+		$prev_y = $y;
+		$prev_x1 = $x1;
+	}
+	$prev_x2 = $x2;
+}
