@@ -202,7 +202,8 @@ print $index_file "          </ol>\n";
 # Copy in the README file
 open(my $overview, '-|', 'pandoc README.md -o -') || die "Unable to run pandoc: $!\n";
 while (<$overview>) {
-	next if $. == 1;
+	# Skip badge (we have our own)
+	next if (/zenodo.2525611"/../alt="DOI"/);
 	s/A/The links above are associated with a/ if $. == 2;
 	print $index_file "          $_";
 }
